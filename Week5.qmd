@@ -1,0 +1,62 @@
+---
+title: "Week 6 - Google Earth Engine"
+author: "Nikhil Desai"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Google Earth Engine
+
+## Summary
+
+This week we learned the basics of Google Earth Engine (GEE). GEE is a truly amazing tool. It allows users to sidestep the labourious process of downloading and processing satellite imagery and instead, users can access and analyse earth observation data directly in the cloud. GEE makes dealing with remote sensing data incredibly accessible.
+
+Ollie's lecture started with a slide which illustrated the exponential uptake of GEE. The slide shows that the number of academic publications using GEE has increased exponentially since 2013. This is a clear indication of the growing popularity of GEE. Having worked with Google in the past (as a client), their focus on user experience shines through with this tool.
+
+#### Figure 1: The Number of Academic Publications Using Google Earth Engine
+
+::: {style="text-align: center;"}
+<img src="/Photos/GEEPublications.png" style="width:40%;"/>
+:::
+
+In simple terms it provides a way to access and analyse satellite imagery and other geospatial data. However, GEE dramatically reduces the time to conducting analysis on remote sensing data by allowing users to bypass the need to download and process the data to your local machine using QGIS or SNAP.
+
+Key features and functionality of Google Earth Engine include:
+
+**Data Catalog**: Google Earth Engine provides access to a diverse and continuously expanding catalog of satellite imagery datasets, including Landsat, Sentinel, MODIS, and more. Users can easily search, discover, and access imagery and other geospatial datasets through the platform.
+
+**Analysis Tools**: Earth Engine offers a powerful set of tools and algorithms for processing and analyzing geospatial data. These tools include image classification, spectral indices computation, time-series analysis, object detection, change detection, and more. Users can perform complex geospatial analyses directly within the platform without the need for extensive programming or computational resources.
+
+**Code Editor**: The Earth Engine Code Editor provides an interactive development environment where users can write, test, and run geospatial analysis scripts using JavaScript and Python programming languages. The Code Editor supports syntax highlighting, auto-completion, and debugging features to streamline the development process.
+
+**Visualisation**: Google Earth Engine allows users to visualise geospatial data and analysis results in interactive maps, time-series charts, and custom visualisations. Users can explore and interact with the data layers, overlay multiple datasets, apply symbology and styling options, and create dynamic visualizations for presentations and publications.
+
+## 2 Applications
+
+### Texture analysis
+is a method to quantify the spatial arrangement of pixel values in an image. It is used to identify patterns in an image. Texture measures can be used to identify different land cover types, such as forest, water, and urban areas.
+
+Land Cover Classification: Land cover classification is the process of assigning a label to every pixel in an image that describes the type of land cover that the pixel represents.
+
+### Principle Component Analysis
+
+### Band Math
+
+#### NDVI
+#### NDMI
+#### GCI
+
+## Reflections:
+
+
+Google Earth Engine has proven to be an incredibly useful tool from a business perspective, offering a wide range of applications that span from environmental monitoring to urban planning and agricultural management. Its vast repository of satellite imagery and geospatial data allows for real-time environmental monitoring, making it an indispensable tool for businesses that require up-to-date geographical information to make informed decisions. For instance, in agriculture, Google Earth Engine enables the analysis of crop health over vast areas, aiding in the efficient management of resources and ultimately leading to increased productivity and reduced costs.
+
+From a user experience standpoint, Google Earth Engine is remarkably mature. Its interface is both intuitive and user-friendly, making it accessible to professionals across various sectors, regardless of their technical expertise in geospatial analysis. The platform's ability to handle large datasets and perform complex spatial analyses in the cloud, without the need for powerful local computing resources, is particularly impressive. This cloud-based approach not only streamlines workflows but also facilitates collaborative projects by allowing teams to share data and insights seamlessly.
+
+Moreover, Google Earth Engine's extensive library of algorithms and models, combined with its support for multiple programming languages, including JavaScript and Python, offers flexibility and efficiency in processing and analysing geospatial data. This adaptability is crucial for businesses that need to tailor their analyses to specific requirements.
+
+In summary, Google Earth Engine's comprehensive data resources, coupled with its sophisticated yet accessible analytical tools, make it an invaluable asset for businesses seeking to leverage geospatial data for strategic decision-making. Its mature user experience ensures that even those with limited experience in spatial data science can harness the power of geospatial analytics to drive innovation and efficiency in their operations.
