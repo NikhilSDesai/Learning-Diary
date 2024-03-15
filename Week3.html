@@ -9,7 +9,7 @@
 <meta name="author" content="Nikhil Desai">
 <meta name="dcterms.date" content="2024-03-15">
 
-<title>Corrections</title>
+<title>Corrections &amp; Data Joining</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -47,7 +47,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Corrections</h1>
+<h1 class="title">Corrections &amp; Data Joining</h1>
 </div>
 
 
@@ -76,14 +76,51 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>In the field of earth observation, the term “correction” describes the process of removing or reducing the effects of various factors distort the imagery or data. These factors can include atmospheric effects, sensor noise, and other sources of error.</p>
-<p>There are four main correction types:</p>
-<ul>
-<li><p><strong>Geometric</strong> Adjusts for image distortions due to the Earth’s rotation, sensor tilt, and curvature, ensuring accurate spatial positioning.</p></li>
-<li><p><strong>Atmospheric</strong> Removes the effects of atmospheric gases and particles on the recorded signal to accurately reflect the Earth’s surface reflectance.</p></li>
-<li><p><strong>Topographic</strong>: Corrects for terrain-induced distortions in satellite images, aligning them with true geographic locations based on elevation data.</p></li>
-<li><p><strong>Radiometric</strong> Adjusts the digital image data to correct for sensor noise and inconsistencies, ensuring uniform brightness and contrast across the image.</p></li>
-</ul>
+<section id="corrections-and-enhancements" class="level2">
+<h2 class="anchored" data-anchor-id="corrections-and-enhancements">1. Corrections and Enhancements</h2>
+<p>Over the course of the week, we discussed how to transform raw, remotely sensed data into a product we can use for analysis. This transformation <em>process</em> is know as <em>enhancing</em> or <em>correcting</em> data.</p>
+<p>In academic terms, “Correction” describes the process of removing or reducing the effects of various factors distort the imagery or data. These factors can include atmospheric effects and sensor noise among others.</p>
+<p>The three main correction types are detailed below, along with their common solutions:</p>
+<section id="geometric-topographic-error" class="level4">
+<h4 class="anchored" data-anchor-id="geometric-topographic-error"><strong>Geometric &amp; Topographic Error</strong></h4>
+<p>Adjusts for image distortions due to the Earth’s rotation, sensor tilt, and curvature, ensuring accurate spatial positioning.</p>
+<p>A common method for geometric correction is orthorectification. This fixes distortions in aerial photos by aligning them with ground truth, correcting for camera angles and terrain. This method essentially ensures every point on a photo maps to the right spot on Earth, ensuring accurate measurements and analysis. This step is key for reliable map-making and data overlay from satellite imagery.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="img/geometriccorrection.png" class="img-fluid figure-img" style="width:30.0%"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="atmospheric-distortion" class="level4">
+<h4 class="anchored" data-anchor-id="atmospheric-distortion"><strong>Atmospheric Distortion</strong></h4>
+<p>Removes the effects of atmospheric gases and particles on the recorded signal to accurately reflect the Earth’s surface reflectance. This is essentially wiping away the haze from satellite imagery. Atmospheric particles and gases can often blur or change the colors in an image. The goal is to make the image show the Earth’s surface as if the atmosphere wasn’t messing with the view.</p>
+<p>Regression is often used to correct atmospheric errors. It allows you to model the relationship between satellite data with known ground values, then applying this model to adjust the entire image for atmospheric distortions.</p>
+</section>
+<section id="radiometric-calibration" class="level4">
+<h4 class="anchored" data-anchor-id="radiometric-calibration"><strong>Radiometric Calibration</strong></h4>
+<p>Adjusts the digital image data to correct for sensor noise and inconsistencies, ensuring uniform brightness and contrast across the image.</p>
+<p>While, I wouldn’t consider this to an error - you can correct for radiometric variations by applying a calibration equation that converts Digital Number (DN) values to spectral radiance (using gain and bias parameters). This helps to standardise image brightness across datasets.</p>
+</section>
+</section>
+<section id="data-joining" class="level2">
+<h2 class="anchored" data-anchor-id="data-joining">2. Data Joining</h2>
+<p>In Earth observation, data joining involves combining multiple satellite images to create a single image. This is an extremely useful method, as most large areas cannot be captured in a single satellite pass.</p>
+<p>One common technique for data joining is called mosaic feathering. Seen below:</p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="img/combinedfeathering.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>Similar to feathering in panoramic photography, mosaic feathering in satellite imagery involves overlapping adjacent images and blending their edges. This blending ensures that the transition between images is smooth, without visible seams or abrupt changes in color and texture that can occur due to differences in lighting, angle of capture, or atmospheric conditions at the time each image was taken.</p>
+</section>
 
 </main>
 <!-- /main column -->

@@ -11,13 +11,17 @@ Over the course of the week, we discussed how to transform raw, remotely sensed 
 
 In academic terms, "Correction" describes the process of removing or reducing the effects of various factors distort the imagery or data. These factors can include atmospheric effects and sensor noise among others.
 
-The four main correction types are detailed below, along with their common solutions:
+The three main correction types are detailed below, along with their common solutions:
 
 #### **Geometric & Topographic Error**
 
 Adjusts for image distortions due to the Earth's rotation, sensor tilt, and curvature, ensuring accurate spatial positioning.
 
 A common method for geometric correction is orthorectification. This fixes distortions in aerial photos by aligning them with ground truth, correcting for camera angles and terrain. This method essentially ensures every point on a photo maps to the right spot on Earth, ensuring accurate measurements and analysis. This step is key for reliable map-making and data overlay from satellite imagery.
+
+```{r echo=FALSE, out.width="30%"}
+knitr::include_graphics("img/geometriccorrection.png")
+```
 
 #### **Atmospheric Distortion**
 
@@ -33,7 +37,12 @@ While, I wouldn't consider this to an error - you can correct for radiometric va
 
 ## 2. Data Joining
 
-```{r}
+In Earth observation, data joining involves combining multiple satellite images to create a single image. This is an extremely useful method, as most large areas cannot be captured in a single satellite pass.
 
+One common technique for data joining is called mosaic feathering. Seen below:
 
+```{r echo=FALSE, out.width="%"}
+knitr::include_graphics("img/combinedfeathering.png")
 ```
+
+Similar to feathering in panoramic photography, mosaic feathering in satellite imagery involves overlapping adjacent images and blending their edges. This blending ensures that the transition between images is smooth, without visible seams or abrupt changes in color and texture that can occur due to differences in lighting, angle of capture, or atmospheric conditions at the time each image was taken.
