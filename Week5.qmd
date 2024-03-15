@@ -38,6 +38,7 @@ Key features and functionality of Google Earth Engine include:
 ## 2 Applications
 
 ### Texture analysis
+
 is a method to quantify the spatial arrangement of pixel values in an image. It is used to identify patterns in an image. Texture measures can be used to identify different land cover types, such as forest, water, and urban areas.
 
 Land Cover Classification: Land cover classification is the process of assigning a label to every pixel in an image that describes the type of land cover that the pixel represents.
@@ -47,11 +48,12 @@ Land Cover Classification: Land cover classification is the process of assigning
 ### Band Math
 
 #### NDVI
+
 #### NDMI
+
 #### GCI
 
 ## Reflections:
-
 
 Google Earth Engine has proven to be an incredibly useful tool from a business perspective, offering a wide range of applications that span from environmental monitoring to urban planning and agricultural management. Its vast repository of satellite imagery and geospatial data allows for real-time environmental monitoring, making it an indispensable tool for businesses that require up-to-date geographical information to make informed decisions. For instance, in agriculture, Google Earth Engine enables the analysis of crop health over vast areas, aiding in the efficient management of resources and ultimately leading to increased productivity and reduced costs.
 
