@@ -1,23 +1,37 @@
 ---
-title: "Corrections"
+title: "Corrections & Data Joining"
 author: "Nikhil Desai"
 date: "`r Sys.Date()`"
 output: html_document
 ---
 
-In the field of earth observation, the term "correction" describes the process of removing or reducing the effects of various factors distort the imagery or data. These factors can include atmospheric effects, sensor noise, and other sources of error. 
+## 1. Corrections and Enhancements
 
-There are four main correction types:
+Over the course of the week, we discussed how to transform raw, remotely sensed data into a product we can use for analysis. This transformation *process* is know as *enhancing* or *correcting* data.
 
-- **Geometric** Adjusts for image distortions due to the Earth's rotation, sensor tilt, and curvature, ensuring accurate spatial positioning.
+In academic terms, "Correction" describes the process of removing or reducing the effects of various factors distort the imagery or data. These factors can include atmospheric effects and sensor noise among others.
 
-- **Atmospheric** Removes the effects of atmospheric gases and particles on the recorded signal to accurately reflect the Earth's surface reflectance.
+The four main correction types are detailed below, along with their common solutions:
 
-- **Topographic**: Corrects for terrain-induced distortions in satellite images, aligning them with true geographic locations based on elevation data.
+#### **Geometric & Topographic Error**
 
-- **Radiometric** Adjusts the digital image data to correct for sensor noise and inconsistencies, ensuring uniform brightness and contrast across the image.
+Adjusts for image distortions due to the Earth's rotation, sensor tilt, and curvature, ensuring accurate spatial positioning.
 
+A common method for geometric correction is orthorectification. This fixes distortions in aerial photos by aligning them with ground truth, correcting for camera angles and terrain. This method essentially ensures every point on a photo maps to the right spot on Earth, ensuring accurate measurements and analysis. This step is key for reliable map-making and data overlay from satellite imagery.
 
+#### **Atmospheric Distortion**
+
+Removes the effects of atmospheric gases and particles on the recorded signal to accurately reflect the Earth's surface reflectance. This is essentially wiping away the haze from satellite imagery. Atmospheric particles and gases can often blur or change the colors in an image. The goal is to make the image show the Earth's surface as if the atmosphere wasn't messing with the view.
+
+Regression is often used to correct atmospheric errors. It allows you to model the relationship between satellite data with known ground values, then applying this model to adjust the entire image for atmospheric distortions.
+
+#### **Radiometric Calibration**
+
+Adjusts the digital image data to correct for sensor noise and inconsistencies, ensuring uniform brightness and contrast across the image.
+
+While, I wouldn't consider this to an error - you can correct for radiometric variations by applying a calibration equation that converts Digital Number (DN) values to spectral radiance (using gain and bias parameters). This helps to standardise image brightness across datasets.
+
+## 2. Data Joining
 
 ```{r}
 
