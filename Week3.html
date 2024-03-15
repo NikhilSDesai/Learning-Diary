@@ -85,20 +85,32 @@ ul.task-list li input[type="checkbox"] {
 <h4 class="anchored" data-anchor-id="geometric-topographic-error"><strong>Geometric &amp; Topographic Error</strong></h4>
 <p>Adjusts for image distortions due to the Earth’s rotation, sensor tilt, and curvature, ensuring accurate spatial positioning.</p>
 <p>A common method for geometric correction is orthorectification. This fixes distortions in aerial photos by aligning them with ground truth, correcting for camera angles and terrain. This method essentially ensures every point on a photo maps to the right spot on Earth, ensuring accurate measurements and analysis. This step is key for reliable map-making and data overlay from satellite imagery.</p>
-<div class="cell">
+<div class="cell" data-layout-align="center">
 <div class="cell-output-display">
-<div>
+<div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="img/geometriccorrection.png" class="img-fluid figure-img" style="width:30.0%"></p>
+<p><img src="img/geometriccorrection.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:70.0%"></p>
 </figure>
 </div>
 </div>
 </div>
+<p>Source: <a href="https://www.researchgate.net/figure/Geometric-correction-procedures_fig7_320710942">Abdul Basith</a></p>
 </section>
 <section id="atmospheric-distortion" class="level4">
 <h4 class="anchored" data-anchor-id="atmospheric-distortion"><strong>Atmospheric Distortion</strong></h4>
 <p>Removes the effects of atmospheric gases and particles on the recorded signal to accurately reflect the Earth’s surface reflectance. This is essentially wiping away the haze from satellite imagery. Atmospheric particles and gases can often blur or change the colors in an image. The goal is to make the image show the Earth’s surface as if the atmosphere wasn’t messing with the view.</p>
-<p>Regression is often used to correct atmospheric errors. It allows you to model the relationship between satellite data with known ground values, then applying this model to adjust the entire image for atmospheric distortions.</p>
+<p>Regression is often used to correct atmospheric errors. It allows you to model the relationship between satellite data with known ground values, then applying this model to adjust the entire image for atmospheric distortions. Below is a Landsat image of the Three Gorges Area, China before and after correction for haze.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/atmosphericcorrection.png" class="img-fluid figure-img" style="width:70.0%"></p>
+<figcaption>Three Gorges Area, China - Before and After Correction</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>Source: <a href="https://www.researchgate.net/profile/Zhaohua-Chen-2?_tp=eyJjb250ZXh0Ijp7ImZpcnN0UGFnZSI6Il9kaXJlY3QiLCJwYWdlIjoiX2RpcmVjdCJ9fQ">Zhaohua Chen</a></p>
 </section>
 <section id="radiometric-calibration" class="level4">
 <h4 class="anchored" data-anchor-id="radiometric-calibration"><strong>Radiometric Calibration</strong></h4>
@@ -119,7 +131,12 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 </div>
+<p>Source: <a href="https://yuan-gao.net/pdf/ISIDF11.pdf">Yun Gao</a></p>
 <p>Similar to feathering in panoramic photography, mosaic feathering in satellite imagery involves overlapping adjacent images and blending their edges. This blending ensures that the transition between images is smooth, without visible seams or abrupt changes in color and texture that can occur due to differences in lighting, angle of capture, or atmospheric conditions at the time each image was taken.</p>
+</section>
+<section id="reflections" class="level2">
+<h2 class="anchored" data-anchor-id="reflections">Reflections</h2>
+<p>The tedious process of enhancing remotely sensed data</p>
 </section>
 
 </main>

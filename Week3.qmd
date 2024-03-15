@@ -19,7 +19,7 @@ Adjusts for image distortions due to the Earth's rotation, sensor tilt, and curv
 
 A common method for geometric correction is orthorectification. This fixes distortions in aerial photos by aligning them with ground truth, correcting for camera angles and terrain. This method essentially ensures every point on a photo maps to the right spot on Earth, ensuring accurate measurements and analysis. This step is key for reliable map-making and data overlay from satellite imagery.
 
-```{r echo=FALSE, out.width="30%"}
+```{r echo=FALSE, out.width="60%", fig.align="center"}
 knitr::include_graphics("img/geometriccorrection.png")
 ```
 
@@ -31,7 +31,7 @@ Removes the effects of atmospheric gases and particles on the recorded signal to
 
 Regression is often used to correct atmospheric errors. It allows you to model the relationship between satellite data with known ground values, then applying this model to adjust the entire image for atmospheric distortions. Below is a Landsat image of the Three Gorges Area, China before and after correction for haze.
 
-```{r echo=FALSE, out.width="30%", fig.cap="Three Gorges Area, China - Before and After Correction"}
+```{r echo=FALSE, out.width="70%", fig.cap="Three Gorges Area, China - Before and After Correction"}
 
 knitr::include_graphics("img/atmosphericcorrection.png")
 ```
@@ -57,3 +57,11 @@ knitr::include_graphics("img/combinedfeathering.png")
 Source: [Yun Gao](https://yuan-gao.net/pdf/ISIDF11.pdf)
 
 Similar to feathering in panoramic photography, mosaic feathering in satellite imagery involves overlapping adjacent images and blending their edges. This blending ensures that the transition between images is smooth, without visible seams or abrupt changes in color and texture that can occur due to differences in lighting, angle of capture, or atmospheric conditions at the time each image was taken.
+
+## Applications
+
+Jensen's description of Atmospheric Correction in *Introductory digital image processing: a remote sensing perspective (2015),* provided me with a tangible example of how bands work in satellite imagery
+
+## Reflections
+
+Prior to this course, I had little exposure to remotely sensed data and personally, going through the tedious process of enhancing raw remotely sensed data highlighted the complexity of tools like Google Earth. I will never again take for granted the ability to zoom in on a location and casually scroll around the globe.
