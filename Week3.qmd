@@ -61,7 +61,7 @@ Similar to feathering in panoramic photography, mosaic feathering in satellite i
 
 Jensen's description of Atmospheric Correction in *Introductory digital image processing: a remote sensing perspective (2015),* provides a good overview of the concept of Dark Object Subtraction (DOS). The idea is that the darkest spot shouldn't really have any brightness and should have a value of zero, so if it does appear slightly bright, that is likely due to atmospheric haze.
 
-I've chosen an image of my hometown, Kamloops, British Columbia, Canada to conduct DOS on.
+I've chosen an image of my favourite park near my hometown, Kamloops, British Columbia, Canada to conduct DOS on.
 
 The formula for doing such is:
 
@@ -69,17 +69,16 @@ The formula for doing such is:
 knitr::include_graphics("img/DOSequation.png")
 ```
 
-I started with an analysis of the Surface Reflectance. Below, I have identified the 'atmosphere' in the image the original image, before corrections:
+I started with an analysis of the Surface Reflectance. The first image below, is the raw Landsat image. The second image is the same image after applying the DOS method.
 
-```{r echo=FALSE, out.width="30%", fig.align="center", fig.cap="Landsat image prior to and after Dark Object Subtraction"}
+```{r echo=FALSE, out.width="70%", fig.align="center", fig.cap="Landsat image prior to and after Dark Object Subtraction"}
 knitr::include_graphics("img/PrePostDOS.png")
 ```
 
-After applying the DOS method, this is what we are left with. While the differences are subtle, the image is noticeably clearer. This difference becom more evident when detailed analysis conducted.
-
+After applying the DOS method, this is what we are left with. While the differences are subtle, the image is noticeably clearer. The first image is more green, there is far less variation in colour and the mountainous region on the left hand side of the image is more distinguished making it easier to identify sp
 
 ## Reflections
 
 Prior to this course, I had little exposure to remotely sensed data. Personally, going through the tedious process of enhancing raw remotely sensed data highlighted the complexity of tools like Google Earth. I will never again take for granted the ability to zoom in on a location and casually scroll around the globe.
 
-In the practical, I focused on dealing with atmospheric correction. I chose this simply because it was the method I technically did not understand. It requiring a deep dive into the complexities of how light interacts with the Earth's atmosphere and affects satellite imagery. I used DOS
+In the practical, I focused on dealing with atmospheric correction using DOS. I chose this simply because it was the method I technically understood, the least. It required a deep dive into the complexities of how light interacts with the Earth's atmosphere and affects satellite imagery. After taking a look at the two images above, I initially saw little difference, but when looking again, the distinction between the two is quite evident (as detailed above).
