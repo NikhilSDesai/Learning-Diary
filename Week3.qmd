@@ -58,10 +58,12 @@ Source: [Yun Gao](https://yuan-gao.net/pdf/ISIDF11.pdf)
 
 Similar to feathering in panoramic photography, mosaic feathering in satellite imagery involves overlapping adjacent images and blending their edges. This blending ensures that the transition between images is smooth, without visible seams or abrupt changes in color and texture that can occur due to differences in lighting, angle of capture, or atmospheric conditions at the time each image was taken.
 
-## Applications
+## Applications - Atmospheric Correction using Dark Object Subtraction
 
-Jensen's description of Atmospheric Correction in *Introductory digital image processing: a remote sensing perspective (2015),* provided me with a tangible example of how bands work in satellite imagery
+Jensen's description of Atmospheric Correction in *Introductory digital image processing: a remote sensing perspective (2015),* provides a good overview of the concept of Dark Object Subtraction (DOS). The idea is that the darkest spot shouldn't really have any brightness and should have a value of zero, so if it does appear slightly bright, that is likely due to atmospheric haze.
 
 ## Reflections
 
-Prior to this course, I had little exposure to remotely sensed data and personally, going through the tedious process of enhancing raw remotely sensed data highlighted the complexity of tools like Google Earth. I will never again take for granted the ability to zoom in on a location and casually scroll around the globe.
+Prior to this course, I had little exposure to remotely sensed data. Personally, going through the tedious process of enhancing raw remotely sensed data highlighted the complexity of tools like Google Earth. I will never again take for granted the ability to zoom in on a location and casually scroll around the globe.
+
+In the practical, I focused on dealing with atmospheric correction. I chose this simply because it was the method I technically did not understand. It requiring a deep dive into the complexities of how light interacts with the Earth's atmosphere and affects satellite imagery. I used DOS
