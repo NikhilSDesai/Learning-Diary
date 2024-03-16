@@ -5,6 +5,8 @@ date: "`r Sys.Date()`"
 output: html_document
 ---
 
+## Overview: Wildfires in Western Canada
+
 This week, we have been tasked with finding a city facing an urban challenge and proposing how remotely sensed data could be used to address the challenge. Prior to starting this degree I spent the summer in my hometown, Kamloops. It is a small rural town in western Canada. The climate of the region is known as a semi-arid desert. The land cover is predominantly grasslands and forest. With the acceleration of climate change, western Canada has been experiencing severe heatwaves and droughts. The increasingly dry conditions have led to an exponential increase in wildfires.
 
 During this summer air quality were at hazardous levels due to the smoke from the wildfires. Several communities were evacuated, including Lytton, a small town near Kamloops, was evacuated and destroyed by a wildfire. Several statistics I found:
@@ -28,3 +30,51 @@ Wildfires are quickly approaching the Kamloops city limits and burned three hous
 ```{r echo=FALSE, out.width="70%", fig.cap="British Coumbia Temperature 2021"}
 knitr::include_graphics("img/kamloopswildfire.jpeg")
 ```
+
+## Proposal: Using Remote Sensing to Address Wildfires
+
+The use of remote sensing to monitor and predict wildfires is not a new concept. However, the technology has been underutilised in Canada. The Canadian government has been slow to adopt new technologies and has been relying on traditional methods to monitor and predict wildfires. The traditional methods include the use of weather stations, satellite imagery, and aerial photography.
+
+These methods are not as effective as remote sensing technology. Remote sensing technology are able to provide real-time data on the location, size and intensity of wildfires. This data can be used to predict the spread of wildfires and to develop strategies to contain them.
+
+## Approach
+
+### **Remote Sensing Approach for Wildfire Monitoring and Prediction in Kamloops, BC**
+
+The escalating wildfire incidents in Kamloops, BC, fueled by climate change-induced dry conditions, necessitate advanced monitoring and predictive methodologies. Remote sensing technology, with its capability to offer real-time, comprehensive data, emerges as a pivotal tool in this regard. Leveraging a combination of satellite imagery and data analysis techniques, we can enhance our ability to monitor environmental conditions conducive to wildfires, detect early signs of fire outbreaks, and predict their potential spread. The proposed method integrates several key datasets:
+
+#### **Land Surface Temperature (LST) and Thermal Anomalies**
+
+LST data, obtained from Landsat satellites or MODIS (Moderate Resolution Imaging Spectroradiometer) on NASA's Terra and Aqua satellites, can identify areas of unusual warmth indicative of a potential fire or areas at high risk due to elevated temperatures. Thermal anomaly data from the VIIRS (Visible Infrared Imaging Radiometer Suite) on the Suomi NPP and NOAA-20 satellites are crucial for early wildfire detection, providing nightly observations that can pinpoint the exact location of a fire breakout.
+
+#### **Previous Rainfall and Soil Moisture**
+
+Precipitation data, available from the Global Precipitation Measurement (GPM) mission, help in understanding recent rainfall patterns, which directly affect soil moisture levels and, consequently, wildfire risk. Soil moisture data can be retrieved from the SMAP (Soil Moisture Active Passive) satellite, offering insights into the dryness of the soil, which, when critically low, significantly heightens the wildfire risk.
+
+#### **Vegetation and Land Cover**
+
+The condition and type of vegetation play a crucial role in wildfire dynamics. Data from Landsat or the Sentinel-2 satellite of the European Space Agency (ESA) can be used to assess vegetation health (through indices like NDVI - Normalized Difference Vegetation Index) and land cover changes over time. Areas with high amounts of dry, unhealthy vegetation are more susceptible to ignition and rapid fire spread.
+
+#### **Temporal Trends and Predictive Modeling**
+
+Analyzing historical data on wildfires, climate patterns, and land use changes in the Kamloops area allows for the identification of trends and potential hotspots for future wildfires. Machine learning algorithms can process this multitude of variables to predict where and when conditions might align for the next wildfire, providing valuable lead time for preventive measures and resource allocation.
+
+### **Implementation Strategy**
+
+The proposed approach involves the following steps:
+
+1.  **Data Integration:** Collect and preprocess relevant datasets (LST, thermal anomalies, precipitation, soil moisture, and vegetation health) for the Kamloops region.
+
+2.  **Hotspot Identification:** Use thermal anomalies and LST data to identify and monitor current hotspots and areas with conditions conducive to wildfire outbreaks.
+
+3.  **Risk Assessment:** Combine soil moisture, vegetation health, and historical wildfire data to assess areas at high risk of experiencing wildfires.
+
+4.  **Predictive Analytics:** Implement machine learning models to analyze temporal trends and predict future wildfire occurrences and their potential spread patterns.
+
+5.  **Operational Integration:** Develop a user-friendly interface or dashboard that integrates with existing emergency management systems, providing real-time data and predictive insights to local authorities, firefighters, and community planners.
+
+### **Benefits and Reflection**
+
+This comprehensive remote sensing approach provides a proactive framework for wildfire management in Kamloops, BC, transforming how authorities predict, monitor, and respond to wildfires. By leveraging the capabilities of earth observation data, the method offers a significant improvement over traditional monitoring techniques, enabling a more effective allocation of resources, enhanced community preparedness, and potentially reducing the catastrophic impact of wildfires.
+
+Reflecting on this proposal, it's evident that while the technological foundation exists, the challenge lies in operational integration, public awareness, and policy support. It's crucial for municipalities like Kamloops to embrace these technologies, invest in the necessary infrastructure, and foster collaborations with scientific communities to tailor these advanced monitoring techniques to their unique environmental and societal landscapes.
