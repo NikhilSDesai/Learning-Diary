@@ -32,7 +32,6 @@ Removes the effects of atmospheric gases and particles on the recorded signal to
 Regression is often used to correct atmospheric errors. It allows you to model the relationship between satellite data with known ground values, then applying this model to adjust the entire image for atmospheric distortions. Below is a Landsat image of the Three Gorges Area, China before and after correction for haze.
 
 ```{r echo=FALSE, out.width="70%", fig.cap="Three Gorges Area, China - Before and After Correction"}
-
 knitr::include_graphics("img/atmosphericcorrection.png")
 ```
 
@@ -50,7 +49,7 @@ In Earth observation, data joining involves combining multiple satellite images 
 
 One common technique for data joining is called mosaic feathering. Seen below:
 
-```{r echo=FALSE, out.width="%"}
+```{r echo=FALSE, out.width="60%"}
 knitr::include_graphics("img/combinedfeathering.png")
 ```
 
@@ -58,9 +57,15 @@ Source: [Yun Gao](https://yuan-gao.net/pdf/ISIDF11.pdf)
 
 Similar to feathering in panoramic photography, mosaic feathering in satellite imagery involves overlapping adjacent images and blending their edges. This blending ensures that the transition between images is smooth, without visible seams or abrupt changes in color and texture that can occur due to differences in lighting, angle of capture, or atmospheric conditions at the time each image was taken.
 
-## Applications - Atmospheric Correction using Dark Object Subtraction
+## Applications: Atmospheric Correction using Dark Object Subtraction
 
 Jensen's description of Atmospheric Correction in *Introductory digital image processing: a remote sensing perspective (2015),* provides a good overview of the concept of Dark Object Subtraction (DOS). The idea is that the darkest spot shouldn't really have any brightness and should have a value of zero, so if it does appear slightly bright, that is likely due to atmospheric haze.
+
+The formula for doing such is:
+
+```{r echo=FALSE, out.width="70%", fig.align="center"; fig.cap="Dark Object Subtraction Equation"} 
+knitr::include_graphics("img/DOSequation.png")
+```
 
 ## Reflections
 
