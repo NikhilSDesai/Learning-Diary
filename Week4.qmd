@@ -5,8 +5,22 @@ date: "`r Sys.Date()`"
 output: html_document
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+This week, we have been tasked with finding a city facing an urban challenge and proposing how remotely sensed data could be used to address the challenge. Prior to starting this degree I spent the summer in my hometown, Kamloops. It is a small rural town in western Canada. The climate of the region is known as a semi-arid desert. The land cover is predominantly grasslands and forest. With the acceleration of climate change, western Canada has been experiencing severe heatwaves and droughts. The increasingly dry conditions have led to an exponential increase in wildfires.
+
+During this summer air quality were at hazardous levels due to the smoke from the wildfires. Several communities were evacuated, including Lytton, a small town near Kamloops, was evacuated and destroyed by a wildfire. A couple statistics I found:
+
+-   *Insurance Bureau of Canada* reported 78 million CAD in damages
+
+-   The fire destroyed 90 percent of the village, killed two people and forced the evacuation of nearby First Nations communities
+
+-   The fire largely leveled Lytton's Main Street, burning the post office, ambulance station, health centre, RCMP detachment, Lytton Hotel and the Lytton Village Office
+
+-   The Lytton Chinese History Museum was lost, along with 1,600 artifacts, museum archives and library
+
+Kamloops is denoted in the following image as a small green dot on the following NASA visualisation of average temperatures in summer 2021.
+
+```{r echo=FALSE, out.width="70%", fig.cap="British Coumbia Temperature 2021"}
+knitr::include_graphics("img/lyttonBC.png")
 ```
 
-## 
+Wildfires are quickly approaching the Kamloops boundary and consumed three houses last summer.
