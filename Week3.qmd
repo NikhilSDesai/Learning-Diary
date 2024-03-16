@@ -49,7 +49,7 @@ In Earth observation, data joining involves combining multiple satellite images 
 
 One common technique for data joining is called mosaic feathering. Seen below:
 
-```{r echo=FALSE, out.width="60%"}
+```{r echo=FALSE, fig.align="center", out.width="60%"}
 knitr::include_graphics("img/combinedfeathering.png")
 ```
 
@@ -61,11 +61,22 @@ Similar to feathering in panoramic photography, mosaic feathering in satellite i
 
 Jensen's description of Atmospheric Correction in *Introductory digital image processing: a remote sensing perspective (2015),* provides a good overview of the concept of Dark Object Subtraction (DOS). The idea is that the darkest spot shouldn't really have any brightness and should have a value of zero, so if it does appear slightly bright, that is likely due to atmospheric haze.
 
+I've chosen an image of my hometown, Kamloops, British Columbia, Canada to conduct DOS on.
+
 The formula for doing such is:
 
-```{r echo=FALSE, out.width="70%", fig.align="center"; fig.cap="Dark Object Subtraction Equation"} 
+```{r echo=FALSE, out.width="50%", fig.align="center", fig.cap="Dark Object Subtraction Equation"}
 knitr::include_graphics("img/DOSequation.png")
 ```
+
+I started with an analysis of the Surface Reflectance. Below, I have identified the 'atmosphere' in the image the original image, before corrections:
+
+```{r echo=FALSE, out.width="30%", fig.align="center", fig.cap="Landsat image prior to and after Dark Object Subtraction"}
+knitr::include_graphics("img/PrePostDOS.png")
+```
+
+After applying the DOS method, this is what we are left with. While the differences are subtle, the image is noticeably clearer. This difference becom more evident when detailed analysis conducted.
+
 
 ## Reflections
 
