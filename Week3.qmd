@@ -49,7 +49,7 @@ In Earth observation, data joining involves combining multiple satellite images 
 
 One common technique for data joining is called mosaic feathering. Seen below:
 
-```{r echo=FALSE, fig.align="center", out.width="60%"}
+```{r echo=FALSE, fig.align="center", out.width="80%"}
 knitr::include_graphics("img/combinedfeathering.png")
 ```
 
