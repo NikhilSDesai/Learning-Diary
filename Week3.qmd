@@ -75,7 +75,7 @@ I started with an analysis of the Surface Reflectance. The first image below, is
 knitr::include_graphics("img/PrePostDOS.png")
 ```
 
-After applying the DOS method, this is what we are left with. While the differences are subtle, the image is noticeably clearer. The first image is more green, there is far less variation in colour and the mountainous region on the left hand side of the image is more distinguished making it easier to identify sp
+After applying the DOS method, this is what we are left with. While the differences are subtle, the image is noticeably clearer. The first image is more green, there is far less variation in colour and the mountainous region on the left hand side of the image is more distinguished making it easier to identify features.
 
 ## Reflections
 
