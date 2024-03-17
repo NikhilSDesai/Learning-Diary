@@ -11,49 +11,60 @@ knitr::opts_chunk$set(echo = TRUE)
 
 # Google Earth Engine
 
-## Summary
+## 1 Summary
 
-This week we learned the basics of Google Earth Engine (GEE). GEE is a truly amazing tool. It allows users to sidestep the labourious process of downloading and processing satellite imagery and instead, users can access and analyse earth observation data directly in the cloud. GEE makes dealing with remote sensing data incredibly accessible.
+This week we learned the basics of Google Earth Engine (GEE). GEE is a truly amazing tool. It allows users to sidestep the labourious process of downloading and processing satellite imagery and instead, users can access and analyse earth observation data directly in the cloud. GEE makes dealing with remote sensing data incredibly accessible and I intend to erase my experiences with SNAP from my memory.
 
-Ollie's lecture started with a slide which illustrated the exponential uptake of GEE. The slide shows that the number of academic publications using GEE has increased exponentially since 2013. This is a clear indication of the growing popularity of GEE. Having worked with Google in the past (as a client), their focus on user experience shines through with this tool.
+This week's lecture started with a slide which illustrated the exponential uptake of GEE. The slide shows that the number of academic publications using GEE has increased exponentially since 2013.
 
 #### Figure 1: The Number of Academic Publications Using Google Earth Engine
 
-::: {style="text-align: center;"}
-<img src="/Photos/GEEPublications.png" style="width:40%;"/>
-:::
+```{r echo=FALSE, out.width="70%", fig.cap="Academic Publications Using Google Earth Engine"}
+knitr::include_graphics("img/GEEPublications.png")
 
-In simple terms it provides a way to access and analyse satellite imagery and other geospatial data. However, GEE dramatically reduces the time to conducting analysis on remote sensing data by allowing users to bypass the need to download and process the data to your local machine using QGIS or SNAP.
+```
+
+In simple terms it provides a way to access and analyse satellite imagery and other geospatial data. GEE dramatically reduces the time to conducting analysis on remote sensing data by allowing users to bypass the need to download and process the data to your local machine using QGIS or SNAP.
+
+Below I've used GEE to conduct a few analyses using methods we've learned about over the past few weeks. I've used Vancouver as a case study here. I thought it would interesting to see how its distinctly north american 'grid system' would appear. I found an interesting code that allows you to a
+
+#### NDVI Analysis
+
+NDVI Analysis assesses vegetation health and coverage in a given area. By comparing the reflectance of near-infrared and red light, NDVI helps in distinguishing between vegetated and non-vegetated surfaces, indicating plant health and biomass. High indexes are seen in Stanley park, the large green area seen at the top of the window and on the left tip of the city is the *University Endowment Lands,* an old growth protected area where the University of British Columbia is located. Due to housing shortages in the city, several acres of this protected area have sadly been approved for development. I will be checking to see how this area changes over the next few years and
+
+```{r echo=FALSE, out.width="70%", fig.cap="Academic Publications Using Google Earth Engine"}
+knitr::include_graphics("img/vancouver_ndvi.png")
+```
+
+#### PCA
+
+Principal Component Analysis (PCA) is a statistical technique used to emphasize variation and bring out strong patterns in a dataset. In remote sensing, PCA transforms the original correlated bands into a set of values of linearly uncorrelated variables called principal components, which helps in reducing the dimensionality of the data. This analysis is useful for enhancing the interpretability of satellite imagery while retaining most of the original information, often revealing hidden patterns in the data.
+
+```{r echo=FALSE, out.width="70%", fig.cap="Academic Publications Using Google Earth Engine"}
+knitr::include_graphics("img/vancouver_pca.png")
+```
+
+#### Texture Analysis
+
+Texture Analysis on satellite imagery involves evaluating the spatial arrangement of colors or intensities in an image to identify patterns or structures. By applying methods such as the Gray-Level Co-occurrence Matrix (GLCM), texture analysis can highlight areas of contrast, uniformity, or variability, providing insights into the physical characteristics and heterogeneity of the surface. This technique is beneficial for classifying land cover, detecting changes, and understanding the structure of various natural and man-made features in the landscape.
+
+```{r echo=FALSE, out.width="70%", fig.cap="Academic Publications Using Google Earth Engine"}
+knitr::include_graphics("img/vancouver_texture.png")
+```
+
+## 2 Applications
 
 Key features and functionality of Google Earth Engine include:
 
 **Data Catalog**: Google Earth Engine provides access to a diverse and continuously expanding catalog of satellite imagery datasets, including Landsat, Sentinel, MODIS, and more. Users can easily search, discover, and access imagery and other geospatial datasets through the platform.
 
-**Analysis Tools**: Earth Engine offers a powerful set of tools and algorithms for processing and analyzing geospatial data. These tools include image classification, spectral indices computation, time-series analysis, object detection, change detection, and more. Users can perform complex geospatial analyses directly within the platform without the need for extensive programming or computational resources.
+**Analysis Tools**: It offers a powerful set of tools and algorithms for processing and analysing geospatial data. These tools include image classification, time-series analysis, object detection, change detection among others.
 
-**Code Editor**: The Earth Engine Code Editor provides an interactive development environment where users can write, test, and run geospatial analysis scripts using JavaScript and Python programming languages. The Code Editor supports syntax highlighting, auto-completion, and debugging features to streamline the development process.
+**Code Editor**: The Earth Engine Code Editor provides an interactive development environment where users can write, test and run geospatial analysis scripts using JavaScript or Python.
 
-**Visualisation**: Google Earth Engine allows users to visualise geospatial data and analysis results in interactive maps, time-series charts, and custom visualisations. Users can explore and interact with the data layers, overlay multiple datasets, apply symbology and styling options, and create dynamic visualizations for presentations and publications.
+**Visualisation**: GEE allows users to visualise geospatial data and analysis results in interactive maps, time-series charts and custom visualisations. Users can explore and interact with the data layers, overlay multiple datasets and apply styling options. The most impressive characteristic of GEE is its ability to dynamically represent data.
 
-## 2 Applications
-
-### Texture analysis
-
-is a method to quantify the spatial arrangement of pixel values in an image. It is used to identify patterns in an image. Texture measures can be used to identify different land cover types, such as forest, water, and urban areas.
-
-Land Cover Classification: Land cover classification is the process of assigning a label to every pixel in an image that describes the type of land cover that the pixel represents.
-
-### Principle Component Analysis
-
-### Band Math
-
-#### NDVI
-
-#### NDMI
-
-#### GCI
-
-## Reflections:
+## 3 Reflections:
 
 Google Earth Engine has proven to be an incredibly useful tool from a business perspective, offering a wide range of applications that span from environmental monitoring to urban planning and agricultural management. Its vast repository of satellite imagery and geospatial data allows for real-time environmental monitoring, making it an indispensable tool for businesses that require up-to-date geographical information to make informed decisions. For instance, in agriculture, Google Earth Engine enables the analysis of crop health over vast areas, aiding in the efficient management of resources and ultimately leading to increased productivity and reduced costs.
 
