@@ -1,0 +1,42 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "LearningDiary",
+    "section": "",
+    "text": "About Me\nMy name is Nikhil Desai, I am originally from Vancouver, Canada. I completed by undergraduate MA degree in Economics from the University of Edinburgh. Upon completion I worked as a management consultant in London for 3 years specialising in Strategy, Data & Analytics, Operating Model and Supply Chain for Technology, Media and Telco companies. I left this role to pursue an MSc in Spatial Data Science at The Bartlett | Centre for Advanced Spatial Analysis at UCL.\nI am interested in studying complex systems in relation to climate change. This broadly involves investigating how interconnected processes and feedback loops can influence and be influenced by global warming.\nThis underscores the complexity of predicting climate outcomes, as minor changes in one part of our carbon system can lead to significant and unexpected results.\nWithin this in mind, I am interested in the world of remote sensing because it offers a powerful and essential tool for observing, analysing, and understanding these complex systems and their dynamic interactions on a global scale.",
+    "crumbs": [
+      "About Me"
+    ]
+  },
+  {
+    "objectID": "intro.html",
+    "href": "intro.html",
+    "title": "1  Introduction",
+    "section": "",
+    "text": "This is a book created from markdown and executable code.\nSee Knuth (1984) for additional discussion of literate programming.\n\n1 + 1\n\n[1] 2\n\n\n\n\n\n\nKnuth, Donald E. 1984. “Literate Programming.” Comput. J. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction</span>"
+    ]
+  },
+  {
+    "objectID": "summary.html",
+    "href": "summary.html",
+    "title": "2  Summary",
+    "section": "",
+    "text": "In summary, this book has no content whatsoever.\n\n1 + 1\n\n[1] 2",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Summary</span>"
+    ]
+  },
+  {
+    "objectID": "references.html",
+    "href": "references.html",
+    "title": "References",
+    "section": "",
+    "text": "Knuth, Donald E. 1984. “Literate Programming.” Comput.\nJ. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97.",
+    "crumbs": [
+      "References"
+    ]
+  }
+]

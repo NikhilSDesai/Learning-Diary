@@ -8,6 +8,14 @@ book:
   chapters:
     - index.qmd
     - intro.qmd
+    - Week1.qmd
+    - Week2.qmd
+    - Week3.qmd
+    - Week4.qmd
+    - Week5.qmd
+    - Week6.qmd
+    - Week7.qmd
+    - Week8.qmd
     - summary.qmd
     - references.qmd
 
