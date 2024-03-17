@@ -30,7 +30,7 @@ Below I've used GEE to conduct a few analyses using methods we've learned about 
 
 #### NDVI Analysis
 
-NDVI Analysis assesses vegetation health and coverage in a given area. By comparing the reflectance of near-infrared and red light, NDVI helps in distinguishing between vegetated and non-vegetated surfaces, indicating plant health and biomass. High indexes are seen in Stanley park, the large green area seen at the top of the window and on the left tip of the city is the *University Endowment Lands,* an old growth protected area where the University of British Columbia is located. Due to housing shortages in the city, several acres of this protected area have sadly been approved for development. I will be checking to see how this area changes over the next few years and
+NDVI Analysis assesses vegetation health and coverage in a given area. By comparing the reflectance of near-infrared and red light, NDVI helps in distinguishing between vegetated and non-vegetated surfaces, indicating plant health and biomass. High indexes are seen in Stanley park, the large green area seen at the top of the window and on the left tip of the city is the *University Endowment Lands,* an old growth protected area where the University of British Columbia is located. Due to housing shortages in the city, several acres of this protected area have sadly been approved for development. I will be checking to see how this area changes over the next few years.
 
 ```{r echo=FALSE, out.width="70%", fig.cap="Academic Publications Using Google Earth Engine"}
 knitr::include_graphics("img/vancouver_ndvi.png")
@@ -38,7 +38,7 @@ knitr::include_graphics("img/vancouver_ndvi.png")
 
 #### PCA
 
-Principal Component Analysis (PCA) is a statistical technique used to emphasize variation and bring out strong patterns in a dataset. In remote sensing, PCA transforms the original correlated bands into a set of values of linearly uncorrelated variables called principal components, which helps in reducing the dimensionality of the data. This analysis is useful for enhancing the interpretability of satellite imagery while retaining most of the original information, often revealing hidden patterns in the data.
+In essence, Principal Component Analysis is used to emphasise variation and bring out patterns in a dataset. In remote sensing, PCA transforms correlated bands in an image into uncorrelated variables or principal components. This method is useful for enhancing the interpretability of satellite imagery while retaining most of the original information "...often revealing hidden patterns in the data."
 
 ```{r echo=FALSE, out.width="70%", fig.cap="Academic Publications Using Google Earth Engine"}
 knitr::include_graphics("img/vancouver_pca.png")
@@ -46,7 +46,7 @@ knitr::include_graphics("img/vancouver_pca.png")
 
 #### Texture Analysis
 
-Texture Analysis on satellite imagery involves evaluating the spatial arrangement of colors or intensities in an image to identify patterns or structures. By applying methods such as the Gray-Level Co-occurrence Matrix (GLCM), texture analysis can highlight areas of contrast, uniformity, or variability, providing insights into the physical characteristics and heterogeneity of the surface. This technique is beneficial for classifying land cover, detecting changes, and understanding the structure of various natural and man-made features in the landscape.
+Finally *Texture Analysis* involves evaluating the spatial arrangement of colors or intensities in an image to identify patterns or structures. By applying methods such as GLCM, texture analysis can highlight areas of contrast or uniformity which can provide insights about the physical characteristics and differences of the surface. This technique is useful for things like classifying land cover, detecting change and understanding the structure features in the landscape.
 
 ```{r echo=FALSE, out.width="70%", fig.cap="Academic Publications Using Google Earth Engine"}
 knitr::include_graphics("img/vancouver_texture.png")
