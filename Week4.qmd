@@ -55,7 +55,7 @@ Rainfall data from the Global Precipitation Measurement mission gives us informa
 
 ### **Vegetation Health**
 
-What's on the ground plays a massive role in how wildfires behave. We can check out the health of vegetation and the types of land cover in the area using data from Landsat or Sentinel-2 satellites. If there's a lot of dry, unhealthy vegetation, it's like laying out a welcome mat for wildfires.
+What's on the ground plays a massive role in how wildfires behave. We can check out the health of vegetation and the types of land cover in the area using data from Landsat or Sentinel-2 satellites. If there is significant dry and unhealthy vegetation, it's like laying out a welcome mat for wildfires.
 
 ### **Trends & Predictions**
 
@@ -63,15 +63,15 @@ By digging into historical data on wildfires, weather patterns, and how land use
 
 ## Strategy & Implementation
 
-1.  **Gather and Prep the Data:** We need to get our hands on the relevant datasets (LST, thermal anomalies, rainfall, soil moisture, vegetation health) for Kamloops and get them ready for analysis.
+1.  **Gather and Prep the Data:** Attain relevant datasets (LST, thermal anomalies, rainfall, soil moisture, vegetation health) for Kamloops and ready them for analysis.
 
-2.  **Spot the Hotspots:** Using the thermal and LST data, we can keep an eye on current and potential wildfire zones.
+2.  **Identify Hotspots:** Using the thermal and LST data, we can keep an eye on current and potential wildfire zones.
 
 3.  **Assess the Risk:** We'll mix soil moisture data with vegetation health and past wildfire info to figure out which areas are most likely to catch fire.
 
-4.  **Forecasting Fire:** This is where we bring in machine learning to chew on the trend data and spit out predictions on future wildfires, including where they might start and how they could spread.
+4.  **Forecasting Fire:** Leverage machine learning to assess the trend data and output predictions on future wildfires, including where they might start and essentially how they could spread.
 
-5.  **Make It Usable:** We should aim to create a dashboard or some kind of interface that lets local emergency services, fire departments, and town planners access and use this data in real-time.
+5.  **Make It Usable:** Develop dashboard / interface for local emergency services, fire departments and planners to access and use data/models in real-time.
 
 ## **Reflections**
 
