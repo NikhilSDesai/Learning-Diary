@@ -20,6 +20,7 @@ We focused on land cover classification, particularly training classification mo
 ```{r echo=FALSE, out.width="60%", fig.align="center"}
 knitr::include_graphics("img/CART.webp")
 ```
+
 Source: [Krzywinski & Altman, 2017](https://www.nature.com/articles/nmeth.4370)
 
 -   **RandomForest:** This method uses several decision trees to make better predictions and be more reliable. By randomly selecting features, RandomForest can handle categorical data, mitigating overfitting risks inherent in CART. It's good at working with both straightforward and more complex data by combining many simple models.
@@ -28,16 +29,16 @@ Source: [Krzywinski & Altman, 2017](https://www.nature.com/articles/nmeth.4370)
 knitr::include_graphics("img/randomforest.webp")
 ```
 
-Source: [Corporate  Finance Institute, 2021](https://corporatefinanceinstitute.com/resources/data-science/random-forest/)
+Source: [Corporate Finance Institute, 2021](https://corporatefinanceinstitute.com/resources/data-science/random-forest/)
 
 -   **NaiveBayes:** This approach uses Bayes' theorem and treats each feature in the data as independent from the others. It's surprisingly good and quick at making predictions, especially with data that can be neatly categorised. While it's really meant for categorical data, it can also work with continuous data if you assume the data fits a certain pattern.
 
 -   **SVM (Support Vector Machines):** SVM looks for the best boundary that separates different categories in the data. It's particularly good for dealing with complex problems where the data has many dimensions. Although it is computationally expensive, its ability to manage detailed and continuous data makes it powerful for identifying patterns that are hard to spot.
 
-
-```{r echo=FALSE, out.width="60%", fig.align="center"}
+```{r echo=FALSE, out.width="50%", fig.align="center"}
 knitr::include_graphics("img/SVM.png")
 ```
+
 Source: [G. Mountrakis , 2011](https://www.sciencedirect.com/science/article/pii/S0924271610001140?casa_token=OqT7oyI3SQsAAAAA:48WJUDtbHXJoEq49Yh8LtiSmXHoHPNPrqneOQgV5c7Q3bgAQ2hyQVHZF3zBOpFsBAufcITvftA)
 
 #### Training and Testing Data:
@@ -58,6 +59,28 @@ This dive into classification methods and how to check their accuracy has been b
 
 ## 2. Applications
 
-The Applications of classification are vast. I think this is why I was quite awe struck by this week's lecture. I've chosen an interesting case
+### Land Cover Classification - Gebze, Turkey
+
+The Applications of classification are vast. I think this is why I was quite awe struck by this week's lecture. I've chosen a case study published in [2009 by Kavzoglu & Colkesen](https://www.sciencedirect.com/science/article/pii/S0303243409000464?casa_token=KxOJqWYnrV4AAAAA:thbuKJ2pkzjqutr-bU-t3KxPOxHJ2DZR4nU3H2SJSCYQZchRyo3dJTYUlI_FQYBZ_TNcPljzlQ#fig6), which classifies Landsat imagery by Landcover. While the study is simplistic in comparison to contemporary studies, I think it does an excellent job illustrating how classification works:
+
+```{r echo=FALSE, out.width="60%", fig.align="center"}
+knitr::include_graphics("img/ClassificationLS.png")
+```
+
+Source: [Kavzoglu & Colkesen, 2009](https://www.sciencedirect.com/science/article/pii/S0303243409000464?casa_token=KxOJqWYnrV4AAAAA:thbuKJ2pkzjqutr-bU-t3KxPOxHJ2DZR4nU3H2SJSCYQZchRyo3dJTYUlI_FQYBZ_TNcPljzlQ#fig6)
+
+In the article, SVMs are utilised for land cover classification using Landsat ETM+ and Terra ASTER images of Gebze, Turkey. The effectiveness of SVMs was analysed. The study finds that SVMs outperformed the maximum likelihood classifier in terms of overall accuracy and individual class accuracies, demonstrating the robustness and effectiveness of SVMs in classifying remotely sensed images for land cover analysis.
+
+Comparing MLC with SVMs is useful because while MLC (I understand this to be a more traditional and computationally intensive process) relies on statistical assumptions about data distribution, SVMs use a different approach finding a hyperplane that best separates different classes in the feature space
+
+### [Predicting Snake Bites](https://www.researchgate.net/publication/348697066_Integrating_human_behavior_and_snake_ecology_with_agent-based_models_to_predict_snakebite_in_high_risk_landscapes) - Ratnapura, Sri Lanka
+
+This is likely one of the most interesting and unique articles I have read in my academic career. [*"...by incorporating detailed datasets on snake species, farmer behaviors and climatic factors, this study examines the spatio-temporal dynamics of snakebite risks"*](https://www.researchgate.net/publication/348697066_Integrating_human_behavior_and_snake_ecology_with_agent-based_models_to_predict_snakebite_in_high_risk_landscapes). While the article is mostly about agent-based modelling, there are several ingenious uses of SVM in satellite imagery. The example below is one of the inputs they use for their model. They found that certain species of snakes take refuge in certain species of trees. As such, they used satellite imagery to identify the distribution of different species of trees in their region of study.
+
+```{r echo=FALSE, out.width="50%", fig.align="center"}
+knitr::include_graphics("img/SnakeBiteSVM.png")
+```
+
+Source: [Goldstein et al., 2021](https://www.researchgate.net/publication/348697066_Integrating_human_behavior_and_snake_ecology_with_agent-based_models_to_predict_snakebite_in_high_risk_landscapes)
 
 ## 3. Reflections
