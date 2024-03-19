@@ -7,9 +7,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Nikhil Desai">
-<meta name="dcterms.date" content="2024-03-14">
 
-<title>Landsat - 9 Xaringan Presentation</title>
+<title>LearningDiary - 6&nbsp; Google Earth Engine 2</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -25,30 +24,173 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="Week2_files/libs/clipboard/clipboard.min.js"></script>
-<script src="Week2_files/libs/quarto-html/quarto.js"></script>
-<script src="Week2_files/libs/quarto-html/popper.min.js"></script>
-<script src="Week2_files/libs/quarto-html/tippy.umd.min.js"></script>
-<script src="Week2_files/libs/quarto-html/anchor.min.js"></script>
-<link href="Week2_files/libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="Week2_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="Week2_files/libs/bootstrap/bootstrap.min.js"></script>
-<link href="Week2_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="Week2_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
-<script src="Week2_files/libs/fitvids-2.1.1/fitvids.min.js"></script>
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./Week8.html" rel="next">
+<link href="./Week6.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
 
 
 </head>
 
-<body class="fullcontent">
+<body class="nav-sidebar floating">
 
-<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
-
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./Week7.html"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Google Earth Engine 2</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">LearningDiary</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">About Me</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Week1.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">What is Remote Sensing?</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Week2.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Landsat - 9 Xaringan Presentation</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Week3.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Corrections &amp; Data Joining</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Week4.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Remote Sensing Policy</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Week6.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Week 6 - Google Earth Engine</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Week7.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Google Earth Engine 2</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Week8.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Week 8</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./summary.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Summary</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">References</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#classification-i" id="toc-classification-i" class="nav-link active" data-scroll-target="#classification-i"><span class="header-section-number">7</span> Classification I</a>
+  <ul class="collapse">
+  <li><a href="#overview" id="toc-overview" class="nav-link" data-scroll-target="#overview"><span class="header-section-number">7.1</span> 1. Overview</a></li>
+  <li><a href="#reflections" id="toc-reflections" class="nav-link" data-scroll-target="#reflections"><span class="header-section-number">7.2</span> 3. Reflections</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Landsat - 9 Xaringan Presentation</h1>
+<h1 class="title"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Google Earth Engine 2</span></h1>
 </div>
 
 
@@ -65,7 +207,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">March 14, 2024</p>
+      <p class="date">Invalid Date</p>
     </div>
   </div>
   
@@ -77,23 +219,40 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="a-short-presentation-on-maybe-one-of-the-most-important-space-programmes-in-the-world" class="level4">
-<h4 class="anchored" data-anchor-id="a-short-presentation-on-maybe-one-of-the-most-important-space-programmes-in-the-world">A short presentation on maybe one of the most important space programmes in the world</h4>
-<div class="cell">
-<div class="cell-output-display">
-<div class="shareagain" style="min-width:300px;margin:1em auto;" data-exeternal="1">
-<iframe src="https://nikhilsdesai.github.io/Xaringan/#1" width="1100" height="900" style="border:2px solid currentColor;" loading="lazy" allowfullscreen=""></iframe>
-<script>fitvids('.shareagain', {players: 'iframe'});</script>
-</div>
-</div>
-</div>
+<section id="classification-i" class="level1" data-number="7">
+<h1 data-number="7"><span class="header-section-number">7</span> Classification I</h1>
+<section id="overview" class="level2" data-number="7.1">
+<h2 data-number="7.1" class="anchored" data-anchor-id="overview"><span class="header-section-number">7.1</span> 1. Overview</h2>
+<p>This week we studied how to use Machine Learning (ML) to classify Earth Observation data. I found this to be the most interesting and useful topic in this module as it cemented how to think about pixels in satellite imagery. This week’s readings, particularly <a href="https://read.kortext.com/reader/pdf/1872407/Cover">Introductory digital image processing: a remote sensing perspective</a> (Jensen, J.R., 2015) describe classification as on of the essential skills in remote sensing.</p>
+<p>After completing this week’s practical, I understood how transformative GEE has been to the field of remote sensing. While the speed of processing is far quicker - the level of integration and functionality built into GEE enables users to conducts more broad and and comprehensive analysis.</p>
+<p>We focused on land cover classification, particularly training classification models, as well as evaluating how accurate the model was in correctly classifying pixels. Four main classification methods were discussed this week:</p>
+<ul>
+<li><p><strong>Classification and Regression Trees (CART):</strong> CART is a straightforward method that splits data into smaller groups to make everything more similar within each group. It is ideal for its simplicity. CART can handle both categorical and continuous data. However, it is susceptible to overfitting.</p></li>
+<li><p><strong>RandomForest:</strong> This method uses several decision trees to make better predictions and be more reliable. By randomly selecting features, RandomForest can handle categorical data, mitigating overfitting risks inherent in CART. It’s good at working with both straightforward and more complex data by combining many simple models.</p></li>
+<li><p><strong>NaiveBayes:</strong> This approach uses Bayes’ theorem and treats each feature in the data as independent from the others. It’s surprisingly good and quick at making predictions, especially with data that can be neatly categorised. While it’s really meant for categorical data, it can also work with continuous data if you assume the data fits a certain pattern.</p></li>
+<li><p><strong>SVM (Support Vector Machines):</strong> SVM looks for the best boundary that separates different categories in the data. It’s particularly good for dealing with complex problems where the data has many dimensions. Although it is computationally expensive, its ability to manage detailed and continuous data makes it powerful for identifying patterns that are hard to spot.</p></li>
+</ul>
+<section id="training-and-testing-data" class="level4" data-number="7.1.0.1">
+<h4 data-number="7.1.0.1" class="anchored" data-anchor-id="training-and-testing-data"><span class="header-section-number">7.1.0.1</span> Training and Testing Data:</h4>
+<p>When developing classification model, you must <em>train</em> the model, which data helps the model learn the link between features and their categories. Testing is used to check how well the model predicts new, unseen data, helping to make sure it works well in different situations and doesn’t just repeat what it has seen before. Distinct training and testing data ensure a model can accurately predict new, unseen data, preventing it from merely memorising the data it was trained on and thus reducing the risk of <strong><em>overfitting</em></strong>.</p>
+<p>We looked at two ways of classifying data in GEE:</p>
+<ol type="1">
+<li><p><strong>Using a RandomForest Classifier</strong>: This straightforward method applies the RandomForest classifier directly to the training data to categorise the image. It’s a solid technique that benefits from RandomForest’s ability to combine multiple models, which helps reduce errors and overfitting.</p></li>
+<li><p><strong>Pixel-Based Approach</strong>: This more detailed method prepares training and testing data for each individual pixel, leading to a more accurate identification of different land types. This allows for better training and testing, improving the model’s accuracy in classifying land cover.</p></li>
+</ol>
+<p>Accuracy Assessment:</p>
+<p>The pixel-based method proved its worth with a thorough accuracy check. By carefully dividing the data into training and testing sets for each pixel, this approach allowed for a precise evaluation of the model’s success. The results showed this method was particularly effective at handling the complexities of classifying different land types, suggesting it can produce highly dependable and widely applicable outcomes.</p>
+<p>This dive into classification methods and how to check their accuracy has been both challenging and revealing. The deep understanding of various classifiers and the essential role of thorough testing are key for using GEE in environmental studies. This exploration not only highlights GEE’s strong features but also the detailed work needed to achieve accurate classification results.2. Applications</p>
 </section>
-<section id="section" class="level2">
-<h2 class="anchored" data-anchor-id="section"></h2>
+</section>
+<section id="reflections" class="level2" data-number="7.2">
+<h2 data-number="7.2" class="anchored" data-anchor-id="reflections"><span class="header-section-number">7.2</span> 3. Reflections</h2>
+
+
+</section>
 </section>
 
-</main>
-<!-- /main column -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -481,6 +640,18 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
 });
 </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a 6="" href="./Week6.html" class="pagination-link  aria-label=" &lt;span="" -="" google="" earth="" engine&lt;="" span&gt;"="">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Week 6 - Google Earth Engine</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./Week8.html" class="pagination-link" aria-label="<span class='chapter-number'>7</span>&nbsp; <span class='chapter-title'>Week 8</span>">
+        <span class="nav-page-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Week 8</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
 </div> <!-- /content -->
 
 

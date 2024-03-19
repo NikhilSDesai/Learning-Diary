@@ -1,14 +1,42 @@
 ---
-title: "Google Earth Engine 2"
+title: "Classification I"
 author: "Nikhil Desai"
 date: "`r Sys.Date()`"
 output: html_document
 ---
 
-# Google Earth Engine 2
+# Classification I
 
 ## 1. Overview
 
-## 2. Applications
+This week we studied how to use Machine Learning (ML) to classify Earth Observation data. I found this to be the most interesting and useful topic in this module as it cemented how to think about pixels in satellite imagery. This week's readings, particularly [Introductory digital image processing: a remote sensing perspective](https://read.kortext.com/reader/pdf/1872407/Cover) (Jensen, J.R., 2015) describe classification as on of the essential skills in remote sensing.
+
+After completing this week's practical, I understood how transformative GEE has been to the field of remote sensing. While the speed of processing is far quicker - the level of integration and functionality built into GEE enables users to conducts more broad and and comprehensive analysis.
+
+We focused on land cover classification, particularly training classification models, as well as evaluating how accurate the model was in correctly classifying pixels. Four main classification methods were discussed this week:
+
+-   **Classification and Regression Trees (CART):** CART is a straightforward method that splits data into smaller groups to make everything more similar within each group. It is ideal for its simplicity. CART can handle both categorical and continuous data. However, it is susceptible to overfitting.
+
+-   **RandomForest:** This method uses several decision trees to make better predictions and be more reliable. By randomly selecting features, RandomForest can handle categorical data, mitigating overfitting risks inherent in CART. It's good at working with both straightforward and more complex data by combining many simple models.
+
+-   **NaiveBayes:** This approach uses Bayes' theorem and treats each feature in the data as independent from the others. It's surprisingly good and quick at making predictions, especially with data that can be neatly categorised. While it's really meant for categorical data, it can also work with continuous data if you assume the data fits a certain pattern.
+
+-   **SVM (Support Vector Machines):** SVM looks for the best boundary that separates different categories in the data. It's particularly good for dealing with complex problems where the data has many dimensions. Although it is computationally expensive, its ability to manage detailed and continuous data makes it powerful for identifying patterns that are hard to spot.
+
+#### Training and Testing Data:
+
+When developing classification model, you must *train* the model, which data helps the model learn the link between features and their categories. Testing is used to check how well the model predicts new, unseen data, helping to make sure it works well in different situations and doesn’t just repeat what it has seen before. Distinct training and testing data ensure a model can accurately predict new, unseen data, preventing it from merely memorising the data it was trained on and thus reducing the risk of ***overfitting***.
+
+We looked at two ways of classifying data in GEE:
+
+1.  **Using a RandomForest Classifier**: This straightforward method applies the RandomForest classifier directly to the training data to categorise the image. It's a solid technique that benefits from RandomForest's ability to combine multiple models, which helps reduce errors and overfitting.
+
+2.  **Pixel-Based Approach**: This more detailed method prepares training and testing data for each individual pixel, leading to a more accurate identification of different land types. This allows for better training and testing, improving the model's accuracy in classifying land cover.
+
+Accuracy Assessment:
+
+The pixel-based method proved its worth with a thorough accuracy check. By carefully dividing the data into training and testing sets for each pixel, this approach allowed for a precise evaluation of the model's success. The results showed this method was particularly effective at handling the complexities of classifying different land types, suggesting it can produce highly dependable and widely applicable outcomes.
+
+This dive into classification methods and how to check their accuracy has been both challenging and revealing. The deep understanding of various classifiers and the essential role of thorough testing are key for using GEE in environmental studies. This exploration not only highlights GEE's strong features but also the detailed work needed to achieve accurate classification results.2. Applications
 
 ## 3. Reflections

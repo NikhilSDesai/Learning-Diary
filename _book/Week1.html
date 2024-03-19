@@ -6,10 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Norah Jones">
-<meta name="dcterms.date" content="2024-03-14">
+<meta name="author" content="Nikhil Desai">
 
-<title>LearningDiary</title>
+<title>LearningDiary - 1&nbsp; Introduction to Remote Sensing</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -32,7 +31,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./Week1.html" rel="next">
+<link href="./Week2.html" rel="next">
+<link href="./index.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -82,7 +82,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html">About Me</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./Week1.html"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction to Remote Sensing</span></a></li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -109,20 +109,20 @@ ul.task-list li input[type="checkbox"] {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link active">
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">About Me</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Week1.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">What is Remote Sensing?</span></span></a>
+  <a href="./Week1.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction to Remote Sensing</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./Week2.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Landsat - 9 Xaringan Presentation</span></span></a>
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Landsat - 9</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -146,7 +146,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./Week7.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Google Earth Engine 2</span></span></a>
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Classification I</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -177,7 +177,22 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#about-me" id="toc-about-me" class="nav-link active" data-scroll-target="#about-me">About Me</a></li>
+  <li><a href="#what-is-remote-sensing" id="toc-what-is-remote-sensing" class="nav-link active" data-scroll-target="#what-is-remote-sensing"><span class="header-section-number">2</span> What is Remote Sensing?</a>
+  <ul class="collapse">
+  <li><a href="#active-and-passive-sensors" id="toc-active-and-passive-sensors" class="nav-link" data-scroll-target="#active-and-passive-sensors"><span class="header-section-number">2.1</span> Active and Passive Sensors</a></li>
+  <li><a href="#how-remote-sensors-gather-and-store-data" id="toc-how-remote-sensors-gather-and-store-data" class="nav-link" data-scroll-target="#how-remote-sensors-gather-and-store-data"><span class="header-section-number">2.2</span> How Remote Sensors Gather and Store Data</a></li>
+  <li><a href="#using-snap-sentinel-application-platform" id="toc-using-snap-sentinel-application-platform" class="nav-link" data-scroll-target="#using-snap-sentinel-application-platform"><span class="header-section-number">2.3</span> Using SNAP (Sentinel Application Platform)</a>
+  <ul class="collapse">
+  <li><a href="#analysing-data-on-snap-is-done-in-the-following-steps" id="toc-analysing-data-on-snap-is-done-in-the-following-steps" class="nav-link" data-scroll-target="#analysing-data-on-snap-is-done-in-the-following-steps"><span class="header-section-number">2.3.1</span> Analysing data on SNAP is done in the following steps:</a></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#applications" id="toc-applications" class="nav-link" data-scroll-target="#applications"><span class="header-section-number">3</span> Applications</a>
+  <ul class="collapse">
+  <li><a href="#tracking-the-growth-of-refugee-camps" id="toc-tracking-the-growth-of-refugee-camps" class="nav-link" data-scroll-target="#tracking-the-growth-of-refugee-camps"><span class="header-section-number">3.0.1</span> Tracking the Growth of Refugee Camps</a></li>
+  <li><a href="#investigating-the-suez-canal-blockage-by-the-ever-given-2021" id="toc-investigating-the-suez-canal-blockage-by-the-ever-given-2021" class="nav-link" data-scroll-target="#investigating-the-suez-canal-blockage-by-the-ever-given-2021"><span class="header-section-number">3.0.2</span> Investigating the Suez Canal Blockage by the <em>Ever Given</em> 2021</a></li>
+  <li><a href="#sentinel-2-imagery-on-my-hometown-kamloops-bc-canada" id="toc-sentinel-2-imagery-on-my-hometown-kamloops-bc-canada" class="nav-link" data-scroll-target="#sentinel-2-imagery-on-my-hometown-kamloops-bc-canada"><span class="header-section-number">3.0.3</span> Sentinel-2 Imagery on my Hometown (Kamloops, BC, Canada)</a></li>
+  </ul></li>
+  <li><a href="#reflections" id="toc-reflections" class="nav-link" data-scroll-target="#reflections"><span class="header-section-number">4</span> Reflections</a></li>
   </ul>
 </nav>
     </div>
@@ -186,7 +201,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">LearningDiary</h1>
+<h1 class="title"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction to Remote Sensing</span></h1>
 </div>
 
 
@@ -196,14 +211,14 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Author</div>
     <div class="quarto-title-meta-contents">
-             <p>Norah Jones </p>
+             <p>Nikhil Desai </p>
           </div>
   </div>
     
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">March 14, 2024</p>
+      <p class="date">Invalid Date</p>
     </div>
   </div>
   
@@ -215,26 +230,100 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="about-me" class="level1 unnumbered">
-<h1 class="unnumbered">About Me</h1>
-<p>My name is Nikhil Desai, I am originally from Vancouver, Canada. I completed by undergraduate MA degree in Economics from the University of Edinburgh. Upon completion I worked as a management consultant in London for 3 years specialising in Strategy, Data &amp; Analytics, Operating Model and Supply Chain for Technology, Media and Telco companies. I left this role to pursue an MSc in Spatial Data Science at The Bartlett | Centre for Advanced Spatial Analysis at UCL.</p>
-<p>I am interested in studying complex systems in relation to climate change. This broadly involves investigating how interconnected processes and feedback loops can influence <strong>and be influenced by</strong> global warming.</p>
-<p>This underscores the complexity of predicting climate outcomes, as minor changes in one part of our carbon system can lead to significant and unexpected results.</p>
-<p>Within this in mind, I am interested in the world of remote sensing because it offers a powerful and essential tool for observing, analysing, and understanding these complex systems and their dynamic interactions on a global scale.</p>
+<p>Introduction to Remote Sensing</p>
+<section id="what-is-remote-sensing" class="level1" data-number="2">
+<h1 data-number="2"><span class="header-section-number">2</span> What is Remote Sensing?</h1>
+<p>Remote Sensing is a subset of Geographic Information Systems. In essence, it is the science of collecting and analysing information from the earth’s surface through the use of sensors mounted on satellites or planes. After taking a brief look at the history of RS, it is apparent that it has significantly accelerated our understanding of our built and natural environment.</p>
+<p>The value of Remote Sensing spans various fields. It can provide critical data for environmental monitoring, disaster management, urban development and the mapping of inaccessible areas to name a few.</p>
+<p>There were two satellites studied this week: <em>Landsat</em> and <em>Sentinel</em>. Sentinel-2 data offers a spatial resolution of 10 meters compared to Landsat’s 30 meters creating more detailed observations. Additionally, Sentinel-2 satellites provide revisits every 5 days at the equator, offering more frequent updates than Landsat’s 16-day revisit cycle. This makes Sentinel-2 particularly valuable for monitoring fast-changing conditions on the Earth’s surface</p>
+<section id="active-and-passive-sensors" class="level2" data-number="2.1">
+<h2 data-number="2.1" class="anchored" data-anchor-id="active-and-passive-sensors"><span class="header-section-number">2.1</span> Active and Passive Sensors</h2>
+<p>There are two primary ways to gather remote sensing data: Active and Passive sensors. <strong>Active sensors</strong> emit energy in the form of radiation, then detect and measure the radiation that is <em>back scattered</em> or reflected back up to the satellite. An example is SAR, which emits signals towards the Earth’s surface and records the reflected signals to form images. <strong>Passive sensors</strong> measure natural energy that is reflected or emitted from the Earth’s surface or atmosphere, without <em>actively</em> emitting any signal of their own. An example is the Landsat programme, which captures the Earth’s surface in the visible, near-infrared, and thermal infrared wavelengths.This distinction is illustrated below:</p>
 <div style="text-align: center;">
-
-<p><img src="./Climbing5.JPG" style="width:65%;"></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="image-5.jpeg" class="img-fluid figure-img" style="width:75.0%"></p>
+<figcaption>Active remote sensors emit their own signal, while passive remote sensors detect natural radiation that is emitted or reflected by the object</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section id="how-remote-sensors-gather-and-store-data" class="level2" data-number="2.2">
+<h2 data-number="2.2" class="anchored" data-anchor-id="how-remote-sensors-gather-and-store-data"><span class="header-section-number">2.2</span> How Remote Sensors Gather and Store Data</h2>
+<p>Remote sensing technology captures data about Earth’s surface and atmosphere by detecting electromagnetic signatures, which are distinct patterns of energy radiated or reflected by materials and phenomena.</p>
+<p>Data from remote sensing are stored with attention to different types of resolution - spatial, spectral, temporal, and radiometric - each providing unique insights into the Earth’s physical characteristics and changes over time.</p>
+<p><strong>Spatial resolution</strong> defines the smallest object that can be observed on the ground, determining the detail visible in an image.</p>
+<p><strong>Spectral resolution</strong> refers to a sensor’s ability to distinguish between different wavelengths of light, enabling identification of various materials based on their electromagnetic signatures.</p>
+<p><strong>Temporal resolution</strong> measures how often a sensor can capture images of the same area over time, crucial for tracking changes and trends.</p>
+<p><strong>Radiometric resolution</strong> indicates the sensor’s sensitivity to different levels of light intensity, allowing for the detection of subtle differences in reflectance or emission.</p>
+</section>
+<section id="using-snap-sentinel-application-platform" class="level2" data-number="2.3">
+<h2 data-number="2.3" class="anchored" data-anchor-id="using-snap-sentinel-application-platform"><span class="header-section-number">2.3</span> Using SNAP (Sentinel Application Platform)</h2>
+<p>SNAP is a common tool used to process and analyse remote sensing data. It is particularly useful for working with data from the Sentinel satellites. There are a variety of statistics you can generate using SNAP. I’d never thought that you could generate so much data from pictures. It has changed the way in which I think about imagery and the analysis that can be conducted on it.</p>
+<section id="analysing-data-on-snap-is-done-in-the-following-steps" class="level3" data-number="2.3.1">
+<h3 data-number="2.3.1" class="anchored" data-anchor-id="analysing-data-on-snap-is-done-in-the-following-steps"><span class="header-section-number">2.3.1</span> Analysing data on SNAP is done in the following steps:</h3>
+<ol type="1">
+<li><p><strong>Downloading Data</strong> Go to the Copernicus website and search for satellite images. You can pick what kind of images you want by setting things like the date or place you’re interested in. Once you find the right images, you download them to your computer.</p></li>
+<li><p><strong>Loading Data</strong> Open the SNAP program on your computer. There’s an option to open or import files - use it to find and select the satellite images you downloaded. This loads them into SNAP for you to work with.</p></li>
+<li><p><strong>Analysing Images</strong> With your images loaded in SNAP, you can now start exploring them. SNAP has tools that let you adjust how the images look, highlight different features, or even combine different images to get a better understanding of what you’re seeing. You can play around with these tools to discover more about the area you’re studying.</p></li>
+</ol>
+<p>However after spending a significant portion of my day troubleshooting SNAP - It seems it does not work on iOS Ventura. QGIS to the rescue!</p>
+</section>
+</section>
+</section>
+<section id="applications" class="level1" data-number="3">
+<h1 data-number="3"><span class="header-section-number">3</span> Applications</h1>
+<p>From my perspective, remote sensing gives us a way to see and understand changes on our planet that we couldn’t easily detect from the ground. My initial perspective was that RS data revolved around natural phenomena and climate related changes. The following two examples highlighted the utility of remotely sensed data in humanitarian and disaster management contexts.</p>
+<section id="tracking-the-growth-of-refugee-camps" class="level3" data-number="3.0.1">
+<h3 data-number="3.0.1" class="anchored" data-anchor-id="tracking-the-growth-of-refugee-camps"><span class="header-section-number">3.0.1</span> Tracking the Growth of Refugee Camps</h3>
+<p>Sentinel-2 imagery, humanitarian organizations mapped the rapid expansion of Rohingya refugee camps, facilitating efficient aid distribution, infrastructure planning, and risk management. This data was instrumental in adapting emergency responses and optimizing resource allocation as the camp situation evolved.</p>
+</section>
+<section id="investigating-the-suez-canal-blockage-by-the-ever-given-2021" class="level3" data-number="3.0.2">
+<h3 data-number="3.0.2" class="anchored" data-anchor-id="investigating-the-suez-canal-blockage-by-the-ever-given-2021"><span class="header-section-number">3.0.2</span> Investigating the Suez Canal Blockage by the <em>Ever Given</em> 2021</h3>
+<p>Sentinel-2 images provided clear views of the ship’s position and the traffic jam of vessels waiting to pass through the canal. These images were crucial for assessing the blockage and its impact on global trade.</p>
+</section>
+<section id="sentinel-2-imagery-on-my-hometown-kamloops-bc-canada" class="level3" data-number="3.0.3">
+<h3 data-number="3.0.3" class="anchored" data-anchor-id="sentinel-2-imagery-on-my-hometown-kamloops-bc-canada"><span class="header-section-number">3.0.3</span> Sentinel-2 Imagery on my Hometown (Kamloops, BC, Canada)</h3>
+<p>After experimenting in QGIS a I was able to extract the spatial signature alongside some indices of the area. Below the Terrain Ruggedness Index and the Spectral Signature of the imagery</p>
 <div style="text-align: center;">
-
-<div style="text-align: center;">
-<p><img src="https://static.independent.co.uk/s3fs-public/thumbnails/image/2018/11/12/08/California-wildfires.jpg?quality=75&amp;width=990&amp;crop=3%3A2%2Csmart&amp;auto=webp&amp;disable=upscale" style="width:65%;"></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="spectralsignature.png" class="img-fluid figure-img" style="width:55.0%"></p>
+<figcaption>Spectral Signature</figcaption>
+</figure>
+</div>
 </div>
 <div style="text-align: center;">
-<p><img src="https://images.newscientist.com/wp-content/uploads/2022/02/03142504/PRI_221379455.jpg?width=900" style="width:65%;"></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="terrainruggednessindex.png" class="img-fluid figure-img" style="width:75.0%"></p>
+<figcaption>Terrain Ruggedness Index</figcaption>
+</figure>
 </div>
+</div>
+<p>Here, I have built a true-colour composite from the red, green, and blue bands of the Sentinel-2 imagery.</p>
+<div style="text-align: center;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="TCCKamloops.png" class="img-fluid figure-img" style="width:75.0%"></p>
+<figcaption>True Colour Composite</figcaption>
+</figure>
+</div>
+</div>
+</section>
+</section>
+<section id="reflections" class="level1" data-number="4">
+<h1 data-number="4"><span class="header-section-number">4</span> Reflections</h1>
+<p>The potential of remote sensing to explore humanitarian issues was very eye opening to me, especially after reading a CASA staff member’s (Ollie Ballinger) contributions to Bellingcat, an investigative news outlet which specialises in disaster and war crimes. This technology’s utility extends beyond monitoring natural events to probing human-related issues, including human rights abuses, war crimes, and informal settlements.</p>
+<div style="text-align: center;">
+<p><img src="https://i0.wp.com/ideatlas.eu/wp-content/uploads/2023/04/Mumbai-IDEAtlas.jpg?resize=2048%2C2048&amp;ssl=1" style="width:65%;"></p>
+</div>
+<p>This technology was deeply fascinating to me from an academic and commercial perspective. From an academic perspective, the concept of extracting immense amounts of data from imagery is revolutionary. Spectral signatures, like unique fingerprints for different Earth materials based on how they reflect light, enable us to understand the composition and health of various elements from afar. This capability is crucial for fields such as agriculture and environmental monitoring, illustrating how deep scientific research translates into practical applications across industries.</p>
+<p>After reading about the applications of Remote Sensing, it is clear that its potential has not been completely tapped into. The field is still in its early stages only from a commercial perspective, primarily finding application within academic and research settings. The processing of Satelite Imagery prior to Google Earth Engine seems to be slow and tedious. GEE itself was only release to th public in 2010. This gap between academic research and commercial application presents a vast opportunity for innovation and implementation in various industries.</p>
+<p>This week has been a great intro to Remote Sensing and has whet my appetite for the coming weeks.</p>
 
 
-</div></div></section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -626,10 +715,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
+      <a href="./index.html" class="pagination-link  aria-label=" about="" me"="">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">About Me</span>
+      </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./Week1.html" class="pagination-link" aria-label="<span class='chapter-number'>1</span>&nbsp; <span class='chapter-title'>What is Remote Sensing?</span>">
-        <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">What is Remote Sensing?</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./Week2.html" class="pagination-link" aria-label="<span class='chapter-number'>2</span>&nbsp; <span class='chapter-title'>Landsat - 9</span>">
+        <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Landsat - 9</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

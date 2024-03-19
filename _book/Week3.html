@@ -6,10 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Norah Jones">
-<meta name="dcterms.date" content="2024-03-14">
+<meta name="author" content="Nikhil Desai">
+<meta name="dcterms.date" content="2024-03-19">
 
-<title>LearningDiary</title>
+<title>LearningDiary - 3&nbsp; Corrections &amp; Data Joining</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -32,7 +32,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./Week1.html" rel="next">
+<link href="./Week4.html" rel="next">
+<link href="./Week2.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -82,7 +83,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html">About Me</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./Week3.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Corrections &amp; Data Joining</span></a></li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -109,7 +110,7 @@ ul.task-list li input[type="checkbox"] {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link active">
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">About Me</span></a>
   </div>
 </li>
@@ -127,7 +128,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Week3.html" class="sidebar-item-text sidebar-link">
+  <a href="./Week3.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Corrections &amp; Data Joining</span></span></a>
   </div>
 </li>
@@ -177,7 +178,10 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#about-me" id="toc-about-me" class="nav-link active" data-scroll-target="#about-me">About Me</a></li>
+  <li><a href="#corrections-and-enhancements" id="toc-corrections-and-enhancements" class="nav-link active" data-scroll-target="#corrections-and-enhancements"><span class="header-section-number">3.1</span> 1. Corrections and Enhancements</a></li>
+  <li><a href="#data-joining" id="toc-data-joining" class="nav-link" data-scroll-target="#data-joining"><span class="header-section-number">3.2</span> 2. Data Joining</a></li>
+  <li><a href="#applications-atmospheric-correction-using-dark-object-subtraction" id="toc-applications-atmospheric-correction-using-dark-object-subtraction" class="nav-link" data-scroll-target="#applications-atmospheric-correction-using-dark-object-subtraction"><span class="header-section-number">3.3</span> Applications: Atmospheric Correction using Dark Object Subtraction</a></li>
+  <li><a href="#reflections" id="toc-reflections" class="nav-link" data-scroll-target="#reflections"><span class="header-section-number">3.4</span> Reflections</a></li>
   </ul>
 </nav>
     </div>
@@ -186,7 +190,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">LearningDiary</h1>
+<h1 class="title"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Corrections &amp; Data Joining</span></h1>
 </div>
 
 
@@ -196,14 +200,14 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Author</div>
     <div class="quarto-title-meta-contents">
-             <p>Norah Jones </p>
+             <p>Nikhil Desai </p>
           </div>
   </div>
     
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">March 14, 2024</p>
+      <p class="date">March 19, 2024</p>
     </div>
   </div>
   
@@ -215,26 +219,99 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="about-me" class="level1 unnumbered">
-<h1 class="unnumbered">About Me</h1>
-<p>My name is Nikhil Desai, I am originally from Vancouver, Canada. I completed by undergraduate MA degree in Economics from the University of Edinburgh. Upon completion I worked as a management consultant in London for 3 years specialising in Strategy, Data &amp; Analytics, Operating Model and Supply Chain for Technology, Media and Telco companies. I left this role to pursue an MSc in Spatial Data Science at The Bartlett | Centre for Advanced Spatial Analysis at UCL.</p>
-<p>I am interested in studying complex systems in relation to climate change. This broadly involves investigating how interconnected processes and feedback loops can influence <strong>and be influenced by</strong> global warming.</p>
-<p>This underscores the complexity of predicting climate outcomes, as minor changes in one part of our carbon system can lead to significant and unexpected results.</p>
-<p>Within this in mind, I am interested in the world of remote sensing because it offers a powerful and essential tool for observing, analysing, and understanding these complex systems and their dynamic interactions on a global scale.</p>
-<div style="text-align: center;">
-
-<p><img src="./Climbing5.JPG" style="width:65%;"></p>
-<div style="text-align: center;">
-
-<div style="text-align: center;">
-<p><img src="https://static.independent.co.uk/s3fs-public/thumbnails/image/2018/11/12/08/California-wildfires.jpg?quality=75&amp;width=990&amp;crop=3%3A2%2Csmart&amp;auto=webp&amp;disable=upscale" style="width:65%;"></p>
+<section id="corrections-and-enhancements" class="level2" data-number="3.1">
+<h2 data-number="3.1" class="anchored" data-anchor-id="corrections-and-enhancements"><span class="header-section-number">3.1</span> 1. Corrections and Enhancements</h2>
+<p>Over the course of the week, we discussed how to transform raw, remotely sensed data into a product we can use for analysis. This transformation <em>process</em> is know as <em>enhancing</em> or <em>correcting</em> data.</p>
+<p>In academic terms, “Correction” describes the process of removing or reducing the effects of various factors distort the imagery or data. These factors can include atmospheric effects and sensor noise among others.</p>
+<p>The three main correction types are detailed below, along with their common solutions:</p>
+<section id="geometric-topographic-error" class="level4" data-number="3.1.0.1">
+<h4 data-number="3.1.0.1" class="anchored" data-anchor-id="geometric-topographic-error"><span class="header-section-number">3.1.0.1</span> <strong>Geometric &amp; Topographic Error</strong></h4>
+<p>Adjusts for image distortions due to the Earth’s rotation, sensor tilt, and curvature, ensuring accurate spatial positioning.</p>
+<p>A common method for geometric correction is orthorectification. This fixes distortions in aerial photos by aligning them with ground truth, correcting for camera angles and terrain. This method essentially ensures every point on a photo maps to the right spot on Earth, ensuring accurate measurements and analysis. This step is key for reliable map-making and data overlay from satellite imagery.</p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/geometriccorrection.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:60.0%"></p>
+</figure>
 </div>
-<div style="text-align: center;">
-<p><img src="https://images.newscientist.com/wp-content/uploads/2022/02/03142504/PRI_221379455.jpg?width=900" style="width:65%;"></p>
 </div>
+</div>
+<p>Source: <a href="https://www.researchgate.net/figure/Geometric-correction-procedures_fig7_320710942">Abdul Basith</a></p>
+</section>
+<section id="atmospheric-distortion" class="level4" data-number="3.1.0.2">
+<h4 data-number="3.1.0.2" class="anchored" data-anchor-id="atmospheric-distortion"><span class="header-section-number">3.1.0.2</span> <strong>Atmospheric Distortion</strong></h4>
+<p>Removes the effects of atmospheric gases and particles on the recorded signal to accurately reflect the Earth’s surface reflectance. This is essentially wiping away the haze from satellite imagery. Atmospheric particles and gases can often blur or change the colors in an image. The goal is to make the image show the Earth’s surface as if the atmosphere wasn’t messing with the view.</p>
+<p>Regression is often used to correct atmospheric errors. It allows you to model the relationship between satellite data with known ground values, then applying this model to adjust the entire image for atmospheric distortions. Below is a Landsat image of the Three Gorges Area, China before and after correction for haze.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/atmosphericcorrection.png" class="img-fluid figure-img" style="width:70.0%"></p>
+<figcaption>Three Gorges Area, China - Before and After Correction</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>Source: <a href="https://www.researchgate.net/profile/Zhaohua-Chen-2?_tp=eyJjb250ZXh0Ijp7ImZpcnN0UGFnZSI6Il9kaXJlY3QiLCJwYWdlIjoiX2RpcmVjdCJ9fQ">Zhaohua Chen</a></p>
+</section>
+<section id="radiometric-calibration" class="level4" data-number="3.1.0.3">
+<h4 data-number="3.1.0.3" class="anchored" data-anchor-id="radiometric-calibration"><span class="header-section-number">3.1.0.3</span> <strong>Radiometric Calibration</strong></h4>
+<p>Adjusts the digital image data to correct for sensor noise and inconsistencies, ensuring uniform brightness and contrast across the image.</p>
+<p>While, I wouldn’t consider this to an error - you can correct for radiometric variations by applying a calibration equation that converts Digital Number (DN) values to spectral radiance (using gain and bias parameters). This helps to standardise image brightness across datasets.</p>
+</section>
+</section>
+<section id="data-joining" class="level2" data-number="3.2">
+<h2 data-number="3.2" class="anchored" data-anchor-id="data-joining"><span class="header-section-number">3.2</span> 2. Data Joining</h2>
+<p>In Earth observation, data joining involves combining multiple satellite images to create a single image. This is an extremely useful method, as most large areas cannot be captured in a single satellite pass.</p>
+<p>One common technique for data joining is called mosaic feathering. Seen below:</p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/combinedfeathering.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:80.0%"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>Source: <a href="https://yuan-gao.net/pdf/ISIDF11.pdf">Yun Gao</a></p>
+<p>Similar to feathering in panoramic photography, mosaic feathering in satellite imagery involves overlapping adjacent images and blending their edges. This blending ensures that the transition between images is smooth, without visible seams or abrupt changes in color and texture that can occur due to differences in lighting, angle of capture, or atmospheric conditions at the time each image was taken.</p>
+</section>
+<section id="applications-atmospheric-correction-using-dark-object-subtraction" class="level2" data-number="3.3">
+<h2 data-number="3.3" class="anchored" data-anchor-id="applications-atmospheric-correction-using-dark-object-subtraction"><span class="header-section-number">3.3</span> Applications: Atmospheric Correction using Dark Object Subtraction</h2>
+<p>Jensen’s description of Atmospheric Correction in <em>Introductory digital image processing: a remote sensing perspective (2015),</em> provides a good overview of the concept of Dark Object Subtraction (DOS). The idea is that the darkest spot shouldn’t really have any brightness and should have a value of zero, so if it does appear slightly bright, that is likely due to atmospheric haze.</p>
+<p>I’ve chosen an image of my favourite park near my hometown, Kamloops, British Columbia, Canada to conduct DOS on.</p>
+<p>The formula for doing such is:</p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/DOSequation.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:50.0%"></p>
+<figcaption>Dark Object Subtraction Equation</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>I started with an analysis of the Surface Reflectance. The first image below, is the raw Landsat image. The second image is the same image after applying the DOS method.</p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/PrePostDOS.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:70.0%"></p>
+<figcaption>Landsat image prior to and after Dark Object Subtraction</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>After applying the DOS method, this is what we are left with. While the differences are subtle, the image is noticeably clearer. The first image is more green, there is far less variation in colour and the mountainous region on the left hand side of the image is more distinguished making it easier to identify features.</p>
+</section>
+<section id="reflections" class="level2" data-number="3.4">
+<h2 data-number="3.4" class="anchored" data-anchor-id="reflections"><span class="header-section-number">3.4</span> Reflections</h2>
+<p>Prior to this course, I had little exposure to remotely sensed data. Personally, going through the tedious process of enhancing raw remotely sensed data highlighted the complexity of tools like Google Earth. I will never again take for granted the ability to zoom in on a location and casually scroll around the globe.</p>
+<p>In the practical, I focused on dealing with atmospheric correction using DOS. I chose this simply because it was the method I technically understood, the least. It required a deep dive into the complexities of how light interacts with the Earth’s atmosphere and affects satellite imagery. After taking a look at the two images above, I initially saw little difference, but when looking again, the distinction between the two is quite evident (as detailed above).</p>
 
 
-</div></div></section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -626,10 +703,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
+      <a 9="" href="./Week2.html" class="pagination-link  aria-label=" &lt;span="" -="" xaringan="" presentation&lt;="" span&gt;"="">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Landsat - 9 Xaringan Presentation</span></span>
+      </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./Week1.html" class="pagination-link" aria-label="<span class='chapter-number'>1</span>&nbsp; <span class='chapter-title'>What is Remote Sensing?</span>">
-        <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">What is Remote Sensing?</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./Week4.html" class="pagination-link" aria-label="<span class='chapter-number'>4</span>&nbsp; <span class='chapter-title'>Remote Sensing Policy</span>">
+        <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Remote Sensing Policy</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
