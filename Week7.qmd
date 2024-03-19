@@ -17,15 +17,34 @@ We focused on land cover classification, particularly training classification mo
 
 -   **Classification and Regression Trees (CART):** CART is a straightforward method that splits data into smaller groups to make everything more similar within each group. It is ideal for its simplicity. CART can handle both categorical and continuous data. However, it is susceptible to overfitting.
 
+```{r echo=FALSE, out.width="60%", fig.align="center"}
+knitr::include_graphics("img/CART.webp")
+```
+Source: [Krzywinski & Altman, 2017](https://www.nature.com/articles/nmeth.4370)
+
 -   **RandomForest:** This method uses several decision trees to make better predictions and be more reliable. By randomly selecting features, RandomForest can handle categorical data, mitigating overfitting risks inherent in CART. It's good at working with both straightforward and more complex data by combining many simple models.
+
+```{r echo=FALSE, out.width="60%", fig.align="center"}
+knitr::include_graphics("img/geometriccorrection.png")
+```
 
 -   **NaiveBayes:** This approach uses Bayes' theorem and treats each feature in the data as independent from the others. It's surprisingly good and quick at making predictions, especially with data that can be neatly categorised. While it's really meant for categorical data, it can also work with continuous data if you assume the data fits a certain pattern.
 
+```{r echo=FALSE, out.width="60%", fig.align="center"}
+knitr::include_graphics("img/geometriccorrection.png")
+```
+
 -   **SVM (Support Vector Machines):** SVM looks for the best boundary that separates different categories in the data. It's particularly good for dealing with complex problems where the data has many dimensions. Although it is computationally expensive, its ability to manage detailed and continuous data makes it powerful for identifying patterns that are hard to spot.
+
+
+```{r echo=FALSE, out.width="60%", fig.align="center"}
+knitr::include_graphics("img/SVM.png")
+```
+Source: [G. Mountrakis , 2011](https://www.sciencedirect.com/science/article/pii/S0924271610001140?casa_token=OqT7oyI3SQsAAAAA:48WJUDtbHXJoEq49Yh8LtiSmXHoHPNPrqneOQgV5c7Q3bgAQ2hyQVHZF3zBOpFsBAufcITvftA)
 
 #### Training and Testing Data:
 
-When developing classification model, you must *train* the model, which data helps the model learn the link between features and their categories. Testing is used to check how well the model predicts new, unseen data, helping to make sure it works well in different situations and doesn’t just repeat what it has seen before. Distinct training and testing data ensure a model can accurately predict new, unseen data, preventing it from merely memorising the data it was trained on and thus reducing the risk of ***overfitting***.
+When developing classification model, you must *train* the model, which helps the model learn the link between features and their categories. Testing is used to check how well the model predicts new, unseen data, helping to make sure it works well in different situations and doesn’t just repeat what it has seen before. Distinct training and testing data ensure a model can accurately predict new, unseen data, preventing it from merely memorising the data it was trained on and thus reducing the risk of ***overfitting***.
 
 We looked at two ways of classifying data in GEE:
 
