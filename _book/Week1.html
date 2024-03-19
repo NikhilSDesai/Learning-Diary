@@ -7,6 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Nikhil Desai">
+<meta name="dcterms.date" content="2024-03-19">
 
 <title>LearningDiary - 1&nbsp; Introduction to Remote Sensing</title>
 <style>
@@ -218,7 +219,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">Invalid Date</p>
+      <p class="date">March 19, 2024</p>
     </div>
   </div>
   
@@ -239,12 +240,14 @@ ul.task-list li input[type="checkbox"] {
 <section id="active-and-passive-sensors" class="level2" data-number="2.1">
 <h2 data-number="2.1" class="anchored" data-anchor-id="active-and-passive-sensors"><span class="header-section-number">2.1</span> Active and Passive Sensors</h2>
 <p>There are two primary ways to gather remote sensing data: Active and Passive sensors. <strong>Active sensors</strong> emit energy in the form of radiation, then detect and measure the radiation that is <em>back scattered</em> or reflected back up to the satellite. An example is SAR, which emits signals towards the Earth’s surface and records the reflected signals to form images. <strong>Passive sensors</strong> measure natural energy that is reflected or emitted from the Earth’s surface or atmosphere, without <em>actively</em> emitting any signal of their own. An example is the Landsat programme, which captures the Earth’s surface in the visible, near-infrared, and thermal infrared wavelengths.This distinction is illustrated below:</p>
-<div style="text-align: center;">
+<div class="cell">
+<div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="image-5.jpeg" class="img-fluid figure-img" style="width:75.0%"></p>
-<figcaption>Active remote sensors emit their own signal, while passive remote sensors detect natural radiation that is emitted or reflected by the object</figcaption>
+<p><img src="img/image-5.jpeg" class="img-fluid figure-img" style="width:75.0%"></p>
+<figcaption>Passive versus Active Sensors</figcaption>
 </figure>
+</div>
 </div>
 </div>
 </section>
@@ -285,29 +288,35 @@ ul.task-list li input[type="checkbox"] {
 <section id="sentinel-2-imagery-on-my-hometown-kamloops-bc-canada" class="level3" data-number="3.0.3">
 <h3 data-number="3.0.3" class="anchored" data-anchor-id="sentinel-2-imagery-on-my-hometown-kamloops-bc-canada"><span class="header-section-number">3.0.3</span> Sentinel-2 Imagery on my Hometown (Kamloops, BC, Canada)</h3>
 <p>After experimenting in QGIS a I was able to extract the spatial signature alongside some indices of the area. Below the Terrain Ruggedness Index and the Spectral Signature of the imagery</p>
-<div style="text-align: center;">
+<div class="cell">
+<div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="spectralsignature.png" class="img-fluid figure-img" style="width:55.0%"></p>
-<figcaption>Spectral Signature</figcaption>
+<p><img src="img/spectralsignature.png" class="img-fluid figure-img" style="width:70.0%"></p>
+<figcaption>Kamloops, British Columbia, Spectral Signature</figcaption>
 </figure>
 </div>
 </div>
-<div style="text-align: center;">
+</div>
+<div class="cell">
+<div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="terrainruggednessindex.png" class="img-fluid figure-img" style="width:75.0%"></p>
-<figcaption>Terrain Ruggedness Index</figcaption>
+<p><img src="img/terrainruggednessindex.png" class="img-fluid figure-img" style="width:70.0%"></p>
+<figcaption>Kamloops, British Columbia, Terrain Ruggedness Index</figcaption>
 </figure>
+</div>
 </div>
 </div>
 <p>Here, I have built a true-colour composite from the red, green, and blue bands of the Sentinel-2 imagery.</p>
-<div style="text-align: center;">
+<div class="cell">
+<div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="TCCKamloops.png" class="img-fluid figure-img" style="width:75.0%"></p>
-<figcaption>True Colour Composite</figcaption>
+<p><img src="img/TCCKamloops.png" class="img-fluid figure-img" style="width:70.0%"></p>
+<figcaption>Kamloops, British Columbia, True Colour Composite</figcaption>
 </figure>
+</div>
 </div>
 </div>
 </section>

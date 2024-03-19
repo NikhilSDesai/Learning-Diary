@@ -19,9 +19,9 @@ There were two satellites studied this week: *Landsat* and *Sentinel*. Sentinel-
 
 There are two primary ways to gather remote sensing data: Active and Passive sensors. **Active sensors** emit energy in the form of radiation, then detect and measure the radiation that is *back scattered* or reflected back up to the satellite. An example is SAR, which emits signals towards the Earth's surface and records the reflected signals to form images. **Passive sensors** measure natural energy that is reflected or emitted from the Earth's surface or atmosphere, without *actively* emitting any signal of their own. An example is the Landsat programme, which captures the Earth's surface in the visible, near-infrared, and thermal infrared wavelengths.This distinction is illustrated below:
 
-::: {style="text-align: center;"}
-![Active remote sensors emit their own signal, while passive remote sensors detect natural radiation that is emitted or reflected by the object](image-5.jpeg){width="75%"}
-:::
+```{r echo=FALSE, out.width="75%", fig.cap="Passive versus Active Sensors"}
+knitr::include_graphics("img/image-5.jpeg")
+```
 
 ## How Remote Sensors Gather and Store Data
 
@@ -67,19 +67,20 @@ Sentinel-2 images provided clear views of the ship's position and the traffic ja
 
 After experimenting in QGIS a I was able to extract the spatial signature alongside some indices of the area. Below the Terrain Ruggedness Index and the Spectral Signature of the imagery
 
-::: {style="text-align: center;"}
-![Spectral Signature](spectralsignature.png){width="55%"}
-:::
 
-::: {style="text-align: center;"}
-![Terrain Ruggedness Index](terrainruggednessindex.png){width="75%"}
-:::
+```{r echo=FALSE, out.width="70%", fig.cap="Kamloops, British Columbia, Spectral Signature"}
+knitr::include_graphics("img/spectralsignature.png")
+```
+
+```{r echo=FALSE, out.width="70%", fig.cap="Kamloops, British Columbia, Terrain Ruggedness Index"}
+knitr::include_graphics("img/terrainruggednessindex.png")
+```
 
 Here, I have built a true-colour composite from the red, green, and blue bands of the Sentinel-2 imagery.
 
-::: {style="text-align: center;"}
-![True Colour Composite](TCCKamloops.png){width="75%"}
-:::
+```{r echo=FALSE, out.width="70%", fig.cap="Kamloops, British Columbia, True Colour Composite"}
+knitr::include_graphics("img/TCCKamloops.png")
+```
 
 # Reflections
 
