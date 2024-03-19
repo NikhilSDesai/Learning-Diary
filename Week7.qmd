@@ -87,6 +87,22 @@ Source: [Goldstein et al., 2021](https://www.researchgate.net/publication/348697
 
 ## 3. Reflections
 
-This was the first week I felt like I could conduct some coherent and interesting research.
+This was the first week I felt like I could conduct some coherent and interesting research in the field of remote sensing. I've gotten to grips with Google Earth Engine and have a good understanding of different classification methods. As mentioned in the introduction, classification, seems to be one of the essential skills in remote sensing.
 
+However, this diary entry has been rather positive and I wanted to reflect on some of the issues I encountered in the practical which must be taken into account when conducting any sort of classification analysis.
 
+Common issues tend to revolve around:
+
+#### Preprocessing:
+
+-   **Cloud Cover and Shadows:** Imperfect cloud masking can leave behind cloud-contaminated pixels, affecting the accuracy of the classification
+
+#### Training and Model Selection:
+
+-   **Balanced Training Data:** The accuracy of classification greatly depends on the quality, representativeness of the training data. Non-representative samples can skew the model's performance. This has significant implications and reminds me of a film I watched a couple years ago called [Coded Bias](https://en.wikipedia.org/wiki/Coded_Bias).
+
+-   **Choice of Classification Model:** each model has strengths and weaknesses and are suited to different types of classification tasks. Using the incorrect classification model can lead to poor performance, including lower accuracy, overfitting or underfitting (detailed below)
+
+#### Validation and Accuracy Assessment:
+
+-   **Overfitting and Generalisation:** There's a risk of overfitting the model to the training data, making it perform poorly on unseen data. Ensuring a proper train-test split and using validation techniques like cross-validation can help assess how well the model generalises [Ying, 2019](https://iopscience.iop.org/article/10.1088/1742-6596/1168/2/022022).
