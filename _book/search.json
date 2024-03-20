@@ -288,5 +288,15 @@
     "crumbs": [
       "<span class='chapter-number'>6</span>  <span class='chapter-title'>Classification I</span>"
     ]
+  },
+  {
+    "objectID": "Week8.html",
+    "href": "Week8.html",
+    "title": "7  Classification II",
+    "section": "",
+    "text": "Classification II\nThis week we continued to study classification of earth observation data, focussing on the distinction between object-based and pixel-based classification. Secondly, we look at how we can assess the accuracy of our classification results. First, I will provide an overview of object based image classification and pixel based image classification, then dive into some methods of how to assess the accuracy of our classification results. When comparing the two methods, they can be seen as opposite approaches.\n\n7.0.1 Pixel-Based Image Analysis:\nIn pixel-based image analysis, each pixel is analysed and classified independently based on its spectral signature. This method includes sub-pixel analysis, which estimates the fractional coverage of different land cover types within a single pixel and superpixel analysis, which groups similar pixels into larger superpixels for more efficient processing and analysis, maintaining the granularity of pixel-level detail but reducing computational complexity.\n\n\n\n\n\nSuperpixel Analysis - Liu et al., 2022\n\n\n\n\n\n\n\n\n\nSubpixel Analysis - Mclachlan et al., 2017\n\n\n\n\n\n\n7.0.2 \nObject-Based Image Analysis (OBIA): OBIA groups adjacent pixels into objects based on their spectral characteristics. This approach considers the context and texture of features within an image, allowing for more nuanced analysis and classification based on the properties of these objects, rather than individual pixels.\n\n \n\n\n\n\nSource: Kate Alison, 2023 and GIS Geography, 2024",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Classification II</span>"
+    ]
   }
 ]

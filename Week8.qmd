@@ -1,6 +1,36 @@
 ---
-title: "Week 8"
+title: "Classification II"
 author: "Nikhil Desai"
 date: "`r Sys.Date()`"
 output: html_document
 ---
+
+Classification II
+
+This week we continued to study classification of earth observation data, focussing on the distinction between object-based and pixel-based classification. Secondly, we look at how we can assess the accuracy of our classification results. First, I will provide an overview of object based image classification and pixel based image classification, then dive into some methods of how to assess the accuracy of our classification results. When comparing the two methods, they can be seen as *opposite* approaches.
+
+### **Pixel-Based Image Analysis**: 
+In pixel-based image analysis, each pixel is analysed and classified independently based on its spectral signature. This method includes sub-pixel analysis, which estimates the fractional coverage of different land cover types within a single pixel and superpixel analysis, which groups similar pixels into larger *superpixels* for more efficient processing and analysis, maintaining the granularity of pixel-level detail but reducing computational complexity.
+
+```{r echo=FALSE, out.width="70%", fig.cap="Superpixel Analysis - [Liu et al., 2022](https://www.mdpi.com/2072-4292/14/4/899)"}
+knitr::include_graphics("img/superpixelanalysis.webp")
+```
+
+```{r echo=FALSE, out.width="70%", fig.cap="Subpixel Analysis - [Mclachlan et al., 2017](https://www.tandfonline.com/doi/pdf/10.1080/01431161.2017.1346403?needAccess=true&)"}
+knitr::include_graphics("img/subpixelanalysis.png")
+```
+
+###
+**Object-Based Image Analysis (OBIA)**: OBIA groups adjacent pixels into *objects* based on their spectral characteristics. This approach considers the context and texture of features within an image, allowing for more nuanced analysis and classification based on the properties of these objects, rather than individual pixels.
+
+```{r echo=FALSE, results='asis'}
+cat(
+  '<div style="margin-bottom: 40px;">',
+  '<img src="', knitr::image_uri("img/OBIA1.png"), '" style="width: 49%; float: left; margin-right: 2%;" />',
+  '<img src="', knitr::image_uri("img/OBIA2.jpeg"), '" style="width: 45.5%; float: right;" />',
+  '</div>',
+  '<div style="clear: both;"></div>'
+)
+```
+
+Source: [Kate Alison, 2023](https://www.udemy.com/course/object-based-image-analysis-classification-in-qgisarcgis/) and [GIS Geography, 2024](https://gisgeography.com/obia-object-based-image-analysis-geobia/)
