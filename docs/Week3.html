@@ -22,7 +22,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -222,12 +242,12 @@ ul.task-list li input[type="checkbox"] {
 <section id="corrections-and-enhancements" class="level2" data-number="4.1">
 <h2 data-number="4.1" class="anchored" data-anchor-id="corrections-and-enhancements"><span class="header-section-number">4.1</span> 1. Corrections and Enhancements</h2>
 <p>Over the course of the week, we discussed how to transform raw, remotely sensed data into a product we can use for analysis. This transformation <em>process</em> is know as <em>enhancing</em> or <em>correcting</em> data.</p>
-<p>In academic terms, “Correction” describes the process of removing or reducing the effects of various factors distort the imagery or data. These factors can include atmospheric effects and sensor noise among others.</p>
+<p>In academic terms, “Correction” describes the process of removing or reducing the effects of various factors distort the imagery or data. These factors can include atmospheric effects and sensor noise among others <span class="citation" data-cites="Bannari1995">(<a href="references.html#ref-Bannari1995" role="doc-biblioref">Bannari et al. 1995</a>)</span>.</p>
 <p>The three main correction types are detailed below, along with their common solutions:</p>
 <section id="geometric-topographic-error" class="level4" data-number="4.1.0.1">
 <h4 data-number="4.1.0.1" class="anchored" data-anchor-id="geometric-topographic-error"><span class="header-section-number">4.1.0.1</span> <strong>Geometric &amp; Topographic Error</strong></h4>
 <p>Adjusts for image distortions due to the Earth’s rotation, sensor tilt, and curvature, ensuring accurate spatial positioning.</p>
-<p>A common method for geometric correction is orthorectification. This fixes distortions in aerial photos by aligning them with ground truth, correcting for camera angles and terrain. This method essentially ensures every point on a photo maps to the right spot on Earth, ensuring accurate measurements and analysis. This step is key for reliable map-making and data overlay from satellite imagery.</p>
+<p>A common method for geometric correction is orthorectification. This fixes distortions in aerial photos by aligning them with ground truth, correcting for camera angles and terrain <span class="citation" data-cites="Jia2013">(<a href="references.html#ref-Jia2013" role="doc-biblioref">Jia et al. 2013</a>)</span>. This method essentially ensures every point on a photo maps to the right spot on Earth, ensuring accurate measurements and analysis. This step is key for reliable map-making and data overlay from satellite imagery [<span class="citation" data-cites="Dave2015">Dave, Joshi, and Srivastava (<a href="references.html#ref-Dave2015" role="doc-biblioref">2015</a>)</span>].</p>
 <div class="cell" data-layout-align="center">
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
@@ -241,8 +261,8 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="atmospheric-distortion" class="level4" data-number="4.1.0.2">
 <h4 data-number="4.1.0.2" class="anchored" data-anchor-id="atmospheric-distortion"><span class="header-section-number">4.1.0.2</span> <strong>Atmospheric Distortion</strong></h4>
-<p>Removes the effects of atmospheric gases and particles on the recorded signal to accurately reflect the Earth’s surface reflectance. This is essentially wiping away the haze from satellite imagery. Atmospheric particles and gases can often blur or change the colors in an image. The goal is to make the image show the Earth’s surface as if the atmosphere wasn’t messing with the view.</p>
-<p>Regression is often used to correct atmospheric errors. It allows you to model the relationship between satellite data with known ground values, then applying this model to adjust the entire image for atmospheric distortions. Below is a Landsat image of the Three Gorges Area, China before and after correction for haze.</p>
+<p>Removes the effects of atmospheric gases and particles on the recorded signal to accurately reflect the Earth’s surface reflectance. This is essentially wiping away the haze from satellite imagery. Atmospheric particles and gases can often blur or change the colors in an image. The goal is to make the image show the Earth’s surface as if the atmosphere wasn’t messing with the view <span class="citation" data-cites="Song2001">(<a href="references.html#ref-Song2001" role="doc-biblioref">Song et al. 2001</a>)</span>.</p>
+<p>Regression is often used to correct atmospheric errors. It allows you to model the relationship between satellite data with known ground values, then applying this model to adjust the entire image for atmospheric distortions. Below is a Landsat image of the Three Gorges Area, China before and after correction for haze [<span class="citation" data-cites="Song2001">Song et al. (<a href="references.html#ref-Song2001" role="doc-biblioref">2001</a>)</span>].</p>
 <div class="cell">
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
@@ -279,7 +299,7 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="applications-atmospheric-correction-using-dark-object-subtraction" class="level2" data-number="4.3">
 <h2 data-number="4.3" class="anchored" data-anchor-id="applications-atmospheric-correction-using-dark-object-subtraction"><span class="header-section-number">4.3</span> Applications: Atmospheric Correction using Dark Object Subtraction</h2>
-<p>Jensen’s description of Atmospheric Correction in <em>Introductory digital image processing: a remote sensing perspective (2015),</em> provides a good overview of the concept of Dark Object Subtraction (DOS). The idea is that the darkest spot shouldn’t really have any brightness and should have a value of zero, so if it does appear slightly bright, that is likely due to atmospheric haze.</p>
+<p>Jensen’s description of Atmospheric Correction in <em>Introductory digital image processing: a remote sensing perspective (2015),</em> provides a good overview of the concept of Dark Object Subtraction (DOS). The idea is that the darkest spot shouldn’t really have any brightness and should have a value of zero, so if it does appear slightly bright, that is likely due to atmospheric haze <span class="citation" data-cites="Wang2019">(<a href="references.html#ref-Wang2019" role="doc-biblioref">Wang et al. 2019</a>)</span>, <span class="citation" data-cites="Hadjimitsis2004">(<a href="references.html#ref-Hadjimitsis2004" role="doc-biblioref">Hadjimitsis, Clayton, and Retalis 2004</a>)</span>.</p>
 <p>I’ve chosen an image of my favourite park near my hometown, Kamloops, British Columbia, Canada to conduct DOS on.</p>
 <p>The formula for doing such is:</p>
 <div class="cell" data-layout-align="center">
@@ -311,6 +331,26 @@ ul.task-list li input[type="checkbox"] {
 <p>In the practical, I focused on dealing with atmospheric correction using DOS. I chose this simply because it was the method I technically understood, the least. It required a deep dive into the complexities of how light interacts with the Earth’s atmosphere and affects satellite imagery. After taking a look at the two images above, I initially saw little difference, but when looking again, the distinction between the two is quite evident (as detailed above).</p>
 
 
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">
+<div id="ref-Bannari1995" class="csl-entry" role="listitem">
+Bannari, A., D. Morin, G. Bénié, and F. Bonn. 1995. <span>“A Theoretical Review of Different Mathematical Models of Geometric Corrections Applied to Remote Sensing Images”</span> 13: 27–47. <a href="https://doi.org/10.1080/02757259509532295">https://doi.org/10.1080/02757259509532295</a>.
+</div>
+<div id="ref-Dave2015" class="csl-entry" role="listitem">
+Dave, Chintan, R. Joshi, and S. Srivastava. 2015. <span>“A Survey on Geometric Correction of Satellite Imagery.”</span> <em>International Journal of Computer Applications</em> 116: 24–27. <a href="https://doi.org/10.5120/20389-2655">https://doi.org/10.5120/20389-2655</a>.
+</div>
+<div id="ref-Hadjimitsis2004" class="csl-entry" role="listitem">
+Hadjimitsis, D., C. Clayton, and A. Retalis. 2004. <span>“On the Darkest Pixel Atmospheric Correction Algorithm: A Revised Procedure Applied over Satellite Remotely Sensed Images Intended for Environmental Applications”</span> 5239. <a href="https://doi.org/10.1117/12.511520">https://doi.org/10.1117/12.511520</a>.
+</div>
+<div id="ref-Jia2013" class="csl-entry" role="listitem">
+Jia, Z., Xiaoping Lu, Wenqian Zang, and Q. Liu. 2013. <span>“Research on Fast Geometric Precision Correction of HJ-1 Remote Sensing Image.”</span> <em>Applied Mechanics and Materials</em> 427-429: 1481–84. <a href="https://doi.org/10.4028/www.scientific.net/AMM.427-429.1481">https://doi.org/10.4028/www.scientific.net/AMM.427-429.1481</a>.
+</div>
+<div id="ref-Song2001" class="csl-entry" role="listitem">
+Song, C., C. Woodcock, K. Seto, M. Lenney, and S. Macomber. 2001. <span>“Classification and Change Detection Using Landsat TM Data: When and How to Correct Atmospheric Effects?”</span> <em>Remote Sensing of Environment</em> 75: 230–44. <a href="https://doi.org/10.1016/S0034-4257(00)00169-3">https://doi.org/10.1016/S0034-4257(00)00169-3</a>.
+</div>
+<div id="ref-Wang2019" class="csl-entry" role="listitem">
+Wang, Yu, Xiaoyong Wang, Hongyan He, and Guoliang Tian. 2019. <span>“An Improved Dark Object Subtraction Method for Atmospheric Correction of Remote Sensing Images,”</span> 425–35. <a href="https://doi.org/10.1007/978-981-13-9917-6_41">https://doi.org/10.1007/978-981-13-9917-6_41</a>.
+</div>
+</div>
 </section>
 
 </main> <!-- /main -->

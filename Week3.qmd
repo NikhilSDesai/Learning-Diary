@@ -27,9 +27,9 @@ Source: [Abdul Basith](https://www.researchgate.net/figure/Geometric-correction-
 
 #### **Atmospheric Distortion**
 
-Removes the effects of atmospheric gases and particles on the recorded signal to accurately reflect the Earth's surface reflectance. This is essentially wiping away the haze from satellite imagery. Atmospheric particles and gases can often blur or change the colors in an image. The goal is to make the image show the Earth's surface as if the atmosphere wasn't messing with the view.
+Removes the effects of atmospheric gases and particles on the recorded signal to accurately reflect the Earth's surface reflectance. This is essentially wiping away the haze from satellite imagery. Atmospheric particles and gases can often blur or change the colors in an image. The goal is to make the image show the Earth's surface as if the atmosphere wasn't messing with the view [@Song2001].
 
-Regression is often used to correct atmospheric errors. It allows you to model the relationship between satellite data with known ground values, then applying this model to adjust the entire image for atmospheric distortions. Below is a Landsat image of the Three Gorges Area, China before and after correction for haze.
+Regression is often used to correct atmospheric errors. It allows you to model the relationship between satellite data with known ground values, then applying this model to adjust the entire image for atmospheric distortions. Below is a Landsat image of the Three Gorges Area, China before and after correction for haze \[@Song2001\].
 
 ```{r echo=FALSE, out.width="70%", fig.cap="Three Gorges Area, China - Before and After Correction"}
 knitr::include_graphics("img/atmosphericcorrection.png")
@@ -59,7 +59,7 @@ Similar to feathering in panoramic photography, mosaic feathering in satellite i
 
 ## Applications: Atmospheric Correction using Dark Object Subtraction
 
-Jensen's description of Atmospheric Correction in *Introductory digital image processing: a remote sensing perspective (2015),* provides a good overview of the concept of Dark Object Subtraction (DOS). The idea is that the darkest spot shouldn't really have any brightness and should have a value of zero, so if it does appear slightly bright, that is likely due to atmospheric haze.
+Jensen's description of Atmospheric Correction in *Introductory digital image processing: a remote sensing perspective (2015),* provides a good overview of the concept of Dark Object Subtraction (DOS). The idea is that the darkest spot shouldn't really have any brightness and should have a value of zero, so if it does appear slightly bright, that is likely due to atmospheric haze [@Wang2019], [@Hadjimitsis2004].
 
 I've chosen an image of my favourite park near my hometown, Kamloops, British Columbia, Canada to conduct DOS on.
 
