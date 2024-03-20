@@ -1,9 +1,10 @@
 project:
   type: book
+  output-dir: docs
 
 book:
-  title: "LearningDiary"
-  author: "Norah Jones"
+  title: "CASA0023 - Learning Diary - Nikhil Desai"
+  author: "Nikhil Desai"
   date: "3/14/2024"
   chapters:
     - index.qmd

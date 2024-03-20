@@ -1,5 +1,5 @@
 ---
-title: "About ME=e"
+title: "About Me"
 author: "Nikhil Desai"
 date: "`r Sys.Date()`"
 output: html_document
