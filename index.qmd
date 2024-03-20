@@ -1,3 +1,10 @@
+---
+title: "About ME=e"
+author: "Nikhil Desai"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
 # About Me {.unnumbered}
 
 My name is Nikhil Desai, I am originally from British Columbia, Canada. I completed by undergraduate MA degree in Economics from the University of Edinburgh. Upon completion I worked as a management consultant in London for 3 years specialising in Strategy, Data & Analytics, Operating Model and Supply Chain for Technology, Media and Telco companies. I left this role to pursue an MSc in Spatial Data Science at The Bartlett \| Centre for Advanced Spatial Analysis at UCL.
