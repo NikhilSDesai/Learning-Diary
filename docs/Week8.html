@@ -71,6 +71,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -181,7 +210,9 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#classification-ii" id="toc-classification-ii" class="nav-link active" data-scroll-target="#classification-ii"><span class="header-section-number">9</span> Classification II</a>
   <ul class="collapse">
   <li><a href="#pixel-based-image-analysis" id="toc-pixel-based-image-analysis" class="nav-link" data-scroll-target="#pixel-based-image-analysis"><span class="header-section-number">9.0.1</span> <strong>Pixel-Based Image Analysis</strong>:</a></li>
-  <li><a href="#accuracy-assessment-of-classification" id="toc-accuracy-assessment-of-classification" class="nav-link" data-scroll-target="#accuracy-assessment-of-classification"><span class="header-section-number">9.0.2</span> Accuracy Assessment of Classification</a></li>
+  <li><a href="#accuracy-assessment-of-classification" id="toc-accuracy-assessment-of-classification" class="nav-link" data-scroll-target="#accuracy-assessment-of-classification"><span class="header-section-number">9.1</span> Accuracy Assessment of Classification</a></li>
+  <li><a href="#applications" id="toc-applications" class="nav-link" data-scroll-target="#applications"><span class="header-section-number">9.2</span> Applications</a></li>
+  <li><a href="#reflections" id="toc-reflections" class="nav-link" data-scroll-target="#reflections"><span class="header-section-number">9.3</span> Reflections</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -259,35 +290,53 @@ ul.task-list li input[type="checkbox"] {
 </div>
 <p>Source: <a href="https://www.udemy.com/course/object-based-image-analysis-classification-in-qgisarcgis/">Kate Alison, 2023</a> and <a href="https://gisgeography.com/obia-object-based-image-analysis-geobia/">GIS Geography, 2024</a></p>
 </section>
-<section id="accuracy-assessment-of-classification" class="level3" data-number="9.0.2">
-<h3 data-number="9.0.2" class="anchored" data-anchor-id="accuracy-assessment-of-classification"><span class="header-section-number">9.0.2</span> Accuracy Assessment of Classification</h3>
+<section id="accuracy-assessment-of-classification" class="level2" data-number="9.1">
+<h2 data-number="9.1" class="anchored" data-anchor-id="accuracy-assessment-of-classification"><span class="header-section-number">9.1</span> Accuracy Assessment of Classification</h2>
 <p>Accuracy assessments for classification results evaluate how well the classification method has performed by comparing the classified data with reference data (<em>ground truth</em> or <em>true</em> values).</p>
-<section id="key-methods-used" class="level4" data-number="9.0.2.1">
-<h4 data-number="9.0.2.1" class="anchored" data-anchor-id="key-methods-used"><span class="header-section-number">9.0.2.1</span> Key Methods Used</h4>
+<section id="key-methods-used" class="level4" data-number="9.1.0.1">
+<h4 data-number="9.1.0.1" class="anchored" data-anchor-id="key-methods-used"><span class="header-section-number">9.1.0.1</span> Key Methods Used</h4>
 <ul>
 <li><p>Confusion Matrix (Error Matrix): A powerful tool that cross-tabulates the actual categories (from ground truth) against the classified categories. It provides metrics like overall accuracy, user’s and producer’s accuracy, and Kappa coefficient.</p></li>
 <li><p>Producer’s and User’s Accuracy: These metrics derive from the confusion matrix. Producer’s accuracy measures the probability that a ground-truth pixel is correctly classified, while user’s accuracy shows the probability that a pixel classified into a category actually represents that category on the ground.</p></li>
-<li><p>Kappa Coefficient: A statistical measure that accounts for chance agreement in the classification accuracy, providing a more robust indicator of the classification performance than overall accuracy alone.</p></li>
+<li><p>F-1 Score: The harmonic mean of user’s accuracy and producer’s accuracy for a class. It balances both measures and gives a single value that balances both.</p></li>
 </ul>
+<p><span class="math display">\[F1 = \frac{2 \times \text{TP}}{2 \times \text{TP} + \text{FP} + \text{FN}}\]</span></p>
 </section>
-<section id="importance-of-conducting-accuracy-assessments" class="level4" data-number="9.0.2.2">
-<h4 data-number="9.0.2.2" class="anchored" data-anchor-id="importance-of-conducting-accuracy-assessments"><span class="header-section-number">9.0.2.2</span> Importance of Conducting Accuracy Assessments</h4>
+<section id="importance-of-conducting-accuracy-assessments" class="level4" data-number="9.1.0.2">
+<h4 data-number="9.1.0.2" class="anchored" data-anchor-id="importance-of-conducting-accuracy-assessments"><span class="header-section-number">9.1.0.2</span> Importance of Conducting Accuracy Assessments</h4>
 <ul>
-<li><p>Validation of Results: Accuracy assessment validates the classification results, ensuring they are reliable for decision-making or further analysis. Benchmarking and Comparison: It allows for the comparison of different classification algorithms or methods, helping to select the most suitable one for a specific application.</p></li>
-<li><p>Identifying Errors: Helps in identifying specific classes or areas where classification errors are more common, guiding improvements in the classification process.</p></li>
+<li>Validation of Results: Accuracy assessment validates the classification results, ensuring they are reliable for decision-making or further analysis.</li>
+</ul>
+<p>*Benchmarking and Comparison: It allows for the comparison of different classification algorithms or methods, helping to select the most suitable one for a specific application.</p>
+<ul>
+<li>Identifying Errors: Helps in identifying specific classes or areas where classification errors are more common, guiding improvements in the classification process.</li>
 </ul>
 </section>
-<section id="potential-pitfalls" class="level4" data-number="9.0.2.3">
-<h4 data-number="9.0.2.3" class="anchored" data-anchor-id="potential-pitfalls"><span class="header-section-number">9.0.2.3</span> Potential Pitfalls</h4>
+<section id="potential-pitfalls" class="level4" data-number="9.1.0.3">
+<h4 data-number="9.1.0.3" class="anchored" data-anchor-id="potential-pitfalls"><span class="header-section-number">9.1.0.3</span> Potential Pitfalls</h4>
 <ul>
 <li><p>Inadequate Reference Data: The quality and quantity of ground truth data can significantly affect the accuracy assessment. Insufficient or inaccurate reference data may lead to misleading assessment results.</p></li>
 <li><p>Spatial and Temporal Mismatches: Differences in the timing of satellite imagery and the collection of reference data can introduce errors due to changes in the landscape or land use.</p></li>
 <li><p>Class Ambiguity: In cases where classes are spectrally similar or the land cover is heterogeneous, distinguishing between classes becomes difficult, potentially leading to lower accuracy.</p></li>
 <li><p>Overfitting: Especially in machine learning classifiers, there’s a risk of overfitting the model to the training data, which can result in high accuracy for the training dataset but poor generalization to new, unseen data.</p></li>
 </ul>
-
-
 </section>
+</section>
+<section id="applications" class="level2" data-number="9.2">
+<h2 data-number="9.2" class="anchored" data-anchor-id="applications"><span class="header-section-number">9.2</span> Applications</h2>
+<p>I’ve mentioned several applications of classifications and sources in my description above. So, in this <em>application</em> section instead of discussing case studies, I was keen to do some brainstorming of how classification could be used to help solve a problem close to me. I did not find any prior research on this topic, so I thought it would be interesting to brainstorm an approach this week.</p>
+<p>I spent several summers tree-planting in western Canada as part of forest regeneration efforts. I was employed by logging companies who, by law, must replant all tress they cut down. I was rather disillusioned by this, as there was no logic to the selection of trees being replanted or any concern about the original biodiversity of the forest. Trees were planted for the sake of it with no intention of restoring the forest to its original state.</p>
+<p>Here, I see an opportunity for subpixel analysis to enhance forest management, particularly in assessing reforestation efforts after clear cutting. This would be an exercise in change detection, comparing biodiversity levels before logging occurs in an area and after tree planting efforts. The goal would be to ensure that the replanted trees are not only surviving but also contributing to the restoration of the original biodivrsity of the ecosystem.</p>
+<p>Subpixel analysis would allow for a detailed examination of satellite imagery to detect changes in forest biodiversity and density at a finer resolution than what is visible at the pixel level. This could identify the health of newly planted trees within each pixel, even if they occupy only a part of it, providing a nuanced view of regeneration efforts over time.</p>
+<p>Personally, I would first apply spectral unmixing to Landsat data. I believe this could isolate the spectral signatures of different vegetation types. This process involves identifying “endmembers,” which are the pure spectral signatures of specific land cover types, including various tree species indicative of the region’s original biodiversity. By assessing how these signatures mix at pixel level, we can estimate the proportions of each vegetation type at the subpixel level, effectively monitoring the progress of reforestation and the restoration of biodiversity over time.</p>
+<p>However, the challenge lies in validating the results of subpixel analysis. And this is where I believe an accuracy assessment would help</p>
+<p>One approach is to harden the subpixel data by converting the fractional coverage of each vegetation type into discrete classification, where pixels are assigned to the land cover type that occupies the majority of their area. This hardened classification can then be compared against high-resolution aerial or drone imagery, serving as ground truth.</p>
+</section>
+<section id="reflections" class="level2" data-number="9.3">
+<h2 data-number="9.3" class="anchored" data-anchor-id="reflections"><span class="header-section-number">9.3</span> Reflections</h2>
+<p>This week’s topic was quite challenging, as it required a deep dive into remote sensing classification techniques and accuracy assessments. It was very interesting to learn some techniques to add conviction and certainty to remote sensing analysis. Over the past weeks we have raced through a wide array of theory and many techniques, it was useful to learn about some techniques which can help us check the accuracy of our results and help to determine whether our choice of classification method was appropriate.</p>
+
+
 </section>
 </section>
 
