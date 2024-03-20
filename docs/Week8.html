@@ -253,7 +253,8 @@ window.Quarto = {
 
 <section id="classification-ii" class="level1" data-number="9">
 <h1 data-number="9"><span class="header-section-number">9</span> Classification II</h1>
-<p>This week we continued to study classification of earth observation data, focussing on the distinction between object-based and pixel-based classification. Secondly, we look at how we can assess the accuracy of our classification results. First, I will provide an overview, including the strengths weaknesses and common applications of object based image classification and pixel based image classification (Superpixel and Subpixel), then dive into some methods of how to assess the accuracy of our classification results. When comparing the two methods, they can be seen as <em>opposite</em> approaches.</p>
+<p>This week we continued to study classification of earth observation data, focussing on the distinction between object-based and pixel-based classification. Secondly, we look at how we can assess the accuracy of our classification results.</p>
+<p>First, I will provide an overview, including the strengths weaknesses and common applications of object based image classification and pixel based image classification (Superpixel and Subpixel), then dive into some methods of how to assess the accuracy of our classification results. When comparing the two methods, they can almost be seen as <em>opposite</em> approaches.</p>
 <section id="pixel-based-image-analysis" class="level3" data-number="9.0.1">
 <h3 data-number="9.0.1" class="anchored" data-anchor-id="pixel-based-image-analysis"><span class="header-section-number">9.0.1</span> <strong>Pixel-Based Image Analysis</strong>:</h3>
 <p>In pixel-based image analysis, each pixel is analysed and classified independently based on its spectral signature. This method includes sub-pixel analysis, which estimates the fractional coverage of different land cover types within a single pixel.</p>
@@ -326,6 +327,16 @@ window.Quarto = {
 <h2 data-number="9.2" class="anchored" data-anchor-id="applications"><span class="header-section-number">9.2</span> Applications</h2>
 <p>I’ve mentioned several applications of classifications and sources in my description above. So, in this <em>application</em> section instead of discussing case studies, I was keen to do some brainstorming of how classification could be used to help solve a problem close to me. I did not find any prior research on this topic, so I thought it would be interesting to brainstorm an approach this week.</p>
 <p>I spent several summers tree-planting in western Canada as part of forest regeneration efforts. I was employed by logging companies who, by law, must replant all tress they cut down. I was rather disillusioned by this, as there was no logic to the selection of trees being replanted or any concern about the original biodiversity of the forest. Trees were planted for the sake of it with no intention of restoring the forest to its original state.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/biodiversity.jpeg" class="img-fluid figure-img" style="width:70.0%"></p>
+<figcaption>Subpixel Analysis - <a href="https://environment.ec.europa.eu/news/birds-eye-view-boreal-forests-using-satellite-remote-sensing-monitor-biodiversity-richness-2023-10-04_en">European Commission, 2024</a></figcaption>
+</figure>
+</div>
+</div>
+</div>
 <p>Here, I see an opportunity for subpixel analysis to enhance forest management, particularly in assessing reforestation efforts after clear cutting. This would be an exercise in change detection, comparing biodiversity levels before logging occurs in an area and after tree planting efforts. The goal would be to ensure that the replanted trees are not only surviving but also contributing to the restoration of the original biodivrsity of the ecosystem.</p>
 <p>Subpixel analysis would allow for a detailed examination of satellite imagery to detect changes in forest biodiversity and density at a finer resolution than what is visible at the pixel level. This could identify the health of newly planted trees within each pixel, even if they occupy only a part of it, providing a nuanced view of regeneration efforts over time.</p>
 <p>Personally, I would first apply spectral unmixing to Landsat data. I believe this could isolate the spectral signatures of different vegetation types. This process involves identifying “endmembers,” which are the pure spectral signatures of specific land cover types, including various tree species indicative of the region’s original biodiversity. By assessing how these signatures mix at pixel level, we can estimate the proportions of each vegetation type at the subpixel level, effectively monitoring the progress of reforestation and the restoration of biodiversity over time.</p>
@@ -335,6 +346,7 @@ window.Quarto = {
 <section id="reflections" class="level2" data-number="9.3">
 <h2 data-number="9.3" class="anchored" data-anchor-id="reflections"><span class="header-section-number">9.3</span> Reflections</h2>
 <p>This week’s topic was quite challenging, as it required a deep dive into remote sensing classification techniques and accuracy assessments. It was very interesting to learn some techniques to add conviction and certainty to remote sensing analysis. Over the past weeks we have raced through a wide array of theory and many techniques, it was useful to learn about some techniques which can help us check the accuracy of our results and help to determine whether our choice of classification method was appropriate.</p>
+<p>Doing a bit of brainstorming on how these techniques could be applied to a real-world problem was interesting exercise. In week 4 we were tasked to something similar, however after 4 weeks of learning about methods and technical details, I was able to develop a more specific and detailed idea of how these techniques could be applied to a problem close to me.</p>
 
 
 </section>

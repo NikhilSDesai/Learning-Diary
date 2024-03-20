@@ -17,11 +17,16 @@ There were two satellites studied this week: *Landsat* and *Sentinel*. Sentinel-
 
 ## Active and Passive Sensors
 
-There are two primary ways to gather remote sensing data: Active and Passive sensors. **Active sensors** emit energy in the form of radiation, then detect and measure the radiation that is *back scattered* or reflected back up to the satellite. An example is SAR, which emits signals towards the Earth's surface and records the reflected signals to form images [@Kreucher2005]. **Passive sensors** measure natural energy that is reflected or emitted from the Earth's surface or atmosphere, without *actively* emitting any signal of their own [@Liu2013]. An example is the Landsat programme, which captures the Earth's surface in the visible, near-infrared, and thermal infrared wavelengths.This distinction is illustrated below:
+There are two primary ways to gather remote sensing data: Active and Passive sensors.
+
+-   **Active sensors** emit energy in the form of radiation, then detect and measure the radiation that is *back scattered* or reflected back up to the satellite. An example is SAR, which emits signals towards the Earth's surface and records the reflected signals to form images [@Kreucher2005].
+
+-   **Passive sensors** measure natural energy that is reflected or emitted from the Earth's surface or atmosphere, without *actively* emitting any signal of their own [@Liu2013]. An example is the Landsat programme, which captures the Earth's surface in the visible, near-infrared, and thermal infrared wavelengths.This distinction is illustrated below:
 
 ```{r echo=FALSE, out.width="75%", fig.cap="Passive versus Active Sensors"}
 knitr::include_graphics("img/passivevactive.jpeg")
 ```
+
 Source: [Geospatial World](https://www.geospatialworld.net/blogs/observing-the-earth-fueling-global-development-solutions/)
 
 ## How Remote Sensors Gather and Store Data
@@ -70,7 +75,6 @@ Sentinel-2 images provided clear views of the ship's position and the traffic ja
 
 After experimenting in QGIS a I was able to extract the spatial signature alongside some indices of the area. Below the Terrain Ruggedness Index and the Spectral Signature of the imagery
 
-
 ```{r echo=FALSE, out.width="70%", fig.cap="Kamloops, British Columbia, Spectral Signature"}
 knitr::include_graphics("img/spectralsignature.png")
 ```
@@ -92,6 +96,7 @@ The potential of remote sensing to explore humanitarian issues was very eye open
 ::: {style="text-align: center;"}
 <img src="https://i0.wp.com/ideatlas.eu/wp-content/uploads/2023/04/Mumbai-IDEAtlas.jpg?resize=2048%2C2048&amp;ssl=1" style="width:65%;"/>
 :::
+Source: [IDEAtlas](https://ideatlas.eu/)
 
 This technology was deeply fascinating to me from an academic and commercial perspective. From an academic perspective, the concept of extracting immense amounts of data from imagery is revolutionary. Spectral signatures, like unique fingerprints for different Earth materials based on how they reflect light, enable us to understand the composition and health of various elements from afar. This capability is crucial for fields such as agriculture and environmental monitoring, illustrating how deep scientific research translates into practical applications across industries.
 
