@@ -3,7 +3,7 @@ project:
   output-dir: docs
 
 book:
-  title: "CASA0023 - Learning Diary - Nikhil Desai"
+  title: "Remote Sensing & Earth Observation Exploration - Nikhil Desai"
   author: "Nikhil Desai"
   date: "3/14/2024"
   chapters:
