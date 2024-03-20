@@ -42,31 +42,31 @@
   {
     "objectID": "Week7.html",
     "href": "Week7.html",
-    "title": "6  Classification I",
+    "title": "6  Week 7",
     "section": "",
     "text": "7 Classification I",
     "crumbs": [
-      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Classification I</span>"
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Week 7</span>"
     ]
   },
   {
     "objectID": "Week7.html#overview",
     "href": "Week7.html#overview",
-    "title": "6  Classification I",
+    "title": "6  Week 7",
     "section": "7.1 1. Overview",
     "text": "7.1 1. Overview\nThis week we studied how to use Machine Learning (ML) to classify Earth Observation data. I found this to be the most interesting and useful topic in this module as it cemented how to think about pixels in satellite imagery. This week’s readings, particularly Introductory digital image processing: a remote sensing perspective (Jensen, J.R., 2015) describe classification as on of the essential skills in remote sensing.\nAfter completing this week’s practical, I understood how transformative GEE has been to the field of remote sensing. While the speed of processing is far quicker - the level of integration and functionality built into GEE enables users to conducts more broad and and comprehensive analysis.\nWe focused on land cover classification, particularly training classification models, as well as evaluating how accurate the model was in correctly classifying pixels. Four main classification methods were discussed this week:\n\nClassification and Regression Trees (CART): CART is a straightforward method that splits data into smaller groups to make everything more similar within each group. It is ideal for its simplicity. CART can handle both categorical and continuous data. However, it is susceptible to overfitting.\n\n\n\n\n\n\n\n\n\n\nSource: Krzywinski & Altman, 2017\n\nRandomForest: This method uses several decision trees to make better predictions and be more reliable. By randomly selecting features, RandomForest can handle categorical data, mitigating overfitting risks inherent in CART. It’s good at working with both straightforward and more complex data by combining many simple models.\n\n\n\n\n\n\n\n\n\n\nSource: Corporate Finance Institute, 2021\n\nNaiveBayes: This approach uses Bayes’ theorem and treats each feature in the data as independent from the others. It’s surprisingly good and quick at making predictions, especially with data that can be neatly categorised. While it’s really meant for categorical data, it can also work with continuous data if you assume the data fits a certain pattern.\nSVM (Support Vector Machines): SVM looks for the best boundary that separates different categories in the data. It’s particularly good for dealing with complex problems where the data has many dimensions. Although it is computationally expensive, its ability to manage detailed and continuous data makes it powerful for identifying patterns that are hard to spot.\n\n\n\n\n\n\n\n\n\n\nSource: G. Mountrakis , 2011\n\n7.1.0.1 Training and Testing Data:\nWhen developing classification model, you must train the model, which helps the model learn the link between features and their categories. Testing is used to check how well the model predicts new, unseen data, helping to make sure it works well in different situations and doesn’t just repeat what it has seen before. Distinct training and testing data ensure a model can accurately predict new, unseen data, preventing it from merely memorising the data it was trained on and thus reducing the risk of overfitting.\nWe looked at two ways of classifying data in GEE:\n\nUsing a RandomForest Classifier: This straightforward method applies the RandomForest classifier directly to the training data to categorise the image. It’s a solid technique that benefits from RandomForest’s ability to combine multiple models, which helps reduce errors and overfitting.\nPixel-Based Approach: This more detailed method prepares training and testing data for each individual pixel, leading to a more accurate identification of different land types. This allows for better training and testing, improving the model’s accuracy in classifying land cover.\n\nAccuracy Assessment:\nThe pixel-based method proved its worth with a thorough accuracy check. By carefully dividing the data into training and testing sets for each pixel, this approach allowed for a precise evaluation of the model’s success. The results showed this method was particularly effective at handling the complexities of classifying different land types, suggesting it can produce highly dependable and widely applicable outcomes.\nThis dive into classification methods and how to check their accuracy has been both challenging and revealing. The deep understanding of various classifiers and the essential role of thorough testing are key for using GEE in environmental studies. This exploration not only highlights GEE’s strong features but also the detailed work needed to achieve accurate classification results.2. Applications",
     "crumbs": [
-      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Classification I</span>"
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Week 7</span>"
     ]
   },
   {
     "objectID": "Week7.html#reflections",
     "href": "Week7.html#reflections",
-    "title": "6  Classification I",
+    "title": "6  Week 7",
     "section": "7.3 3. Reflections",
     "text": "7.3 3. Reflections\nThis was the first week I felt like I could conduct some coherent and interesting research in the field of remote sensing. I’ve gotten to grips with Google Earth Engine and have a good understanding of different classification methods. As mentioned in the introduction, classification, seems to be one of the essential skills in remote sensing.\nHowever, this diary entry has been rather positive and I wanted to reflect on some of the issues I encountered in the practical which must be taken into account when conducting any sort of classification analysis.\nCommon issues tend to revolve around:\n\n7.3.0.1 Preprocessing:\n\nCloud Cover and Shadows: Imperfect cloud masking can leave behind cloud-contaminated pixels, affecting the accuracy of the classification\n\n\n\n7.3.0.2 Training and Model Selection:\n\nBalanced Training Data: The accuracy of classification greatly depends on the quality, representativeness of the training data. Non-representative samples can skew the model’s performance. This has significant implications and reminds me of a film I watched a couple years ago called Coded Bias.\nChoice of Classification Model: each model has strengths and weaknesses and are suited to different types of classification tasks. Using the incorrect classification model can lead to poor performance, including lower accuracy, overfitting or underfitting (detailed below)\n\n\n\n7.3.0.3 Validation and Accuracy Assessment:\n\nOverfitting and Generalisation: There’s a risk of overfitting the model to the training data, making it perform poorly on unseen data. Ensuring a proper train-test split and using validation techniques like cross-validation can help assess how well the model generalises Ying, 2019.",
     "crumbs": [
-      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Classification I</span>"
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Week 7</span>"
     ]
   },
   {
@@ -112,181 +112,181 @@
   {
     "objectID": "Week3.html",
     "href": "Week3.html",
-    "title": "3  Corrections & Data Joining",
+    "title": "3  Week 3",
     "section": "",
     "text": "3.1 1. Corrections and Enhancements\nOver the course of the week, we discussed how to transform raw, remotely sensed data into a product we can use for analysis. This transformation process is know as enhancing or correcting data.\nIn academic terms, “Correction” describes the process of removing or reducing the effects of various factors distort the imagery or data. These factors can include atmospheric effects and sensor noise among others.\nThe three main correction types are detailed below, along with their common solutions:",
     "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Corrections & Data Joining</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Week 3</span>"
     ]
   },
   {
     "objectID": "Week3.html#corrections-and-enhancements",
     "href": "Week3.html#corrections-and-enhancements",
-    "title": "3  Corrections & Data Joining",
+    "title": "3  Week 3",
     "section": "",
     "text": "3.1.0.1 Geometric & Topographic Error\nAdjusts for image distortions due to the Earth’s rotation, sensor tilt, and curvature, ensuring accurate spatial positioning.\nA common method for geometric correction is orthorectification. This fixes distortions in aerial photos by aligning them with ground truth, correcting for camera angles and terrain. This method essentially ensures every point on a photo maps to the right spot on Earth, ensuring accurate measurements and analysis. This step is key for reliable map-making and data overlay from satellite imagery.\n\n\n\n\n\n\n\n\n\nSource: Abdul Basith\n\n\n3.1.0.2 Atmospheric Distortion\nRemoves the effects of atmospheric gases and particles on the recorded signal to accurately reflect the Earth’s surface reflectance. This is essentially wiping away the haze from satellite imagery. Atmospheric particles and gases can often blur or change the colors in an image. The goal is to make the image show the Earth’s surface as if the atmosphere wasn’t messing with the view.\nRegression is often used to correct atmospheric errors. It allows you to model the relationship between satellite data with known ground values, then applying this model to adjust the entire image for atmospheric distortions. Below is a Landsat image of the Three Gorges Area, China before and after correction for haze.\n\n\n\n\n\nThree Gorges Area, China - Before and After Correction\n\n\n\n\nSource: Zhaohua Chen\n\n\n3.1.0.3 Radiometric Calibration\nAdjusts the digital image data to correct for sensor noise and inconsistencies, ensuring uniform brightness and contrast across the image.\nWhile, I wouldn’t consider this to an error - you can correct for radiometric variations by applying a calibration equation that converts Digital Number (DN) values to spectral radiance (using gain and bias parameters). This helps to standardise image brightness across datasets.",
     "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Corrections & Data Joining</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Week 3</span>"
     ]
   },
   {
     "objectID": "Week3.html#data-joining",
     "href": "Week3.html#data-joining",
-    "title": "3  Corrections & Data Joining",
+    "title": "3  Week 3",
     "section": "3.2 2. Data Joining",
     "text": "3.2 2. Data Joining\nIn Earth observation, data joining involves combining multiple satellite images to create a single image. This is an extremely useful method, as most large areas cannot be captured in a single satellite pass.\nOne common technique for data joining is called mosaic feathering. Seen below:\n\n\n\n\n\n\n\n\n\nSource: Yun Gao\nSimilar to feathering in panoramic photography, mosaic feathering in satellite imagery involves overlapping adjacent images and blending their edges. This blending ensures that the transition between images is smooth, without visible seams or abrupt changes in color and texture that can occur due to differences in lighting, angle of capture, or atmospheric conditions at the time each image was taken.",
     "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Corrections & Data Joining</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Week 3</span>"
     ]
   },
   {
     "objectID": "Week3.html#applications-atmospheric-correction-using-dark-object-subtraction",
     "href": "Week3.html#applications-atmospheric-correction-using-dark-object-subtraction",
-    "title": "3  Corrections & Data Joining",
+    "title": "3  Week 3",
     "section": "3.3 Applications: Atmospheric Correction using Dark Object Subtraction",
     "text": "3.3 Applications: Atmospheric Correction using Dark Object Subtraction\nJensen’s description of Atmospheric Correction in Introductory digital image processing: a remote sensing perspective (2015), provides a good overview of the concept of Dark Object Subtraction (DOS). The idea is that the darkest spot shouldn’t really have any brightness and should have a value of zero, so if it does appear slightly bright, that is likely due to atmospheric haze.\nI’ve chosen an image of my favourite park near my hometown, Kamloops, British Columbia, Canada to conduct DOS on.\nThe formula for doing such is:\n\n\n\n\n\nDark Object Subtraction Equation\n\n\n\n\nI started with an analysis of the Surface Reflectance. The first image below, is the raw Landsat image. The second image is the same image after applying the DOS method.\n\n\n\n\n\nLandsat image prior to and after Dark Object Subtraction\n\n\n\n\nAfter applying the DOS method, this is what we are left with. While the differences are subtle, the image is noticeably clearer. The first image is more green, there is far less variation in colour and the mountainous region on the left hand side of the image is more distinguished making it easier to identify features.",
     "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Corrections & Data Joining</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Week 3</span>"
     ]
   },
   {
     "objectID": "Week3.html#reflections",
     "href": "Week3.html#reflections",
-    "title": "3  Corrections & Data Joining",
+    "title": "3  Week 3",
     "section": "3.4 Reflections",
     "text": "3.4 Reflections\nPrior to this course, I had little exposure to remotely sensed data. Personally, going through the tedious process of enhancing raw remotely sensed data highlighted the complexity of tools like Google Earth. I will never again take for granted the ability to zoom in on a location and casually scroll around the globe.\nIn the practical, I focused on dealing with atmospheric correction using DOS. I chose this simply because it was the method I technically understood, the least. It required a deep dive into the complexities of how light interacts with the Earth’s atmosphere and affects satellite imagery. After taking a look at the two images above, I initially saw little difference, but when looking again, the distinction between the two is quite evident (as detailed above).",
     "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Corrections & Data Joining</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Week 3</span>"
     ]
   },
   {
     "objectID": "Week2.html",
     "href": "Week2.html",
-    "title": "2  Landsat - 9",
+    "title": "2  Week 2",
     "section": "",
     "text": "2.0.0.1 A short presentation on maybe one of the most important space programmes in the world",
     "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Landsat - 9</span>"
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Week 2</span>"
     ]
   },
   {
     "objectID": "Week2.html#section",
     "href": "Week2.html#section",
-    "title": "2  Landsat - 9",
+    "title": "2  Week 2",
     "section": "2.1 ",
     "text": "2.1",
     "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Landsat - 9</span>"
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Week 2</span>"
     ]
   },
   {
     "objectID": "Week4.html",
     "href": "Week4.html",
-    "title": "4  Remote Sensing Policy",
+    "title": "4  Week 4",
     "section": "",
     "text": "4.1 Overview: Wildfires in Western Canada\nThis week, we have been tasked with finding a city facing an urban challenge and proposing how remotely sensed data could be used to address the challenge. Prior to starting this degree I spent the summer in my hometown, Kamloops. It is a small rural town in western Canada. The climate of the region is known as a semi-arid desert. The land cover is predominantly grasslands and forest. With the acceleration of climate change, western Canada has been experiencing severe heatwaves and droughts. The increasingly dry conditions have led to an exponential increase in wildfires.\nDuring this summer air quality were at hazardous levels due to the smoke from the wildfires. Several communities were evacuated, including Lytton, a small town near Kamloops, was evacuated and destroyed by a wildfire. Several statistics I found:\nKamloops is denoted in the following image as a small green dot on the following NASA visualisation of average temperatures in summer 2021.\nBritish Coumbia Temperature 2021\nWildfires are quickly approaching the Kamloops city limits and burned three houses last summer and the entirety of the city’s north shore was evacuated. Below is an eerie photo taken from my apartment last summer.\nBritish Coumbia Temperature 2021",
     "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Remote Sensing Policy</span>"
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Week 4</span>"
     ]
   },
   {
     "objectID": "Week4.html#overview-wildfires-in-western-canada",
     "href": "Week4.html#overview-wildfires-in-western-canada",
-    "title": "4  Remote Sensing Policy",
+    "title": "4  Week 4",
     "section": "",
     "text": "Insurance Bureau of Canada reported 78 million CAD in damages\nThe fire destroyed 90 percent of the village, killed two people and forced the evacuation of nearby First Nations communities\nThe fire largely leveled Lytton’s Main Street, burning the post office, ambulance station, health centre, RCMP detachment, Lytton Hotel and the Lytton Village Office\nThe Lytton Chinese History Museum was lost, along with 1,600 artifacts, museum archives and library",
     "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Remote Sensing Policy</span>"
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Week 4</span>"
     ]
   },
   {
     "objectID": "Week4.html#proposal-using-remote-sensing-to-address-wildfires",
     "href": "Week4.html#proposal-using-remote-sensing-to-address-wildfires",
-    "title": "4  Remote Sensing Policy",
+    "title": "4  Week 4",
     "section": "4.2 Proposal: Using Remote Sensing to Address Wildfires",
     "text": "4.2 Proposal: Using Remote Sensing to Address Wildfires\nThe use of remote sensing to monitor and predict wildfires is not a new concept. However, the technology has been underutilised in Canada. The Canadian government has been slow to adopt new technologies and has been relying on traditional methods to monitor and predict wildfires. The traditional methods include the use of weather stations, satellite imagery, and aerial photography.\nThese methods are not as effective as remote sensing technology. Remote sensing technology are able to provide real-time data on the location, size and intensity of wildfires. This data can be used to predict the spread of wildfires and to develop strategies to contain them.",
     "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Remote Sensing Policy</span>"
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Week 4</span>"
     ]
   },
   {
     "objectID": "Week4.html#approach",
     "href": "Week4.html#approach",
-    "title": "4  Remote Sensing Policy",
+    "title": "4  Week 4",
     "section": "4.3 Approach",
     "text": "4.3 Approach\n\n4.3.1 Wildfire Monitoring in Kamloops: A Remote Sensing Approach\nGiven the uptick in wildfire incidents around Kamloops, BC, driven by drier conditions, there is a need to actively monitor and predict these events. Remote sensing offers a lot of promise here, providing frequent, detailed data that can change the game in terms of understanding environmental triggers for wildfires, catching them early and forecasting their movements.\nBased on the teachings and research I’ve done, I’ve taken a stab at outlining how the use of remotely sensed data can detect and predict wildfires in BC.\n\n\n4.3.2 Heat Maps & Fire Detection\nWe can use Land Surface Temperature data from satellites like Landsat or MODIS to spot unusually hot areas that might indicate a fire or a high-risk zone. VIIRS data is incredibly useful for identifying thermal anomalies which allow us to pinpoint fires almost as soon as they start.\n\n\n4.3.3 Soil Moisture & Dryness\nRainfall data from the Global Precipitation Measurement mission gives us information on recent precipitation patterns, affecting soil moisture levels and by extension, wildfire risk. The SMAP satellite can tell us how moist the soil is, and when it’s super dry, the risk of wildfires is high.\n\n\n4.3.4 Vegetation Health\nWhat’s on the ground plays a massive role in how wildfires behave. We can check out the health of vegetation and the types of land cover in the area using data from Landsat or Sentinel-2 satellites. If there is significant dry and unhealthy vegetation, it’s like laying out a welcome mat for wildfires.\n\n\n4.3.5 Trends & Predictions\nBy digging into historical data on wildfires, weather patterns, and how land use has changed over time, we can start spotting trends and potential hotspots for future fires. We can then feed this data into machine learning models to forecast where and when the next big wildfire might hit, giving us a head start on preparations.",
     "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Remote Sensing Policy</span>"
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Week 4</span>"
     ]
   },
   {
     "objectID": "Week4.html#strategy-implementation",
     "href": "Week4.html#strategy-implementation",
-    "title": "4  Remote Sensing Policy",
+    "title": "4  Week 4",
     "section": "4.4 Strategy & Implementation",
     "text": "4.4 Strategy & Implementation\n\nGather and Prep the Data: Attain relevant datasets (LST, thermal anomalies, rainfall, soil moisture, vegetation health) for Kamloops and ready them for analysis.\nIdentify Hotspots: Using the thermal and LST data, we can keep an eye on current and potential wildfire zones.\nAssess the Risk: We’ll mix soil moisture data with vegetation health and past wildfire info to figure out which areas are most likely to catch fire.\nForecasting Fire: Leverage machine learning to assess the trend data and output predictions on future wildfires, including where they might start and essentially how they could spread.\nMake It Usable: Develop dashboard / interface for local emergency services, fire departments and planners to access and use data/models in real-time.",
     "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Remote Sensing Policy</span>"
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Week 4</span>"
     ]
   },
   {
     "objectID": "Week4.html#reflections",
     "href": "Week4.html#reflections",
-    "title": "4  Remote Sensing Policy",
+    "title": "4  Week 4",
     "section": "4.5 Reflections",
     "text": "4.5 Reflections\nThis approach is based upon being proactive rather than reactive when it comes to wildfires in Western Canada. By harnessing the power of remote sensing, we can significantly improve how we monitor, react to and predict wildfires, ultimately saving resources, properties, and lives.\nIt’s clear the tech and data are at the level to conduct this analysis. The challenge is integrating this approach into current operations, raising awareness and getting the backing needed from policies and funding. As municipalities in western Canada such as Kamloops look to adapt to the changing climate, it’s crucial that they embrace these advanced monitoring techniques and work closely with the scientific community to customise these solutions to their specific needs and challenges.",
     "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Remote Sensing Policy</span>"
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Week 4</span>"
     ]
   },
   {
     "objectID": "Week6.html",
     "href": "Week6.html",
-    "title": "5  Google Earth Engine",
+    "title": "5  Week 6",
     "section": "",
     "text": "6 Google Earth Engine",
     "crumbs": [
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Google Earth Engine</span>"
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Week 6</span>"
     ]
   },
   {
     "objectID": "Week6.html#summary",
     "href": "Week6.html#summary",
-    "title": "5  Google Earth Engine",
+    "title": "5  Week 6",
     "section": "6.1 1 Summary",
     "text": "6.1 1 Summary\nSorry in advance for the length of this entry, Google Earth Engine (GEE) is an amazing tool and conducting analysis on my hometown was a real joy.\nThis week we learned the basics of Google Earth Engine. GEE is a truly amazing tool. It allows users to sidestep the labourious process of downloading and processing satellite imagery and instead, users can access and analyse earth observation data directly in the cloud. GEE makes dealing with remote sensing data incredibly accessible and I intend to erase my experiences with SNAP from my memory.\nThis week’s lecture started with a slide which illustrated the exponential uptake of GEE. The slide shows that the number of academic publications using GEE has increased exponentially since 2013.\n\n6.1.0.1 Figure 1: The Number of Academic Publications Using Google Earth Engine\n\n\n\n\n\nAcademic Publications Using Google Earth Engine\n\n\n\n\nIn simple terms it provides a way to access and analyse satellite imagery and other geospatial data. GEE dramatically reduces the time to conducting analysis on remote sensing data by allowing users to bypass the need to download and process the data to your local machine using QGIS or SNAP.\nBelow I’ve used GEE to conduct a few analyses using methods we’ve learned about over the past few weeks. I’ve used Vancouver as a case study here. I thought it would interesting to see how its distinctly north american ‘grid system’ would appear.\nThe key features of GEE:\nData Catalog: Google Earth Engine provides access to a diverse and continuously expanding catalog of satellite imagery datasets\nAnalysis Tools: It offers a set of tools and algorithms for processing and analysing geospatial data (image classification, time-series analysis, object detection, change detection etc.)\nCode Editor: The Earth Engine Code Editor provides an interactive development environment where users can write, test and run geospatial analysis code\nVisualisation: GEE allows users to visualise geospatial data and analysis results in interactive maps. A user can explore and interact with the data layers.\nHowever, in my opinion, the most impressive characteristic of GEE is its ability to dynamically represent data.\n\n\n6.1.0.2 NDVI Analysis\nNDVI Analysis assesses vegetation health and coverage in a given area. By comparing the reflectance of near-infrared and red light, NDVI helps in distinguishing between vegetated and non-vegetated surfaces, indicating plant health and biomass. High indexes are seen in Stanley park, the large green area seen at the top of the window and on the left tip of the city is the University Endowment Lands, an old growth protected area where the University of British Columbia is located. Due to housing shortages in the city, several acres of this protected area have sadly been approved for development. I will be checking to see how this area changes over the next few years.\n\n\n\n\n\nAcademic Publications Using Google Earth Engine\n\n\n\n\n\n\n6.1.0.3 PCA\nIn essence, Principal Component Analysis is used to emphasise variation and bring out patterns in a dataset. In remote sensing, PCA transforms correlated bands in an image into uncorrelated variables or principal components. This method is useful for enhancing the differences of satellite imagery while retaining most of the original information “…often revealing hidden patterns in the data.”\n\n\n\n\n\nAcademic Publications Using Google Earth Engine\n\n\n\n\n\n\n6.1.0.4 Texture Analysis\nFinally Texture Analysis involves evaluating the spatial arrangement of colors or intensities in an image to identify patterns or structures. By applying methods such as GLCM, texture analysis can highlight areas of contrast or uniformity which can provide insights about the physical characteristics and differences of the surface. This technique is useful for things like classifying land cover, detecting change and understanding the structure features in the landscape.\n\n\n\n\n\nAcademic Publications Using Google Earth Engine",
     "crumbs": [
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Google Earth Engine</span>"
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Week 6</span>"
     ]
   },
   {
     "objectID": "Week6.html#applications",
     "href": "Week6.html#applications",
-    "title": "5  Google Earth Engine",
+    "title": "5  Week 6",
     "section": "6.2 2 Applications",
     "text": "6.2 2 Applications\nI watched Noah Gorelick’s lecture on machine learning in GEE. As a result I ended up diving into another one of his papers, Google Earth Engine: Planetary-scale geospatial analysis for everyone, published in 2017. Gorelick mentions a plethora of different ways you can leverage GEE for analysis, some of those include:\n\nGlobal Forest Change Monitoring: GEE has been used to characterise global forest extent, loss and gain using decision trees and large collections of Landsat scenes\nWater Resources Management: GEE enables the detailed monitoring of water bodies’ extent, health, and surface water changes globally\nAgricultural Monitoring and Yield Estimation: Leveraging GEE for agricultural monitoring, specifically for estimating crop yields by relating output from crop model simulations\nUrban Expansion and Land Use Change Detection: The platform supports the analysis of urban expansion and land use changes\n\nThe real strength/utility of GEE is in the speed it can analyse data. This means you can look at much bigger areas and do more studies than before. To me, this seems like a big deal for studying the environment because it helps us understand and make decisions faster.\nA tangible example of the strength and utility of GEE is its role in the Global Forest Watch initiative. This platform uses GEE to monitor deforestation around the world in near-real-time. Traditionally, analysing satellite images to detect changes in forest cover over vast areas like the Amazon rainforest would take months.",
     "crumbs": [
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Google Earth Engine</span>"
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Week 6</span>"
     ]
   },
   {
     "objectID": "Week6.html#reflections",
     "href": "Week6.html#reflections",
-    "title": "5  Google Earth Engine",
+    "title": "5  Week 6",
     "section": "6.3 3 Reflections",
     "text": "6.3 3 Reflections\nGoogle Earth Engine has proven to be an incredibly useful tool from a business perspective, offering a wide range of applications that span from environmental monitoring to urban planning and agricultural management. Its vast repository of satellite imagery and geospatial data allows for real-time environmental monitoring, making it an indispensable tool for businesses that require up-to-date geographical information to make informed decisions. For instance, in agriculture, Google Earth Engine enables the analysis of crop health over vast areas, aiding in the efficient management of resources and ultimately leading to increased productivity and reduced costs.\nFrom a user experience standpoint, Google Earth Engine is remarkably mature. Its interface is both intuitive and user-friendly, making it accessible to professionals across various sectors, regardless of their technical expertise in geospatial analysis. The platform’s ability to handle large datasets and perform complex spatial analyses in the cloud, without the need for powerful local computing resources, is particularly impressive. This cloud-based approach not only streamlines workflows but also facilitates collaborative projects by allowing teams to share data and insights seamlessly.\nMoreover, Google Earth Engine’s extensive library of algorithms and models, combined with its support for multiple programming languages, including JavaScript and Python, offers flexibility and efficiency in processing and analysing geospatial data. This adaptability is crucial for businesses that need to tailor their analyses to specific requirements.\nIn summary, Google Earth Engine’s comprehensive data resources, coupled with its sophisticated yet accessible analytical tools, make it an invaluable asset for businesses seeking to leverage geospatial data for strategic decision-making. Its mature user experience ensures that even those with limited experience in spatial data science can harness the power of geospatial analytics to drive innovation and efficiency in their operations.",
     "crumbs": [
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Google Earth Engine</span>"
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Week 6</span>"
     ]
   },
   {
     "objectID": "Week7.html#applications",
     "href": "Week7.html#applications",
-    "title": "6  Classification I",
+    "title": "6  Week 7",
     "section": "7.2 2. Applications",
     "text": "7.2 2. Applications\nThe applications of classification in Earth Observation are vast. These methods offer a powerful way to categorise and understand the world around us. Below, I have included a couple examples of classification in Earth Observation data that I found interesting.\n\n7.2.1 Land Cover Classification - Gebze, Turkey\nThe Applications of classification are vast. I think this is why I was quite awe struck by this week’s lecture. I’ve chosen a case study published in 2009 by Kavzoglu & Colkesen, which classifies Landsat imagery by Landcover. While the study is simplistic in comparison to contemporary studies, I think it does an excellent job illustrating how classification works:\n\n\n\n\n\n\n\n\n\nSource: Kavzoglu & Colkesen, 2009\nIn the article, SVMs are utilised for land cover classification using Landsat ETM+ and Terra ASTER images of Gebze, Turkey. The effectiveness of SVMs was analysed. The study finds that SVMs outperformed the maximum likelihood classifier in terms of overall accuracy and individual class accuracies, demonstrating the robustness and effectiveness of SVMs in classifying remotely sensed images for land cover analysis.\nComparing MLC with SVMs is useful because while MLC (I understand this to be a more traditional and computationally intensive process) relies on statistical assumptions about data distribution, SVMs use a different approach finding a hyperplane that best separates different classes in the feature space\n\n\n7.2.2 Predicting Snake Bites - Ratnapura, Sri Lanka\nThis is likely one of the most interesting and unique articles I have read in my academic career. “…by incorporating detailed datasets on snake species, farmer behaviors and climatic factors, this study examines the spatio-temporal dynamics of snakebite risks”. While the article is mostly about agent-based modelling, there are several ingenious uses of SVM in satellite imagery. The example below is one of the inputs they use for their model. They found that certain species of snakes take refuge in certain species of trees. As such, they used satellite imagery to identify the distribution of different species of trees in their region of study.\n\n\n\n\n\n\n\n\n\nSource: Goldstein et al., 2021",
     "crumbs": [
-      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Classification I</span>"
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Week 7</span>"
     ]
   },
   {
