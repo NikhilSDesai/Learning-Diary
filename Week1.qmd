@@ -22,6 +22,7 @@ There are two primary ways to gather remote sensing data: Active and Passive sen
 ```{r echo=FALSE, out.width="75%", fig.cap="Passive versus Active Sensors"}
 knitr::include_graphics("img/passivevactive.jpeg")
 ```
+Source: [Geospatial World](https://www.geospatialworld.net/blogs/observing-the-earth-fueling-global-development-solutions/)
 
 ## How Remote Sensors Gather and Store Data
 
@@ -37,7 +38,9 @@ Data from remote sensing are stored with attention to different types of resolut
 
 **Radiometric resolution** indicates the sensor's sensitivity to different levels of light intensity, allowing for the detection of subtle differences in reflectance or emission.
 
-## Using SNAP (Sentinel Application Platform)
+Source: [Verde, 2018](https://www.mdpi.com/2072-4292/10/8/1267)
+
+## Using Sentinel Application Platform (SNAP)
 
 SNAP is a common tool used to process and analyse remote sensing data. It is particularly useful for working with data from the Sentinel satellites. There are a variety of statistics you can generate using SNAP. I'd never thought that you could generate so much data from pictures. It has changed the way in which I think about imagery and the analysis that can be conducted on it.
 
@@ -57,11 +60,11 @@ From my perspective, remote sensing gives us a way to see and understand changes
 
 ### Tracking the Growth of Refugee Camps
 
-Sentinel-2 imagery, humanitarian organizations mapped the rapid expansion of Rohingya refugee camps, facilitating efficient aid distribution, infrastructure planning, and risk management. This data was instrumental in adapting emergency responses and optimizing resource allocation as the camp situation evolved.
+Sentinel-2 imagery, humanitarian organisations mapped the rapid expansion of Rohingya refugee camps, facilitating efficient aid distribution, infrastructure planning, and risk management. This data was instrumental in adapting emergency responses and optimising resource allocation as the camp situation evolved [@Braun2019].
 
 ### Investigating the Suez Canal Blockage by the *Ever Given* 2021
 
-Sentinel-2 images provided clear views of the ship's position and the traffic jam of vessels waiting to pass through the canal. These images were crucial for assessing the blockage and its impact on global trade.
+Sentinel-2 images provided clear views of the ship's position and the traffic jam of vessels waiting to pass through the canal. These images were crucial for assessing the blockage and its impact on global trade [@Niroumand-Jadidi2021]
 
 ### Sentinel-2 Imagery on my Hometown (Kamloops, BC, Canada)
 

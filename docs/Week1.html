@@ -202,7 +202,7 @@ div.csl-indent {
   <ul class="collapse">
   <li><a href="#active-and-passive-sensors" id="toc-active-and-passive-sensors" class="nav-link" data-scroll-target="#active-and-passive-sensors"><span class="header-section-number">3.1</span> Active and Passive Sensors</a></li>
   <li><a href="#how-remote-sensors-gather-and-store-data" id="toc-how-remote-sensors-gather-and-store-data" class="nav-link" data-scroll-target="#how-remote-sensors-gather-and-store-data"><span class="header-section-number">3.2</span> How Remote Sensors Gather and Store Data</a></li>
-  <li><a href="#using-snap-sentinel-application-platform" id="toc-using-snap-sentinel-application-platform" class="nav-link" data-scroll-target="#using-snap-sentinel-application-platform"><span class="header-section-number">3.3</span> Using SNAP (Sentinel Application Platform)</a>
+  <li><a href="#using-sentinel-application-platform-snap" id="toc-using-sentinel-application-platform-snap" class="nav-link" data-scroll-target="#using-sentinel-application-platform-snap"><span class="header-section-number">3.3</span> Using Sentinel Application Platform (SNAP)</a>
   <ul class="collapse">
   <li><a href="#analysing-data-on-snap-is-done-in-the-following-steps" id="toc-analysing-data-on-snap-is-done-in-the-following-steps" class="nav-link" data-scroll-target="#analysing-data-on-snap-is-done-in-the-following-steps"><span class="header-section-number">3.3.1</span> Analysing data on SNAP is done in the following steps:</a></li>
   </ul></li>
@@ -259,7 +259,7 @@ div.csl-indent {
 <p>There were two satellites studied this week: <em>Landsat</em> and <em>Sentinel</em>. Sentinel-2 data offers a spatial resolution of 10 meters compared to Landsat’s 30 meters creating more detailed observations. Additionally, Sentinel-2 satellites provide revisits every 5 days at the equator, offering more frequent updates than Landsat’s 16-day revisit cycle. This makes Sentinel-2 particularly valuable for monitoring fast-changing conditions on the Earth’s surface <span class="citation" data-cites="Claverie2018">(<a href="references.html#ref-Claverie2018" role="doc-biblioref">Claverie et al. 2018</a>)</span></p>
 <section id="active-and-passive-sensors" class="level2" data-number="3.1">
 <h2 data-number="3.1" class="anchored" data-anchor-id="active-and-passive-sensors"><span class="header-section-number">3.1</span> Active and Passive Sensors</h2>
-<p>There are two primary ways to gather remote sensing data: Active and Passive sensors. <strong>Active sensors</strong> emit energy in the form of radiation, then detect and measure the radiation that is <em>back scattered</em> or reflected back up to the satellite. An example is SAR, which emits signals towards the Earth’s surface and records the reflected signals to form images <span class="citation" data-cites="Kreucher2005">(<a href="references.html#ref-Kreucher2005" role="doc-biblioref"><strong>Kreucher2005?</strong></a>)</span>. <strong>Passive sensors</strong> measure natural energy that is reflected or emitted from the Earth’s surface or atmosphere, without <em>actively</em> emitting any signal of their own <span class="citation" data-cites="Liu2013">(<a href="references.html#ref-Liu2013" role="doc-biblioref"><strong>Liu2013?</strong></a>)</span>. An example is the Landsat programme, which captures the Earth’s surface in the visible, near-infrared, and thermal infrared wavelengths.This distinction is illustrated below:</p>
+<p>There are two primary ways to gather remote sensing data: Active and Passive sensors. <strong>Active sensors</strong> emit energy in the form of radiation, then detect and measure the radiation that is <em>back scattered</em> or reflected back up to the satellite. An example is SAR, which emits signals towards the Earth’s surface and records the reflected signals to form images <span class="citation" data-cites="Kreucher2005">(<a href="references.html#ref-Kreucher2005" role="doc-biblioref">Kreucher, Kastella, and Hero 2005</a>)</span>. <strong>Passive sensors</strong> measure natural energy that is reflected or emitted from the Earth’s surface or atmosphere, without <em>actively</em> emitting any signal of their own <span class="citation" data-cites="Liu2013">(<a href="references.html#ref-Liu2013" role="doc-biblioref">Liu 2013</a>)</span>. An example is the Landsat programme, which captures the Earth’s surface in the visible, near-infrared, and thermal infrared wavelengths.This distinction is illustrated below:</p>
 <div class="cell">
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
@@ -270,6 +270,7 @@ div.csl-indent {
 </div>
 </div>
 </div>
+<p>Source: <a href="https://www.geospatialworld.net/blogs/observing-the-earth-fueling-global-development-solutions/">Geospatial World</a></p>
 </section>
 <section id="how-remote-sensors-gather-and-store-data" class="level2" data-number="3.2">
 <h2 data-number="3.2" class="anchored" data-anchor-id="how-remote-sensors-gather-and-store-data"><span class="header-section-number">3.2</span> How Remote Sensors Gather and Store Data</h2>
@@ -279,9 +280,10 @@ div.csl-indent {
 <p><strong>Spectral resolution</strong> refers to a sensor’s ability to distinguish between different wavelengths of light, enabling identification of various materials based on their electromagnetic signatures.</p>
 <p><strong>Temporal resolution</strong> measures how often a sensor can capture images of the same area over time, crucial for tracking changes and trends.</p>
 <p><strong>Radiometric resolution</strong> indicates the sensor’s sensitivity to different levels of light intensity, allowing for the detection of subtle differences in reflectance or emission.</p>
+<p>Source: <a href="https://www.mdpi.com/2072-4292/10/8/1267">Verde, 2018</a></p>
 </section>
-<section id="using-snap-sentinel-application-platform" class="level2" data-number="3.3">
-<h2 data-number="3.3" class="anchored" data-anchor-id="using-snap-sentinel-application-platform"><span class="header-section-number">3.3</span> Using SNAP (Sentinel Application Platform)</h2>
+<section id="using-sentinel-application-platform-snap" class="level2" data-number="3.3">
+<h2 data-number="3.3" class="anchored" data-anchor-id="using-sentinel-application-platform-snap"><span class="header-section-number">3.3</span> Using Sentinel Application Platform (SNAP)</h2>
 <p>SNAP is a common tool used to process and analyse remote sensing data. It is particularly useful for working with data from the Sentinel satellites. There are a variety of statistics you can generate using SNAP. I’d never thought that you could generate so much data from pictures. It has changed the way in which I think about imagery and the analysis that can be conducted on it.</p>
 <section id="analysing-data-on-snap-is-done-in-the-following-steps" class="level3" data-number="3.3.1">
 <h3 data-number="3.3.1" class="anchored" data-anchor-id="analysing-data-on-snap-is-done-in-the-following-steps"><span class="header-section-number">3.3.1</span> Analysing data on SNAP is done in the following steps:</h3>
@@ -299,11 +301,11 @@ div.csl-indent {
 <p>From my perspective, remote sensing gives us a way to see and understand changes on our planet that we couldn’t easily detect from the ground. My initial perspective was that RS data revolved around natural phenomena and climate related changes. The following two examples highlighted the utility of remotely sensed data in humanitarian and disaster management contexts.</p>
 <section id="tracking-the-growth-of-refugee-camps" class="level3" data-number="4.0.1">
 <h3 data-number="4.0.1" class="anchored" data-anchor-id="tracking-the-growth-of-refugee-camps"><span class="header-section-number">4.0.1</span> Tracking the Growth of Refugee Camps</h3>
-<p>Sentinel-2 imagery, humanitarian organizations mapped the rapid expansion of Rohingya refugee camps, facilitating efficient aid distribution, infrastructure planning, and risk management. This data was instrumental in adapting emergency responses and optimizing resource allocation as the camp situation evolved.</p>
+<p>Sentinel-2 imagery, humanitarian organisations mapped the rapid expansion of Rohingya refugee camps, facilitating efficient aid distribution, infrastructure planning, and risk management. This data was instrumental in adapting emergency responses and optimising resource allocation as the camp situation evolved <span class="citation" data-cites="Braun2019">(<a href="references.html#ref-Braun2019" role="doc-biblioref">Braun, Falah, and Hochschild 2019</a>)</span>.</p>
 </section>
 <section id="investigating-the-suez-canal-blockage-by-the-ever-given-2021" class="level3" data-number="4.0.2">
 <h3 data-number="4.0.2" class="anchored" data-anchor-id="investigating-the-suez-canal-blockage-by-the-ever-given-2021"><span class="header-section-number">4.0.2</span> Investigating the Suez Canal Blockage by the <em>Ever Given</em> 2021</h3>
-<p>Sentinel-2 images provided clear views of the ship’s position and the traffic jam of vessels waiting to pass through the canal. These images were crucial for assessing the blockage and its impact on global trade.</p>
+<p>Sentinel-2 images provided clear views of the ship’s position and the traffic jam of vessels waiting to pass through the canal. These images were crucial for assessing the blockage and its impact on global trade <span class="citation" data-cites="Niroumand-Jadidi2021">(<a href="references.html#ref-Niroumand-Jadidi2021" role="doc-biblioref">Niroumand-Jadidi and Bovolo 2021</a>)</span></p>
 </section>
 <section id="sentinel-2-imagery-on-my-hometown-kamloops-bc-canada" class="level3" data-number="4.0.3">
 <h3 data-number="4.0.3" class="anchored" data-anchor-id="sentinel-2-imagery-on-my-hometown-kamloops-bc-canada"><span class="header-section-number">4.0.3</span> Sentinel-2 Imagery on my Hometown (Kamloops, BC, Canada)</h3>
@@ -353,11 +355,23 @@ div.csl-indent {
 
 
 <div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">
+<div id="ref-Braun2019" class="csl-entry" role="listitem">
+Braun, A., F. Falah, and V. Hochschild. 2019. <span>“Refugee Camp Monitoring and Environmental Change Assessment of Kutupalong, Bangladesh, Based on Radar Imagery of Sentinel-1 and ALOS-2.”</span> <em>Remote. Sens.</em> 11: 2047. <a href="https://doi.org/10.3390/rs11172047">https://doi.org/10.3390/rs11172047</a>.
+</div>
 <div id="ref-Claverie2018" class="csl-entry" role="listitem">
 Claverie, M., J. Ju, J. Masek, J. Dungan, E. Vermote, J. Roger, S. Skakun, and C. Justice. 2018. <span>“The Harmonized Landsat and Sentinel-2 Surface Reflectance Data Set.”</span> <em>Remote Sensing of Environment</em>. <a href="https://doi.org/10.1016/J.RSE.2018.09.002">https://doi.org/10.1016/J.RSE.2018.09.002</a>.
 </div>
 <div id="ref-Cracknell2018" class="csl-entry" role="listitem">
 Cracknell, A. 2018. <span>“The Development of Remote Sensing in the Last 40 Years.”</span> <em>International Journal of Remote Sensing</em> 39: 8387–427. <a href="https://doi.org/10.1080/01431161.2018.1550919">https://doi.org/10.1080/01431161.2018.1550919</a>.
+</div>
+<div id="ref-Kreucher2005" class="csl-entry" role="listitem">
+Kreucher, C., K. Kastella, and A. Hero. 2005. <span>“Sensor Management Using an Active Sensing Approach.”</span> <em>Signal Process.</em> 85: 607–24. <a href="https://doi.org/10.1016/j.sigpro.2004.11.004">https://doi.org/10.1016/j.sigpro.2004.11.004</a>.
+</div>
+<div id="ref-Liu2013" class="csl-entry" role="listitem">
+Liu, J. G. 2013. <span>“REMOTE SENSING | Passive Sensors,”</span> 431–39. <a href="https://doi.org/10.1016/B978-0-12-409548-9.02956-0">https://doi.org/10.1016/B978-0-12-409548-9.02956-0</a>.
+</div>
+<div id="ref-Niroumand-Jadidi2021" class="csl-entry" role="listitem">
+Niroumand-Jadidi, M., and F. Bovolo. 2021. <span>“Sentinel-2 Reveals Abrupt Increment of Total Suspended Matter While Ever Given Ship Blocked the Suez Canal.”</span> <em>Water</em>. <a href="https://doi.org/10.3390/w13223286">https://doi.org/10.3390/w13223286</a>.
 </div>
 <div id="ref-Olsen2007" class="csl-entry" role="listitem">
 Olsen, R. 2007. <span>“Introduction to Remote Sensing.”</span> <em>BioScience</em> 27: 1–31. <a href="https://doi.org/10.1117/3.673407.CH1">https://doi.org/10.1117/3.673407.CH1</a>.
