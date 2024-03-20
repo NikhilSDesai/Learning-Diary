@@ -182,9 +182,6 @@ ul.task-list li input[type="checkbox"] {
   <ul class="collapse">
   <li><a href="#pixel-based-image-analysis" id="toc-pixel-based-image-analysis" class="nav-link" data-scroll-target="#pixel-based-image-analysis"><span class="header-section-number">9.0.1</span> <strong>Pixel-Based Image Analysis</strong>:</a></li>
   <li><a href="#accuracy-assessment-of-classification" id="toc-accuracy-assessment-of-classification" class="nav-link" data-scroll-target="#accuracy-assessment-of-classification"><span class="header-section-number">9.0.2</span> Accuracy Assessment of Classification</a></li>
-  <li><a href="#key-methods-used" id="toc-key-methods-used" class="nav-link" data-scroll-target="#key-methods-used"><span class="header-section-number">9.0.3</span> Key Methods Used</a></li>
-  <li><a href="#importance-of-conducting-accuracy-assessments" id="toc-importance-of-conducting-accuracy-assessments" class="nav-link" data-scroll-target="#importance-of-conducting-accuracy-assessments"><span class="header-section-number">9.0.4</span> Importance of Conducting Accuracy Assessments</a></li>
-  <li><a href="#potential-pitfalls" id="toc-potential-pitfalls" class="nav-link" data-scroll-target="#potential-pitfalls"><span class="header-section-number">9.0.5</span> Potential Pitfalls</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -264,25 +261,24 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="accuracy-assessment-of-classification" class="level3" data-number="9.0.2">
 <h3 data-number="9.0.2" class="anchored" data-anchor-id="accuracy-assessment-of-classification"><span class="header-section-number">9.0.2</span> Accuracy Assessment of Classification</h3>
-<p>Accuracy assessments for classification results are crucial steps in remote sensing and GIS workflows, serving as a measure of the reliability and precision of classified images or maps. They essentially evaluate how well the classification has performed by comparing the classified data (predicted values) with reference data (ground truth or true values).</p>
-</section>
-<section id="key-methods-used" class="level3" data-number="9.0.3">
-<h3 data-number="9.0.3" class="anchored" data-anchor-id="key-methods-used"><span class="header-section-number">9.0.3</span> Key Methods Used</h3>
+<p>Accuracy assessments for classification results evaluate how well the classification method has performed by comparing the classified data with reference data (<em>ground truth</em> or <em>true</em> values).</p>
+<section id="key-methods-used" class="level4" data-number="9.0.2.1">
+<h4 data-number="9.0.2.1" class="anchored" data-anchor-id="key-methods-used"><span class="header-section-number">9.0.2.1</span> Key Methods Used</h4>
 <ul>
 <li><p>Confusion Matrix (Error Matrix): A powerful tool that cross-tabulates the actual categories (from ground truth) against the classified categories. It provides metrics like overall accuracy, user’s and producer’s accuracy, and Kappa coefficient.</p></li>
 <li><p>Producer’s and User’s Accuracy: These metrics derive from the confusion matrix. Producer’s accuracy measures the probability that a ground-truth pixel is correctly classified, while user’s accuracy shows the probability that a pixel classified into a category actually represents that category on the ground.</p></li>
 <li><p>Kappa Coefficient: A statistical measure that accounts for chance agreement in the classification accuracy, providing a more robust indicator of the classification performance than overall accuracy alone.</p></li>
 </ul>
 </section>
-<section id="importance-of-conducting-accuracy-assessments" class="level3" data-number="9.0.4">
-<h3 data-number="9.0.4" class="anchored" data-anchor-id="importance-of-conducting-accuracy-assessments"><span class="header-section-number">9.0.4</span> Importance of Conducting Accuracy Assessments</h3>
+<section id="importance-of-conducting-accuracy-assessments" class="level4" data-number="9.0.2.2">
+<h4 data-number="9.0.2.2" class="anchored" data-anchor-id="importance-of-conducting-accuracy-assessments"><span class="header-section-number">9.0.2.2</span> Importance of Conducting Accuracy Assessments</h4>
 <ul>
 <li><p>Validation of Results: Accuracy assessment validates the classification results, ensuring they are reliable for decision-making or further analysis. Benchmarking and Comparison: It allows for the comparison of different classification algorithms or methods, helping to select the most suitable one for a specific application.</p></li>
 <li><p>Identifying Errors: Helps in identifying specific classes or areas where classification errors are more common, guiding improvements in the classification process.</p></li>
 </ul>
 </section>
-<section id="potential-pitfalls" class="level3" data-number="9.0.5">
-<h3 data-number="9.0.5" class="anchored" data-anchor-id="potential-pitfalls"><span class="header-section-number">9.0.5</span> Potential Pitfalls</h3>
+<section id="potential-pitfalls" class="level4" data-number="9.0.2.3">
+<h4 data-number="9.0.2.3" class="anchored" data-anchor-id="potential-pitfalls"><span class="header-section-number">9.0.2.3</span> Potential Pitfalls</h4>
 <ul>
 <li><p>Inadequate Reference Data: The quality and quantity of ground truth data can significantly affect the accuracy assessment. Insufficient or inaccurate reference data may lead to misleading assessment results.</p></li>
 <li><p>Spatial and Temporal Mismatches: Differences in the timing of satellite imagery and the collection of reference data can introduce errors due to changes in the landscape or land use.</p></li>
@@ -291,6 +287,7 @@ ul.task-list li input[type="checkbox"] {
 </ul>
 
 
+</section>
 </section>
 </section>
 
