@@ -22,7 +22,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -234,12 +254,12 @@ ul.task-list li input[type="checkbox"] {
 <p>Introduction to Remote Sensing</p>
 <section id="what-is-remote-sensing" class="level1" data-number="3">
 <h1 data-number="3"><span class="header-section-number">3</span> What is Remote Sensing?</h1>
-<p>Remote Sensing is a subset of Geographic Information Systems. In essence, it is the science of collecting and analysing information from the earth’s surface through the use of sensors mounted on satellites or planes. After taking a brief look at the history of RS, it is apparent that it has significantly accelerated our understanding of our built and natural environment <span class="citation" data-cites="Olsen2007Introduction">(<a href="references.html#ref-Olsen2007Introduction" role="doc-biblioref"><strong>Olsen2007Introduction?</strong></a>)</span>.</p>
-<p>The value of Remote Sensing spans various fields. It can provide critical data for environmental monitoring, disaster management, urban development and the mapping of inaccessible areas to name a few.</p>
-<p>There were two satellites studied this week: <em>Landsat</em> and <em>Sentinel</em>. Sentinel-2 data offers a spatial resolution of 10 meters compared to Landsat’s 30 meters creating more detailed observations. Additionally, Sentinel-2 satellites provide revisits every 5 days at the equator, offering more frequent updates than Landsat’s 16-day revisit cycle. This makes Sentinel-2 particularly valuable for monitoring fast-changing conditions on the Earth’s surface</p>
+<p>Remote Sensing is a subset of Geographic Information Systems. In essence, it is the science of collecting and analysing information from the earth’s surface through the use of sensors mounted on satellites or planes. After taking a brief look at the history of RS, it is apparent that it has significantly accelerated our understanding of our built and natural environment <span class="citation" data-cites="Olsen2007">(<a href="references.html#ref-Olsen2007" role="doc-biblioref">Olsen 2007</a>)</span>.</p>
+<p>The value of Remote Sensing spans various fields. It can provide critical data for environmental monitoring, disaster management, urban development and the mapping of inaccessible areas to name a few <span class="citation" data-cites="Cracknell2018">(<a href="references.html#ref-Cracknell2018" role="doc-biblioref">Cracknell 2018</a>)</span>.</p>
+<p>There were two satellites studied this week: <em>Landsat</em> and <em>Sentinel</em>. Sentinel-2 data offers a spatial resolution of 10 meters compared to Landsat’s 30 meters creating more detailed observations. Additionally, Sentinel-2 satellites provide revisits every 5 days at the equator, offering more frequent updates than Landsat’s 16-day revisit cycle. This makes Sentinel-2 particularly valuable for monitoring fast-changing conditions on the Earth’s surface <span class="citation" data-cites="Claverie2018">(<a href="references.html#ref-Claverie2018" role="doc-biblioref">Claverie et al. 2018</a>)</span></p>
 <section id="active-and-passive-sensors" class="level2" data-number="3.1">
 <h2 data-number="3.1" class="anchored" data-anchor-id="active-and-passive-sensors"><span class="header-section-number">3.1</span> Active and Passive Sensors</h2>
-<p>There are two primary ways to gather remote sensing data: Active and Passive sensors. <strong>Active sensors</strong> emit energy in the form of radiation, then detect and measure the radiation that is <em>back scattered</em> or reflected back up to the satellite. An example is SAR, which emits signals towards the Earth’s surface and records the reflected signals to form images. <strong>Passive sensors</strong> measure natural energy that is reflected or emitted from the Earth’s surface or atmosphere, without <em>actively</em> emitting any signal of their own. An example is the Landsat programme, which captures the Earth’s surface in the visible, near-infrared, and thermal infrared wavelengths.This distinction is illustrated below:</p>
+<p>There are two primary ways to gather remote sensing data: Active and Passive sensors. <strong>Active sensors</strong> emit energy in the form of radiation, then detect and measure the radiation that is <em>back scattered</em> or reflected back up to the satellite. An example is SAR, which emits signals towards the Earth’s surface and records the reflected signals to form images <span class="citation" data-cites="Kreucher2005">(<a href="references.html#ref-Kreucher2005" role="doc-biblioref"><strong>Kreucher2005?</strong></a>)</span>. <strong>Passive sensors</strong> measure natural energy that is reflected or emitted from the Earth’s surface or atmosphere, without <em>actively</em> emitting any signal of their own <span class="citation" data-cites="Liu2013">(<a href="references.html#ref-Liu2013" role="doc-biblioref"><strong>Liu2013?</strong></a>)</span>. An example is the Landsat programme, which captures the Earth’s surface in the visible, near-infrared, and thermal infrared wavelengths.This distinction is illustrated below:</p>
 <div class="cell">
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
@@ -332,6 +352,17 @@ ul.task-list li input[type="checkbox"] {
 <p>This week has been a great intro to Remote Sensing and has whet my appetite for the coming weeks.</p>
 
 
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">
+<div id="ref-Claverie2018" class="csl-entry" role="listitem">
+Claverie, M., J. Ju, J. Masek, J. Dungan, E. Vermote, J. Roger, S. Skakun, and C. Justice. 2018. <span>“The Harmonized Landsat and Sentinel-2 Surface Reflectance Data Set.”</span> <em>Remote Sensing of Environment</em>. <a href="https://doi.org/10.1016/J.RSE.2018.09.002">https://doi.org/10.1016/J.RSE.2018.09.002</a>.
+</div>
+<div id="ref-Cracknell2018" class="csl-entry" role="listitem">
+Cracknell, A. 2018. <span>“The Development of Remote Sensing in the Last 40 Years.”</span> <em>International Journal of Remote Sensing</em> 39: 8387–427. <a href="https://doi.org/10.1080/01431161.2018.1550919">https://doi.org/10.1080/01431161.2018.1550919</a>.
+</div>
+<div id="ref-Olsen2007" class="csl-entry" role="listitem">
+Olsen, R. 2007. <span>“Introduction to Remote Sensing.”</span> <em>BioScience</em> 27: 1–31. <a href="https://doi.org/10.1117/3.673407.CH1">https://doi.org/10.1117/3.673407.CH1</a>.
+</div>
+</div>
 </section>
 
 </main> <!-- /main -->
