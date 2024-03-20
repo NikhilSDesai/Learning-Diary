@@ -5,7 +5,7 @@ date: "`r Sys.Date()`"
 output: html_document
 ---
 
-Classification II
+# Classification II
 
 This week we continued to study classification of earth observation data, focussing on the distinction between object-based and pixel-based classification. Secondly, we look at how we can assess the accuracy of our classification results. First, I will provide an overview, including the strengths weaknesses and common applications of object based image classification and pixel based image classification (Superpixel and Subpixel), then dive into some methods of how to assess the accuracy of our classification results. When comparing the two methods, they can be seen as *opposite* approaches.
 
@@ -51,5 +51,33 @@ cat(
 
 Source: [Kate Alison, 2023](https://www.udemy.com/course/object-based-image-analysis-classification-in-qgisarcgis/) and [GIS Geography, 2024](https://gisgeography.com/obia-object-based-image-analysis-geobia/)
 
+### Accuracy Assessment of Classification
 
+Accuracy assessments for classification results are crucial steps in remote sensing and GIS workflows, serving as a measure of the reliability and precision of classified images or maps. They essentially evaluate how well the classification has performed by comparing the classified data (predicted values) with reference data (ground truth or true values).
+
+### Key Methods Used
+
+* Confusion Matrix (Error Matrix): A powerful tool that cross-tabulates the actual categories (from ground truth) against the classified categories. It provides metrics like overall accuracy, user’s and producer’s accuracy, and 
+Kappa coefficient.
+
+* Producer’s and User’s Accuracy: These metrics derive from the confusion matrix. Producer's accuracy measures the probability that a ground-truth pixel is correctly classified, while user's accuracy shows the probability that a pixel classified into a category actually represents that category on the ground.
+
+* Kappa Coefficient: A statistical measure that accounts for chance agreement in the classification accuracy, providing a more robust indicator of the classification performance than overall accuracy alone.
+
+### Importance of Conducting Accuracy Assessments
+
+* Validation of Results: Accuracy assessment validates the classification results, ensuring they are reliable for decision-making or further analysis.
+Benchmarking and Comparison: It allows for the comparison of different classification algorithms or methods, helping to select the most suitable one for a specific application.
+
+* Identifying Errors: Helps in identifying specific classes or areas where classification errors are more common, guiding improvements in the classification process.
+
+### Potential Pitfalls
+
+* Inadequate Reference Data: The quality and quantity of ground truth data can significantly affect the accuracy assessment. Insufficient or inaccurate reference data may lead to misleading assessment results.
+
+* Spatial and Temporal Mismatches: Differences in the timing of satellite imagery and the collection of reference data can introduce errors due to changes in the landscape or land use.
+
+* Class Ambiguity: In cases where classes are spectrally similar or the land cover is heterogeneous, distinguishing between classes becomes difficult, potentially leading to lower accuracy.
+
+* Overfitting: Especially in machine learning classifiers, there's a risk of overfitting the model to the training data, which can result in high accuracy for the training dataset but poor generalization to new, unseen data.
 
