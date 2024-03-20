@@ -9,7 +9,7 @@
 <meta name="author" content="Nikhil Desai">
 <meta name="dcterms.date" content="2024-03-20">
 
-<title>CASA0023 - Learning Diary - Nikhil Desai - 8&nbsp; Week 8</title>
+<title>Remote Sensing &amp; Earth Observation Exploration - Nikhil Desai - 8&nbsp; Week 8</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -98,7 +98,7 @@ ul.task-list li input[type="checkbox"] {
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
-      <a href="./">CASA0023 - Learning Diary - Nikhil Desai</a> 
+      <a href="./">Remote Sensing &amp; Earth Observation Exploration - Nikhil Desai</a> 
     </div>
       </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
@@ -178,7 +178,14 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#pixel-based-image-analysis" id="toc-pixel-based-image-analysis" class="nav-link active" data-scroll-target="#pixel-based-image-analysis"><span class="header-section-number">8.0.1</span> <strong>Pixel-Based Image Analysis</strong>:</a></li>
+  <li><a href="#classification-ii" id="toc-classification-ii" class="nav-link active" data-scroll-target="#classification-ii"><span class="header-section-number">9</span> Classification II</a>
+  <ul class="collapse">
+  <li><a href="#pixel-based-image-analysis" id="toc-pixel-based-image-analysis" class="nav-link" data-scroll-target="#pixel-based-image-analysis"><span class="header-section-number">9.0.1</span> <strong>Pixel-Based Image Analysis</strong>:</a></li>
+  <li><a href="#accuracy-assessment-of-classification" id="toc-accuracy-assessment-of-classification" class="nav-link" data-scroll-target="#accuracy-assessment-of-classification"><span class="header-section-number">9.0.2</span> Accuracy Assessment of Classification</a></li>
+  <li><a href="#key-methods-used" id="toc-key-methods-used" class="nav-link" data-scroll-target="#key-methods-used"><span class="header-section-number">9.0.3</span> Key Methods Used</a></li>
+  <li><a href="#importance-of-conducting-accuracy-assessments" id="toc-importance-of-conducting-accuracy-assessments" class="nav-link" data-scroll-target="#importance-of-conducting-accuracy-assessments"><span class="header-section-number">9.0.4</span> Importance of Conducting Accuracy Assessments</a></li>
+  <li><a href="#potential-pitfalls" id="toc-potential-pitfalls" class="nav-link" data-scroll-target="#potential-pitfalls"><span class="header-section-number">9.0.5</span> Potential Pitfalls</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -216,10 +223,11 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Classification II</p>
+<section id="classification-ii" class="level1" data-number="9">
+<h1 data-number="9"><span class="header-section-number">9</span> Classification II</h1>
 <p>This week we continued to study classification of earth observation data, focussing on the distinction between object-based and pixel-based classification. Secondly, we look at how we can assess the accuracy of our classification results. First, I will provide an overview, including the strengths weaknesses and common applications of object based image classification and pixel based image classification (Superpixel and Subpixel), then dive into some methods of how to assess the accuracy of our classification results. When comparing the two methods, they can be seen as <em>opposite</em> approaches.</p>
-<section id="pixel-based-image-analysis" class="level3" data-number="8.0.1">
-<h3 data-number="8.0.1" class="anchored" data-anchor-id="pixel-based-image-analysis"><span class="header-section-number">8.0.1</span> <strong>Pixel-Based Image Analysis</strong>:</h3>
+<section id="pixel-based-image-analysis" class="level3" data-number="9.0.1">
+<h3 data-number="9.0.1" class="anchored" data-anchor-id="pixel-based-image-analysis"><span class="header-section-number">9.0.1</span> <strong>Pixel-Based Image Analysis</strong>:</h3>
 <p>In pixel-based image analysis, each pixel is analysed and classified independently based on its spectral signature. This method includes sub-pixel analysis, which estimates the fractional coverage of different land cover types within a single pixel.</p>
 <p><strong>Strengths:</strong> Offers high precision in identifying land cover types within mixed pixels, ideal for fine-scale analysis. <strong>Weaknesses:</strong> Complexity in selecting appropriate endmembers and challenges in accuracy assessment. <strong>Common Uses:</strong> Widely used in agricultural monitoring, where detailed differentiation between crop types and growth stages within a single pixel is critical. Includes spectral unmixing as a sub-method.</p>
 <div class="cell">
@@ -253,8 +261,37 @@ ul.task-list li input[type="checkbox"] {
 
 </div>
 <p>Source: <a href="https://www.udemy.com/course/object-based-image-analysis-classification-in-qgisarcgis/">Kate Alison, 2023</a> and <a href="https://gisgeography.com/obia-object-based-image-analysis-geobia/">GIS Geography, 2024</a></p>
+</section>
+<section id="accuracy-assessment-of-classification" class="level3" data-number="9.0.2">
+<h3 data-number="9.0.2" class="anchored" data-anchor-id="accuracy-assessment-of-classification"><span class="header-section-number">9.0.2</span> Accuracy Assessment of Classification</h3>
+<p>Accuracy assessments for classification results are crucial steps in remote sensing and GIS workflows, serving as a measure of the reliability and precision of classified images or maps. They essentially evaluate how well the classification has performed by comparing the classified data (predicted values) with reference data (ground truth or true values).</p>
+</section>
+<section id="key-methods-used" class="level3" data-number="9.0.3">
+<h3 data-number="9.0.3" class="anchored" data-anchor-id="key-methods-used"><span class="header-section-number">9.0.3</span> Key Methods Used</h3>
+<ul>
+<li><p>Confusion Matrix (Error Matrix): A powerful tool that cross-tabulates the actual categories (from ground truth) against the classified categories. It provides metrics like overall accuracy, user’s and producer’s accuracy, and Kappa coefficient.</p></li>
+<li><p>Producer’s and User’s Accuracy: These metrics derive from the confusion matrix. Producer’s accuracy measures the probability that a ground-truth pixel is correctly classified, while user’s accuracy shows the probability that a pixel classified into a category actually represents that category on the ground.</p></li>
+<li><p>Kappa Coefficient: A statistical measure that accounts for chance agreement in the classification accuracy, providing a more robust indicator of the classification performance than overall accuracy alone.</p></li>
+</ul>
+</section>
+<section id="importance-of-conducting-accuracy-assessments" class="level3" data-number="9.0.4">
+<h3 data-number="9.0.4" class="anchored" data-anchor-id="importance-of-conducting-accuracy-assessments"><span class="header-section-number">9.0.4</span> Importance of Conducting Accuracy Assessments</h3>
+<ul>
+<li><p>Validation of Results: Accuracy assessment validates the classification results, ensuring they are reliable for decision-making or further analysis. Benchmarking and Comparison: It allows for the comparison of different classification algorithms or methods, helping to select the most suitable one for a specific application.</p></li>
+<li><p>Identifying Errors: Helps in identifying specific classes or areas where classification errors are more common, guiding improvements in the classification process.</p></li>
+</ul>
+</section>
+<section id="potential-pitfalls" class="level3" data-number="9.0.5">
+<h3 data-number="9.0.5" class="anchored" data-anchor-id="potential-pitfalls"><span class="header-section-number">9.0.5</span> Potential Pitfalls</h3>
+<ul>
+<li><p>Inadequate Reference Data: The quality and quantity of ground truth data can significantly affect the accuracy assessment. Insufficient or inaccurate reference data may lead to misleading assessment results.</p></li>
+<li><p>Spatial and Temporal Mismatches: Differences in the timing of satellite imagery and the collection of reference data can introduce errors due to changes in the landscape or land use.</p></li>
+<li><p>Class Ambiguity: In cases where classes are spectrally similar or the land cover is heterogeneous, distinguishing between classes becomes difficult, potentially leading to lower accuracy.</p></li>
+<li><p>Overfitting: Especially in machine learning classifiers, there’s a risk of overfitting the model to the training data, which can result in high accuracy for the training dataset but poor generalization to new, unseen data.</p></li>
+</ul>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
