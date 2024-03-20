@@ -7,21 +7,37 @@ output: html_document
 
 Classification II
 
-This week we continued to study classification of earth observation data, focussing on the distinction between object-based and pixel-based classification. Secondly, we look at how we can assess the accuracy of our classification results. First, I will provide an overview of object based image classification and pixel based image classification, then dive into some methods of how to assess the accuracy of our classification results. When comparing the two methods, they can be seen as *opposite* approaches.
+This week we continued to study classification of earth observation data, focussing on the distinction between object-based and pixel-based classification. Secondly, we look at how we can assess the accuracy of our classification results. First, I will provide an overview, including the strengths weaknesses and common applications of object based image classification and pixel based image classification (Superpixel and Subpixel), then dive into some methods of how to assess the accuracy of our classification results. When comparing the two methods, they can be seen as *opposite* approaches.
 
-### **Pixel-Based Image Analysis**: 
-In pixel-based image analysis, each pixel is analysed and classified independently based on its spectral signature. This method includes sub-pixel analysis, which estimates the fractional coverage of different land cover types within a single pixel and superpixel analysis, which groups similar pixels into larger *superpixels* for more efficient processing and analysis, maintaining the granularity of pixel-level detail but reducing computational complexity.
+
+### **Pixel-Based Image Analysis**:
+
+In pixel-based image analysis, each pixel is analysed and classified independently based on its spectral signature. This method includes sub-pixel analysis, which estimates the fractional coverage of different land cover types within a single pixel. 
+
+**Strengths:** Offers high precision in identifying land cover types within mixed pixels, ideal for fine-scale analysis.
+**Weaknesses:** Complexity in selecting appropriate endmembers and challenges in accuracy assessment.
+**Common Uses:** Widely used in agricultural monitoring, where detailed differentiation between crop types and growth stages within a single pixel is critical. Includes spectral unmixing as a sub-method.
 
 ```{r echo=FALSE, out.width="70%", fig.cap="Superpixel Analysis - [Liu et al., 2022](https://www.mdpi.com/2072-4292/14/4/899)"}
-knitr::include_graphics("img/superpixelanalysis.webp")
-```
-
-```{r echo=FALSE, out.width="70%", fig.cap="Subpixel Analysis - [Mclachlan et al., 2017](https://www.tandfonline.com/doi/pdf/10.1080/01431161.2017.1346403?needAccess=true&)"}
 knitr::include_graphics("img/subpixelanalysis.png")
 ```
 
-###
+The second method is superpixel analysis. This method groups similar pixels into larger *superpixels* for more efficient processing and analysis, maintaining the granularity of pixel-level detail but reducing computational complexity. Super
+
+**Strengths:** Simplifies the image by reducing the number of individual elements to be analysed, making it easier to manage and classify large datasets.
+**Weaknesses:** The choice of parameters for clustering can greatly affect the outcome, and inappropriate settings may lead to over- or under-segmentation.
+**Common Uses:** Useful in large-scale land cover mapping and environmental monitoring where delineating homogeneous areas (like forest stands) is necessary. K-means clustering and Simple Non-Iterative Clustering (SNIC) are sub-methods that aid in creating super-pixels.
+
+```{r echo=FALSE, out.width="70%", fig.cap="Subpixel Analysis - [Mclachlan et al., 2017](https://www.tandfonline.com/doi/pdf/10.1080/01431161.2017.1346403?needAccess=true&)"}
+knitr::include_graphics("img/superpixelanalysis.webp")
+```
+
 **Object-Based Image Analysis (OBIA)**: OBIA groups adjacent pixels into *objects* based on their spectral characteristics. This approach considers the context and texture of features within an image, allowing for more nuanced analysis and classification based on the properties of these objects, rather than individual pixels.
+
+**Strengths:** Effective in handling spatial patterns and relationships between objects, reducing the 'salt and pepper' noise common in pixel-based classifications.
+**Weaknesses:** Can be computationally intensive and requires careful parameter tuning for segmenting images into meaningful objects.
+**Common Uses:** Primarily used in urban planning, forest mapping, and habitat delineation, where the spatial arrangement and context of objects (like buildings or vegetation patches) are important. Techniques like image gradient and spectral gradient analysis are sub-methods within OBIA.
+
 
 ```{r echo=FALSE, results='asis'}
 cat(
