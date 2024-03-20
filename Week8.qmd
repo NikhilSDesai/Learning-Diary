@@ -81,6 +81,10 @@ I've mentioned several applications of classifications and sources in my descrip
 
 I spent several summers tree-planting in western Canada as part of forest regeneration efforts. I was employed by logging companies who, by law, must replant all tress they cut down. I was rather disillusioned by this, as there was no logic to the selection of trees being replanted or any concern about the original biodiversity of the forest. Trees were planted for the sake of it with no intention of restoring the forest to its original state.
 
+```{r echo=FALSE, out.width="70%", fig.cap="Subpixel Analysis - [European Commission, 2024](https://environment.ec.europa.eu/news/birds-eye-view-boreal-forests-using-satellite-remote-sensing-monitor-biodiversity-richness-2023-10-04_en)"}
+knitr::include_graphics("img/biodiversity.jpg")
+```
+
 Here, I see an opportunity for subpixel analysis to enhance forest management, particularly in assessing reforestation efforts after clear cutting. This would be an exercise in change detection, comparing biodiversity levels before logging occurs in an area and after tree planting efforts. The goal would be to ensure that the replanted trees are not only surviving but also contributing to the restoration of the original biodivrsity of the ecosystem.
 
 Subpixel analysis would allow for a detailed examination of satellite imagery to detect changes in forest biodiversity and density at a finer resolution than what is visible at the pixel level. This could identify the health of newly planted trees within each pixel, even if they occupy only a part of it, providing a nuanced view of regeneration efforts over time.
