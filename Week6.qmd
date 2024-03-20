@@ -1,5 +1,5 @@
 ---
-title: "Google Earth Engine"
+title: "Week 6"
 author: "Nikhil Desai"
 date: "`r Sys.Date()`"
 output: html_document
