@@ -40,11 +40,21 @@
     ]
   },
   {
-    "objectID": "Week1.html#using-snap-sentinel-application-platform",
-    "href": "Week1.html#using-snap-sentinel-application-platform",
+    "objectID": "Week1.html#using-sentinel-application-platform-snap",
+    "href": "Week1.html#using-sentinel-application-platform-snap",
     "title": "2  Week 1",
-    "section": "3.3 Using SNAP (Sentinel Application Platform)",
-    "text": "3.3 Using SNAP (Sentinel Application Platform)\nSNAP is a common tool used to process and analyse remote sensing data. It is particularly useful for working with data from the Sentinel satellites. There are a variety of statistics you can generate using SNAP. I’d never thought that you could generate so much data from pictures. It has changed the way in which I think about imagery and the analysis that can be conducted on it.\n\n3.3.1 Analysing data on SNAP is done in the following steps:\n\nDownloading Data Go to the Copernicus website and search for satellite images. You can pick what kind of images you want by setting things like the date or place you’re interested in. Once you find the right images, you download them to your computer.\nLoading Data Open the SNAP program on your computer. There’s an option to open or import files - use it to find and select the satellite images you downloaded. This loads them into SNAP for you to work with.\nAnalysing Images With your images loaded in SNAP, you can now start exploring them. SNAP has tools that let you adjust how the images look, highlight different features, or even combine different images to get a better understanding of what you’re seeing. You can play around with these tools to discover more about the area you’re studying.\n\nHowever after spending a significant portion of my day troubleshooting SNAP - It seems it does not work on iOS Ventura. QGIS to the rescue!",
+    "section": "3.3 Using Sentinel Application Platform (SNAP)",
+    "text": "3.3 Using Sentinel Application Platform (SNAP)\nSNAP is a common tool used to process and analyse remote sensing data. It is particularly useful for working with data from the Sentinel satellites. There are a variety of statistics you can generate using SNAP. I’d never thought that you could generate so much data from pictures. It has changed the way in which I think about imagery and the analysis that can be conducted on it.\n\n3.3.1 Analysing data on SNAP is done in the following steps:\n\nDownloading Data Go to the Copernicus website and search for satellite images. You can pick what kind of images you want by setting things like the date or place you’re interested in. Once you find the right images, you download them to your computer.\nLoading Data Open the SNAP program on your computer. There’s an option to open or import files - use it to find and select the satellite images you downloaded. This loads them into SNAP for you to work with.\nAnalysing Images With your images loaded in SNAP, you can now start exploring them. SNAP has tools that let you adjust how the images look, highlight different features, or even combine different images to get a better understanding of what you’re seeing. You can play around with these tools to discover more about the area you’re studying.\n\nHowever after spending a significant portion of my day troubleshooting SNAP - It seems it does not work on iOS Ventura. QGIS to the rescue!",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Week 1</span>"
+    ]
+  },
+  {
+    "objectID": "Week1.html#references",
+    "href": "Week1.html#references",
+    "title": "2  Week 1",
+    "section": "5.1 References",
+    "text": "5.1 References\n\n\n\n\nBraun, A., F. Falah, and V. Hochschild. 2019. “Refugee Camp Monitoring and Environmental Change Assessment of Kutupalong, Bangladesh, Based on Radar Imagery of Sentinel-1 and ALOS-2.” Remote. Sens. 11: 2047. https://doi.org/10.3390/rs11172047.\n\n\nClaverie, M., J. Ju, J. Masek, J. Dungan, E. Vermote, J. Roger, S. Skakun, and C. Justice. 2018. “The Harmonized Landsat and Sentinel-2 Surface Reflectance Data Set.” Remote Sensing of Environment. https://doi.org/10.1016/J.RSE.2018.09.002.\n\n\nCracknell, A. 2018. “The Development of Remote Sensing in the Last 40 Years.” International Journal of Remote Sensing 39: 8387–427. https://doi.org/10.1080/01431161.2018.1550919.\n\n\nKreucher, C., K. Kastella, and A. Hero. 2005. “Sensor Management Using an Active Sensing Approach.” Signal Process. 85: 607–24. https://doi.org/10.1016/j.sigpro.2004.11.004.\n\n\nLiu, J. G. 2013. “REMOTE SENSING | Passive Sensors,” 431–39. https://doi.org/10.1016/B978-0-12-409548-9.02956-0.\n\n\nNiroumand-Jadidi, M., and F. Bovolo. 2021. “Sentinel-2 Reveals Abrupt Increment of Total Suspended Matter While Ever Given Ship Blocked the Suez Canal.” Water. https://doi.org/10.3390/w13223286.\n\n\nOlsen, R. 2007. “Introduction to Remote Sensing.” BioScience 27: 1–31. https://doi.org/10.1117/3.673407.CH1.",
     "crumbs": [
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Week 1</span>"
     ]
@@ -110,6 +120,16 @@
     ]
   },
   {
+    "objectID": "Week3.html#references",
+    "href": "Week3.html#references",
+    "title": "4  Week 3",
+    "section": "4.5 References",
+    "text": "4.5 References\n\n\n\n\nBannari, A., D. Morin, G. Bénié, and F. Bonn. 1995. “A Theoretical Review of Different Mathematical Models of Geometric Corrections Applied to Remote Sensing Images” 13: 27–47. https://doi.org/10.1080/02757259509532295.\n\n\nDave, Chintan, R. Joshi, and S. Srivastava. 2015. “A Survey on Geometric Correction of Satellite Imagery.” International Journal of Computer Applications 116: 24–27. https://doi.org/10.5120/20389-2655.\n\n\nHadjimitsis, D., C. Clayton, and A. Retalis. 2004. “On the Darkest Pixel Atmospheric Correction Algorithm: A Revised Procedure Applied over Satellite Remotely Sensed Images Intended for Environmental Applications” 5239. https://doi.org/10.1117/12.511520.\n\n\nJia, Z., Xiaoping Lu, Wenqian Zang, and Q. Liu. 2013. “Research on Fast Geometric Precision Correction of HJ-1 Remote Sensing Image.” Applied Mechanics and Materials 427-429: 1481–84. https://doi.org/10.4028/www.scientific.net/AMM.427-429.1481.\n\n\nSong, C., C. Woodcock, K. Seto, M. Lenney, and S. Macomber. 2001. “Classification and Change Detection Using Landsat TM Data: When and How to Correct Atmospheric Effects?” Remote Sensing of Environment 75: 230–44. https://doi.org/10.1016/S0034-4257(00)00169-3.\n\n\nWang, Yu, Xiaoyong Wang, Hongyan He, and Guoliang Tian. 2019. “An Improved Dark Object Subtraction Method for Atmospheric Correction of Remote Sensing Images,” 425–35. https://doi.org/10.1007/978-981-13-9917-6_41.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Week 3</span>"
+    ]
+  },
+  {
     "objectID": "Week4.html",
     "href": "Week4.html",
     "title": "5  Week 4",
@@ -170,6 +190,16 @@
     ]
   },
   {
+    "objectID": "Week4.html#references",
+    "href": "Week4.html#references",
+    "title": "5  Week 4",
+    "section": "5.6 References",
+    "text": "5.6 References",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Week 4</span>"
+    ]
+  },
+  {
     "objectID": "Week6.html",
     "href": "Week6.html",
     "title": "6  Week 6",
@@ -205,6 +235,16 @@
     "title": "6  Week 6",
     "section": "7.3 3 Reflections",
     "text": "7.3 3 Reflections\nGoogle Earth Engine has proven to be an incredibly useful tool from a business perspective, offering a wide range of applications that span from environmental monitoring to urban planning and agricultural management. Its vast repository of satellite imagery and geospatial data allows for real-time environmental monitoring, making it an indispensable tool for businesses that require up-to-date geographical information to make informed decisions. For instance, in agriculture, Google Earth Engine enables the analysis of crop health over vast areas, aiding in the efficient management of resources and ultimately leading to increased productivity and reduced costs.\nFrom a user experience standpoint, Google Earth Engine is remarkably mature. Its interface is both intuitive and user-friendly, making it accessible to professionals across various sectors, regardless of their technical expertise in geospatial analysis. The platform’s ability to handle large datasets and perform complex spatial analyses in the cloud, without the need for powerful local computing resources, is particularly impressive. This cloud-based approach not only streamlines workflows but also facilitates collaborative projects by allowing teams to share data and insights seamlessly.\nMoreover, Google Earth Engine’s extensive library of algorithms and models, combined with its support for multiple programming languages, including JavaScript and Python, offers flexibility and efficiency in processing and analysing geospatial data. This adaptability is crucial for businesses that need to tailor their analyses to specific requirements.\nIn summary, Google Earth Engine’s comprehensive data resources, coupled with its sophisticated yet accessible analytical tools, make it an invaluable asset for businesses seeking to leverage geospatial data for strategic decision-making. Its mature user experience ensures that even those with limited experience in spatial data science can harness the power of geospatial analytics to drive innovation and efficiency in their operations.",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Week 6</span>"
+    ]
+  },
+  {
+    "objectID": "Week6.html#references",
+    "href": "Week6.html#references",
+    "title": "6  Week 6",
+    "section": "7.4 References",
+    "text": "7.4 References",
     "crumbs": [
       "<span class='chapter-number'>6</span>  <span class='chapter-title'>Week 6</span>"
     ]
@@ -250,6 +290,16 @@
     ]
   },
   {
+    "objectID": "Week7.html#references",
+    "href": "Week7.html#references",
+    "title": "7  Week 7",
+    "section": "8.4 References",
+    "text": "8.4 References",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Week 7</span>"
+    ]
+  },
+  {
     "objectID": "Week8.html",
     "href": "Week8.html",
     "title": "8  Week 8",
@@ -290,86 +340,6 @@
     ]
   },
   {
-    "objectID": "Week1.html#using-sentinel-application-platform-snap",
-    "href": "Week1.html#using-sentinel-application-platform-snap",
-    "title": "2  Week 1",
-    "section": "3.3 Using Sentinel Application Platform (SNAP)",
-    "text": "3.3 Using Sentinel Application Platform (SNAP)\nSNAP is a common tool used to process and analyse remote sensing data. It is particularly useful for working with data from the Sentinel satellites. There are a variety of statistics you can generate using SNAP. I’d never thought that you could generate so much data from pictures. It has changed the way in which I think about imagery and the analysis that can be conducted on it.\n\n3.3.1 Analysing data on SNAP is done in the following steps:\n\nDownloading Data Go to the Copernicus website and search for satellite images. You can pick what kind of images you want by setting things like the date or place you’re interested in. Once you find the right images, you download them to your computer.\nLoading Data Open the SNAP program on your computer. There’s an option to open or import files - use it to find and select the satellite images you downloaded. This loads them into SNAP for you to work with.\nAnalysing Images With your images loaded in SNAP, you can now start exploring them. SNAP has tools that let you adjust how the images look, highlight different features, or even combine different images to get a better understanding of what you’re seeing. You can play around with these tools to discover more about the area you’re studying.\n\nHowever after spending a significant portion of my day troubleshooting SNAP - It seems it does not work on iOS Ventura. QGIS to the rescue!",
-    "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Week 1</span>"
-    ]
-  },
-  {
-    "objectID": "summary.html",
-    "href": "summary.html",
-    "title": "9  Summary",
-    "section": "",
-    "text": "In summary, this book has no content whatsoever.\n\n1 + 1\n\n[1] 2",
-    "crumbs": [
-      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Summary</span>"
-    ]
-  },
-  {
-    "objectID": "references.html",
-    "href": "references.html",
-    "title": "References",
-    "section": "",
-    "text": "Braun, A., F. Falah, and V. Hochschild. 2019. “Refugee Camp\nMonitoring and Environmental Change Assessment of Kutupalong,\nBangladesh, Based on Radar Imagery of Sentinel-1 and ALOS-2.”\nRemote. Sens. 11: 2047. https://doi.org/10.3390/rs11172047.\n\n\nClaverie, M., J. Ju, J. Masek, J. Dungan, E. Vermote, J. Roger, S.\nSkakun, and C. Justice. 2018. “The Harmonized Landsat and\nSentinel-2 Surface Reflectance Data Set.” Remote Sensing of\nEnvironment. https://doi.org/10.1016/J.RSE.2018.09.002.\n\n\nCracknell, A. 2018. “The Development of Remote Sensing in the Last\n40 Years.” International Journal of Remote Sensing 39:\n8387–427. https://doi.org/10.1080/01431161.2018.1550919.\n\n\nKreucher, C., K. Kastella, and A. Hero. 2005. “Sensor Management\nUsing an Active Sensing Approach.” Signal Process. 85:\n607–24. https://doi.org/10.1016/j.sigpro.2004.11.004.\n\n\nLiu, J. G. 2013. “REMOTE SENSING | Passive Sensors,”\n431–39. https://doi.org/10.1016/B978-0-12-409548-9.02956-0.\n\n\nNiroumand-Jadidi, M., and F. Bovolo. 2021. “Sentinel-2 Reveals\nAbrupt Increment of Total Suspended Matter While Ever Given Ship Blocked\nthe Suez Canal.” Water. https://doi.org/10.3390/w13223286.\n\n\nOlsen, R. 2007. “Introduction to Remote Sensing.”\nBioScience 27: 1–31. https://doi.org/10.1117/3.673407.CH1.",
-    "crumbs": [
-      "References"
-    ]
-  },
-  {
-    "objectID": "Week1.html#references",
-    "href": "Week1.html#references",
-    "title": "2  Week 1",
-    "section": "5.1 References",
-    "text": "5.1 References\n\n\n\n\nBraun, A., F. Falah, and V. Hochschild. 2019. “Refugee Camp Monitoring and Environmental Change Assessment of Kutupalong, Bangladesh, Based on Radar Imagery of Sentinel-1 and ALOS-2.” Remote. Sens. 11: 2047. https://doi.org/10.3390/rs11172047.\n\n\nClaverie, M., J. Ju, J. Masek, J. Dungan, E. Vermote, J. Roger, S. Skakun, and C. Justice. 2018. “The Harmonized Landsat and Sentinel-2 Surface Reflectance Data Set.” Remote Sensing of Environment. https://doi.org/10.1016/J.RSE.2018.09.002.\n\n\nCracknell, A. 2018. “The Development of Remote Sensing in the Last 40 Years.” International Journal of Remote Sensing 39: 8387–427. https://doi.org/10.1080/01431161.2018.1550919.\n\n\nKreucher, C., K. Kastella, and A. Hero. 2005. “Sensor Management Using an Active Sensing Approach.” Signal Process. 85: 607–24. https://doi.org/10.1016/j.sigpro.2004.11.004.\n\n\nLiu, J. G. 2013. “REMOTE SENSING | Passive Sensors,” 431–39. https://doi.org/10.1016/B978-0-12-409548-9.02956-0.\n\n\nNiroumand-Jadidi, M., and F. Bovolo. 2021. “Sentinel-2 Reveals Abrupt Increment of Total Suspended Matter While Ever Given Ship Blocked the Suez Canal.” Water. https://doi.org/10.3390/w13223286.\n\n\nOlsen, R. 2007. “Introduction to Remote Sensing.” BioScience 27: 1–31. https://doi.org/10.1117/3.673407.CH1.",
-    "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Week 1</span>"
-    ]
-  },
-  {
-    "objectID": "Week3.html#references",
-    "href": "Week3.html#references",
-    "title": "4  Week 3",
-    "section": "4.5 References",
-    "text": "4.5 References\n\n\n\n\nBannari, A., D. Morin, G. Bénié, and F. Bonn. 1995. “A Theoretical Review of Different Mathematical Models of Geometric Corrections Applied to Remote Sensing Images” 13: 27–47. https://doi.org/10.1080/02757259509532295.\n\n\nDave, Chintan, R. Joshi, and S. Srivastava. 2015. “A Survey on Geometric Correction of Satellite Imagery.” International Journal of Computer Applications 116: 24–27. https://doi.org/10.5120/20389-2655.\n\n\nHadjimitsis, D., C. Clayton, and A. Retalis. 2004. “On the Darkest Pixel Atmospheric Correction Algorithm: A Revised Procedure Applied over Satellite Remotely Sensed Images Intended for Environmental Applications” 5239. https://doi.org/10.1117/12.511520.\n\n\nJia, Z., Xiaoping Lu, Wenqian Zang, and Q. Liu. 2013. “Research on Fast Geometric Precision Correction of HJ-1 Remote Sensing Image.” Applied Mechanics and Materials 427-429: 1481–84. https://doi.org/10.4028/www.scientific.net/AMM.427-429.1481.\n\n\nSong, C., C. Woodcock, K. Seto, M. Lenney, and S. Macomber. 2001. “Classification and Change Detection Using Landsat TM Data: When and How to Correct Atmospheric Effects?” Remote Sensing of Environment 75: 230–44. https://doi.org/10.1016/S0034-4257(00)00169-3.\n\n\nWang, Yu, Xiaoyong Wang, Hongyan He, and Guoliang Tian. 2019. “An Improved Dark Object Subtraction Method for Atmospheric Correction of Remote Sensing Images,” 425–35. https://doi.org/10.1007/978-981-13-9917-6_41.",
-    "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Week 3</span>"
-    ]
-  },
-  {
-    "objectID": "Week4.html#references",
-    "href": "Week4.html#references",
-    "title": "5  Week 4",
-    "section": "5.6 References",
-    "text": "5.6 References",
-    "crumbs": [
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Week 4</span>"
-    ]
-  },
-  {
-    "objectID": "Week6.html#references",
-    "href": "Week6.html#references",
-    "title": "6  Week 6",
-    "section": "7.4 References",
-    "text": "7.4 References",
-    "crumbs": [
-      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Week 6</span>"
-    ]
-  },
-  {
-    "objectID": "Week7.html#references",
-    "href": "Week7.html#references",
-    "title": "7  Week 7",
-    "section": "8.4 References",
-    "text": "8.4 References",
-    "crumbs": [
-      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Week 7</span>"
-    ]
-  },
-  {
     "objectID": "Week8.html#references",
     "href": "Week8.html#references",
     "title": "8  Week 8",
@@ -377,6 +347,66 @@
     "text": "9.4 References",
     "crumbs": [
       "<span class='chapter-number'>8</span>  <span class='chapter-title'>Week 8</span>"
+    ]
+  },
+  {
+    "objectID": "Week9.html",
+    "href": "Week9.html",
+    "title": "9  Week 9",
+    "section": "",
+    "text": "9.1 Overview",
+    "crumbs": [
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Week 9</span>"
+    ]
+  },
+  {
+    "objectID": "Week9.html#applications",
+    "href": "Week9.html#applications",
+    "title": "9  Week 9",
+    "section": "9.2 Applications",
+    "text": "9.2 Applications",
+    "crumbs": [
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Week 9</span>"
+    ]
+  },
+  {
+    "objectID": "Week9.html#reflections",
+    "href": "Week9.html#reflections",
+    "title": "9  Week 9",
+    "section": "9.3 Reflections",
+    "text": "9.3 Reflections",
+    "crumbs": [
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Week 9</span>"
+    ]
+  },
+  {
+    "objectID": "Week9.html#references",
+    "href": "Week9.html#references",
+    "title": "9  Week 9",
+    "section": "9.4 References",
+    "text": "9.4 References",
+    "crumbs": [
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Week 9</span>"
+    ]
+  },
+  {
+    "objectID": "summary.html",
+    "href": "summary.html",
+    "title": "10  Summary",
+    "section": "",
+    "text": "In summary, this book has no content whatsoever.\n\n1 + 1\n\n[1] 2",
+    "crumbs": [
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Summary</span>"
+    ]
+  },
+  {
+    "objectID": "references.html",
+    "href": "references.html",
+    "title": "References",
+    "section": "",
+    "text": "Bannari, A., D. Morin, G. Bénié, and F. Bonn. 1995. “A Theoretical\nReview of Different Mathematical Models of Geometric Corrections Applied\nto Remote Sensing Images” 13: 27–47. https://doi.org/10.1080/02757259509532295.\n\n\nBraun, A., F. Falah, and V. Hochschild. 2019. “Refugee Camp\nMonitoring and Environmental Change Assessment of Kutupalong,\nBangladesh, Based on Radar Imagery of Sentinel-1 and ALOS-2.”\nRemote. Sens. 11: 2047. https://doi.org/10.3390/rs11172047.\n\n\nClaverie, M., J. Ju, J. Masek, J. Dungan, E. Vermote, J. Roger, S.\nSkakun, and C. Justice. 2018. “The Harmonized Landsat and\nSentinel-2 Surface Reflectance Data Set.” Remote Sensing of\nEnvironment. https://doi.org/10.1016/J.RSE.2018.09.002.\n\n\nCracknell, A. 2018. “The Development of Remote Sensing in the Last\n40 Years.” International Journal of Remote Sensing 39:\n8387–427. https://doi.org/10.1080/01431161.2018.1550919.\n\n\nDave, Chintan, R. Joshi, and S. Srivastava. 2015. “A Survey on\nGeometric Correction of Satellite Imagery.” International\nJournal of Computer Applications 116: 24–27. https://doi.org/10.5120/20389-2655.\n\n\nHadjimitsis, D., C. Clayton, and A. Retalis. 2004. “On the Darkest\nPixel Atmospheric Correction Algorithm: A Revised Procedure Applied over\nSatellite Remotely Sensed Images Intended for Environmental\nApplications” 5239. https://doi.org/10.1117/12.511520.\n\n\nJia, Z., Xiaoping Lu, Wenqian Zang, and Q. Liu. 2013. “Research on\nFast Geometric Precision Correction of HJ-1 Remote Sensing\nImage.” Applied Mechanics and Materials 427-429:\n1481–84. https://doi.org/10.4028/www.scientific.net/AMM.427-429.1481.\n\n\nKreucher, C., K. Kastella, and A. Hero. 2005. “Sensor Management\nUsing an Active Sensing Approach.” Signal Process. 85:\n607–24. https://doi.org/10.1016/j.sigpro.2004.11.004.\n\n\nLiu, J. G. 2013. “REMOTE SENSING | Passive Sensors,”\n431–39. https://doi.org/10.1016/B978-0-12-409548-9.02956-0.\n\n\nNiroumand-Jadidi, M., and F. Bovolo. 2021. “Sentinel-2 Reveals\nAbrupt Increment of Total Suspended Matter While Ever Given Ship Blocked\nthe Suez Canal.” Water. https://doi.org/10.3390/w13223286.\n\n\nOlsen, R. 2007. “Introduction to Remote Sensing.”\nBioScience 27: 1–31. https://doi.org/10.1117/3.673407.CH1.\n\n\nSong, C., C. Woodcock, K. Seto, M. Lenney, and S. Macomber. 2001.\n“Classification and Change Detection Using Landsat TM Data: When\nand How to Correct Atmospheric Effects?” Remote Sensing of\nEnvironment 75: 230–44. https://doi.org/10.1016/S0034-4257(00)00169-3.\n\n\nWang, Yu, Xiaoyong Wang, Hongyan He, and Guoliang Tian. 2019. “An\nImproved Dark Object Subtraction Method for Atmospheric Correction of\nRemote Sensing Images,” 425–35. https://doi.org/10.1007/978-981-13-9917-6_41.",
+    "crumbs": [
+      "References"
     ]
   }
 ]

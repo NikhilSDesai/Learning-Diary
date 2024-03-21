@@ -23,9 +23,7 @@ bibliography: references.bib
 
 format:
   html:
-    theme: 
-        light: [sandstone, flatly]
-        dark: [sandstone, darkly]
+    theme: superhero
   pdf:
     documentclass: scrreprt
 

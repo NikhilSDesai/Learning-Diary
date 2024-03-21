@@ -14,4 +14,3 @@ xaringanExtra::embed_xaringan(
   ratio = "11:9")
 
 ```
-
