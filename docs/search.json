@@ -354,7 +354,7 @@
     "href": "Week9.html",
     "title": "9  Week 9",
     "section": "",
-    "text": "9.1 Overview\nAs mentioned in my previous entry, change detection is",
+    "text": "9.1 Overview\nSynthetic Aperature Radar (SAR) is a particularly powerful tool for change detection, an interest of mine. Learning about SAR while the methods were familiar comes across as a unique type of sensor.\nSAR is an active remote sensing technology that captures high-resolution images of the Earth’s surface. SAR works independently of sunlight, emitting their own energy measure the reflected energy. This allows SAR to obtain images during the night or through clouds and vegetation (Moreira et al. 2013). The week 1 image which illustrates active vs. passive sensors is useful here.\nPassive versus Active Sensors\nSource: (“What Is Synthetic Aperture Radar?” n.d.)",
     "crumbs": [
       "<span class='chapter-number'>9</span>  <span class='chapter-title'>Week 9</span>"
     ]
@@ -384,7 +384,7 @@
     "href": "Week9.html#references",
     "title": "9  Week 9",
     "section": "9.4 References",
-    "text": "9.4 References",
+    "text": "9.4 References\n\n\n\n\nMoreira, A., P. Prats-Iraola, M. Younis, G. Krieger, I. Hajnsek, and K. Papathanassiou. 2013. “A Tutorial on Synthetic Aperture Radar.” IEEE Geoscience and Remote Sensing Magazine 1: 6–43. https://doi.org/10.1109/MGRS.2013.2248301.\n\n\n“What Is Synthetic Aperture Radar?” n.d. https://www.earthdata.nasa.gov/learn/backgrounders/what-is-sar.",
     "crumbs": [
       "<span class='chapter-number'>9</span>  <span class='chapter-title'>Week 9</span>"
     ]

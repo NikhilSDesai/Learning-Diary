@@ -6,9 +6,14 @@ output: html_document
 ---
 
 ## Overview
-As mentioned in my previous entry, change detection is 
+Synthetic Aperature Radar (SAR) is a particularly powerful tool for change detection, an interest of mine. Learning about SAR while the methods were familiar comes across as a unique type of sensor. 
 
+SAR is an active remote sensing technology that captures high-resolution images of the Earth's surface. SAR works independently of sunlight, emitting their own energy measure the reflected energy. This allows SAR to obtain images during the night or through clouds and vegetation [@Moreira2013]. The week 1 image which illustrates active vs. passive sensors is useful here.
 
+```{r echo=FALSE, out.width="75%", fig.cap="Passive versus Active Sensors"}
+knitr::include_graphics("img/SAR_emspectrum.png")
+```
+Source: [@NASA2024]
 
 ## Applications
 
