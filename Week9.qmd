@@ -9,9 +9,9 @@ Synthetic Aperture Radar
 
 ## Summary
 
-### Synthetic Aperture Radar (SAR) 
+### Synthetic Aperture Radar (SAR)
 
-SAR is a particularly powerful tool for change detection, an interest of mine. Learning about SAR, while the methods are familiar, comes across as a unique type of remote sensing. 
+SAR is a particularly powerful tool for change detection, an interest of mine. Learning about SAR, while the methods are familiar, comes across as a unique type of remote sensing.
 
 SAR is an active remote sensing technology that captures high-resolution images of the Earth's surface. SAR works independently of sunlight, emitting their own energy measure the reflected energy [@NASA2024]. This allows SAR to obtain images during the night or through clouds and vegetation [@Moreira2013]. The week 1 image which illustrates active vs. passive sensors is useful here.
 
@@ -20,24 +20,34 @@ SAR uses wavelengths in the microwave band of the electromagnetic spectrum to co
 ```{r echo=FALSE, out.width="60%", fig.cap="SAR Wavelenghts"}
 knitr::include_graphics("img/SAR_emspectrum.png")
 ```
+
 Source: [@NASA2024]
 
-The *synthetic* aspect of *Synthetic Aperture Radar* refers to how it simulates a much larger antenna from "...a sequence of acquisitions from a shorter antenna are combined to simulate a much larger antenna, thus providing higher resolution data [NASA2024]"
+The *synthetic* aspect of *Synthetic Aperture Radar* refers to how it simulates a much larger antenna from "...a sequence of acquisitions from a shorter antenna are combined to simulate a much larger antenna, thus providing higher resolution data \[NASA2024\]"
 
-### Backscatter and Polarisation 
+### Backscatter and Polarisation
 
 SAR sensors operate by measuring the reflections or backscatter of these waves. The variation in amplitude and phase of these reflections, due to differences in surface properties or changes such as damage, allows for the detection of changes on the ground, including the aftermath of disasters, independent of light or weather conditions [@Kojima2023].
 
 ```{r echo=FALSE, out.width="60%", fig.cap="The concept of backscatter"}
 knitr::include_graphics("img/SARPOlarization.jpg")
 ```
+
 Source: [@NASA2024]
 
 ## Applications
 
 Continuing with my interest of deforestation and change detection, the paper [Monthly mapping of forest harvesting using dense time series Sentinel-1](https://www.sciencedirect.com/science/article/pii/S0034425721005423?ref=pdf_download&fr=RR-2&rr=867ebe162eda79c0) written by Zhao et al. uses Sentinel-1 SAR imagery and deep learning to map monthly forest harvesting in California, USA, and Rondônia, Brazil. Two distinctly different forest types. Interestingly this approach using SAR outperformed traditional object-based methods [@zhao2022].
 
+Below illustrates classification conducted using SAR imagery
 
+```{r echo=FALSE, out.width="80%", fig.cap="SAR Imagery Classification"}
+knitr::include_graphics("img/SARBased.png")
+```
+
+```{r echo=FALSE, out.width="80%", fig.cap="Optical Imagery Classification"}
+knitr::include_graphics("img/OBBased.png")
+```
 
 ## Reflections
 
