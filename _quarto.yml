@@ -23,7 +23,9 @@ bibliography: references.bib
 
 format:
   html:
-    theme: darkly
+    theme: 
+        light: [sandstone, flatly]
+        dark: [sandstone, darkly]
   pdf:
     documentclass: scrreprt
 
