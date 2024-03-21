@@ -6,6 +6,9 @@ output: html_document
 ---
 
 ## Overview
+As mentioned in my previous entry, change detection is 
+
+
 
 ## Applications
 

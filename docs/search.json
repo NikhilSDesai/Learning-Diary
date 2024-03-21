@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "Remote Sensing & Earth Observation Exploration - Nikhil Desai",
     "section": "",
-    "text": "About Me\nMy name is Nikhil Desai, I am originally from British Columbia, Canada. I completed by undergraduate MA degree in Economics from the University of Edinburgh, then worked as a management consultant for 3 years. I left this role to pursue an MSc in Spatial Data Science at The Bartlett | Centre for Advanced Spatial Analysis at UCL.\n\n\n\nI am interested in studying complex systems in relation to climate change. This broadly involves investigating how interconnected processes and feedback loops can influence and be influenced by climate change. One of the main reasons i was. interested in this class is due to the frequency of wildfires in British Columbia. Since 2017, wildfires in British Columbia have been the worst in the province’s history, burning over 1.2 million hectares of land. The 2018 fires were so severe that the smoke from the fires was visible from space.\nFor this reason, throughout these entries you will see several studies of wildfires in British Columbia.\n\n\n\nThis underscores the complexity of predicting climate outcomes, as minor changes in one part of our carbon system can lead to significant and unexpected results.\nWithin this in mind, I am interested in the world of remote sensing because it offers a powerful and essential tool for observing, analysing, and understanding these complex systems and their dynamic interactions on a global scale.",
+    "text": "About Me\nMy name is Nikhil Desai, I am originally from British Columbia, Canada. I completed by undergraduate MA degree in Economics from the University of Edinburgh, then worked as a management consultant for 3 years. I left this role and am now pursing an MSc in Spatial Data Science at The Centre for Advanced Spatial Analysis.\nI’ve been lucky to have lived in a variety of cities in Canada, The Netherlands, New Zealand and now the UK. I think this has caused me to pay attention to the built environment and how it shapes our lives and changes over time.\n\n\n\nOn this site, you will find my week-by-week reflections on my Remote Sensing & Earth Observation course. I am very interested in the intersection of climate change and remote sensing, particularly in relation to deforestation and wildfires. Since 2017, wildfires in British Columbia have been the worst in the province’s history, burning over 1.2 million hectares of land. The 2018 fires were so severe that the smoke from the fires was visible from space as seen below.\n\n\n\nThis underscores the complexity of predicting climate outcomes, as minor changes in one part of our carbon system can lead to significant and unexpected results.\nWithin this in mind, I am interested in the world of remote sensing because it offers a powerful and essential tool for observing, analysing, and understanding these complex systems and their dynamic interactions on a global scale.",
     "crumbs": [
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>About Me</span>"
     ]
@@ -354,7 +354,7 @@
     "href": "Week9.html",
     "title": "9  Week 9",
     "section": "",
-    "text": "9.1 Overview",
+    "text": "9.1 Overview\nAs mentioned in my previous entry, change detection is",
     "crumbs": [
       "<span class='chapter-number'>9</span>  <span class='chapter-title'>Week 9</span>"
     ]

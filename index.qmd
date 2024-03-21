@@ -7,15 +7,15 @@ output: html_document
 
 # About Me {.unnumbered}
 
-My name is Nikhil Desai, I am originally from British Columbia, Canada. I completed by undergraduate MA degree in Economics from the University of Edinburgh, then worked as a management consultant for 3 years. I left this role to pursue an MSc in Spatial Data Science at The Bartlett \| Centre for Advanced Spatial Analysis at UCL.
+My name is Nikhil Desai, I am originally from British Columbia, Canada. I completed by undergraduate MA degree in Economics from the University of Edinburgh, then worked as a management consultant for 3 years. I left this role and am now pursing an MSc in Spatial Data Science at The Centre for Advanced Spatial Analysis.
+
+I've been lucky to have lived in a variety of cities in Canada, The Netherlands, New Zealand and now the UK. I think this has caused me to pay attention to the built environment and how it shapes our lives and changes over time.
 
 ::: {style="text-align: center;"}
 <img src="img/Climbing5.JPG" style="width:65%;"/>
 :::
 
-I am interested in studying complex systems in relation to climate change. This broadly involves investigating how interconnected processes and feedback loops can influence **and be influenced by** climate change. One of the main reasons i was. interested in this class is due to the frequency of wildfires in British Columbia. Since 2017, wildfires in British Columbia have been the worst in the province's history, burning over 1.2 million hectares of land. The 2018 fires were so severe that the smoke from the fires was visible from space.
-
-For this reason, throughout these entries you will see several studies of wildfires in British Columbia.
+On this site, you will find my week-by-week reflections on my Remote Sensing & Earth Observation course. I am very interested in the intersection of climate change and remote sensing, particularly in relation to deforestation and wildfires. Since 2017, wildfires in British Columbia have been the worst in the province's history, burning over 1.2 million hectares of land. The 2018 fires were so severe that the smoke from the fires was visible from space as seen below.
 
 ::: {style="text-align: center;"}
 <img src="https://static.independent.co.uk/s3fs-public/thumbnails/image/2018/11/12/08/California-wildfires.jpg?quality=75&amp;width=990&amp;crop=3%3A2%2Csmart&amp;auto=webp&amp;disable=upscale" style="width:65%;"/>
