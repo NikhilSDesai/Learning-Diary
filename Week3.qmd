@@ -5,13 +5,13 @@ date: "`r Sys.Date()`"
 output: html_document
 ---
 
-## Summary
+## Corrections and Enhancements
 
-### Corrections and Enhancements
+### Summary
 
-Over the course of the week, we discussed how to transform raw, remotely sensed data into a product we can use for analysis. This transformation *process* is know as *enhancing* or *correcting* data.
+This week we discussed how to transform raw data into a product we can use for analysis. This is know as *enhancement* or *correction*.
 
-In academic terms, "Correction" describes the process of removing or reducing the effects of various factors distort the imagery or data. These factors can include atmospheric effects and sensor noise among others [@Bannari1995].
+"Correction" describes the process of removing or reducing the effects of various factors distort the imagery or data. These factors can include atmospheric effects and sensor noise [@Bannari1995].
 
 The three main correction types are detailed below, along with their common solutions:
 
@@ -19,7 +19,7 @@ The three main correction types are detailed below, along with their common solu
 
 Adjusts for image distortions due to the Earth's rotation, sensor tilt, and curvature, ensuring accurate spatial positioning.
 
-A common method for geometric correction is orthorectification. This fixes distortions in aerial photos by aligning them with ground truth, correcting for camera angles and terrain [@Jia2013]. This method essentially ensures every point on a photo maps to the right spot on Earth, ensuring accurate measurements and analysis. This step is key for reliable map-making and data overlay from satellite imagery [@Dave2015].
+A common method for geometric correction is orthorectification. This fixes distortions in aerial photos by aligning them with ground *truth*, correcting for camera angles and terrain [@Jia2013]. This method essentially ensures every point on a photo maps to the right spot on Earth, ensuring accurate measurements and analysis. This step is key for reliable map-making and data overlay from satellite imagery [@Dave2015].
 
 ```{r echo=FALSE, out.width="60%", fig.align="center"}
 knitr::include_graphics("img/geometriccorrection.png")

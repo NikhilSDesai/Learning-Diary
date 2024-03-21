@@ -5,11 +5,9 @@ date: "`r Sys.Date()`"
 output: html_document
 ---
 
-Introduction to Remote Sensing
+# Introduction to Remote Sensing
 
 ## Summary
-
-### What is Remote Sensing?
 
 Remote Sensing is a subset of Geographic Information Systems. It is the science of collecting & analysing information about the earth's surface through the use of sensors mounted on satellites or planes [@Olsen2007].
 
@@ -19,9 +17,9 @@ There were two satellites studied this week: *Landsat* and *Sentinel*. Sentinel-
 
 ### Active & Passive Sensors
 
-* **Active sensors** emit energy in the form of radiation, then detect and measure the radiation that is *back scattered* or reflected back up to the satellite. An example is SAR [@Kreucher2005].
+-   **Active sensors** emit energy in the form of radiation, then detect and measure the radiation that is *back scattered* or reflected back up to the satellite. An example is SAR [@Kreucher2005].
 
-* **Passive sensors** measure natural energy reflected or emitted from Earth, without *actively* emitting any signal of their own [@Liu2013]. An example is the Landsat programme, which captures the Earth's surface in the visible, near-infrared and thermal infrared wavelengths.This is illustrated below:
+-   **Passive sensors** measure natural energy reflected or emitted from Earth, without *actively* emitting any signal of their own [@Liu2013]. An example is the Landsat programme, which captures the Earth's surface in the visible, near-infrared and thermal infrared wavelengths.This is illustrated below:
 
 ```{r echo=FALSE, out.width="75%", fig.cap="Passive versus Active Sensors"}
 knitr::include_graphics("img/passivevactive.jpeg")
@@ -29,32 +27,25 @@ knitr::include_graphics("img/passivevactive.jpeg")
 
 Source: [Geospatial World](https://www.geospatialworld.net/blogs/observing-the-earth-fueling-global-development-solutions/)
 
-### How Remote Sensors Gather & Store Data
+### How Remote Sensors Store Data
 
 Remote sensing technology captures data about Earth's surface and atmosphere by detecting electromagnetic signatures, which are distinct patterns of energy radiated or reflected [@NASA2024].
 
 Data from remote sensing are stored with attention to different types of resolution. Each provides unique insights into the Earth's physical characteristics.
 
-* **Spatial resolution** defines the smallest object that can be observed on the ground, determining the detail visible in an image.
-* **Spectral resolution** refers to a sensor's ability to distinguish between different wavelengths of light, enabling identification of various materials based on their electromagnetic signatures.
-* **Temporal resolution** measures how often a sensor can capture images of the same area over time, crucial for tracking changes and trends.
-* **Radiometric resolution** indicates the sensor's sensitivity to different levels of light intensity, allowing for the detection of subtle differences in reflectance or emission.
+-   **Spatial resolution** indicates the smallest visible feature in an image. Higher resolution reveals finer details
+
+-   **Spectral resolution** is a sensor's ability to distinguish light wavelengths, critical for identifying materials
+
+-   **Temporal resolution** measures how often an area is imaged, important for tracking changes over time
+
+-   **Radiometric resolution** reflects a sensor's sensitivity to light intensity, aiding in detecting subtle variations
 
 Source: [Verde, 2018](https://www.mdpi.com/2072-4292/10/8/1267)
 
 ### Using Sentinel Application Platform (SNAP)
 
-SNAP is a common tool used to process and analyse remote sensing data. It is particularly useful for working with data from the Sentinel satellites. There are a variety of statistics you can generate using SNAP. I'd never thought that you could generate so much data from pictures. It has changed the way in which I think about imagery and the analysis that can be conducted on it.
-
-### Analysing data on SNAP is done in the following steps:
-
-1.  **Downloading Data** Go to the Copernicus website and search for satellite images. You can pick what kind of images you want by setting things like the date or place you're interested in. Once you find the right images, you download them to your computer.
-
-2.  **Loading Data** Open the SNAP program on your computer. There’s an option to open or import files - use it to find and select the satellite images you downloaded. This loads them into SNAP for you to work with.
-
-3.  **Analysing Images** With your images loaded in SNAP, you can now start exploring them. SNAP has tools that let you adjust how the images look, highlight different features, or even combine different images to get a better understanding of what you’re seeing. You can play around with these tools to discover more about the area you’re studying.
-
-However after spending a significant portion of my day troubleshooting SNAP - It seems it does not work on iOS Ventura. QGIS to the rescue!
+SNAP is a tool used to process and analyse remote sensing data, similar to QGIS but for satellite data. There are a variety of basic statistics you can generate on SNAP.
 
 ## Applications
 

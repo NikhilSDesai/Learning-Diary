@@ -9,7 +9,7 @@
 <meta name="author" content="Nikhil Desai">
 <meta name="dcterms.date" content="2024-03-21">
 
-<title>Remote Sensing &amp; Earth Observation Exploration - Nikhil Desai - 8&nbsp; Week 8</title>
+<title>Remote Sensing &amp; Earth Observation Studies - 8&nbsp; Week 8</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -22,7 +22,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -127,7 +147,7 @@ window.Quarto = {
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
-      <a href="./">Remote Sensing &amp; Earth Observation Exploration - Nikhil Desai</a> 
+      <a href="./">Remote Sensing &amp; Earth Observation Studies</a> 
     </div>
       </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
@@ -261,15 +281,14 @@ window.Quarto = {
 <p>Classification II</p>
 <section id="summary" class="level2" data-number="8.1">
 <h2 data-number="8.1" class="anchored" data-anchor-id="summary"><span class="header-section-number">8.1</span> Summary</h2>
-<p>This week we continued to study classification of earth observation data, focussing on the distinction between object-based and pixel-based classification. Secondly, we look at how we can assess the accuracy of our classification results.</p>
-<p>First, I will provide an overview, including the strengths weaknesses and common applications of object based image classification and pixel based image classification (Superpixel and Subpixel), then dive into some methods of how to assess the accuracy of our classification results. When comparing the two methods, they can almost be seen as <em>opposite</em> approaches.</p>
+<p>This week we continued to study classification of earth observation data, focussing on the distinction between object-based and pixel-based classification. Secondly, we look at how we can assess the accuracy of our classification results. First, I will provide an overview, including the strengths weaknesses and common applications of object based image classification and pixel based image classification (Superpixel and Subpixel), then dive into some methods of how to assess the accuracy of our classification results.</p>
 <section id="pixel-based-image-analysis" class="level3" data-number="8.1.1">
 <h3 data-number="8.1.1" class="anchored" data-anchor-id="pixel-based-image-analysis"><span class="header-section-number">8.1.1</span> Pixel-Based Image Analysis</h3>
-<p>In pixel-based image analysis, each pixel is analysed and classified independently based on its spectral signature. This method includes sub-pixel analysis, which estimates the fractional coverage of different land cover types within a single pixel.</p>
+<p>In pixel-based image analysis, each pixel is classified independently based on spectral signature. This method includes sub-pixel analysis, which estimates the fractional coverage of different land cover types within a single pixel <span class="citation" data-cites="castillejo2009">(<a href="references.html#ref-castillejo2009" role="doc-biblioref"><strong>castillejo2009?</strong></a>)</span>.</p>
 <ul>
-<li><strong>Strengths</strong> Offers high precision in identifying land cover types within mixed pixels, ideal for fine-scale analysis.</li>
-<li><strong>Weaknesses</strong> Complexity in selecting appropriate endmembers and challenges in accuracy assessment.</li>
-<li><strong>Common Uses</strong> Widely used in agricultural monitoring, where detailed differentiation between crop types and growth stages within a single pixel is critical. Includes spectral unmixing as a sub-method.</li>
+<li><strong>Strengths</strong> Offers high precision in identifying land cover types within mixed pixels, ideal for fine-scale analysis</li>
+<li><strong>Weaknesses</strong> Complexity in selecting appropriate endmembers and challenges in accuracy assessment</li>
+<li><strong>Common Uses</strong> Widely used in agricultural monitoring, where detailed differentiation between crop types within a single pixel is critical. This is illustrated below <span class="citation" data-cites="castillejo2009">(<a href="references.html#ref-castillejo2009" role="doc-biblioref"><strong>castillejo2009?</strong></a>)</span></li>
 </ul>
 <div class="cell">
 <div class="cell-output-display">
@@ -281,11 +300,11 @@ window.Quarto = {
 </div>
 </div>
 </div>
-<p>The second method is superpixel analysis. This method groups similar pixels into larger <em>superpixels</em> for more efficient processing and analysis, maintaining the granularity of pixel-level detail but reducing computational complexity. Super</p>
+<p>The second method is superpixel analysis. This method groups similar pixels into larger <em>superpixels</em> for more efficient processing and analysis <span class="citation" data-cites="castillejo2009">(<a href="references.html#ref-castillejo2009" role="doc-biblioref"><strong>castillejo2009?</strong></a>)</span>.</p>
 <ul>
-<li><strong>Strengths</strong> Simplifies the image by reducing the number of individual elements to be analysed, making it easier to manage and classify large datasets.</li>
-<li><strong>Weaknesses</strong> The choice of parameters for clustering can greatly affect the outcome, and inappropriate settings may lead to over- or under-segmentation.</li>
-<li><strong>Common Uses</strong> Useful in large-scale land cover mapping and environmental monitoring where delineating homogeneous areas (like forest stands) is necessary. K-means clustering and Simple Non-Iterative Clustering (SNIC) are sub-methods that aid in creating super-pixels.</li>
+<li><strong>Strengths</strong> Simplifies the image by reducing the number of individual elements to be analysed, making it easier to manage and classify large datasets</li>
+<li><strong>Weaknesses</strong> The choice of parameters for clustering can greatly affect the outcome, and inappropriate settings may lead to over- or under-segmentation</li>
+<li><strong>Common Uses</strong> Useful for large-scale land cover mapping where you are delineating homogeneous areas. K-means clustering are aid in creating super-pixels<span class="citation" data-cites="castillejo2009">(<a href="references.html#ref-castillejo2009" role="doc-biblioref"><strong>castillejo2009?</strong></a>)</span></li>
 </ul>
 <div class="cell">
 <div class="cell-output-display">
@@ -300,10 +319,10 @@ window.Quarto = {
 </section>
 <section id="object-based-image-analysis-obia" class="level3" data-number="8.1.2">
 <h3 data-number="8.1.2" class="anchored" data-anchor-id="object-based-image-analysis-obia"><span class="header-section-number">8.1.2</span> Object-Based Image Analysis (OBIA)</h3>
-<p>OBIA groups adjacent pixels into <em>objects</em> based on their spectral characteristics. This approach considers the context and texture of features within an image, allowing for more nuanced analysis and classification based on the properties of these objects, rather than individual pixels.</p>
+<p>OBIA groups adjacent pixels into <em>objects</em> based on their spectral characteristics. This approach considers the contextor texture of features within an image, allowing for nuanced classification based on object properties.</p>
 <ul>
-<li><strong>Strengths:</strong> Effective in handling spatial patterns and relationships between objects, reducing the ‘salt and pepper’ noise common in pixel-based classifications.</li>
-<li><strong>Weaknesses:</strong> Can be computationally intensive and requires careful parameter tuning for segmenting images into meaningful objects.</li>
+<li><strong>Strengths:</strong> Good at handling spatial patterns and relationships between objects, reducing the ‘salt and pepper’ noise common in pixel-based classifications</li>
+<li><strong>Weaknesses:</strong> computationally intensive and requires parameter tuning for segmenting images into meaningful objects <span class="citation" data-cites="gorelick2017">(<a href="references.html#ref-gorelick2017" role="doc-biblioref">Gorelick et al. 2017</a>)</span></li>
 <li><strong>Common Uses:</strong> Primarily used in urban planning, forest mapping, and habitat delineation, where the spatial arrangement and context of objects (like buildings or vegetation patches) are important. Techniques like image gradient and spectral gradient analysis are sub-methods within OBIA.</li>
 </ul>
 <div style="margin-bottom: 40px;">
@@ -374,6 +393,11 @@ window.Quarto = {
 <h2 data-number="8.5" class="anchored" data-anchor-id="references"><span class="header-section-number">8.5</span> References</h2>
 
 
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">
+<div id="ref-gorelick2017" class="csl-entry" role="listitem">
+Gorelick, Noel, Matt Hancher, Mike Dixon, Simon Ilyushchenko, David Thau, and Rebecca Moore. 2017. <span>“Google Earth Engine: Planetary-Scale Geospatial Analysis for Everyone.”</span> <em>Remote Sensing of Environment</em> 202: 18–27.
+</div>
+</div>
 </section>
 
 </main> <!-- /main -->

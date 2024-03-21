@@ -30,7 +30,7 @@ The *synthetic* aspect of *Synthetic Aperture Radar* refers to how it simulates 
 SAR sensors operate by measuring the reflections or backscatter of these waves. The variation in amplitude and phase of these reflections, due to differences in surface properties or changes such as damage, allows for the detection of changes on the ground, including the aftermath of disasters, independent of light or weather conditions [@Kojima2023].
 
 ```{r echo=FALSE, out.width="60%", fig.cap="The concept of backscatter"}
-knitr::include_graphics("img/SARPOlarization.jpg")
+knitr::include_graphics("img/SARPolarization.jpg")
 ```
 
 Source: [@NASA2024]
