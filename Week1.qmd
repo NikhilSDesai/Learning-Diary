@@ -11,19 +11,17 @@ Introduction to Remote Sensing
 
 ### What is Remote Sensing?
 
-Remote Sensing is a subset of Geographic Information Systems. In essence, it is the science of collecting and analysing information from the earth's surface through the use of sensors mounted on satellites or planes. After taking a brief look at the history of RS, it is apparent that it has significantly accelerated our understanding of our built and natural environment [@Olsen2007].
+Remote Sensing is a subset of Geographic Information Systems. It is the science of collecting & analysing information about the earth's surface through the use of sensors mounted on satellites or planes [@Olsen2007].
 
 The value of Remote Sensing spans various fields. It can provide critical data for environmental monitoring, disaster management, urban development and the mapping of inaccessible areas to name a few [@Cracknell2018].
 
-There were two satellites studied this week: *Landsat* and *Sentinel*. Sentinel-2 data offers a spatial resolution of 10 meters compared to Landsat's 30 meters creating more detailed observations. Additionally, Sentinel-2 satellites provide revisits every 5 days at the equator, offering more frequent updates than Landsat's 16-day revisit cycle. This makes Sentinel-2 particularly valuable for monitoring fast-changing conditions on the Earth’s surface [@Claverie2018]
+There were two satellites studied this week: *Landsat* and *Sentinel*. Sentinel-2 data offers a spatial resolution of 10 meters compared to Landsat's 30 meters creating more detailed observations. Sentinel-2 satellite orbit every 5 days and offer more frequent updates than Landsat's 16-day cycle. This makes Sentinel-2 particularly valuable for monitoring fast-changing conditions on the Earth’s surface [@Claverie2018]
 
-### Active and Passive Sensors
+### Active & Passive Sensors
 
-There are two primary ways to gather remote sensing data: Active and Passive sensors.
+* **Active sensors** emit energy in the form of radiation, then detect and measure the radiation that is *back scattered* or reflected back up to the satellite. An example is SAR [@Kreucher2005].
 
--   **Active sensors** emit energy in the form of radiation, then detect and measure the radiation that is *back scattered* or reflected back up to the satellite. An example is SAR, which emits signals towards the Earth's surface and records the reflected signals to form images [@Kreucher2005].
-
--   **Passive sensors** measure natural energy that is reflected or emitted from the Earth's surface or atmosphere, without *actively* emitting any signal of their own [@Liu2013]. An example is the Landsat programme, which captures the Earth's surface in the visible, near-infrared, and thermal infrared wavelengths.This distinction is illustrated below:
+* **Passive sensors** measure natural energy reflected or emitted from Earth, without *actively* emitting any signal of their own [@Liu2013]. An example is the Landsat programme, which captures the Earth's surface in the visible, near-infrared and thermal infrared wavelengths.This is illustrated below:
 
 ```{r echo=FALSE, out.width="75%", fig.cap="Passive versus Active Sensors"}
 knitr::include_graphics("img/passivevactive.jpeg")
@@ -31,19 +29,16 @@ knitr::include_graphics("img/passivevactive.jpeg")
 
 Source: [Geospatial World](https://www.geospatialworld.net/blogs/observing-the-earth-fueling-global-development-solutions/)
 
-### How Remote Sensors Gather and Store Data
+### How Remote Sensors Gather & Store Data
 
-Remote sensing technology captures data about Earth's surface and atmosphere by detecting electromagnetic signatures, which are distinct patterns of energy radiated or reflected by materials and phenomena.
+Remote sensing technology captures data about Earth's surface and atmosphere by detecting electromagnetic signatures, which are distinct patterns of energy radiated or reflected [@NASA2024].
 
-Data from remote sensing are stored with attention to different types of resolution - spatial, spectral, temporal, and radiometric - each providing unique insights into the Earth's physical characteristics and changes over time.
+Data from remote sensing are stored with attention to different types of resolution. Each provides unique insights into the Earth's physical characteristics.
 
-**Spatial resolution** defines the smallest object that can be observed on the ground, determining the detail visible in an image.
-
-**Spectral resolution** refers to a sensor's ability to distinguish between different wavelengths of light, enabling identification of various materials based on their electromagnetic signatures.
-
-**Temporal resolution** measures how often a sensor can capture images of the same area over time, crucial for tracking changes and trends.
-
-**Radiometric resolution** indicates the sensor's sensitivity to different levels of light intensity, allowing for the detection of subtle differences in reflectance or emission.
+* **Spatial resolution** defines the smallest object that can be observed on the ground, determining the detail visible in an image.
+* **Spectral resolution** refers to a sensor's ability to distinguish between different wavelengths of light, enabling identification of various materials based on their electromagnetic signatures.
+* **Temporal resolution** measures how often a sensor can capture images of the same area over time, crucial for tracking changes and trends.
+* **Radiometric resolution** indicates the sensor's sensitivity to different levels of light intensity, allowing for the detection of subtle differences in reflectance or emission.
 
 Source: [Verde, 2018](https://www.mdpi.com/2072-4292/10/8/1267)
 

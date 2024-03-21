@@ -201,8 +201,8 @@ div.csl-indent {
   <li><a href="#summary" id="toc-summary" class="nav-link active" data-scroll-target="#summary"><span class="header-section-number">2.1</span> Summary</a>
   <ul class="collapse">
   <li><a href="#what-is-remote-sensing" id="toc-what-is-remote-sensing" class="nav-link" data-scroll-target="#what-is-remote-sensing"><span class="header-section-number">2.1.1</span> What is Remote Sensing?</a></li>
-  <li><a href="#active-and-passive-sensors" id="toc-active-and-passive-sensors" class="nav-link" data-scroll-target="#active-and-passive-sensors"><span class="header-section-number">2.1.2</span> Active and Passive Sensors</a></li>
-  <li><a href="#how-remote-sensors-gather-and-store-data" id="toc-how-remote-sensors-gather-and-store-data" class="nav-link" data-scroll-target="#how-remote-sensors-gather-and-store-data"><span class="header-section-number">2.1.3</span> How Remote Sensors Gather and Store Data</a></li>
+  <li><a href="#active-passive-sensors" id="toc-active-passive-sensors" class="nav-link" data-scroll-target="#active-passive-sensors"><span class="header-section-number">2.1.2</span> Active &amp; Passive Sensors</a></li>
+  <li><a href="#how-remote-sensors-gather-store-data" id="toc-how-remote-sensors-gather-store-data" class="nav-link" data-scroll-target="#how-remote-sensors-gather-store-data"><span class="header-section-number">2.1.3</span> How Remote Sensors Gather &amp; Store Data</a></li>
   <li><a href="#using-sentinel-application-platform-snap" id="toc-using-sentinel-application-platform-snap" class="nav-link" data-scroll-target="#using-sentinel-application-platform-snap"><span class="header-section-number">2.1.4</span> Using Sentinel Application Platform (SNAP)</a></li>
   <li><a href="#analysing-data-on-snap-is-done-in-the-following-steps" id="toc-analysing-data-on-snap-is-done-in-the-following-steps" class="nav-link" data-scroll-target="#analysing-data-on-snap-is-done-in-the-following-steps"><span class="header-section-number">2.1.5</span> Analysing data on SNAP is done in the following steps:</a></li>
   </ul></li>
@@ -256,16 +256,15 @@ div.csl-indent {
 <h2 data-number="2.1" class="anchored" data-anchor-id="summary"><span class="header-section-number">2.1</span> Summary</h2>
 <section id="what-is-remote-sensing" class="level3" data-number="2.1.1">
 <h3 data-number="2.1.1" class="anchored" data-anchor-id="what-is-remote-sensing"><span class="header-section-number">2.1.1</span> What is Remote Sensing?</h3>
-<p>Remote Sensing is a subset of Geographic Information Systems. In essence, it is the science of collecting and analysing information from the earth’s surface through the use of sensors mounted on satellites or planes. After taking a brief look at the history of RS, it is apparent that it has significantly accelerated our understanding of our built and natural environment <span class="citation" data-cites="Olsen2007">(<a href="references.html#ref-Olsen2007" role="doc-biblioref">Olsen 2007</a>)</span>.</p>
+<p>Remote Sensing is a subset of Geographic Information Systems. It is the science of collecting &amp; analysing information about the earth’s surface through the use of sensors mounted on satellites or planes <span class="citation" data-cites="Olsen2007">(<a href="references.html#ref-Olsen2007" role="doc-biblioref">Olsen 2007</a>)</span>.</p>
 <p>The value of Remote Sensing spans various fields. It can provide critical data for environmental monitoring, disaster management, urban development and the mapping of inaccessible areas to name a few <span class="citation" data-cites="Cracknell2018">(<a href="references.html#ref-Cracknell2018" role="doc-biblioref">Cracknell 2018</a>)</span>.</p>
-<p>There were two satellites studied this week: <em>Landsat</em> and <em>Sentinel</em>. Sentinel-2 data offers a spatial resolution of 10 meters compared to Landsat’s 30 meters creating more detailed observations. Additionally, Sentinel-2 satellites provide revisits every 5 days at the equator, offering more frequent updates than Landsat’s 16-day revisit cycle. This makes Sentinel-2 particularly valuable for monitoring fast-changing conditions on the Earth’s surface <span class="citation" data-cites="Claverie2018">(<a href="references.html#ref-Claverie2018" role="doc-biblioref">Claverie et al. 2018</a>)</span></p>
+<p>There were two satellites studied this week: <em>Landsat</em> and <em>Sentinel</em>. Sentinel-2 data offers a spatial resolution of 10 meters compared to Landsat’s 30 meters creating more detailed observations. Sentinel-2 satellite orbit every 5 days and offer more frequent updates than Landsat’s 16-day cycle. This makes Sentinel-2 particularly valuable for monitoring fast-changing conditions on the Earth’s surface <span class="citation" data-cites="Claverie2018">(<a href="references.html#ref-Claverie2018" role="doc-biblioref">Claverie et al. 2018</a>)</span></p>
 </section>
-<section id="active-and-passive-sensors" class="level3" data-number="2.1.2">
-<h3 data-number="2.1.2" class="anchored" data-anchor-id="active-and-passive-sensors"><span class="header-section-number">2.1.2</span> Active and Passive Sensors</h3>
-<p>There are two primary ways to gather remote sensing data: Active and Passive sensors.</p>
+<section id="active-passive-sensors" class="level3" data-number="2.1.2">
+<h3 data-number="2.1.2" class="anchored" data-anchor-id="active-passive-sensors"><span class="header-section-number">2.1.2</span> Active &amp; Passive Sensors</h3>
 <ul>
-<li><p><strong>Active sensors</strong> emit energy in the form of radiation, then detect and measure the radiation that is <em>back scattered</em> or reflected back up to the satellite. An example is SAR, which emits signals towards the Earth’s surface and records the reflected signals to form images <span class="citation" data-cites="Kreucher2005">(<a href="references.html#ref-Kreucher2005" role="doc-biblioref">Kreucher, Kastella, and Hero 2005</a>)</span>.</p></li>
-<li><p><strong>Passive sensors</strong> measure natural energy that is reflected or emitted from the Earth’s surface or atmosphere, without <em>actively</em> emitting any signal of their own <span class="citation" data-cites="Liu2013">(<a href="references.html#ref-Liu2013" role="doc-biblioref">Liu 2013</a>)</span>. An example is the Landsat programme, which captures the Earth’s surface in the visible, near-infrared, and thermal infrared wavelengths.This distinction is illustrated below:</p></li>
+<li><p><strong>Active sensors</strong> emit energy in the form of radiation, then detect and measure the radiation that is <em>back scattered</em> or reflected back up to the satellite. An example is SAR <span class="citation" data-cites="Kreucher2005">(<a href="references.html#ref-Kreucher2005" role="doc-biblioref">Kreucher, Kastella, and Hero 2005</a>)</span>.</p></li>
+<li><p><strong>Passive sensors</strong> measure natural energy reflected or emitted from Earth, without <em>actively</em> emitting any signal of their own <span class="citation" data-cites="Liu2013">(<a href="references.html#ref-Liu2013" role="doc-biblioref">Liu 2013</a>)</span>. An example is the Landsat programme, which captures the Earth’s surface in the visible, near-infrared and thermal infrared wavelengths.This is illustrated below:</p></li>
 </ul>
 <div class="cell">
 <div class="cell-output-display">
@@ -279,14 +278,16 @@ div.csl-indent {
 </div>
 <p>Source: <a href="https://www.geospatialworld.net/blogs/observing-the-earth-fueling-global-development-solutions/">Geospatial World</a></p>
 </section>
-<section id="how-remote-sensors-gather-and-store-data" class="level3" data-number="2.1.3">
-<h3 data-number="2.1.3" class="anchored" data-anchor-id="how-remote-sensors-gather-and-store-data"><span class="header-section-number">2.1.3</span> How Remote Sensors Gather and Store Data</h3>
-<p>Remote sensing technology captures data about Earth’s surface and atmosphere by detecting electromagnetic signatures, which are distinct patterns of energy radiated or reflected by materials and phenomena.</p>
-<p>Data from remote sensing are stored with attention to different types of resolution - spatial, spectral, temporal, and radiometric - each providing unique insights into the Earth’s physical characteristics and changes over time.</p>
-<p><strong>Spatial resolution</strong> defines the smallest object that can be observed on the ground, determining the detail visible in an image.</p>
-<p><strong>Spectral resolution</strong> refers to a sensor’s ability to distinguish between different wavelengths of light, enabling identification of various materials based on their electromagnetic signatures.</p>
-<p><strong>Temporal resolution</strong> measures how often a sensor can capture images of the same area over time, crucial for tracking changes and trends.</p>
-<p><strong>Radiometric resolution</strong> indicates the sensor’s sensitivity to different levels of light intensity, allowing for the detection of subtle differences in reflectance or emission.</p>
+<section id="how-remote-sensors-gather-store-data" class="level3" data-number="2.1.3">
+<h3 data-number="2.1.3" class="anchored" data-anchor-id="how-remote-sensors-gather-store-data"><span class="header-section-number">2.1.3</span> How Remote Sensors Gather &amp; Store Data</h3>
+<p>Remote sensing technology captures data about Earth’s surface and atmosphere by detecting electromagnetic signatures, which are distinct patterns of energy radiated or reflected <span class="citation" data-cites="NASA2024">(<a href="references.html#ref-NASA2024" role="doc-biblioref">NASA 2024</a>)</span>.</p>
+<p>Data from remote sensing are stored with attention to different types of resolution. Each provides unique insights into the Earth’s physical characteristics.</p>
+<ul>
+<li><strong>Spatial resolution</strong> defines the smallest object that can be observed on the ground, determining the detail visible in an image.</li>
+<li><strong>Spectral resolution</strong> refers to a sensor’s ability to distinguish between different wavelengths of light, enabling identification of various materials based on their electromagnetic signatures.</li>
+<li><strong>Temporal resolution</strong> measures how often a sensor can capture images of the same area over time, crucial for tracking changes and trends.</li>
+<li><strong>Radiometric resolution</strong> indicates the sensor’s sensitivity to different levels of light intensity, allowing for the detection of subtle differences in reflectance or emission.</li>
+</ul>
 <p>Source: <a href="https://www.mdpi.com/2072-4292/10/8/1267">Verde, 2018</a></p>
 </section>
 <section id="using-sentinel-application-platform-snap" class="level3" data-number="2.1.4">
@@ -387,6 +388,9 @@ Kreucher, C., K. Kastella, and A. Hero. 2005. <span>“Sensor Management Using a
 </div>
 <div id="ref-Liu2013" class="csl-entry" role="listitem">
 Liu, J. G. 2013. <span>“REMOTE SENSING | Passive Sensors,”</span> 431–39. <a href="https://doi.org/10.1016/B978-0-12-409548-9.02956-0">https://doi.org/10.1016/B978-0-12-409548-9.02956-0</a>.
+</div>
+<div id="ref-NASA2024" class="csl-entry" role="listitem">
+NASA. 2024. <span>“What Is Synthetic Aperture Radar?”</span> <a href="https://www.earthdata.nasa.gov/learn/backgrounders/what-is-sar" class="uri">https://www.earthdata.nasa.gov/learn/backgrounders/what-is-sar</a>.
 </div>
 <div id="ref-Niroumand-Jadidi2021" class="csl-entry" role="listitem">
 Niroumand-Jadidi, M., and F. Bovolo. 2021. <span>“Sentinel-2 Reveals Abrupt Increment of Total Suspended Matter While Ever Given Ship Blocked the Suez Canal.”</span> <em>Water</em>. <a href="https://doi.org/10.3390/w13223286">https://doi.org/10.3390/w13223286</a>.
