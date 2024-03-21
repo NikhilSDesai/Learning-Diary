@@ -5,15 +5,26 @@ date: "`r Sys.Date()`"
 output: html_document
 ---
 
-## Overview
-Synthetic Aperature Radar (SAR) is a particularly powerful tool for change detection, an interest of mine. Learning about SAR while the methods were familiar comes across as a unique type of sensor. 
+Synthetic Aperture Radar
 
-SAR is an active remote sensing technology that captures high-resolution images of the Earth's surface. SAR works independently of sunlight, emitting their own energy measure the reflected energy. This allows SAR to obtain images during the night or through clouds and vegetation [@Moreira2013]. The week 1 image which illustrates active vs. passive sensors is useful here.
+## Summary
 
-```{r echo=FALSE, out.width="75%", fig.cap="SAR Wavelenghts"}
+### Synthetic Aperture Radar (SAR) 
+
+SAR is a particularly powerful tool for change detection, an interest of mine. Learning about SAR, while the methods are familiar, comes across as a unique type of remote sensing. 
+
+SAR is an active remote sensing technology that captures high-resolution images of the Earth's surface. SAR works independently of sunlight, emitting their own energy measure the reflected energy [@NASA2024]. This allows SAR to obtain images during the night or through clouds and vegetation [@Moreira2013]. The week 1 image which illustrates active vs. passive sensors is useful here.
+
+SAR uses wavelengths in the microwave band of the electromagnetic spectrum to collect data, enabling it to penetrate through clouds and interact with different surface materials, thereby providing unique insights regardless of weather conditions or time of day [@NASA2024].
+
+```{r echo=FALSE, out.width="60%", fig.cap="SAR Wavelenghts"}
 knitr::include_graphics("img/SAR_emspectrum.png")
 ```
 Source: [@NASA2024]
+
+The *synthetic* aspect of *Synthetic Aperture Radar* refers to how it simulates a much larger antenna from "...a sequence of acquisitions from a shorter antenna are combined to simulate a much larger antenna, thus providing higher resolution data [NASA2024]"
+
+### Backscatter and Polarisation 
 
 ## Applications
 
