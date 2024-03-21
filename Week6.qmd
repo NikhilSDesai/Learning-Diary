@@ -19,7 +19,7 @@ This week we learned the basics of Google Earth Engine. GEE is a truly amazing t
 
 This week's lecture started with a slide which illustrated the exponential uptake of GEE. The slide shows that the number of academic publications using GEE has increased exponentially since 2013.
 
-### Figure 1: The Number of Academic Publications Using Google Earth Engine
+The Number of Academic Publications Using Google Earth Engine
 
 ```{r echo=FALSE, out.width="70%", fig.cap="Academic Publications Using Google Earth Engine"}
 knitr::include_graphics("img/GEEPublications.png")
