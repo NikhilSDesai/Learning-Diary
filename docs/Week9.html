@@ -283,7 +283,7 @@ div.csl-indent {
 <section id="applications" class="level2" data-number="9.2">
 <h2 data-number="9.2" class="anchored" data-anchor-id="applications"><span class="header-section-number">9.2</span> Applications</h2>
 <p>Continuing with my interest of deforestation and change detection, the paper <a href="https://www.sciencedirect.com/science/article/pii/S0034425721005423?ref=pdf_download&amp;fr=RR-2&amp;rr=867ebe162eda79c0">Monthly mapping of forest harvesting using dense time series Sentinel-1</a> written by Zhao et al.&nbsp;uses Sentinel-1 SAR imagery and deep learning to map monthly forest harvesting in California, USA, and Rondônia, Brazil. Two distinctly different forest types. Interestingly this approach using SAR outperformed traditional object-based methods <span class="citation" data-cites="zhao2022">(<a href="references.html#ref-zhao2022" role="doc-biblioref">Zhao et al. 2022</a>)</span>.</p>
-<p>Below illustrates classification conducted using SAR imagery</p>
+<p>Below illustrates classification conducted using SAR imagery and Optical Imagery.</p>
 <div class="cell">
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
@@ -304,9 +304,11 @@ div.csl-indent {
 </div>
 </div>
 </div>
+<p>Forests are often humid environments, emitting significant water vapor which can distort traditional optical imagery. SAR, according to authors has performed better in this type of analysis due to its ability to penetrate cloud cover and operate effectively regardless of weather conditions or time of day. This capability is crucial for consistent monitoring in areas with frequent cloudiness or limited daylight, ensuring reliable data acquisition for monthly forest harvesting mapping. Optical imagery, while offering high-resolution and color-rich details under clear conditions, is limited by its dependence on weather and daylight, making SAR a more robust choice for the study’s objectives.</p>
 </section>
 <section id="reflections" class="level2" data-number="9.3">
 <h2 data-number="9.3" class="anchored" data-anchor-id="reflections"><span class="header-section-number">9.3</span> Reflections</h2>
+<p>Initially skeptical about SAR’s utility due to its lower resolution and lack of color, I now understand its value. SAR’s ability to penetrate clouds and vegetation enables consistent and frequent monitoring, making it a key tool for change detection where optical imagery is impeded, showcasing its unique contribution to the precision and reliability of earth observation efforts.</p>
 </section>
 <section id="references" class="level2" data-number="9.4">
 <h2 data-number="9.4" class="anchored" data-anchor-id="references"><span class="header-section-number">9.4</span> References</h2>

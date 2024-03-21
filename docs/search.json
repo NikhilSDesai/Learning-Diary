@@ -364,7 +364,7 @@
     "href": "Week9.html#applications",
     "title": "9  Week 9",
     "section": "9.2 Applications",
-    "text": "9.2 Applications\nContinuing with my interest of deforestation and change detection, the paper Monthly mapping of forest harvesting using dense time series Sentinel-1 written by Zhao et al. uses Sentinel-1 SAR imagery and deep learning to map monthly forest harvesting in California, USA, and Rondônia, Brazil. Two distinctly different forest types. Interestingly this approach using SAR outperformed traditional object-based methods (Zhao et al. 2022).\nBelow illustrates classification conducted using SAR imagery\n\n\n\n\n\nSAR Imagery Classification\n\n\n\n\n\n\n\n\n\nOptical Imagery Classification",
+    "text": "9.2 Applications\nContinuing with my interest of deforestation and change detection, the paper Monthly mapping of forest harvesting using dense time series Sentinel-1 written by Zhao et al. uses Sentinel-1 SAR imagery and deep learning to map monthly forest harvesting in California, USA, and Rondônia, Brazil. Two distinctly different forest types. Interestingly this approach using SAR outperformed traditional object-based methods (Zhao et al. 2022).\nBelow illustrates classification conducted using SAR imagery and Optical Imagery.\n\n\n\n\n\nSAR Imagery Classification\n\n\n\n\n\n\n\n\n\nOptical Imagery Classification\n\n\n\n\nForests are often humid environments, emitting significant water vapor which can distort traditional optical imagery. SAR, according to authors has performed better in this type of analysis due to its ability to penetrate cloud cover and operate effectively regardless of weather conditions or time of day. This capability is crucial for consistent monitoring in areas with frequent cloudiness or limited daylight, ensuring reliable data acquisition for monthly forest harvesting mapping. Optical imagery, while offering high-resolution and color-rich details under clear conditions, is limited by its dependence on weather and daylight, making SAR a more robust choice for the study’s objectives.",
     "crumbs": [
       "<span class='chapter-number'>9</span>  <span class='chapter-title'>Week 9</span>"
     ]
@@ -374,7 +374,7 @@
     "href": "Week9.html#reflections",
     "title": "9  Week 9",
     "section": "9.3 Reflections",
-    "text": "9.3 Reflections",
+    "text": "9.3 Reflections\nInitially skeptical about SAR’s utility due to its lower resolution and lack of color, I now understand its value. SAR’s ability to penetrate clouds and vegetation enables consistent and frequent monitoring, making it a key tool for change detection where optical imagery is impeded, showcasing its unique contribution to the precision and reliability of earth observation efforts.",
     "crumbs": [
       "<span class='chapter-number'>9</span>  <span class='chapter-title'>Week 9</span>"
     ]
