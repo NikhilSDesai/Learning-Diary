@@ -10,7 +10,7 @@ Synthetic Aperature Radar (SAR) is a particularly powerful tool for change detec
 
 SAR is an active remote sensing technology that captures high-resolution images of the Earth's surface. SAR works independently of sunlight, emitting their own energy measure the reflected energy. This allows SAR to obtain images during the night or through clouds and vegetation [@Moreira2013]. The week 1 image which illustrates active vs. passive sensors is useful here.
 
-```{r echo=FALSE, out.width="75%", fig.cap="Passive versus Active Sensors"}
+```{r echo=FALSE, out.width="75%", fig.cap="SAR Wavelenghts"}
 knitr::include_graphics("img/SAR_emspectrum.png")
 ```
 Source: [@NASA2024]
