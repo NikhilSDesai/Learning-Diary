@@ -46,7 +46,7 @@ However, in my opinion, the most impressive characteristic of GEE is its ability
 
 NDVI Analysis assesses vegetation health and coverage in a given area. By comparing the reflectance of near-infrared and red light, NDVI helps in distinguishing between vegetated and non-vegetated surfaces, indicating plant health and biomass. High indexes are seen in Stanley park, the large green area seen at the top of the window and on the left tip of the city is the *University Endowment Lands,* an old growth protected area where the University of British Columbia is located. Due to housing shortages in the city, several acres of this protected area have sadly been approved for development. I will be checking to see how this area changes over the next few years.
 
-```{r echo=FALSE, out.width="70%", fig.cap="Academic Publications Using Google Earth Engine"}
+```{r echo=FALSE, out.width="70%", fig.cap="NDVI Analysis of Vancouver"}
 knitr::include_graphics("img/vancouver_ndvi.png")
 ```
 
@@ -54,7 +54,7 @@ knitr::include_graphics("img/vancouver_ndvi.png")
 
 In essence, Principal Component Analysis is used to emphasise variation and bring out patterns in a dataset. In remote sensing, PCA transforms correlated bands in an image into uncorrelated variables or principal components. This method is useful for enhancing the differences of satellite imagery while retaining most of the original information "...often revealing hidden patterns in the data."
 
-```{r echo=FALSE, out.width="70%", fig.cap="Academic Publications Using Google Earth Engine"}
+```{r echo=FALSE, out.width="70%", fig.cap="PCA Analysis of Vancouver"}
 knitr::include_graphics("img/vancouver_pca.png")
 ```
 
@@ -62,7 +62,7 @@ knitr::include_graphics("img/vancouver_pca.png")
 
 Finally *Texture Analysis* involves evaluating the spatial arrangement of colors or intensities in an image to identify patterns or structures. By applying methods such as GLCM, texture analysis can highlight areas of contrast or uniformity which can provide insights about the physical characteristics and differences of the surface. This technique is useful for things like classifying land cover, detecting change and understanding the structure features in the landscape.
 
-```{r echo=FALSE, out.width="70%", fig.cap="Academic Publications Using Google Earth Engine"}
+```{r echo=FALSE, out.width="70%", fig.cap="Texture Analysis of Vancouver"}
 knitr::include_graphics("img/vancouver_texture.png")
 ```
 

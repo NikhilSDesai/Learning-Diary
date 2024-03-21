@@ -35,6 +35,10 @@ Source: [@NASA2024]
 
 ## Applications
 
+Continuing with my interest of deforestation and change detection, the paper [Monthly mapping of forest harvesting using dense time series Sentinel-1](https://www.sciencedirect.com/science/article/pii/S0034425721005423?ref=pdf_download&fr=RR-2&rr=867ebe162eda79c0) written by Zhao et al. uses Sentinel-1 SAR imagery and deep learning to map monthly forest harvesting in California, USA, and Rondônia, Brazil. Two distinctly different forest types. Interestingly this approach using SAR outperformed traditional object-based methods [@zhao2022].
+
+
+
 ## Reflections
 
 ## References

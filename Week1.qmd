@@ -93,11 +93,11 @@ knitr::include_graphics("img/TCCKamloops.png")
 
 ## Reflections
 
-The potential of remote sensing to explore humanitarian issues was very eye opening to me, especially after reading a CASA staff member's (Ollie Ballinger) contributions to Bellingcat, an investigative news outlet which specialises in disaster and war crimes. This technology's utility extends beyond monitoring natural events to probing human-related issues, including human rights abuses, war crimes, and informal settlements.
+The potential of remote sensing to explore humanitarian issues was very eye opening to me, especially after reading a CASA staff member's (Ollie Ballinger) contributions to Bellingcat, an investigative news outlet which specialises in disaster and war crimes. This technology's utility extends beyond monitoring natural events to probing human-related issues, including human rights abuses, war crimes and informal settlements.
 
-::: {style="text-align: center;"}
-<img src="https://i0.wp.com/ideatlas.eu/wp-content/uploads/2023/04/Mumbai-IDEAtlas.jpg?resize=2048%2C2048&amp;ssl=1" style="width:65%;"/>
-:::
+```{r echo=FALSE, out.width="70%", fig.cap="Informal Settlements in Mumbai India "}
+knitr::include_graphics("img/mumbai_informalsettlement.webp")
+```
 
 Source: [IDEAtlas](https://ideatlas.eu/)
 
