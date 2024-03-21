@@ -5,9 +5,9 @@ date: "`r Sys.Date()`"
 output: html_document
 ---
 
-# Classification I
+Classification I
 
-## 1. Overview
+## Summary
 
 This week we studied how to use Machine Learning (ML) to classify Earth Observation data. I found this to be the most interesting and useful topic in this module as it cemented how to think about pixels in satellite imagery. This week's readings, particularly [Introductory digital image processing: a remote sensing perspective](https://read.kortext.com/reader/pdf/1872407/Cover) (Jensen, J.R., 2015) describe classification as on of the essential skills in remote sensing.
 
@@ -57,7 +57,7 @@ The pixel-based method proved its worth with a thorough accuracy check. By caref
 
 This dive into classification methods and how to check their accuracy has been both challenging and revealing. The deep understanding of various classifiers and the essential role of thorough testing are key for using GEE in environmental studies. This exploration not only highlights GEE's strong features but also the detailed work needed to achieve accurate classification results.2. Applications
 
-## 2. Applications
+## Applications
 
 The applications of classification in Earth Observation are vast. These methods offer a powerful way to categorise and understand the world around us. Below, I have included a couple examples of classification in Earth Observation data that I found interesting.
 
@@ -85,7 +85,7 @@ knitr::include_graphics("img/SnakeBiteSVM.png")
 
 Source: [Goldstein et al., 2021](https://www.researchgate.net/publication/348697066_Integrating_human_behavior_and_snake_ecology_with_agent-based_models_to_predict_snakebite_in_high_risk_landscapes)
 
-## 3. Reflections
+## Reflections
 
 This was the first week I felt like I could conduct some coherent and interesting research in the field of remote sensing. I've gotten to grips with Google Earth Engine and have a good understanding of different classification methods. As mentioned in the introduction, classification, seems to be one of the essential skills in remote sensing.
 
@@ -93,17 +93,17 @@ However, this diary entry has been rather positive and I wanted to reflect on so
 
 Common issues tend to revolve around:
 
-#### Preprocessing:
+### Preprocessing:
 
 -   **Cloud Cover and Shadows:** Imperfect cloud masking can leave behind cloud-contaminated pixels, affecting the accuracy of the classification
 
-#### Training and Model Selection:
+### Training and Model Selection:
 
 -   **Balanced Training Data:** The accuracy of classification greatly depends on the quality, representativeness of the training data. Non-representative samples can skew the model's performance. This has significant implications and reminds me of a film I watched a couple years ago called [Coded Bias](https://en.wikipedia.org/wiki/Coded_Bias).
 
 -   **Choice of Classification Model:** each model has strengths and weaknesses and are suited to different types of classification tasks. Using the incorrect classification model can lead to poor performance, including lower accuracy, overfitting or underfitting (detailed below)
 
-#### Validation and Accuracy Assessment:
+### Validation and Accuracy Assessment:
 
 -   **Overfitting and Generalisation:** There's a risk of overfitting the model to the training data, making it perform poorly on unseen data. Ensuring a proper train-test split and using validation techniques like cross-validation can help assess how well the model generalises [Ying, 2019](https://iopscience.iop.org/article/10.1088/1742-6596/1168/2/022022).
 

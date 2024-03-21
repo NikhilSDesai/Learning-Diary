@@ -5,7 +5,9 @@ date: "`r Sys.Date()`"
 output: html_document
 ---
 
-## 1. Corrections and Enhancements
+## Summary
+
+### Corrections and Enhancements
 
 Over the course of the week, we discussed how to transform raw, remotely sensed data into a product we can use for analysis. This transformation *process* is know as *enhancing* or *correcting* data.
 
@@ -17,7 +19,7 @@ The three main correction types are detailed below, along with their common solu
 
 Adjusts for image distortions due to the Earth's rotation, sensor tilt, and curvature, ensuring accurate spatial positioning.
 
-A common method for geometric correction is orthorectification. This fixes distortions in aerial photos by aligning them with ground truth, correcting for camera angles and terrain [@Jia2013]. This method essentially ensures every point on a photo maps to the right spot on Earth, ensuring accurate measurements and analysis. This step is key for reliable map-making and data overlay from satellite imagery \[@Dave2015\].
+A common method for geometric correction is orthorectification. This fixes distortions in aerial photos by aligning them with ground truth, correcting for camera angles and terrain [@Jia2013]. This method essentially ensures every point on a photo maps to the right spot on Earth, ensuring accurate measurements and analysis. This step is key for reliable map-making and data overlay from satellite imagery [@Dave2015].
 
 ```{r echo=FALSE, out.width="60%", fig.align="center"}
 knitr::include_graphics("img/geometriccorrection.png")
@@ -29,7 +31,7 @@ Source: [Abdul Basith](https://www.researchgate.net/figure/Geometric-correction-
 
 Removes the effects of atmospheric gases and particles on the recorded signal to accurately reflect the Earth's surface reflectance. This is essentially wiping away the haze from satellite imagery. Atmospheric particles and gases can often blur or change the colors in an image. The goal is to make the image show the Earth's surface as if the atmosphere wasn't messing with the view [@Song2001].
 
-Regression is often used to correct atmospheric errors. It allows you to model the relationship between satellite data with known ground values, then applying this model to adjust the entire image for atmospheric distortions. Below is a Landsat image of the Three Gorges Area, China before and after correction for haze \[@Song2001\].
+Regression is often used to correct atmospheric errors. It allows you to model the relationship between satellite data with known ground values, then applying this model to adjust the entire image for atmospheric distortions. Below is a Landsat image of the Three Gorges Area, China before and after correction for haze [@Song2001].
 
 ```{r echo=FALSE, out.width="70%", fig.cap="Three Gorges Area, China - Before and After Correction"}
 knitr::include_graphics("img/atmosphericcorrection.png")
@@ -43,7 +45,7 @@ Adjusts the digital image data to correct for sensor noise and inconsistencies, 
 
 While, I wouldn't consider this to an error - you can correct for radiometric variations by applying a calibration equation that converts Digital Number (DN) values to spectral radiance (using gain and bias parameters). This helps to standardise image brightness across datasets.
 
-## 2. Data Joining
+### Data Joining
 
 In Earth observation, data joining involves combining multiple satellite images to create a single image. This is an extremely useful method, as most large areas cannot be captured in a single satellite pass.
 
@@ -57,7 +59,9 @@ Source: [Yun Gao](https://yuan-gao.net/pdf/ISIDF11.pdf)
 
 Similar to feathering in panoramic photography, mosaic feathering in satellite imagery involves overlapping adjacent images and blending their edges. This blending ensures that the transition between images is smooth, without visible seams or abrupt changes in color and texture that can occur due to differences in lighting, angle of capture, or atmospheric conditions at the time each image was taken.
 
-## Applications: Atmospheric Correction using Dark Object Subtraction
+## Applications
+
+### Atmospheric Correction using Dark Object Subtraction
 
 Jensen's description of Atmospheric Correction in *Introductory digital image processing: a remote sensing perspective (2015),* provides a good overview of the concept of Dark Object Subtraction (DOS). The idea is that the darkest spot shouldn't really have any brightness and should have a value of zero, so if it does appear slightly bright, that is likely due to atmospheric haze [@Wang2019], [@Hadjimitsis2004].
 

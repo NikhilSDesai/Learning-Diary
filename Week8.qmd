@@ -5,17 +5,21 @@ date: "`r Sys.Date()`"
 output: html_document
 ---
 
-# Classification II
+Classification II
+
+## Summary
 
 This week we continued to study classification of earth observation data, focussing on the distinction between object-based and pixel-based classification. Secondly, we look at how we can assess the accuracy of our classification results.
 
 First, I will provide an overview, including the strengths weaknesses and common applications of object based image classification and pixel based image classification (Superpixel and Subpixel), then dive into some methods of how to assess the accuracy of our classification results. When comparing the two methods, they can almost be seen as *opposite* approaches.
 
-### **Pixel-Based Image Analysis**:
+### Pixel-Based Image Analysis
 
 In pixel-based image analysis, each pixel is analysed and classified independently based on its spectral signature. This method includes sub-pixel analysis, which estimates the fractional coverage of different land cover types within a single pixel.
 
-**Strengths:** Offers high precision in identifying land cover types within mixed pixels, ideal for fine-scale analysis. **Weaknesses:** Complexity in selecting appropriate endmembers and challenges in accuracy assessment. **Common Uses:** Widely used in agricultural monitoring, where detailed differentiation between crop types and growth stages within a single pixel is critical. Includes spectral unmixing as a sub-method.
+* **Strengths** Offers high precision in identifying land cover types within mixed pixels, ideal for fine-scale analysis. 
+* **Weaknesses** Complexity in selecting appropriate endmembers and challenges in accuracy assessment. 
+* **Common Uses** Widely used in agricultural monitoring, where detailed differentiation between crop types and growth stages within a single pixel is critical. Includes spectral unmixing as a sub-method.
 
 ```{r echo=FALSE, out.width="70%", fig.cap="Superpixel Analysis - [Liu et al., 2022](https://www.mdpi.com/2072-4292/14/4/899)"}
 knitr::include_graphics("img/subpixelanalysis.png")
@@ -23,15 +27,21 @@ knitr::include_graphics("img/subpixelanalysis.png")
 
 The second method is superpixel analysis. This method groups similar pixels into larger *superpixels* for more efficient processing and analysis, maintaining the granularity of pixel-level detail but reducing computational complexity. Super
 
-**Strengths:** Simplifies the image by reducing the number of individual elements to be analysed, making it easier to manage and classify large datasets. **Weaknesses:** The choice of parameters for clustering can greatly affect the outcome, and inappropriate settings may lead to over- or under-segmentation. **Common Uses:** Useful in large-scale land cover mapping and environmental monitoring where delineating homogeneous areas (like forest stands) is necessary. K-means clustering and Simple Non-Iterative Clustering (SNIC) are sub-methods that aid in creating super-pixels.
+* **Strengths** Simplifies the image by reducing the number of individual elements to be analysed, making it easier to manage and classify large datasets. 
+* **Weaknesses** The choice of parameters for clustering can greatly affect the outcome, and inappropriate settings may lead to over- or under-segmentation. 
+* **Common Uses** Useful in large-scale land cover mapping and environmental monitoring where delineating homogeneous areas (like forest stands) is necessary. K-means clustering and Simple Non-Iterative Clustering (SNIC) are sub-methods that aid in creating super-pixels.
 
 ```{r echo=FALSE, out.width="70%", fig.cap="Subpixel Analysis - [Mclachlan et al., 2017](https://www.tandfonline.com/doi/pdf/10.1080/01431161.2017.1346403?needAccess=true&)"}
 knitr::include_graphics("img/superpixelanalysis.webp")
 ```
 
-**Object-Based Image Analysis (OBIA)**: OBIA groups adjacent pixels into *objects* based on their spectral characteristics. This approach considers the context and texture of features within an image, allowing for more nuanced analysis and classification based on the properties of these objects, rather than individual pixels.
+### Object-Based Image Analysis (OBIA)
 
-**Strengths:** Effective in handling spatial patterns and relationships between objects, reducing the 'salt and pepper' noise common in pixel-based classifications. **Weaknesses:** Can be computationally intensive and requires careful parameter tuning for segmenting images into meaningful objects. **Common Uses:** Primarily used in urban planning, forest mapping, and habitat delineation, where the spatial arrangement and context of objects (like buildings or vegetation patches) are important. Techniques like image gradient and spectral gradient analysis are sub-methods within OBIA.
+OBIA groups adjacent pixels into *objects* based on their spectral characteristics. This approach considers the context and texture of features within an image, allowing for more nuanced analysis and classification based on the properties of these objects, rather than individual pixels.
+
+* **Strengths:** Effective in handling spatial patterns and relationships between objects, reducing the 'salt and pepper' noise common in pixel-based classifications. 
+* **Weaknesses:** Can be computationally intensive and requires careful parameter tuning for segmenting images into meaningful objects. 
+* **Common Uses:** Primarily used in urban planning, forest mapping, and habitat delineation, where the spatial arrangement and context of objects (like buildings or vegetation patches) are important. Techniques like image gradient and spectral gradient analysis are sub-methods within OBIA.
 
 ```{r echo=FALSE, results='asis'}
 cat(
@@ -49,33 +59,33 @@ Source: [Kate Alison, 2023](https://www.udemy.com/course/object-based-image-anal
 
 Accuracy assessments for classification results evaluate how well the classification method has performed by comparing the classified data with reference data (*ground truth* or *true* values).
 
-#### Key Methods Used
+### Key Methods Used
 
--   Confusion Matrix (Error Matrix): A powerful tool that cross-tabulates the actual categories (from ground truth) against the classified categories. It provides metrics like overall accuracy, user’s and producer’s accuracy, and Kappa coefficient.
+* Confusion Matrix (Error Matrix): A powerful tool that cross-tabulates the actual categories (from ground truth) against the classified categories. It provides metrics like overall accuracy, user’s and producer’s accuracy, and Kappa coefficient.
 
--   Producer’s and User’s Accuracy: These metrics derive from the confusion matrix. Producer's accuracy measures the probability that a ground-truth pixel is correctly classified, while user's accuracy shows the probability that a pixel classified into a category actually represents that category on the ground.
+* Producer’s and User’s Accuracy: These metrics derive from the confusion matrix. Producer's accuracy measures the probability that a ground-truth pixel is correctly classified, while user's accuracy shows the probability that a pixel classified into a category actually represents that category on the ground.
 
--   F-1 Score: The harmonic mean of user’s accuracy and producer’s accuracy for a class. It balances both measures and gives a single value that balances both.
+* F-1 Score: The harmonic mean of user’s accuracy and producer’s accuracy for a class. It balances both measures and gives a single value that balances both.
 
 $$F1 = \frac{2 \times \text{TP}}{2 \times \text{TP} + \text{FP} + \text{FN}}$$
 
-#### Importance of Conducting Accuracy Assessments
+### Importance of Conducting Accuracy Assessments
 
--   Validation of Results: Accuracy assessment validates the classification results, ensuring they are reliable for decision-making or further analysis.
+* Validation of Results: Accuracy assessment validates the classification results, ensuring they are reliable for decision-making or further analysis.
 
-\*Benchmarking and Comparison: It allows for the comparison of different classification algorithms or methods, helping to select the most suitable one for a specific application.
+* Benchmarking and Comparison: It allows for the comparison of different classification algorithms or methods, helping to select the most suitable one for a specific application.
 
--   Identifying Errors: Helps in identifying specific classes or areas where classification errors are more common, guiding improvements in the classification process.
+* Identifying Errors: Helps in identifying specific classes or areas where classification errors are more common, guiding improvements in the classification process.
 
-#### Potential Pitfalls
+### Potential Pitfalls
 
--   Inadequate Reference Data: The quality and quantity of ground truth data can significantly affect the accuracy assessment. Insufficient or inaccurate reference data may lead to misleading assessment results.
+* Inadequate Reference Data: The quality and quantity of ground truth data can significantly affect the accuracy assessment. Insufficient or inaccurate reference data may lead to misleading assessment results.
 
--   Spatial and Temporal Mismatches: Differences in the timing of satellite imagery and the collection of reference data can introduce errors due to changes in the landscape or land use.
+* Spatial and Temporal Mismatches: Differences in the timing of satellite imagery and the collection of reference data can introduce errors due to changes in the landscape or land use.
 
--   Class Ambiguity: In cases where classes are spectrally similar or the land cover is heterogeneous, distinguishing between classes becomes difficult, potentially leading to lower accuracy.
+* Class Ambiguity: In cases where classes are spectrally similar or the land cover is heterogeneous, distinguishing between classes becomes difficult, potentially leading to lower accuracy.
 
--   Overfitting: Especially in machine learning classifiers, there's a risk of overfitting the model to the training data, which can result in high accuracy for the training dataset but poor generalization to new, unseen data.
+* Overfitting: Especially in machine learning classifiers, there's a risk of overfitting the model to the training data, which can result in high accuracy for the training dataset but poor generalization to new, unseen data.
 
 ## Applications
 

@@ -7,7 +7,9 @@ output: html_document
 
 Introduction to Remote Sensing
 
-# What is Remote Sensing?
+## Summary
+
+### What is Remote Sensing?
 
 Remote Sensing is a subset of Geographic Information Systems. In essence, it is the science of collecting and analysing information from the earth's surface through the use of sensors mounted on satellites or planes. After taking a brief look at the history of RS, it is apparent that it has significantly accelerated our understanding of our built and natural environment [@Olsen2007].
 
@@ -15,7 +17,7 @@ The value of Remote Sensing spans various fields. It can provide critical data f
 
 There were two satellites studied this week: *Landsat* and *Sentinel*. Sentinel-2 data offers a spatial resolution of 10 meters compared to Landsat's 30 meters creating more detailed observations. Additionally, Sentinel-2 satellites provide revisits every 5 days at the equator, offering more frequent updates than Landsat's 16-day revisit cycle. This makes Sentinel-2 particularly valuable for monitoring fast-changing conditions on the Earth’s surface [@Claverie2018]
 
-## Active and Passive Sensors
+### Active and Passive Sensors
 
 There are two primary ways to gather remote sensing data: Active and Passive sensors.
 
@@ -29,7 +31,7 @@ knitr::include_graphics("img/passivevactive.jpeg")
 
 Source: [Geospatial World](https://www.geospatialworld.net/blogs/observing-the-earth-fueling-global-development-solutions/)
 
-## How Remote Sensors Gather and Store Data
+### How Remote Sensors Gather and Store Data
 
 Remote sensing technology captures data about Earth's surface and atmosphere by detecting electromagnetic signatures, which are distinct patterns of energy radiated or reflected by materials and phenomena.
 
@@ -45,7 +47,7 @@ Data from remote sensing are stored with attention to different types of resolut
 
 Source: [Verde, 2018](https://www.mdpi.com/2072-4292/10/8/1267)
 
-## Using Sentinel Application Platform (SNAP)
+### Using Sentinel Application Platform (SNAP)
 
 SNAP is a common tool used to process and analyse remote sensing data. It is particularly useful for working with data from the Sentinel satellites. There are a variety of statistics you can generate using SNAP. I'd never thought that you could generate so much data from pictures. It has changed the way in which I think about imagery and the analysis that can be conducted on it.
 
@@ -59,7 +61,7 @@ SNAP is a common tool used to process and analyse remote sensing data. It is par
 
 However after spending a significant portion of my day troubleshooting SNAP - It seems it does not work on iOS Ventura. QGIS to the rescue!
 
-# Applications
+## Applications
 
 From my perspective, remote sensing gives us a way to see and understand changes on our planet that we couldn't easily detect from the ground. My initial perspective was that RS data revolved around natural phenomena and climate related changes. The following two examples highlighted the utility of remotely sensed data in humanitarian and disaster management contexts.
 
@@ -89,7 +91,7 @@ Here, I have built a true-colour composite from the red, green, and blue bands o
 knitr::include_graphics("img/TCCKamloops.png")
 ```
 
-# Reflections
+## Reflections
 
 The potential of remote sensing to explore humanitarian issues was very eye opening to me, especially after reading a CASA staff member's (Ollie Ballinger) contributions to Bellingcat, an investigative news outlet which specialises in disaster and war crimes. This technology's utility extends beyond monitoring natural events to probing human-related issues, including human rights abuses, war crimes, and informal settlements.
 

@@ -11,7 +11,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 # Google Earth Engine
 
-## 1 Summary
+## Summary
 
 Sorry in advance for the length of this entry, Google Earth Engine (GEE) is an amazing tool and conducting analysis on my hometown was a real joy.
 
@@ -19,7 +19,7 @@ This week we learned the basics of Google Earth Engine. GEE is a truly amazing t
 
 This week's lecture started with a slide which illustrated the exponential uptake of GEE. The slide shows that the number of academic publications using GEE has increased exponentially since 2013.
 
-#### Figure 1: The Number of Academic Publications Using Google Earth Engine
+### Figure 1: The Number of Academic Publications Using Google Earth Engine
 
 ```{r echo=FALSE, out.width="70%", fig.cap="Academic Publications Using Google Earth Engine"}
 knitr::include_graphics("img/GEEPublications.png")
@@ -42,7 +42,7 @@ The key features of GEE:
 
 However, in my opinion, the most impressive characteristic of GEE is its ability to dynamically represent data.
 
-#### NDVI Analysis
+### NDVI Analysis
 
 NDVI Analysis assesses vegetation health and coverage in a given area. By comparing the reflectance of near-infrared and red light, NDVI helps in distinguishing between vegetated and non-vegetated surfaces, indicating plant health and biomass. High indexes are seen in Stanley park, the large green area seen at the top of the window and on the left tip of the city is the *University Endowment Lands,* an old growth protected area where the University of British Columbia is located. Due to housing shortages in the city, several acres of this protected area have sadly been approved for development. I will be checking to see how this area changes over the next few years.
 
@@ -50,7 +50,7 @@ NDVI Analysis assesses vegetation health and coverage in a given area. By compar
 knitr::include_graphics("img/vancouver_ndvi.png")
 ```
 
-#### PCA
+### PCA
 
 In essence, Principal Component Analysis is used to emphasise variation and bring out patterns in a dataset. In remote sensing, PCA transforms correlated bands in an image into uncorrelated variables or principal components. This method is useful for enhancing the differences of satellite imagery while retaining most of the original information "...often revealing hidden patterns in the data."
 
@@ -58,7 +58,7 @@ In essence, Principal Component Analysis is used to emphasise variation and brin
 knitr::include_graphics("img/vancouver_pca.png")
 ```
 
-#### Texture Analysis
+### Texture Analysis
 
 Finally *Texture Analysis* involves evaluating the spatial arrangement of colors or intensities in an image to identify patterns or structures. By applying methods such as GLCM, texture analysis can highlight areas of contrast or uniformity which can provide insights about the physical characteristics and differences of the surface. This technique is useful for things like classifying land cover, detecting change and understanding the structure features in the landscape.
 
@@ -66,7 +66,7 @@ Finally *Texture Analysis* involves evaluating the spatial arrangement of colors
 knitr::include_graphics("img/vancouver_texture.png")
 ```
 
-## 2 Applications
+## Applications
 
 I watched Noah Gorelick's [lecture](https://www.youtube.com/watch?v=WvaBZbph_cU&t=1822s) on machine learning in GEE. As a result I ended up diving into another one of his papers, [Google Earth Engine: Planetary-scale geospatial analysis for everyone](https://www.sciencedirect.com/science/article/pii/S0034425717302900), published in 2017. Gorelick mentions a plethora of different ways you can leverage GEE for analysis, some of those include:
 
@@ -79,7 +79,7 @@ The real strength/utility of GEE is in the speed it can analyse data. This means
 
 A tangible example of the strength and utility of GEE is its role in the Global Forest Watch initiative. This platform uses GEE to monitor deforestation around the world in near-real-time. Traditionally, analysing satellite images to detect changes in forest cover over vast areas like the Amazon rainforest would take months.
 
-## 3 Reflections
+## Reflections
 
 Google Earth Engine has proven to be an incredibly useful tool from a business perspective, offering a wide range of applications that span from environmental monitoring to urban planning and agricultural management. Its vast repository of satellite imagery and geospatial data allows for real-time environmental monitoring, making it an indispensable tool for businesses that require up-to-date geographical information to make informed decisions. For instance, in agriculture, Google Earth Engine enables the analysis of crop health over vast areas, aiding in the efficient management of resources and ultimately leading to increased productivity and reduced costs.
 
