@@ -7,6 +7,8 @@ output: html_document
 
 ## Overview
 
-## Applications 
+## Applications
 
 ## Reflections
+
+## References

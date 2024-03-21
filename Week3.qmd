@@ -82,3 +82,5 @@ After applying the DOS method, this is what we are left with. While the differen
 Prior to this course, I had little exposure to remotely sensed data. Personally, going through the tedious process of enhancing raw remotely sensed data highlighted the complexity of tools like Google Earth. I will never again take for granted the ability to zoom in on a location and casually scroll around the globe.
 
 In the practical, I focused on dealing with atmospheric correction using DOS. I chose this simply because it was the method I technically understood, the least. It required a deep dive into the complexities of how light interacts with the Earth's atmosphere and affects satellite imagery. After taking a look at the two images above, I initially saw little difference, but when looking again, the distinction between the two is quite evident (as detailed above).
+
+## References

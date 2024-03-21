@@ -96,6 +96,7 @@ The potential of remote sensing to explore humanitarian issues was very eye open
 ::: {style="text-align: center;"}
 <img src="https://i0.wp.com/ideatlas.eu/wp-content/uploads/2023/04/Mumbai-IDEAtlas.jpg?resize=2048%2C2048&amp;ssl=1" style="width:65%;"/>
 :::
+
 Source: [IDEAtlas](https://ideatlas.eu/)
 
 This technology was deeply fascinating to me from an academic and commercial perspective. From an academic perspective, the concept of extracting immense amounts of data from imagery is revolutionary. Spectral signatures, like unique fingerprints for different Earth materials based on how they reflect light, enable us to understand the composition and health of various elements from afar. This capability is crucial for fields such as agriculture and environmental monitoring, illustrating how deep scientific research translates into practical applications across industries.
@@ -103,3 +104,5 @@ This technology was deeply fascinating to me from an academic and commercial per
 After reading about the applications of Remote Sensing, it is clear that its potential has not been completely tapped into. The field is still in its early stages only from a commercial perspective, primarily finding application within academic and research settings. The processing of Satelite Imagery prior to Google Earth Engine seems to be slow and tedious. GEE itself was only release to th public in 2010. This gap between academic research and commercial application presents a vast opportunity for innovation and implementation in various industries.
 
 This week has been a great intro to Remote Sensing and has whet my appetite for the coming weeks.
+
+## References

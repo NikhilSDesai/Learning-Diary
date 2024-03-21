@@ -104,7 +104,7 @@
     "href": "Week3.html#reflections",
     "title": "4  Week 3",
     "section": "4.4 Reflections",
-    "text": "4.4 Reflections\nPrior to this course, I had little exposure to remotely sensed data. Personally, going through the tedious process of enhancing raw remotely sensed data highlighted the complexity of tools like Google Earth. I will never again take for granted the ability to zoom in on a location and casually scroll around the globe.\nIn the practical, I focused on dealing with atmospheric correction using DOS. I chose this simply because it was the method I technically understood, the least. It required a deep dive into the complexities of how light interacts with the Earth’s atmosphere and affects satellite imagery. After taking a look at the two images above, I initially saw little difference, but when looking again, the distinction between the two is quite evident (as detailed above).\n\n\n\n\nBannari, A., D. Morin, G. Bénié, and F. Bonn. 1995. “A Theoretical Review of Different Mathematical Models of Geometric Corrections Applied to Remote Sensing Images” 13: 27–47. https://doi.org/10.1080/02757259509532295.\n\n\nDave, Chintan, R. Joshi, and S. Srivastava. 2015. “A Survey on Geometric Correction of Satellite Imagery.” International Journal of Computer Applications 116: 24–27. https://doi.org/10.5120/20389-2655.\n\n\nHadjimitsis, D., C. Clayton, and A. Retalis. 2004. “On the Darkest Pixel Atmospheric Correction Algorithm: A Revised Procedure Applied over Satellite Remotely Sensed Images Intended for Environmental Applications” 5239. https://doi.org/10.1117/12.511520.\n\n\nJia, Z., Xiaoping Lu, Wenqian Zang, and Q. Liu. 2013. “Research on Fast Geometric Precision Correction of HJ-1 Remote Sensing Image.” Applied Mechanics and Materials 427-429: 1481–84. https://doi.org/10.4028/www.scientific.net/AMM.427-429.1481.\n\n\nSong, C., C. Woodcock, K. Seto, M. Lenney, and S. Macomber. 2001. “Classification and Change Detection Using Landsat TM Data: When and How to Correct Atmospheric Effects?” Remote Sensing of Environment 75: 230–44. https://doi.org/10.1016/S0034-4257(00)00169-3.\n\n\nWang, Yu, Xiaoyong Wang, Hongyan He, and Guoliang Tian. 2019. “An Improved Dark Object Subtraction Method for Atmospheric Correction of Remote Sensing Images,” 425–35. https://doi.org/10.1007/978-981-13-9917-6_41.",
+    "text": "4.4 Reflections\nPrior to this course, I had little exposure to remotely sensed data. Personally, going through the tedious process of enhancing raw remotely sensed data highlighted the complexity of tools like Google Earth. I will never again take for granted the ability to zoom in on a location and casually scroll around the globe.\nIn the practical, I focused on dealing with atmospheric correction using DOS. I chose this simply because it was the method I technically understood, the least. It required a deep dive into the complexities of how light interacts with the Earth’s atmosphere and affects satellite imagery. After taking a look at the two images above, I initially saw little difference, but when looking again, the distinction between the two is quite evident (as detailed above).",
     "crumbs": [
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>Week 3</span>"
     ]
@@ -317,6 +317,66 @@
     "text": "Braun, A., F. Falah, and V. Hochschild. 2019. “Refugee Camp\nMonitoring and Environmental Change Assessment of Kutupalong,\nBangladesh, Based on Radar Imagery of Sentinel-1 and ALOS-2.”\nRemote. Sens. 11: 2047. https://doi.org/10.3390/rs11172047.\n\n\nClaverie, M., J. Ju, J. Masek, J. Dungan, E. Vermote, J. Roger, S.\nSkakun, and C. Justice. 2018. “The Harmonized Landsat and\nSentinel-2 Surface Reflectance Data Set.” Remote Sensing of\nEnvironment. https://doi.org/10.1016/J.RSE.2018.09.002.\n\n\nCracknell, A. 2018. “The Development of Remote Sensing in the Last\n40 Years.” International Journal of Remote Sensing 39:\n8387–427. https://doi.org/10.1080/01431161.2018.1550919.\n\n\nKreucher, C., K. Kastella, and A. Hero. 2005. “Sensor Management\nUsing an Active Sensing Approach.” Signal Process. 85:\n607–24. https://doi.org/10.1016/j.sigpro.2004.11.004.\n\n\nLiu, J. G. 2013. “REMOTE SENSING | Passive Sensors,”\n431–39. https://doi.org/10.1016/B978-0-12-409548-9.02956-0.\n\n\nNiroumand-Jadidi, M., and F. Bovolo. 2021. “Sentinel-2 Reveals\nAbrupt Increment of Total Suspended Matter While Ever Given Ship Blocked\nthe Suez Canal.” Water. https://doi.org/10.3390/w13223286.\n\n\nOlsen, R. 2007. “Introduction to Remote Sensing.”\nBioScience 27: 1–31. https://doi.org/10.1117/3.673407.CH1.",
     "crumbs": [
       "References"
+    ]
+  },
+  {
+    "objectID": "Week1.html#references",
+    "href": "Week1.html#references",
+    "title": "2  Week 1",
+    "section": "5.1 References",
+    "text": "5.1 References\n\n\n\n\nBraun, A., F. Falah, and V. Hochschild. 2019. “Refugee Camp Monitoring and Environmental Change Assessment of Kutupalong, Bangladesh, Based on Radar Imagery of Sentinel-1 and ALOS-2.” Remote. Sens. 11: 2047. https://doi.org/10.3390/rs11172047.\n\n\nClaverie, M., J. Ju, J. Masek, J. Dungan, E. Vermote, J. Roger, S. Skakun, and C. Justice. 2018. “The Harmonized Landsat and Sentinel-2 Surface Reflectance Data Set.” Remote Sensing of Environment. https://doi.org/10.1016/J.RSE.2018.09.002.\n\n\nCracknell, A. 2018. “The Development of Remote Sensing in the Last 40 Years.” International Journal of Remote Sensing 39: 8387–427. https://doi.org/10.1080/01431161.2018.1550919.\n\n\nKreucher, C., K. Kastella, and A. Hero. 2005. “Sensor Management Using an Active Sensing Approach.” Signal Process. 85: 607–24. https://doi.org/10.1016/j.sigpro.2004.11.004.\n\n\nLiu, J. G. 2013. “REMOTE SENSING | Passive Sensors,” 431–39. https://doi.org/10.1016/B978-0-12-409548-9.02956-0.\n\n\nNiroumand-Jadidi, M., and F. Bovolo. 2021. “Sentinel-2 Reveals Abrupt Increment of Total Suspended Matter While Ever Given Ship Blocked the Suez Canal.” Water. https://doi.org/10.3390/w13223286.\n\n\nOlsen, R. 2007. “Introduction to Remote Sensing.” BioScience 27: 1–31. https://doi.org/10.1117/3.673407.CH1.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Week 1</span>"
+    ]
+  },
+  {
+    "objectID": "Week3.html#references",
+    "href": "Week3.html#references",
+    "title": "4  Week 3",
+    "section": "4.5 References",
+    "text": "4.5 References\n\n\n\n\nBannari, A., D. Morin, G. Bénié, and F. Bonn. 1995. “A Theoretical Review of Different Mathematical Models of Geometric Corrections Applied to Remote Sensing Images” 13: 27–47. https://doi.org/10.1080/02757259509532295.\n\n\nDave, Chintan, R. Joshi, and S. Srivastava. 2015. “A Survey on Geometric Correction of Satellite Imagery.” International Journal of Computer Applications 116: 24–27. https://doi.org/10.5120/20389-2655.\n\n\nHadjimitsis, D., C. Clayton, and A. Retalis. 2004. “On the Darkest Pixel Atmospheric Correction Algorithm: A Revised Procedure Applied over Satellite Remotely Sensed Images Intended for Environmental Applications” 5239. https://doi.org/10.1117/12.511520.\n\n\nJia, Z., Xiaoping Lu, Wenqian Zang, and Q. Liu. 2013. “Research on Fast Geometric Precision Correction of HJ-1 Remote Sensing Image.” Applied Mechanics and Materials 427-429: 1481–84. https://doi.org/10.4028/www.scientific.net/AMM.427-429.1481.\n\n\nSong, C., C. Woodcock, K. Seto, M. Lenney, and S. Macomber. 2001. “Classification and Change Detection Using Landsat TM Data: When and How to Correct Atmospheric Effects?” Remote Sensing of Environment 75: 230–44. https://doi.org/10.1016/S0034-4257(00)00169-3.\n\n\nWang, Yu, Xiaoyong Wang, Hongyan He, and Guoliang Tian. 2019. “An Improved Dark Object Subtraction Method for Atmospheric Correction of Remote Sensing Images,” 425–35. https://doi.org/10.1007/978-981-13-9917-6_41.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Week 3</span>"
+    ]
+  },
+  {
+    "objectID": "Week4.html#references",
+    "href": "Week4.html#references",
+    "title": "5  Week 4",
+    "section": "5.6 References",
+    "text": "5.6 References",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Week 4</span>"
+    ]
+  },
+  {
+    "objectID": "Week6.html#references",
+    "href": "Week6.html#references",
+    "title": "6  Week 6",
+    "section": "7.4 References",
+    "text": "7.4 References",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Week 6</span>"
+    ]
+  },
+  {
+    "objectID": "Week7.html#references",
+    "href": "Week7.html#references",
+    "title": "7  Week 7",
+    "section": "8.4 References",
+    "text": "8.4 References",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Week 7</span>"
+    ]
+  },
+  {
+    "objectID": "Week8.html#references",
+    "href": "Week8.html#references",
+    "title": "8  Week 8",
+    "section": "9.4 References",
+    "text": "9.4 References",
+    "crumbs": [
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Week 8</span>"
     ]
   }
 ]

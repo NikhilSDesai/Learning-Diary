@@ -106,3 +106,5 @@ Common issues tend to revolve around:
 #### Validation and Accuracy Assessment:
 
 -   **Overfitting and Generalisation:** There's a risk of overfitting the model to the training data, making it perform poorly on unseen data. Ensuring a proper train-test split and using validation techniques like cross-validation can help assess how well the model generalises [Ying, 2019](https://iopscience.iop.org/article/10.1088/1742-6596/1168/2/022022).
+
+## References
