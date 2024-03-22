@@ -5,9 +5,11 @@ date: "February 2024"
 output: html_document
 ---
 
-# About Me {.unnumbered}
+# About Me
 
-My name is Nikhil Desai, I am originally from British Columbia, Canada. I completed my undergraduate MA in Economics from the University of Edinburgh, then worked as a management consultant for 3 years. I left this role and am now pursing an MSc in Urban Spatial Science at The Centre for Advanced Spatial Analysis. I've been lucky to have lived in a variety of cities in Canada, The Netherlands, New Zealand and now the UK. I think this has caused me to pay attention to the built environment and how it shapes our lives.
+Hello!
+
+My name is [Nikhil Desai](https://www.linkedin.com/in/nikhildesai4/), I am originally from British Columbia, Canada. I completed my undergraduate MA in Economics from the University of Edinburgh, then worked as a management consultant for 3 years. I left this role and am now pursing an MSc in Urban Spatial Science at The Centre for Advanced Spatial Analysis. I've been lucky to have lived in a variety of cities in Canada, The Netherlands, New Zealand and now the UK. I think this has caused me to pay attention to the built environment and how it shapes our lives.
 
 ::: {style="text-align: center;"}
 <img src="img/Climbing5.JPG" style="width:65%;"/>
