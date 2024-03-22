@@ -11,7 +11,7 @@ output: html_document
 
 This week we discussed how to transform raw data into a product we can use for analysis. This is know as *enhancement* or *correction*.
 
-"Correction" describes the process of removing or reducing the effects of various factors distort the imagery or data. These factors can include atmospheric effects and sensor noise [@Bannari1995].
+"Correction" describes the process of removing or reducing the effects of various factors distort the imagery or data. These factors can include atmospheric effects (CLOUDS!) and sensor noise [@Bannari1995].
 
 The three main correction types are detailed below, along with their common solutions:
 

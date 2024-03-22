@@ -43,43 +43,54 @@ Data from remote sensing are stored with attention to different types of resolut
 
 Source: [Verde, 2018](https://www.mdpi.com/2072-4292/10/8/1267)
 
-## Applications
+### Raster Analysis: Kamloops, BC, Canada Sentinel-2 Imagery
 
-From my perspective, remote sensing gives us a way to see and understand changes on our planet that we couldn't easily detect from the ground. My initial perspective was that RS data revolved around natural phenomena and climate related changes. The following two examples highlighted the utility of remotely sensed data in humanitarian and disaster management contexts.
+Before diving into case studies using remote sensing data, I wanted to showcase some basic analysis you can conduct. I've downloaded some satelite data of my Kamloops, British Columbia, Canada. Below is a True Colour Images of the area (built from the Blue, Green and Red Bands)
 
-### Tracking the Growth of Refugee Camps
+```{r echo=FALSE, out.width="70%", fig.cap="Kamloops, British Columbia, Spectral Signature"}
+knitr::include_graphics("img/TCIKamloops.jpeg")
+```
 
-Sentinel-2 imagery, humanitarian organisations mapped the rapid expansion of Rohingya refugee camps, facilitating efficient aid distribution, infrastructure planning, and risk management. This data was instrumental in adapting emergency responses and optimising resource allocation as the camp situation evolved [@Braun2019].
+After experimenting in QGIS, I extracted the spectral signature alongside some indices of the area. The spectral signature is a a unique combination of reflectance values across red, green, and blue wavelengths. This enables the identification of specific materials or objects on Earth by their color profile 
 
-### Investigating the Suez Canal Blockage by the *Ever Given* 2021
-
-Sentinel-2 images provided clear views of the ship's position and the traffic jam of vessels waiting to pass through the canal. These images were crucial for assessing the blockage and its impact on global trade [@Niroumand-Jadidi2021]
-
-### Using Sentinel Application Platform (SNAP)
-
-SNAP is a tool used to process and analyse remote sensing data. There are a variety of basic statistics you can generate on SNAP.
-
-### Sentinel-2 Imagery on my Hometown (Kamloops, BC, Canada)
-
-After experimenting in QGIS a I was able to extract the spatial signature alongside some indices of the area. Below the Terrain Ruggedness Index and the Spectral Signature of the imagery
+Below is the Spectral Signature and Terrain Ruggedness Index of the imagery:
 
 ```{r echo=FALSE, out.width="70%", fig.cap="Kamloops, British Columbia, Spectral Signature"}
 knitr::include_graphics("img/spectralsignature.png")
 ```
+The Terrain Ruggedness Index quantifies the topographic variation of an area in Earth observation data, measuring the difference in elevation between adjacent pixels to assess the roughness of the terrain [@Valentine2005].
 
 ```{r echo=FALSE, out.width="70%", fig.cap="Kamloops, British Columbia, Terrain Ruggedness Index"}
 knitr::include_graphics("img/terrainruggednessindex.png")
 ```
 
-Here, I have built a true-colour composite from the red, green, and blue bands of the Sentinel-2 imagery.
+Here, I have built a true-colour composite from the red, green, and blue bands of the Sentinel-2 imagery. True-color composite images depict the Earth's surface in colors similar to those a human eye would perceive, combining red, green, and blue light wavelengths to create natural-looking photographs from satellite data [@Sovdat2019].
 
 ```{r echo=FALSE, out.width="70%", fig.cap="Kamloops, British Columbia, True Colour Composite"}
 knitr::include_graphics("img/TCCKamloops.png")
 ```
 
+## Applications
+
+Remote sensing gives us a way to see and understand changes on our planet that we can't detect from the ground. My initial perspective was that remote sensing data was mainly used for analysis of natural phenomena and climate related. After doing some reading, it as evident the applications of remote sensing are vast. Below, I've described two interesting case studies I came across.
+
+### Tracking the Growth of Refugee Camps
+
+Sentinel-2 imagery, humanitarian organisations mapped the rapid expansion of Rohingya refugee camps, facilitating efficient aid distribution, infrastructure planning, and risk management. This data was instrumental in adapting emergency responses and optimising resource allocation as the camp situation evolved [@Braun2019].
+
+### Investigating the Suez Canal Blockage by the *Ever Given*
+
+Sentinel-2 images provided clear views of the ship's position and the traffic jam of vessels waiting to pass through the canal. These images were crucial for assessing the blockage and its impact on global trade [@Niroumand-Jadidi2021]
+
+```{r echo=FALSE, out.width="70%", fig.cap="EverGiven Blocking Suez Canal - Satelite Imagery"}
+knitr::include_graphics("img/EverGiven.png")
+```
+
+Source: [Forbes, 2021](https://www.forbes.com/sites/danidiplacido/2021/03/27/the-big-boat-stuck-in-the-suez-canal-is-the-absurd-joke-we-all-needed-right-now/)
+
 ## Reflections
 
-The potential of remote sensing to explore humanitarian issues was very eye opening to me, especially after reading a CASA staff member's (Ollie Ballinger) contributions to Bellingcat, an investigative news outlet which specialises in disaster and war crimes. This technology's utility extends beyond monitoring natural events to probing human-related issues, including human rights abuses, war crimes and informal settlements.
+The potential of remote sensing to explore humanitarian issues was very eye opening to me, especially after reading a CASA staff member's (Ollie Ballinger) contributions to Bellingcat, an investigative news outlet which specialises in disaster and war crimes. This technology's utility extends beyond monitoring natural events to human-related issues, including human rights abuses, war crimes and informal settlements.
 
 ```{r echo=FALSE, out.width="70%", fig.cap="Informal Settlements in Mumbai India "}
 knitr::include_graphics("img/mumbai_informalsettlement.webp")
@@ -87,10 +98,9 @@ knitr::include_graphics("img/mumbai_informalsettlement.webp")
 
 Source: [IDEAtlas](https://ideatlas.eu/)
 
-This technology was deeply fascinating to me from an academic and commercial perspective. From an academic perspective, the concept of extracting immense amounts of data from imagery is revolutionary. Spectral signatures, like unique fingerprints for different Earth materials based on how they reflect light, enable us to understand the composition and health of various elements from afar. This capability is crucial for fields such as agriculture and environmental monitoring, illustrating how deep scientific research translates into practical applications across industries.
+This technology was deeply fascinating to me from an academic and commercial perspective. From an academic perspective, the concept of extracting immense amounts of data from imagery is will make me look at photos very differently. Analysis as simple as extracting spectral signatures can provide a wealth of information about the land cover and terrain of an area. Spectral signatures are like fingerprints for different land cover. This capability is crucial for environmental monitoring, a particular interest of mine.
 
-After reading about the applications of Remote Sensing, it is clear that its potential has not been completely tapped into. The field is still in its early stages only from a commercial perspective, primarily finding application within academic and research settings. The processing of Satelite Imagery prior to Google Earth Engine seems to be slow and tedious. GEE itself was only release to th public in 2010. This gap between academic research and commercial application presents a vast opportunity for innovation and implementation in various industries.
+After reading about the applications of Remote Sensing, it is clear that its potential has not been completely tapped into. The field is still in its early stages only from a commercial perspective. I say this because I primarily found application within academic and research settings. 
+The processing of Satelite Imagery prior to Google Earth Engine, as I found out this week, is slow and tedious. GEE was only release to the public in 2010. This gap between academic research and commercial application presents a vast opportunity for innovation and implementation in various industries.
 
 This week has been a great intro to Remote Sensing and has whet my appetite for the coming weeks.
-
-## References
