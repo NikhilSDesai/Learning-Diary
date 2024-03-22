@@ -11,7 +11,7 @@ Synthetic Aperture Radar
 
 ### Synthetic Aperture Radar (SAR)
 
-SAR is a particularly powerful tool for change detection, an interest of mine. Learning about SAR, while the methods are familiar, comes across as a unique type of remote sensing.
+SAR is a particularly powerful tool for change detection, an interest of mine. Learning about SAR, while the methods are familiar, comes across as a unique type of remote sensing due to it being an active sensors and functioning at a different wavelength.
 
 SAR is an active remote sensing technology that captures high-resolution images of the Earth's surface. SAR works independently of sunlight, emitting their own energy measure the reflected energy [@NASA2024]. This allows SAR to obtain images during the night or through clouds and vegetation [@Moreira2013]. The week 1 image which illustrates active vs. passive sensors is useful here.
 
@@ -37,9 +37,9 @@ Source: [@NASA2024]
 
 ## Applications
 
-Continuing with my interest of deforestation and change detection, the paper [Monthly mapping of forest harvesting using dense time series Sentinel-1](https://www.sciencedirect.com/science/article/pii/S0034425721005423?ref=pdf_download&fr=RR-2&rr=867ebe162eda79c0) written by Zhao et al. uses Sentinel-1 SAR imagery and deep learning to map monthly forest harvesting in California, USA, and Rondônia, Brazil. Two distinctly different forest types. Interestingly this approach using SAR outperformed traditional object-based methods [@zhao2022].
+Continuing with my interest of deforestation and change detection, the paper [Monthly mapping of forest harvesting using dense time series Sentinel-1](https://www.sciencedirect.com/science/article/pii/S0034425721005423?ref=pdf_download&fr=RR-2&rr=867ebe162eda79c0) written by Zhao et al. uses Sentinel-1 SAR imagery and deep learning to map monthly forest harvesting in California, USA, and Rondônia, Brazil. It compares a SAR based approach with an Optical Imagery based approach. Two distinctly different forest types. Interestingly the approach using SAR outperformed traditional object-based methods [@zhao2022].
 
-Below illustrates classification conducted using SAR imagery and Optical Imagery.
+Below, illustrates classification conducted using SAR imagery vs Optical Imagery.
 
 ```{r echo=FALSE, out.width="80%", fig.cap="SAR Imagery Classification"}
 knitr::include_graphics("img/SARBased.png")
@@ -49,12 +49,12 @@ knitr::include_graphics("img/SARBased.png")
 knitr::include_graphics("img/OBBased.png")
 ```
 
-Forests are often humid environments, emitting significant water vapor which can distort traditional optical imagery. SAR, according to authors has performed better in this type of analysis due to its ability to penetrate cloud cover and operate effectively regardless of weather conditions or time of day. This capability is crucial for consistent monitoring in areas with frequent cloudiness or limited daylight, ensuring reliable data acquisition for monthly forest harvesting mapping. Optical imagery, while offering high-resolution and color-rich details under clear conditions, is limited by its dependence on weather and daylight, making SAR a more robust choice for the study's objectives.
+Forests are often humid environments, emitting significant water vapor which can distort traditional optical imagery. SAR, according to the authors has performed better in this type of analysis due to its ability to penetrate cloud cover and operate effectively regardless of weather conditions or time of day. This capability is crucial for consistent monitoring in areas with frequent cloudiness or limited daylight, ensuring reliable data acquisition for monthly forest harvesting mapping. Optical imagery, while offering high-resolution and color-rich details under clear conditions, is limited by its dependence on weather and daylight, making SAR a more robust choice for the study's objectives [@zhao2022].
 
 ## Reflections
 
-Initially skeptical about SAR's utility due to its lower resolution and lack of color, I now understand its value. SAR's ability to penetrate clouds and vegetation enables consistent and frequent monitoring, making it a key tool for change detection where optical imagery is impeded, showcasing its unique contribution to the precision and reliability of earth observation efforts.
+Initially skeptical about SAR's utility due to its lower resolution and lack of color, I now understand its value. SAR's ability to penetrate clouds and vegetation enables consistent and frequent monitoring, making it a key tool for change detection where optical imagery is limited, showcasing its value to the precision and reliability of earth observation efforts.
 
-This wee was very useful for our group project on flood mapping using SAR in Da Nang, Vietnam. I've transitioned from understanding the theory to grasping the practical aspects of why SAR is frequently used for flooding mapping. SAR's ability to detection is key for identifying flood zones, crucial for accurate monitoring. This week's practical work has deepened my grasp, highlighting SAR's specific strengths in flood mapping and merging theory with real-world application.
+In addition, this week was very useful for our group project on flood mapping using SAR in Da Nang, Vietnam. I've transitioned from understanding the theory to grasping the practical aspects of why SAR is frequently used for flooding mapping. SAR's ability to detection is key for identifying flood zones, crucial for accurate monitoring. This week's practical work has deepened my grasp, highlighting SAR's specific strengths in flood mapping and merging theory with real-world application.
 
-## References
+And that's a wrap for CASA0023 ! WHAT A COURSE! Thank you Andy & Ollie, super cool stuff

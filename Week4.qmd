@@ -21,7 +21,7 @@ During this summer air quality were at hazardous levels due to the smoke from th
 
 Source: [Canadian Broadcating Corporation](https://www.cbc.ca/news/canada/british-columbia/lytton-wildfire-sat-update-1.6089367)
 
-Kamloops is denoted below as a  green dot on the following NASA visualisation of average temperatures in summer 2021.
+Kamloops is denoted below as a green dot on the following NASA visualisation of average temperatures in summer 2021.
 
 ```{r echo=FALSE, out.width="70%", fig.cap="British Coumbia Temperature 2021"}
 knitr::include_graphics("img/lyttonBC.png")
@@ -51,7 +51,7 @@ Based on the teachings and research I've done, I've taken a stab at outlining ho
 
 ### **Heat Maps & Fire Detection**
 
-We can use Land Surface Temperature data from satellites like Landsat or MODIS to spot unusually hot areas that might indicate a fire or a high-risk zone. VIIRS data is incredibly useful for identifying thermal anomalies which allow us to pinpoint fires almost as soon as they start [ding2023].
+We can use Land Surface Temperature data from satellites like Landsat or MODIS to spot unusually hot areas that might indicate a fire or a high-risk zone. VIIRS data is incredibly useful for identifying thermal anomalies which allow us to pinpoint fires almost as soon as they start \[ding2023\].
 
 ### **Soil Moisture & Dryness**
 

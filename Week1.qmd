@@ -51,13 +51,14 @@ Before diving into case studies using remote sensing data, I wanted to showcase 
 knitr::include_graphics("img/TCIKamloops.jpeg")
 ```
 
-After experimenting in QGIS, I extracted the spectral signature alongside some indices of the area. The spectral signature is a a unique combination of reflectance values across red, green, and blue wavelengths. This enables the identification of specific materials or objects on Earth by their color profile 
+After experimenting in QGIS, I extracted the spectral signature alongside some indices of the area. The spectral signature is a a unique combination of reflectance values across red, green, and blue wavelengths. This enables the identification of specific materials or objects on Earth by their color profile
 
 Below is the Spectral Signature and Terrain Ruggedness Index of the imagery:
 
 ```{r echo=FALSE, out.width="70%", fig.cap="Kamloops, British Columbia, Spectral Signature"}
 knitr::include_graphics("img/spectralsignature.png")
 ```
+
 The Terrain Ruggedness Index quantifies the topographic variation of an area in Earth observation data, measuring the difference in elevation between adjacent pixels to assess the roughness of the terrain [@Valentine2005].
 
 ```{r echo=FALSE, out.width="70%", fig.cap="Kamloops, British Columbia, Terrain Ruggedness Index"}
@@ -100,7 +101,6 @@ Source: [IDEAtlas](https://ideatlas.eu/)
 
 This technology was deeply fascinating to me from an academic and commercial perspective. From an academic perspective, the concept of extracting immense amounts of data from imagery is will make me look at photos very differently. Analysis as simple as extracting spectral signatures can provide a wealth of information about the land cover and terrain of an area. Spectral signatures are like fingerprints for different land cover. This capability is crucial for environmental monitoring, a particular interest of mine.
 
-After reading about the applications of Remote Sensing, it is clear that its potential has not been completely tapped into. The field is still in its early stages only from a commercial perspective. I say this because I primarily found application within academic and research settings. 
-The processing of Satelite Imagery prior to Google Earth Engine, as I found out this week, is slow and tedious. GEE was only release to the public in 2010. This gap between academic research and commercial application presents a vast opportunity for innovation and implementation in various industries.
+After reading about the applications of Remote Sensing, it is clear that its potential has not been completely tapped into. The field is still in its early stages only from a commercial perspective. I say this because I primarily found application within academic and research settings. The processing of Satelite Imagery prior to Google Earth Engine, as I found out this week, is slow and tedious. GEE was only release to the public in 2010. This gap between academic research and commercial application presents a vast opportunity for innovation and implementation in various industries.
 
 This week has been a great intro to Remote Sensing and has whet my appetite for the coming weeks.

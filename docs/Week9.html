@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Nikhil Desai">
-<meta name="dcterms.date" content="2024-03-21">
+<meta name="dcterms.date" content="2024-03-22">
 
 <title>Remote Sensing &amp; Earth Observation Studies - 9&nbsp; Week 9</title>
 <style>
@@ -205,7 +205,6 @@ div.csl-indent {
   </ul></li>
   <li><a href="#applications" id="toc-applications" class="nav-link" data-scroll-target="#applications"><span class="header-section-number">9.2</span> Applications</a></li>
   <li><a href="#reflections" id="toc-reflections" class="nav-link" data-scroll-target="#reflections"><span class="header-section-number">9.3</span> Reflections</a></li>
-  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references"><span class="header-section-number">9.4</span> References</a></li>
   </ul>
 </nav>
     </div>
@@ -231,7 +230,7 @@ div.csl-indent {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">March 21, 2024</p>
+      <p class="date">March 22, 2024</p>
     </div>
   </div>
   
@@ -248,7 +247,7 @@ div.csl-indent {
 <h2 data-number="9.1" class="anchored" data-anchor-id="summary"><span class="header-section-number">9.1</span> Summary</h2>
 <section id="synthetic-aperture-radar-sar" class="level3" data-number="9.1.1">
 <h3 data-number="9.1.1" class="anchored" data-anchor-id="synthetic-aperture-radar-sar"><span class="header-section-number">9.1.1</span> Synthetic Aperture Radar (SAR)</h3>
-<p>SAR is a particularly powerful tool for change detection, an interest of mine. Learning about SAR, while the methods are familiar, comes across as a unique type of remote sensing.</p>
+<p>SAR is a particularly powerful tool for change detection, an interest of mine. Learning about SAR, while the methods are familiar, comes across as a unique type of remote sensing due to it being an active sensors and functioning at a different wavelength.</p>
 <p>SAR is an active remote sensing technology that captures high-resolution images of the Earth’s surface. SAR works independently of sunlight, emitting their own energy measure the reflected energy <span class="citation" data-cites="NASA2024">(<a href="references.html#ref-NASA2024" role="doc-biblioref">NASA 2024</a>)</span>. This allows SAR to obtain images during the night or through clouds and vegetation <span class="citation" data-cites="Moreira2013">(<a href="references.html#ref-Moreira2013" role="doc-biblioref">Moreira et al. 2013</a>)</span>. The week 1 image which illustrates active vs.&nbsp;passive sensors is useful here.</p>
 <p>SAR uses wavelengths in the microwave band of the electromagnetic spectrum to collect data, enabling it to penetrate through clouds and interact with different surface materials, thereby providing unique insights regardless of weather conditions or time of day <span class="citation" data-cites="NASA2024">(<a href="references.html#ref-NASA2024" role="doc-biblioref">NASA 2024</a>)</span>.</p>
 <div class="cell">
@@ -282,8 +281,8 @@ div.csl-indent {
 </section>
 <section id="applications" class="level2" data-number="9.2">
 <h2 data-number="9.2" class="anchored" data-anchor-id="applications"><span class="header-section-number">9.2</span> Applications</h2>
-<p>Continuing with my interest of deforestation and change detection, the paper <a href="https://www.sciencedirect.com/science/article/pii/S0034425721005423?ref=pdf_download&amp;fr=RR-2&amp;rr=867ebe162eda79c0">Monthly mapping of forest harvesting using dense time series Sentinel-1</a> written by Zhao et al.&nbsp;uses Sentinel-1 SAR imagery and deep learning to map monthly forest harvesting in California, USA, and Rondônia, Brazil. Two distinctly different forest types. Interestingly this approach using SAR outperformed traditional object-based methods <span class="citation" data-cites="zhao2022">(<a href="references.html#ref-zhao2022" role="doc-biblioref">Zhao et al. 2022</a>)</span>.</p>
-<p>Below illustrates classification conducted using SAR imagery and Optical Imagery.</p>
+<p>Continuing with my interest of deforestation and change detection, the paper <a href="https://www.sciencedirect.com/science/article/pii/S0034425721005423?ref=pdf_download&amp;fr=RR-2&amp;rr=867ebe162eda79c0">Monthly mapping of forest harvesting using dense time series Sentinel-1</a> written by Zhao et al.&nbsp;uses Sentinel-1 SAR imagery and deep learning to map monthly forest harvesting in California, USA, and Rondônia, Brazil. It compares a SAR based approach with an Optical Imagery based approach. Two distinctly different forest types. Interestingly the approach using SAR outperformed traditional object-based methods <span class="citation" data-cites="zhao2022">(<a href="references.html#ref-zhao2022" role="doc-biblioref">Zhao et al. 2022</a>)</span>.</p>
+<p>Below, illustrates classification conducted using SAR imagery vs Optical Imagery.</p>
 <div class="cell">
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
@@ -304,15 +303,13 @@ div.csl-indent {
 </div>
 </div>
 </div>
-<p>Forests are often humid environments, emitting significant water vapor which can distort traditional optical imagery. SAR, according to authors has performed better in this type of analysis due to its ability to penetrate cloud cover and operate effectively regardless of weather conditions or time of day. This capability is crucial for consistent monitoring in areas with frequent cloudiness or limited daylight, ensuring reliable data acquisition for monthly forest harvesting mapping. Optical imagery, while offering high-resolution and color-rich details under clear conditions, is limited by its dependence on weather and daylight, making SAR a more robust choice for the study’s objectives.</p>
+<p>Forests are often humid environments, emitting significant water vapor which can distort traditional optical imagery. SAR, according to the authors has performed better in this type of analysis due to its ability to penetrate cloud cover and operate effectively regardless of weather conditions or time of day. This capability is crucial for consistent monitoring in areas with frequent cloudiness or limited daylight, ensuring reliable data acquisition for monthly forest harvesting mapping. Optical imagery, while offering high-resolution and color-rich details under clear conditions, is limited by its dependence on weather and daylight, making SAR a more robust choice for the study’s objectives <span class="citation" data-cites="zhao2022">(<a href="references.html#ref-zhao2022" role="doc-biblioref">Zhao et al. 2022</a>)</span>.</p>
 </section>
 <section id="reflections" class="level2" data-number="9.3">
 <h2 data-number="9.3" class="anchored" data-anchor-id="reflections"><span class="header-section-number">9.3</span> Reflections</h2>
-<p>Initially skeptical about SAR’s utility due to its lower resolution and lack of color, I now understand its value. SAR’s ability to penetrate clouds and vegetation enables consistent and frequent monitoring, making it a key tool for change detection where optical imagery is impeded, showcasing its unique contribution to the precision and reliability of earth observation efforts.</p>
-<p>This wee was very useful for our group project on flood mapping using SAR in Da Nang, Vietnam. I’ve transitioned from understanding the theory to grasping the practical aspects of why SAR is frequently used for flooding mapping. SAR’s ability to detection is key for identifying flood zones, crucial for accurate monitoring. This week’s practical work has deepened my grasp, highlighting SAR’s specific strengths in flood mapping and merging theory with real-world application.</p>
-</section>
-<section id="references" class="level2" data-number="9.4">
-<h2 data-number="9.4" class="anchored" data-anchor-id="references"><span class="header-section-number">9.4</span> References</h2>
+<p>Initially skeptical about SAR’s utility due to its lower resolution and lack of color, I now understand its value. SAR’s ability to penetrate clouds and vegetation enables consistent and frequent monitoring, making it a key tool for change detection where optical imagery is limited, showcasing its value to the precision and reliability of earth observation efforts.</p>
+<p>In addition, this week was very useful for our group project on flood mapping using SAR in Da Nang, Vietnam. I’ve transitioned from understanding the theory to grasping the practical aspects of why SAR is frequently used for flooding mapping. SAR’s ability to detection is key for identifying flood zones, crucial for accurate monitoring. This week’s practical work has deepened my grasp, highlighting SAR’s specific strengths in flood mapping and merging theory with real-world application.</p>
+<p>And that’s a wrap for CASA0023 ! WHAT A COURSE! Thank you Andy &amp; Ollie, super cool stuff</p>
 
 
 <div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">
