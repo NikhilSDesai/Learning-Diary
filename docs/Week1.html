@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Nikhil Desai">
-<meta name="dcterms.date" content="2024-03-21">
+<meta name="dcterms.date" content="2024-03-22">
 
 <title>Remote Sensing &amp; Earth Observation Studies - 2&nbsp; Week 1</title>
 <style>
@@ -202,15 +202,15 @@ div.csl-indent {
   <ul class="collapse">
   <li><a href="#summary" id="toc-summary" class="nav-link" data-scroll-target="#summary"><span class="header-section-number">3.1</span> Summary</a>
   <ul class="collapse">
-  <li><a href="#active-passive-sensors" id="toc-active-passive-sensors" class="nav-link" data-scroll-target="#active-passive-sensors"><span class="header-section-number">3.1.1</span> Active &amp; Passive Sensors</a></li>
+  <li><a href="#there-are-two-types-of-sensors-active-passive" id="toc-there-are-two-types-of-sensors-active-passive" class="nav-link" data-scroll-target="#there-are-two-types-of-sensors-active-passive"><span class="header-section-number">3.1.1</span> There are two types of sensors: Active &amp; Passive</a></li>
   <li><a href="#how-remote-sensors-store-data" id="toc-how-remote-sensors-store-data" class="nav-link" data-scroll-target="#how-remote-sensors-store-data"><span class="header-section-number">3.1.2</span> How Remote Sensors Store Data</a></li>
-  <li><a href="#using-sentinel-application-platform-snap" id="toc-using-sentinel-application-platform-snap" class="nav-link" data-scroll-target="#using-sentinel-application-platform-snap"><span class="header-section-number">3.1.3</span> Using Sentinel Application Platform (SNAP)</a></li>
   </ul></li>
   <li><a href="#applications" id="toc-applications" class="nav-link" data-scroll-target="#applications"><span class="header-section-number">3.2</span> Applications</a>
   <ul class="collapse">
   <li><a href="#tracking-the-growth-of-refugee-camps" id="toc-tracking-the-growth-of-refugee-camps" class="nav-link" data-scroll-target="#tracking-the-growth-of-refugee-camps"><span class="header-section-number">3.2.1</span> Tracking the Growth of Refugee Camps</a></li>
   <li><a href="#investigating-the-suez-canal-blockage-by-the-ever-given-2021" id="toc-investigating-the-suez-canal-blockage-by-the-ever-given-2021" class="nav-link" data-scroll-target="#investigating-the-suez-canal-blockage-by-the-ever-given-2021"><span class="header-section-number">3.2.2</span> Investigating the Suez Canal Blockage by the <em>Ever Given</em> 2021</a></li>
-  <li><a href="#sentinel-2-imagery-on-my-hometown-kamloops-bc-canada" id="toc-sentinel-2-imagery-on-my-hometown-kamloops-bc-canada" class="nav-link" data-scroll-target="#sentinel-2-imagery-on-my-hometown-kamloops-bc-canada"><span class="header-section-number">3.2.3</span> Sentinel-2 Imagery on my Hometown (Kamloops, BC, Canada)</a></li>
+  <li><a href="#using-sentinel-application-platform-snap" id="toc-using-sentinel-application-platform-snap" class="nav-link" data-scroll-target="#using-sentinel-application-platform-snap"><span class="header-section-number">3.2.3</span> Using Sentinel Application Platform (SNAP)</a></li>
+  <li><a href="#sentinel-2-imagery-on-my-hometown-kamloops-bc-canada" id="toc-sentinel-2-imagery-on-my-hometown-kamloops-bc-canada" class="nav-link" data-scroll-target="#sentinel-2-imagery-on-my-hometown-kamloops-bc-canada"><span class="header-section-number">3.2.4</span> Sentinel-2 Imagery on my Hometown (Kamloops, BC, Canada)</a></li>
   </ul></li>
   <li><a href="#reflections" id="toc-reflections" class="nav-link" data-scroll-target="#reflections"><span class="header-section-number">3.3</span> Reflections</a></li>
   <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references"><span class="header-section-number">3.4</span> References</a></li>
@@ -240,7 +240,7 @@ div.csl-indent {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">March 21, 2024</p>
+      <p class="date">March 22, 2024</p>
     </div>
   </div>
   
@@ -257,13 +257,13 @@ div.csl-indent {
 <section id="summary" class="level2" data-number="3.1">
 <h2 data-number="3.1" class="anchored" data-anchor-id="summary"><span class="header-section-number">3.1</span> Summary</h2>
 <p>Remote Sensing is a subset of Geographic Information Systems. It is the science of collecting &amp; analysing information about the earth’s surface through the use of sensors mounted on satellites or planes <span class="citation" data-cites="Olsen2007">(<a href="references.html#ref-Olsen2007" role="doc-biblioref">Olsen 2007</a>)</span>.</p>
-<p>The value of Remote Sensing spans various fields. It can provide critical data for environmental monitoring, disaster management, urban development and the mapping of inaccessible areas to name a few <span class="citation" data-cites="Cracknell2018">(<a href="references.html#ref-Cracknell2018" role="doc-biblioref">Cracknell 2018</a>)</span>.</p>
-<p>There were two satellites studied this week: <em>Landsat</em> and <em>Sentinel</em>. Sentinel-2 data offers a spatial resolution of 10 meters compared to Landsat’s 30 meters creating more detailed observations. Sentinel-2 satellite orbit every 5 days and offer more frequent updates than Landsat’s 16-day cycle. This makes Sentinel-2 particularly valuable for monitoring fast-changing conditions on the Earth’s surface <span class="citation" data-cites="Claverie2018">(<a href="references.html#ref-Claverie2018" role="doc-biblioref">Claverie et al. 2018</a>)</span></p>
-<section id="active-passive-sensors" class="level3" data-number="3.1.1">
-<h3 data-number="3.1.1" class="anchored" data-anchor-id="active-passive-sensors"><span class="header-section-number">3.1.1</span> Active &amp; Passive Sensors</h3>
+<p>The value of Remote Sensing spans various fields. It provides critical data for environmental monitoring, disaster management and urban development to name a few <span class="citation" data-cites="Cracknell2018">(<a href="references.html#ref-Cracknell2018" role="doc-biblioref">Cracknell 2018</a>)</span>. This week we learned about basic concepts in remote sensing and conducted some rudimentary analysis in R and SNAP (a QGIS for remote sensing data). Below I’ll provide an overview of the technology, its applications and my reflections on the potential of remote sensing.</p>
+<p>We were introduced to two satellite programmes this week: <em>Landsat</em> and <em>Sentinel</em>. Sentinel-2 data offers a spatial resolution of 10 meters compared to Landsat’s 30 meters creating more detailed observations. Sentinel-2 satellite orbit every 5 days and offer more frequent updates than Landsat’s 16-day cycle. This makes Sentinel-2 particularly valuable for monitoring fast-changing conditions on the Earth’s surface <span class="citation" data-cites="Claverie2018">(<a href="references.html#ref-Claverie2018" role="doc-biblioref">Claverie et al. 2018</a>)</span>. For example the <a href="https://dynamicworld.app/">Dynamic World</a> programme is a near real-time land cover dataset that uses satellites to monitor changes in Earth’s surface.</p>
+<section id="there-are-two-types-of-sensors-active-passive" class="level3" data-number="3.1.1">
+<h3 data-number="3.1.1" class="anchored" data-anchor-id="there-are-two-types-of-sensors-active-passive"><span class="header-section-number">3.1.1</span> There are two types of sensors: Active &amp; Passive</h3>
 <ul>
 <li><p><strong>Active sensors</strong> emit energy in the form of radiation, then detect and measure the radiation that is <em>back scattered</em> or reflected back up to the satellite. An example is SAR <span class="citation" data-cites="Kreucher2005">(<a href="references.html#ref-Kreucher2005" role="doc-biblioref">Kreucher, Kastella, and Hero 2005</a>)</span>.</p></li>
-<li><p><strong>Passive sensors</strong> measure natural energy reflected or emitted from Earth, without <em>actively</em> emitting any signal of their own <span class="citation" data-cites="Liu2013">(<a href="references.html#ref-Liu2013" role="doc-biblioref">Liu 2013</a>)</span>. An example is the Landsat programme, which captures the Earth’s surface in the visible, near-infrared and thermal infrared wavelengths.This is illustrated below:</p></li>
+<li><p><strong>Passive sensors</strong> measure natural energy reflected or emitted from Earth, without <em>actively</em> emitting any signal of their own <span class="citation" data-cites="Liu2013">(<a href="references.html#ref-Liu2013" role="doc-biblioref">Liu 2013</a>)</span>. An example is the Landsat programme, which captures the Earth’s surface in the visible, near-infrared and thermal infrared wavelengths. This is illustrated below:</p></li>
 </ul>
 <div class="cell">
 <div class="cell-output-display">
@@ -289,10 +289,6 @@ div.csl-indent {
 </ul>
 <p>Source: <a href="https://www.mdpi.com/2072-4292/10/8/1267">Verde, 2018</a></p>
 </section>
-<section id="using-sentinel-application-platform-snap" class="level3" data-number="3.1.3">
-<h3 data-number="3.1.3" class="anchored" data-anchor-id="using-sentinel-application-platform-snap"><span class="header-section-number">3.1.3</span> Using Sentinel Application Platform (SNAP)</h3>
-<p>SNAP is a tool used to process and analyse remote sensing data, similar to QGIS but for satellite data. There are a variety of basic statistics you can generate on SNAP.</p>
-</section>
 </section>
 <section id="applications" class="level2" data-number="3.2">
 <h2 data-number="3.2" class="anchored" data-anchor-id="applications"><span class="header-section-number">3.2</span> Applications</h2>
@@ -305,8 +301,12 @@ div.csl-indent {
 <h3 data-number="3.2.2" class="anchored" data-anchor-id="investigating-the-suez-canal-blockage-by-the-ever-given-2021"><span class="header-section-number">3.2.2</span> Investigating the Suez Canal Blockage by the <em>Ever Given</em> 2021</h3>
 <p>Sentinel-2 images provided clear views of the ship’s position and the traffic jam of vessels waiting to pass through the canal. These images were crucial for assessing the blockage and its impact on global trade <span class="citation" data-cites="Niroumand-Jadidi2021">(<a href="references.html#ref-Niroumand-Jadidi2021" role="doc-biblioref">Niroumand-Jadidi and Bovolo 2021</a>)</span></p>
 </section>
-<section id="sentinel-2-imagery-on-my-hometown-kamloops-bc-canada" class="level3" data-number="3.2.3">
-<h3 data-number="3.2.3" class="anchored" data-anchor-id="sentinel-2-imagery-on-my-hometown-kamloops-bc-canada"><span class="header-section-number">3.2.3</span> Sentinel-2 Imagery on my Hometown (Kamloops, BC, Canada)</h3>
+<section id="using-sentinel-application-platform-snap" class="level3" data-number="3.2.3">
+<h3 data-number="3.2.3" class="anchored" data-anchor-id="using-sentinel-application-platform-snap"><span class="header-section-number">3.2.3</span> Using Sentinel Application Platform (SNAP)</h3>
+<p>SNAP is a tool used to process and analyse remote sensing data. There are a variety of basic statistics you can generate on SNAP.</p>
+</section>
+<section id="sentinel-2-imagery-on-my-hometown-kamloops-bc-canada" class="level3" data-number="3.2.4">
+<h3 data-number="3.2.4" class="anchored" data-anchor-id="sentinel-2-imagery-on-my-hometown-kamloops-bc-canada"><span class="header-section-number">3.2.4</span> Sentinel-2 Imagery on my Hometown (Kamloops, BC, Canada)</h3>
 <p>After experimenting in QGIS a I was able to extract the spatial signature alongside some indices of the area. Below the Terrain Ruggedness Index and the Spectral Signature of the imagery</p>
 <div class="cell">
 <div class="cell-output-display">

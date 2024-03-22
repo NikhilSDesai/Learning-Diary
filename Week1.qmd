@@ -11,15 +11,15 @@ output: html_document
 
 Remote Sensing is a subset of Geographic Information Systems. It is the science of collecting & analysing information about the earth's surface through the use of sensors mounted on satellites or planes [@Olsen2007].
 
-The value of Remote Sensing spans various fields. It can provide critical data for environmental monitoring, disaster management, urban development and the mapping of inaccessible areas to name a few [@Cracknell2018].
+The value of Remote Sensing spans various fields. It provides critical data for environmental monitoring, disaster management and urban development to name a few [@Cracknell2018]. This week we learned about basic concepts in remote sensing and conducted some rudimentary analysis in R and SNAP (a QGIS for remote sensing data). Below I'll provide an overview of the technology, its applications and my reflections on the potential of remote sensing.
 
-There were two satellites studied this week: *Landsat* and *Sentinel*. Sentinel-2 data offers a spatial resolution of 10 meters compared to Landsat's 30 meters creating more detailed observations. Sentinel-2 satellite orbit every 5 days and offer more frequent updates than Landsat's 16-day cycle. This makes Sentinel-2 particularly valuable for monitoring fast-changing conditions on the Earth’s surface [@Claverie2018]
+We were introduced to two satellite programmes this week: *Landsat* and *Sentinel*. Sentinel-2 data offers a spatial resolution of 10 meters compared to Landsat's 30 meters creating more detailed observations. Sentinel-2 satellite orbit every 5 days and offer more frequent updates than Landsat's 16-day cycle. This makes Sentinel-2 particularly valuable for monitoring fast-changing conditions on the Earth’s surface [@Claverie2018]. For example the [Dynamic World](https://dynamicworld.app/) programme is a near real-time land cover dataset that uses satellites to monitor changes in Earth's surface.
 
-### Active & Passive Sensors
+### There are two types of sensors: Active & Passive
 
 -   **Active sensors** emit energy in the form of radiation, then detect and measure the radiation that is *back scattered* or reflected back up to the satellite. An example is SAR [@Kreucher2005].
 
--   **Passive sensors** measure natural energy reflected or emitted from Earth, without *actively* emitting any signal of their own [@Liu2013]. An example is the Landsat programme, which captures the Earth's surface in the visible, near-infrared and thermal infrared wavelengths.This is illustrated below:
+-   **Passive sensors** measure natural energy reflected or emitted from Earth, without *actively* emitting any signal of their own [@Liu2013]. An example is the Landsat programme, which captures the Earth's surface in the visible, near-infrared and thermal infrared wavelengths. This is illustrated below:
 
 ```{r echo=FALSE, out.width="75%", fig.cap="Passive versus Active Sensors"}
 knitr::include_graphics("img/passivevactive.jpeg")
@@ -43,10 +43,6 @@ Data from remote sensing are stored with attention to different types of resolut
 
 Source: [Verde, 2018](https://www.mdpi.com/2072-4292/10/8/1267)
 
-### Using Sentinel Application Platform (SNAP)
-
-SNAP is a tool used to process and analyse remote sensing data, similar to QGIS but for satellite data. There are a variety of basic statistics you can generate on SNAP.
-
 ## Applications
 
 From my perspective, remote sensing gives us a way to see and understand changes on our planet that we couldn't easily detect from the ground. My initial perspective was that RS data revolved around natural phenomena and climate related changes. The following two examples highlighted the utility of remotely sensed data in humanitarian and disaster management contexts.
@@ -58,6 +54,10 @@ Sentinel-2 imagery, humanitarian organisations mapped the rapid expansion of Roh
 ### Investigating the Suez Canal Blockage by the *Ever Given* 2021
 
 Sentinel-2 images provided clear views of the ship's position and the traffic jam of vessels waiting to pass through the canal. These images were crucial for assessing the blockage and its impact on global trade [@Niroumand-Jadidi2021]
+
+### Using Sentinel Application Platform (SNAP)
+
+SNAP is a tool used to process and analyse remote sensing data. There are a variety of basic statistics you can generate on SNAP.
 
 ### Sentinel-2 Imagery on my Hometown (Kamloops, BC, Canada)
 
