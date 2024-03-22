@@ -15,11 +15,13 @@ This week we discussed how to transform raw data into a product we can use for a
 
 The three main correction types are detailed below, along with their common solutions:
 
-#### **Geometric & Topographic Error**
+#### **1. Geometric & Topographic Error**
 
-Adjusts for image distortions due to the Earth's rotation, sensor tilt, and curvature, ensuring accurate spatial positioning.
+Geometric and topographic errors are mistakes in how objects and landforms look in images, caused by camera angles, the shape of the Earth and uneven ground, which need to be fixed to get accurate pictures.
 
-A common method for geometric correction is orthorectification. This fixes distortions in aerial photos by aligning them with ground *truth*, correcting for camera angles and terrain [@Jia2013]. This method essentially ensures every point on a photo maps to the right spot on Earth, ensuring accurate measurements and analysis. This step is key for reliable map-making and data overlay from satellite imagery [@Dave2015].
+A common method for geometric correction is orthorectification. This fixes distortions in aerial photos by aligning them with ground *truth*, correcting for camera angles and terrain.
+
+The image below outlines how orthorectification works:
 
 ```{r echo=FALSE, out.width="60%", fig.align="center"}
 knitr::include_graphics("img/geometriccorrection.png")
@@ -27,11 +29,17 @@ knitr::include_graphics("img/geometriccorrection.png")
 
 Source: [Abdul Basith](https://www.researchgate.net/figure/Geometric-correction-procedures_fig7_320710942)
 
-#### **Atmospheric Distortion**
+This method essentially ensures every point on a photo maps to the right spot on Earth, ensuring accurate measurements and analysis. This step is key for reliable map-making and data overlay from satellite imagery [@Jia2013][@Dave2015].
 
-Removes the effects of atmospheric gases and particles on the recorded signal to accurately reflect the Earth's surface reflectance. This is essentially wiping away the haze from satellite imagery. Atmospheric particles and gases can often blur or change the colors in an image. The goal is to make the image show the Earth's surface as if the atmosphere wasn't messing with the view [@Song2001].
+#### **2. Atmospheric Distortion**
 
-Regression is often used to correct atmospheric errors. It allows you to model the relationship between satellite data with known ground values, then applying this model to adjust the entire image for atmospheric distortions. Below is a Landsat image of the Three Gorges Area, China before and after correction for haze [@Song2001].
+Atmospheric distortion occurs when gases and particles in the air change how light travels from the Earth to the camera, making images look blurry or colored differently. This can mislead observations.
+
+Atmospheric Distortion is frequently corrected using a method called Dark Object Subtraction (DOS). DOS corrects atmospheric distortion by adjusting for the darkest parts. It assumes these should be completely dark or given a value of 0 - it then adjusts the rest of the image using this as a reference [@Song2001].
+
+DOS removes the effects of atmospheric gases and particles on the recorded signal to accurately reflect the Earth's surface reflectance. This is essentially *wiping away the haze* from satellite imagery. [@Song2001]. I've detailed this method below
+
+Below is an image of China's Three Gorges Area before and after atmospheric correction.
 
 ```{r echo=FALSE, out.width="70%", fig.cap="Three Gorges Area, China - Before and After Correction"}
 knitr::include_graphics("img/atmosphericcorrection.png")
@@ -39,7 +47,7 @@ knitr::include_graphics("img/atmosphericcorrection.png")
 
 Source: [Zhaohua Chen](https://www.researchgate.net/profile/Zhaohua-Chen-2?_tp=eyJjb250ZXh0Ijp7ImZpcnN0UGFnZSI6Il9kaXJlY3QiLCJwYWdlIjoiX2RpcmVjdCJ9fQ)
 
-#### **Radiometric Calibration**
+#### **3. Radiometric Calibration**
 
 Adjusts the digital image data to correct for sensor noise and inconsistencies, ensuring uniform brightness and contrast across the image.
 
@@ -86,5 +94,3 @@ After applying the DOS method, this is what we are left with. While the differen
 Prior to this course, I had little exposure to remotely sensed data. Personally, going through the tedious process of enhancing raw remotely sensed data highlighted the complexity of tools like Google Earth. I will never again take for granted the ability to zoom in on a location and casually scroll around the globe.
 
 In the practical, I focused on dealing with atmospheric correction using DOS. I chose this simply because it was the method I technically understood, the least. It required a deep dive into the complexities of how light interacts with the Earth's atmosphere and affects satellite imagery. After taking a look at the two images above, I initially saw little difference, but when looking again, the distinction between the two is quite evident (as detailed above).
-
-## References

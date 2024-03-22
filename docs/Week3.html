@@ -208,7 +208,6 @@ div.csl-indent {
   <li><a href="#atmospheric-correction-using-dark-object-subtraction" id="toc-atmospheric-correction-using-dark-object-subtraction" class="nav-link" data-scroll-target="#atmospheric-correction-using-dark-object-subtraction"><span class="header-section-number">4.2.1</span> Atmospheric Correction using Dark Object Subtraction</a></li>
   </ul></li>
   <li><a href="#reflections" id="toc-reflections" class="nav-link" data-scroll-target="#reflections"><span class="header-section-number">4.3</span> Reflections</a></li>
-  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references"><span class="header-section-number">4.4</span> References</a></li>
   </ul>
 </nav>
     </div>
@@ -251,12 +250,13 @@ div.csl-indent {
 <section id="summary" class="level3" data-number="4.1.1">
 <h3 data-number="4.1.1" class="anchored" data-anchor-id="summary"><span class="header-section-number">4.1.1</span> Summary</h3>
 <p>This week we discussed how to transform raw data into a product we can use for analysis. This is know as <em>enhancement</em> or <em>correction</em>.</p>
-<p>“Correction” describes the process of removing or reducing the effects of various factors distort the imagery or data. These factors can include atmospheric effects and sensor noise <span class="citation" data-cites="Bannari1995">(<a href="references.html#ref-Bannari1995" role="doc-biblioref">Bannari et al. 1995</a>)</span>.</p>
+<p>“Correction” describes the process of removing or reducing the effects of various factors distort the imagery or data. These factors can include atmospheric effects (CLOUDS!) and sensor noise <span class="citation" data-cites="Bannari1995">(<a href="references.html#ref-Bannari1995" role="doc-biblioref">Bannari et al. 1995</a>)</span>.</p>
 <p>The three main correction types are detailed below, along with their common solutions:</p>
 <section id="geometric-topographic-error" class="level4" data-number="4.1.1.1">
-<h4 data-number="4.1.1.1" class="anchored" data-anchor-id="geometric-topographic-error"><span class="header-section-number">4.1.1.1</span> <strong>Geometric &amp; Topographic Error</strong></h4>
-<p>Adjusts for image distortions due to the Earth’s rotation, sensor tilt, and curvature, ensuring accurate spatial positioning.</p>
-<p>A common method for geometric correction is orthorectification. This fixes distortions in aerial photos by aligning them with ground <em>truth</em>, correcting for camera angles and terrain <span class="citation" data-cites="Jia2013">(<a href="references.html#ref-Jia2013" role="doc-biblioref">Jia et al. 2013</a>)</span>. This method essentially ensures every point on a photo maps to the right spot on Earth, ensuring accurate measurements and analysis. This step is key for reliable map-making and data overlay from satellite imagery <span class="citation" data-cites="Dave2015">(<a href="references.html#ref-Dave2015" role="doc-biblioref">Dave, Joshi, and Srivastava 2015</a>)</span>.</p>
+<h4 data-number="4.1.1.1" class="anchored" data-anchor-id="geometric-topographic-error"><span class="header-section-number">4.1.1.1</span> <strong>1. Geometric &amp; Topographic Error</strong></h4>
+<p>Geometric and topographic errors are mistakes in how objects and landforms look in images, caused by camera angles, the shape of the Earth and uneven ground, which need to be fixed to get accurate pictures.</p>
+<p>A common method for geometric correction is orthorectification. This fixes distortions in aerial photos by aligning them with ground <em>truth</em>, correcting for camera angles and terrain.</p>
+<p>The image below outlines how orthorectification works:</p>
 <div class="cell" data-layout-align="center">
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
@@ -267,11 +267,14 @@ div.csl-indent {
 </div>
 </div>
 <p>Source: <a href="https://www.researchgate.net/figure/Geometric-correction-procedures_fig7_320710942">Abdul Basith</a></p>
+<p>This method essentially ensures every point on a photo maps to the right spot on Earth, ensuring accurate measurements and analysis. This step is key for reliable map-making and data overlay from satellite imagery [<span class="citation" data-cites="Jia2013">Jia et al. (<a href="references.html#ref-Jia2013" role="doc-biblioref">2013</a>)</span>]<span class="citation" data-cites="Dave2015">(<a href="references.html#ref-Dave2015" role="doc-biblioref">Dave, Joshi, and Srivastava 2015</a>)</span>.</p>
 </section>
 <section id="atmospheric-distortion" class="level4" data-number="4.1.1.2">
-<h4 data-number="4.1.1.2" class="anchored" data-anchor-id="atmospheric-distortion"><span class="header-section-number">4.1.1.2</span> <strong>Atmospheric Distortion</strong></h4>
-<p>Removes the effects of atmospheric gases and particles on the recorded signal to accurately reflect the Earth’s surface reflectance. This is essentially wiping away the haze from satellite imagery. Atmospheric particles and gases can often blur or change the colors in an image. The goal is to make the image show the Earth’s surface as if the atmosphere wasn’t messing with the view <span class="citation" data-cites="Song2001">(<a href="references.html#ref-Song2001" role="doc-biblioref">Song et al. 2001</a>)</span>.</p>
-<p>Regression is often used to correct atmospheric errors. It allows you to model the relationship between satellite data with known ground values, then applying this model to adjust the entire image for atmospheric distortions. Below is a Landsat image of the Three Gorges Area, China before and after correction for haze <span class="citation" data-cites="Song2001">(<a href="references.html#ref-Song2001" role="doc-biblioref">Song et al. 2001</a>)</span>.</p>
+<h4 data-number="4.1.1.2" class="anchored" data-anchor-id="atmospheric-distortion"><span class="header-section-number">4.1.1.2</span> <strong>2. Atmospheric Distortion</strong></h4>
+<p>Atmospheric distortion occurs when gases and particles in the air change how light travels from the Earth to the camera, making images look blurry or colored differently. This can mislead observations.</p>
+<p>Atmospheric Distortion is frequently corrected using a method called Dark Object Subtraction (DOS). DOS corrects atmospheric distortion by adjusting for the darkest parts. It assumes these should be completely dark or given a value of 0 - it then adjusts the rest of the image using this as a reference <span class="citation" data-cites="Song2001">(<a href="references.html#ref-Song2001" role="doc-biblioref">Song et al. 2001</a>)</span>.</p>
+<p>DOS removes the effects of atmospheric gases and particles on the recorded signal to accurately reflect the Earth’s surface reflectance. This is essentially <em>wiping away the haze</em> from satellite imagery. <span class="citation" data-cites="Song2001">(<a href="references.html#ref-Song2001" role="doc-biblioref">Song et al. 2001</a>)</span>. I’ve detailed this method below</p>
+<p>Below is an image of China’s Three Gorges Area before and after atmospheric correction.</p>
 <div class="cell">
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
@@ -285,7 +288,7 @@ div.csl-indent {
 <p>Source: <a href="https://www.researchgate.net/profile/Zhaohua-Chen-2?_tp=eyJjb250ZXh0Ijp7ImZpcnN0UGFnZSI6Il9kaXJlY3QiLCJwYWdlIjoiX2RpcmVjdCJ9fQ">Zhaohua Chen</a></p>
 </section>
 <section id="radiometric-calibration" class="level4" data-number="4.1.1.3">
-<h4 data-number="4.1.1.3" class="anchored" data-anchor-id="radiometric-calibration"><span class="header-section-number">4.1.1.3</span> <strong>Radiometric Calibration</strong></h4>
+<h4 data-number="4.1.1.3" class="anchored" data-anchor-id="radiometric-calibration"><span class="header-section-number">4.1.1.3</span> <strong>3. Radiometric Calibration</strong></h4>
 <p>Adjusts the digital image data to correct for sensor noise and inconsistencies, ensuring uniform brightness and contrast across the image.</p>
 <p>While, I wouldn’t consider this to an error - you can correct for radiometric variations by applying a calibration equation that converts Digital Number (DN) values to spectral radiance (using gain and bias parameters). This helps to standardise image brightness across datasets.</p>
 </section>
@@ -342,9 +345,6 @@ div.csl-indent {
 <h2 data-number="4.3" class="anchored" data-anchor-id="reflections"><span class="header-section-number">4.3</span> Reflections</h2>
 <p>Prior to this course, I had little exposure to remotely sensed data. Personally, going through the tedious process of enhancing raw remotely sensed data highlighted the complexity of tools like Google Earth. I will never again take for granted the ability to zoom in on a location and casually scroll around the globe.</p>
 <p>In the practical, I focused on dealing with atmospheric correction using DOS. I chose this simply because it was the method I technically understood, the least. It required a deep dive into the complexities of how light interacts with the Earth’s atmosphere and affects satellite imagery. After taking a look at the two images above, I initially saw little difference, but when looking again, the distinction between the two is quite evident (as detailed above).</p>
-</section>
-<section id="references" class="level2" data-number="4.4">
-<h2 data-number="4.4" class="anchored" data-anchor-id="references"><span class="header-section-number">4.4</span> References</h2>
 
 
 <div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">

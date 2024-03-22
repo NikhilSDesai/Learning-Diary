@@ -7,7 +7,7 @@ output: html_document
 
 ## Overview: Wildfires in Western Canada
 
-This week, we have been tasked with finding a city facing an urban challenge and proposing how remotely sensed data could be used to address the challenge. Prior to starting this degree I spent the summer in my hometown, Kamloops. It is a small rural town in western Canada. The climate of the region is known as a semi-arid desert. The land cover is predominantly grasslands and forest. With the acceleration of climate change, western Canada has been experiencing severe heatwaves and droughts. The increasingly dry conditions have led to an exponential increase in wildfires.
+This week, we have been tasked with finding an urban challenge and proposing how remote sesning could be used to address the challenge. Prior to starting this degree I spent the summer in my hometown, Kamloops. It is a small rural town in western Canada. The climate of the region is known as a semi-arid desert. The land cover is predominantly grasslands and forest. With the acceleration of climate change, western Canada has been experiencing severe heatwaves and droughts. The increasingly dry conditions have led to an exponential increase in wildfires.
 
 During this summer air quality were at hazardous levels due to the smoke from the wildfires. Several communities were evacuated, including Lytton, a small town near Kamloops, was evacuated and destroyed by a wildfire. Several statistics I found:
 
@@ -19,59 +19,63 @@ During this summer air quality were at hazardous levels due to the smoke from th
 
 -   The Lytton Chinese History Museum was lost, along with 1,600 artifacts, museum archives and library
 
-Kamloops is denoted in the following image as a small green dot on the following NASA visualisation of average temperatures in summer 2021.
+Source: [Canadian Broadcating Corporation](https://www.cbc.ca/news/canada/british-columbia/lytton-wildfire-sat-update-1.6089367)
+
+Kamloops is denoted below as a  green dot on the following NASA visualisation of average temperatures in summer 2021.
 
 ```{r echo=FALSE, out.width="70%", fig.cap="British Coumbia Temperature 2021"}
 knitr::include_graphics("img/lyttonBC.png")
 ```
 
-Wildfires are quickly approaching the Kamloops city limits and burned three houses last summer and the entirety of the city's north shore was evacuated. Below is an eerie photo taken from my apartment last summer.
+Source: [NASA, 2021](https://www.earthdata.nasa.gov/learn/articles/urban-extreme-heat-dataset)
 
-```{r echo=FALSE, out.width="70%", fig.cap="British Coumbia Temperature 2021"}
+Wildfires are quickly approaching the Kamloops city limits and burned three houses last summer and the entirety of the city's north shore was evacuated. Below is an eerie photo I took from my apartment last summer.
+
+```{r echo=FALSE, out.width="60%", fig.cap="Kamloops Wildfires 2023"}
 knitr::include_graphics("img/kamloopswildfire.jpeg")
 ```
 
 ## Proposal: Using Remote Sensing to Address Wildfires
 
-The use of remote sensing to monitor and predict wildfires is not a new concept. However, the technology has been underutilised in Canada. The Canadian government has been slow to adopt new technologies and has been relying on traditional methods to monitor and predict wildfires. The traditional methods include the use of weather stations, satellite imagery, and aerial photography.
+The use of remote sensing to monitor and predict wildfires is not a new concept. However, [the technology has been underutilised in Canada](https://cwfis.cfs.nrcan.gc.ca/background). The Canadian government has been slow to adopt new technologies and has been relying on traditional methods to monitor and predict wildfires. The [traditional](https://cwfis.cfs.nrcan.gc.ca/background) methods includes the use of weather stations and aerial photography.
 
-These methods are not as effective as remote sensing technology. Remote sensing technology are able to provide real-time data on the location, size and intensity of wildfires. This data can be used to predict the spread of wildfires and to develop strategies to contain them.
+These methods are not as effective as remote sensing technology. Remote sensing could provide real-time data on the location, size and intensity of wildfires, machine learning methods could then predict the spread of wildfires and high risk areas.
 
 ## Approach
 
 ### **Wildfire Monitoring in Kamloops: A Remote Sensing Approach**
 
-Given the uptick in wildfire incidents around Kamloops, BC, driven by drier conditions, there is a need to actively monitor and predict these events. Remote sensing offers a lot of promise here, providing frequent, detailed data that can change the game in terms of understanding environmental triggers for wildfires, catching them early and forecasting their movements.
+Given the uptick in wildfire incidents in BC, driven by drier conditions, there is a need to actively monitor and predict these events. Remote sensing offers a lot of promise here, providing frequent, detailed data that can change the game in terms of understanding environmental triggers for wildfires, catching them early and forecasting their movements [@Rashkovetsky2021].
 
 Based on the teachings and research I've done, I've taken a stab at outlining how the use of remotely sensed data can detect and predict wildfires in BC.
 
 ### **Heat Maps & Fire Detection**
 
-We can use Land Surface Temperature data from satellites like Landsat or MODIS to spot unusually hot areas that might indicate a fire or a high-risk zone. VIIRS data is incredibly useful for identifying thermal anomalies which allow us to pinpoint fires almost as soon as they start.
+We can use Land Surface Temperature data from satellites like Landsat or MODIS to spot unusually hot areas that might indicate a fire or a high-risk zone. VIIRS data is incredibly useful for identifying thermal anomalies which allow us to pinpoint fires almost as soon as they start [Ding2023].
 
 ### **Soil Moisture & Dryness**
 
-Rainfall data from the Global Precipitation Measurement mission gives us information on recent precipitation patterns, affecting soil moisture levels and by extension, wildfire risk. The SMAP satellite can tell us how moist the soil is, and when it's super dry, the risk of wildfires is high.
+Rainfall data from the Global Precipitation Measurement mission gives us information on recent precipitation patterns, affecting soil moisture levels and by extension, wildfire risk. The SMAP satellite can tell us how moist the soil is, and when it's super dry, the risk of wildfires is high [@Chaparro2016].
 
 ### **Vegetation Health**
 
-What's on the ground plays a massive role in how wildfires behave. We can check out the health of vegetation and the types of land cover in the area using data from Landsat or Sentinel-2 satellites. If there is significant dry and unhealthy vegetation, it's like laying out a welcome mat for wildfires.
+What's on the ground plays a massive role in how wildfires behave. We can check out the health of vegetation and the types of land cover in the area using data from Landsat or Sentinel-2 satellites. If there is significant dry and unhealthy vegetation, it's like laying out a welcome mat for wildfires [@Chaparro2016].
 
 ### **Trends & Predictions**
 
-By digging into historical data on wildfires, weather patterns, and how land use has changed over time, we can start spotting trends and potential hotspots for future fires. We can then feed this data into machine learning models to forecast where and when the next big wildfire might hit, giving us a head start on preparations.
+By digging into historical data on wildfires, weather patterns, and how land use has changed over time, we can start spotting trends and potential hotspots for future fires. We can then feed this data into machine learning models to forecast where and when the next big wildfire might hit, giving us a head start on preparations [@Chaparro2016].
 
 ## Strategy & Implementation
 
-1.  **Gather and Prep the Data:** Attain relevant datasets (LST, thermal anomalies, rainfall, soil moisture, vegetation health) for Kamloops and ready them for analysis.
+1.  **Gather and Prep the Data** Attain relevant datasets: LST, thermal anomalies, rainfall, soil moisture, vegetation for Kamloops and ready them for analysis
 
-2.  **Identify Hotspots:** Using the thermal and LST data, we can keep an eye on current and potential wildfire zones.
+2.  **Identify High Risk Areas** Using the thermal and LST data, we can keep an eye on current and potential wildfire zones
 
-3.  **Assess the Risk:** We'll mix soil moisture data with vegetation health and past wildfire info to figure out which areas are most likely to catch fire.
+3.  **Assess the Risk** We'll mix soil moisture data with vegetation health and past wildfire info to figure out which areas are most likely to catch fire
 
-4.  **Forecasting Fire:** Leverage machine learning to assess the trend data and output predictions on future wildfires, including where they might start and essentially how they could spread.
+4.  **Forecasting Fire** Leverage machine learning to assess the trend data and output predictions on future wildfires, including where they might start and essentially how they could spread
 
-5.  **Make It Usable:** Develop dashboard / interface for local emergency services, fire departments and planners to access and use data/models in real-time.
+5.  **Dashboard** Develop dashboard / interface for local emergency services, fire departments and planners to access and use data/models in real-time
 
 ## Reflections
 

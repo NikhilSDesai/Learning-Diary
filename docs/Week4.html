@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Nikhil Desai">
-<meta name="dcterms.date" content="2024-03-21">
+<meta name="dcterms.date" content="2024-03-22">
 
 <title>Remote Sensing &amp; Earth Observation Studies - 5&nbsp; Week 4</title>
 <style>
@@ -22,7 +22,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -216,7 +236,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">March 21, 2024</p>
+      <p class="date">March 22, 2024</p>
     </div>
   </div>
   
@@ -230,7 +250,7 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="overview-wildfires-in-western-canada" class="level2" data-number="5.1">
 <h2 data-number="5.1" class="anchored" data-anchor-id="overview-wildfires-in-western-canada"><span class="header-section-number">5.1</span> Overview: Wildfires in Western Canada</h2>
-<p>This week, we have been tasked with finding a city facing an urban challenge and proposing how remotely sensed data could be used to address the challenge. Prior to starting this degree I spent the summer in my hometown, Kamloops. It is a small rural town in western Canada. The climate of the region is known as a semi-arid desert. The land cover is predominantly grasslands and forest. With the acceleration of climate change, western Canada has been experiencing severe heatwaves and droughts. The increasingly dry conditions have led to an exponential increase in wildfires.</p>
+<p>This week, we have been tasked with finding an urban challenge and proposing how remote sesning could be used to address the challenge. Prior to starting this degree I spent the summer in my hometown, Kamloops. It is a small rural town in western Canada. The climate of the region is known as a semi-arid desert. The land cover is predominantly grasslands and forest. With the acceleration of climate change, western Canada has been experiencing severe heatwaves and droughts. The increasingly dry conditions have led to an exponential increase in wildfires.</p>
 <p>During this summer air quality were at hazardous levels due to the smoke from the wildfires. Several communities were evacuated, including Lytton, a small town near Kamloops, was evacuated and destroyed by a wildfire. Several statistics I found:</p>
 <ul>
 <li><p><em>Insurance Bureau of Canada</em> reported 78 million CAD in damages</p></li>
@@ -238,7 +258,8 @@ ul.task-list li input[type="checkbox"] {
 <li><p>The fire largely leveled Lytton’s Main Street, burning the post office, ambulance station, health centre, RCMP detachment, Lytton Hotel and the Lytton Village Office</p></li>
 <li><p>The Lytton Chinese History Museum was lost, along with 1,600 artifacts, museum archives and library</p></li>
 </ul>
-<p>Kamloops is denoted in the following image as a small green dot on the following NASA visualisation of average temperatures in summer 2021.</p>
+<p>Source: <a href="https://www.cbc.ca/news/canada/british-columbia/lytton-wildfire-sat-update-1.6089367">Canadian Broadcating Corporation</a></p>
+<p>Kamloops is denoted below as a green dot on the following NASA visualisation of average temperatures in summer 2021.</p>
 <div class="cell">
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
@@ -249,13 +270,14 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 </div>
-<p>Wildfires are quickly approaching the Kamloops city limits and burned three houses last summer and the entirety of the city’s north shore was evacuated. Below is an eerie photo taken from my apartment last summer.</p>
+<p>Source: <a href="https://www.earthdata.nasa.gov/learn/articles/urban-extreme-heat-dataset">NASA, 2021</a></p>
+<p>Wildfires are quickly approaching the Kamloops city limits and burned three houses last summer and the entirety of the city’s north shore was evacuated. Below is an eerie photo I took from my apartment last summer.</p>
 <div class="cell">
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="img/kamloopswildfire.jpeg" class="img-fluid figure-img" style="width:70.0%"></p>
-<figcaption>British Coumbia Temperature 2021</figcaption>
+<p><img src="img/kamloopswildfire.jpeg" class="img-fluid figure-img" style="width:60.0%"></p>
+<figcaption>Kamloops Wildfires 2023</figcaption>
 </figure>
 </div>
 </div>
@@ -263,41 +285,41 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="proposal-using-remote-sensing-to-address-wildfires" class="level2" data-number="5.2">
 <h2 data-number="5.2" class="anchored" data-anchor-id="proposal-using-remote-sensing-to-address-wildfires"><span class="header-section-number">5.2</span> Proposal: Using Remote Sensing to Address Wildfires</h2>
-<p>The use of remote sensing to monitor and predict wildfires is not a new concept. However, the technology has been underutilised in Canada. The Canadian government has been slow to adopt new technologies and has been relying on traditional methods to monitor and predict wildfires. The traditional methods include the use of weather stations, satellite imagery, and aerial photography.</p>
-<p>These methods are not as effective as remote sensing technology. Remote sensing technology are able to provide real-time data on the location, size and intensity of wildfires. This data can be used to predict the spread of wildfires and to develop strategies to contain them.</p>
+<p>The use of remote sensing to monitor and predict wildfires is not a new concept. However, <a href="https://cwfis.cfs.nrcan.gc.ca/background">the technology has been underutilised in Canada</a>. The Canadian government has been slow to adopt new technologies and has been relying on traditional methods to monitor and predict wildfires. The <a href="https://cwfis.cfs.nrcan.gc.ca/background">traditional</a> methods includes the use of weather stations and aerial photography.</p>
+<p>These methods are not as effective as remote sensing technology. Remote sensing could provide real-time data on the location, size and intensity of wildfires, machine learning methods could then predict the spread of wildfires and high risk areas.</p>
 </section>
 <section id="approach" class="level2" data-number="5.3">
 <h2 data-number="5.3" class="anchored" data-anchor-id="approach"><span class="header-section-number">5.3</span> Approach</h2>
 <section id="wildfire-monitoring-in-kamloops-a-remote-sensing-approach" class="level3" data-number="5.3.1">
 <h3 data-number="5.3.1" class="anchored" data-anchor-id="wildfire-monitoring-in-kamloops-a-remote-sensing-approach"><span class="header-section-number">5.3.1</span> <strong>Wildfire Monitoring in Kamloops: A Remote Sensing Approach</strong></h3>
-<p>Given the uptick in wildfire incidents around Kamloops, BC, driven by drier conditions, there is a need to actively monitor and predict these events. Remote sensing offers a lot of promise here, providing frequent, detailed data that can change the game in terms of understanding environmental triggers for wildfires, catching them early and forecasting their movements.</p>
+<p>Given the uptick in wildfire incidents in BC, driven by drier conditions, there is a need to actively monitor and predict these events. Remote sensing offers a lot of promise here, providing frequent, detailed data that can change the game in terms of understanding environmental triggers for wildfires, catching them early and forecasting their movements <span class="citation" data-cites="Rashkovetsky2021">(<a href="references.html#ref-Rashkovetsky2021" role="doc-biblioref">Rashkovetsky et al. 2021</a>)</span>.</p>
 <p>Based on the teachings and research I’ve done, I’ve taken a stab at outlining how the use of remotely sensed data can detect and predict wildfires in BC.</p>
 </section>
 <section id="heat-maps-fire-detection" class="level3" data-number="5.3.2">
 <h3 data-number="5.3.2" class="anchored" data-anchor-id="heat-maps-fire-detection"><span class="header-section-number">5.3.2</span> <strong>Heat Maps &amp; Fire Detection</strong></h3>
-<p>We can use Land Surface Temperature data from satellites like Landsat or MODIS to spot unusually hot areas that might indicate a fire or a high-risk zone. VIIRS data is incredibly useful for identifying thermal anomalies which allow us to pinpoint fires almost as soon as they start.</p>
+<p>We can use Land Surface Temperature data from satellites like Landsat or MODIS to spot unusually hot areas that might indicate a fire or a high-risk zone. VIIRS data is incredibly useful for identifying thermal anomalies which allow us to pinpoint fires almost as soon as they start [Ding2023].</p>
 </section>
 <section id="soil-moisture-dryness" class="level3" data-number="5.3.3">
 <h3 data-number="5.3.3" class="anchored" data-anchor-id="soil-moisture-dryness"><span class="header-section-number">5.3.3</span> <strong>Soil Moisture &amp; Dryness</strong></h3>
-<p>Rainfall data from the Global Precipitation Measurement mission gives us information on recent precipitation patterns, affecting soil moisture levels and by extension, wildfire risk. The SMAP satellite can tell us how moist the soil is, and when it’s super dry, the risk of wildfires is high.</p>
+<p>Rainfall data from the Global Precipitation Measurement mission gives us information on recent precipitation patterns, affecting soil moisture levels and by extension, wildfire risk. The SMAP satellite can tell us how moist the soil is, and when it’s super dry, the risk of wildfires is high <span class="citation" data-cites="Chaparro2016">(<a href="references.html#ref-Chaparro2016" role="doc-biblioref">Chaparro et al. 2016</a>)</span>.</p>
 </section>
 <section id="vegetation-health" class="level3" data-number="5.3.4">
 <h3 data-number="5.3.4" class="anchored" data-anchor-id="vegetation-health"><span class="header-section-number">5.3.4</span> <strong>Vegetation Health</strong></h3>
-<p>What’s on the ground plays a massive role in how wildfires behave. We can check out the health of vegetation and the types of land cover in the area using data from Landsat or Sentinel-2 satellites. If there is significant dry and unhealthy vegetation, it’s like laying out a welcome mat for wildfires.</p>
+<p>What’s on the ground plays a massive role in how wildfires behave. We can check out the health of vegetation and the types of land cover in the area using data from Landsat or Sentinel-2 satellites. If there is significant dry and unhealthy vegetation, it’s like laying out a welcome mat for wildfires <span class="citation" data-cites="Chaparro2016">(<a href="references.html#ref-Chaparro2016" role="doc-biblioref">Chaparro et al. 2016</a>)</span>.</p>
 </section>
 <section id="trends-predictions" class="level3" data-number="5.3.5">
 <h3 data-number="5.3.5" class="anchored" data-anchor-id="trends-predictions"><span class="header-section-number">5.3.5</span> <strong>Trends &amp; Predictions</strong></h3>
-<p>By digging into historical data on wildfires, weather patterns, and how land use has changed over time, we can start spotting trends and potential hotspots for future fires. We can then feed this data into machine learning models to forecast where and when the next big wildfire might hit, giving us a head start on preparations.</p>
+<p>By digging into historical data on wildfires, weather patterns, and how land use has changed over time, we can start spotting trends and potential hotspots for future fires. We can then feed this data into machine learning models to forecast where and when the next big wildfire might hit, giving us a head start on preparations <span class="citation" data-cites="Chaparro2016">(<a href="references.html#ref-Chaparro2016" role="doc-biblioref">Chaparro et al. 2016</a>)</span>.</p>
 </section>
 </section>
 <section id="strategy-implementation" class="level2" data-number="5.4">
 <h2 data-number="5.4" class="anchored" data-anchor-id="strategy-implementation"><span class="header-section-number">5.4</span> Strategy &amp; Implementation</h2>
 <ol type="1">
-<li><p><strong>Gather and Prep the Data:</strong> Attain relevant datasets (LST, thermal anomalies, rainfall, soil moisture, vegetation health) for Kamloops and ready them for analysis.</p></li>
-<li><p><strong>Identify Hotspots:</strong> Using the thermal and LST data, we can keep an eye on current and potential wildfire zones.</p></li>
-<li><p><strong>Assess the Risk:</strong> We’ll mix soil moisture data with vegetation health and past wildfire info to figure out which areas are most likely to catch fire.</p></li>
-<li><p><strong>Forecasting Fire:</strong> Leverage machine learning to assess the trend data and output predictions on future wildfires, including where they might start and essentially how they could spread.</p></li>
-<li><p><strong>Make It Usable:</strong> Develop dashboard / interface for local emergency services, fire departments and planners to access and use data/models in real-time.</p></li>
+<li><p><strong>Gather and Prep the Data</strong> Attain relevant datasets: LST, thermal anomalies, rainfall, soil moisture, vegetation for Kamloops and ready them for analysis</p></li>
+<li><p><strong>Identify High Risk Areas</strong> Using the thermal and LST data, we can keep an eye on current and potential wildfire zones</p></li>
+<li><p><strong>Assess the Risk</strong> We’ll mix soil moisture data with vegetation health and past wildfire info to figure out which areas are most likely to catch fire</p></li>
+<li><p><strong>Forecasting Fire</strong> Leverage machine learning to assess the trend data and output predictions on future wildfires, including where they might start and essentially how they could spread</p></li>
+<li><p><strong>Dashboard</strong> Develop dashboard / interface for local emergency services, fire departments and planners to access and use data/models in real-time</p></li>
 </ol>
 </section>
 <section id="reflections" class="level2" data-number="5.5">
@@ -309,6 +331,14 @@ ul.task-list li input[type="checkbox"] {
 <h2 data-number="5.6" class="anchored" data-anchor-id="references"><span class="header-section-number">5.6</span> References</h2>
 
 
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">
+<div id="ref-Chaparro2016" class="csl-entry" role="listitem">
+Chaparro, D., M. Piles, M. Vall-llossera, and Adriano Camps. 2016. <span>“Surface Moisture and Temperature Trends Anticipate Drought Conditions Linked to Wildfire Activity in the Iberian Peninsula.”</span> <em>European Journal of Remote Sensing</em> 49: 955–71. <a href="https://doi.org/10.5721/EuJRS20164950">https://doi.org/10.5721/EuJRS20164950</a>.
+</div>
+<div id="ref-Rashkovetsky2021" class="csl-entry" role="listitem">
+Rashkovetsky, D., F. Mauracher, M. Langer, and M. Schmitt. 2021. <span>“Wildfire Detection from Multisensor Satellite Imagery Using Deep Semantic Segmentation.”</span> <em>IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing</em> 14: 7001–16. <a href="https://doi.org/10.1109/JSTARS.2021.3093625">https://doi.org/10.1109/JSTARS.2021.3093625</a>.
+</div>
+</div>
 </section>
 
 </main> <!-- /main -->
