@@ -51,7 +51,7 @@ Based on the teachings and research I've done, I've taken a stab at outlining ho
 
 ### **Heat Maps & Fire Detection**
 
-We can use Land Surface Temperature data from satellites like Landsat or MODIS to spot unusually hot areas that might indicate a fire or a high-risk zone. VIIRS data is incredibly useful for identifying thermal anomalies which allow us to pinpoint fires almost as soon as they start [Ding2023].
+We can use Land Surface Temperature data from satellites like Landsat or MODIS to spot unusually hot areas that might indicate a fire or a high-risk zone. VIIRS data is incredibly useful for identifying thermal anomalies which allow us to pinpoint fires almost as soon as they start [ding2023].
 
 ### **Soil Moisture & Dryness**
 
