@@ -9,9 +9,9 @@ Classification I
 
 ## Summary
 
-This week we studied how to use Machine Learning (ML) to classify Earth Observation data. I found this to be the most interesting and useful topic in this module as it cemented how to think about pixels in satellite imagery. This week's readings, particularly [Introductory digital image processing: a remote sensing perspective](https://read.kortext.com/reader/pdf/1872407/Cover) (Jensen, J.R., 2015) describe classification as on of the essential skills in remote sensing.
+This week we studied how to use Machine Learning (ML) to classify Earth Observation data. I found this to be the most interesting and useful topic in this module as it cemented how to think about pixels in satellite imagery. This week's readings, particularly [Introductory digital image processing: a remote sensing perspective](https://read.kortext.com/reader/pdf/1872407/Cover) (Jensen, J.R., 2015) allude to classification as on of the essential skills in remote sensing.
 
-After completing this week's practical, I understood how transformative GEE has been to the field of remote sensing. While the speed of processing is far quicker - the level of integration and functionality built into GEE enables users to conducts more broad and and comprehensive analysis.
+After completing this week's practical, I really understood how transformative GEE has been to the field of remote sensing. While the speed of processing is far quicker - the level of integration and functionality built into GEE enables users to conducts more broad and and comprehensive analysis, using techniques that would take significant time.
 
 We focused on land cover classification, particularly training classification models, as well as evaluating how accurate the model was in correctly classifying pixels. Four main classification methods were discussed this week:
 

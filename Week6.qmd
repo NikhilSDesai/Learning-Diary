@@ -13,22 +13,17 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ## Summary
 
-Sorry in advance for the length of this entry, Google Earth Engine (GEE) is an amazing tool and conducting analysis on my hometown was a real joy.
+Sorry in advance for the length of this entry, Google Earth Engine (GEE) is an amazing tool and conducting analysis on my hometown was a treat
 
-This week we learned the basics of Google Earth Engine. GEE is a truly amazing tool. It allows users to sidestep the labourious process of downloading and processing satellite imagery and instead, users can access and analyse earth observation data directly in the cloud. GEE makes dealing with remote sensing data incredibly accessible and I intend to erase my experiences with SNAP from my memory.
+This week we learned the basics of GEE - It is an amazing tool. It allows users to sidestep the labourious process of downloading and processing satellite imagery. Instead, users can access and analyse earth observation data directly in the cloud. GEE makes dealing with remote sensing data incredibly simple.
 
-This week's lecture started with a slide which illustrated the exponential uptake of GEE. The slide shows that the number of academic publications using GEE has increased exponentially since 2013.
-
-The Number of Academic Publications Using Google Earth Engine
+This week's lecture started with a slide which illustrated the exponential uptake of GEE, showing the number of academic publications using GEE since 2015. GEE's uptake is seen below [@pham2023]:
 
 ```{r echo=FALSE, out.width="70%", fig.cap="Academic Publications Using Google Earth Engine"}
 knitr::include_graphics("img/GEEPublications.png")
-
 ```
 
-In simple terms it provides a way to access and analyse satellite imagery and other geospatial data. GEE dramatically reduces the time to conducting analysis on remote sensing data by allowing users to bypass the need to download and process the data to your local machine using QGIS or SNAP.
-
-Below I've used GEE to conduct a few analyses using methods we've learned about over the past few weeks. I've used Vancouver as a case study here. I thought it would interesting to see how its distinctly north american 'grid system' would appear.
+Unlike traditional tools such as SNAP or QGIS, GEE operates in the cloud, providing users with immediate access to its extensive data archives and powerful computing resources. This means users can run complex analyses and algorithms on massive datasets directly within their web browser, without the need for extensive local storage or high computing power.
 
 The key features of GEE:
 
@@ -40,11 +35,13 @@ The key features of GEE:
 
 **Visualisation**: GEE allows users to visualise geospatial data and analysis results in interactive maps. A user can explore and interact with the data layers.
 
-However, in my opinion, the most impressive characteristic of GEE is its ability to dynamically represent data.
+Below I've used GEE to conduct a few analyses using methods we've learned about over the past few weeks. I've used Vancouver as a case study here. I thought it would interesting to see how its distinctly north american 'grid system' would appear.
+
+## Applications 1
 
 ### NDVI Analysis
 
-NDVI Analysis assesses vegetation health and coverage in a given area. By comparing the reflectance of near-infrared and red light, NDVI helps in distinguishing between vegetated and non-vegetated surfaces, indicating plant health and biomass. High indexes are seen in Stanley park, the large green area seen at the top of the window and on the left tip of the city is the *University Endowment Lands,* an old growth protected area where the University of British Columbia is located. Due to housing shortages in the city, several acres of this protected area have sadly been approved for development. I will be checking to see how this area changes over the next few years.
+NDVI Analysis assesses vegetation health and coverage in a given area. By comparing the reflectance of near-infrared and red light, NDVI helps to distinguish between vegetated and non-vegetated surfaces, indicating plant health and biomass. High indexes are seen in Stanley park, the large green area seen at the top of the window and on the left tip of the city is the *University Endowment Lands,* an old growth protected area where the University of British Columbia is located. Due to housing shortages in the city, several acres of this protected area have sadly been approved for development. I will be checking to see how this area changes over the next few years.
 
 ```{r echo=FALSE, out.width="70%", fig.cap="NDVI Analysis of Vancouver"}
 knitr::include_graphics("img/vancouver_ndvi.png")
@@ -66,7 +63,7 @@ Finally *Texture Analysis* involves evaluating the spatial arrangement of colors
 knitr::include_graphics("img/vancouver_texture.png")
 ```
 
-## Applications
+## Applications 2
 
 I watched Noah Gorelick's [lecture](https://www.youtube.com/watch?v=WvaBZbph_cU&t=1822s) on machine learning in GEE. As a result I ended up diving into another one of his papers, [Google Earth Engine: Planetary-scale geospatial analysis for everyone](https://www.sciencedirect.com/science/article/pii/S0034425717302900), published in 2017. Gorelick mentions a plethora of different ways you can leverage GEE for analysis, some of those include:
 
@@ -81,12 +78,8 @@ A tangible example of the strength and utility of GEE is its role in the Global 
 
 ## Reflections
 
-Google Earth Engine has proven to be an incredibly useful tool from a business perspective, offering a wide range of applications that span from environmental monitoring to urban planning and agricultural management. Its vast repository of satellite imagery and geospatial data allows for real-time environmental monitoring, making it an indispensable tool for businesses that require up-to-date geographical information to make informed decisions. For instance, in agriculture, Google Earth Engine enables the analysis of crop health over vast areas, aiding in the efficient management of resources and ultimately leading to increased productivity and reduced costs.
+GEE offers a wide range of applications that span from environmental monitoring to urban planning and agricultural management. Its vast repository of satellite imagery and geospatial data allows for real-time environmental monitoring, making it indispensable tool up-to-date geographical information to make informed decisions. For instance, in agriculture, GEE enables the analysis of crop health over vast areas, aiding in the efficient management of resources and ultimately leading to increased productivity and reduced costs.
 
-From a user experience standpoint, Google Earth Engine is remarkably mature. Its interface is both intuitive and user-friendly, making it accessible to professionals across various sectors, regardless of their technical expertise in geospatial analysis. The platform's ability to handle large datasets and perform complex spatial analyses in the cloud, without the need for powerful local computing resources, is particularly impressive. This cloud-based approach not only streamlines workflows but also facilitates collaborative projects by allowing teams to share data and insights seamlessly.
+From a user experience standpoint, GEE is very mature. Its interface is both intuitive and user-friendly. The platform's ability to handle large datasets and perform complex spatial analyses in the cloud, without the need for powerful local computing resources, is particularly impressive. The main thing I noticed when conducting analysis using it vs SNAP or QGIS is just this. It's easy, fast and vast. I don't know enough about remote sensing to assert that GEE enables *new* types of analysis. However, through readings, it is obvious that GEE enables more breadth and depth of RS & EO analysis.
 
-Moreover, Google Earth Engine's extensive library of algorithms and models, combined with its support for multiple programming languages, including JavaScript and Python, offers flexibility and efficiency in processing and analysing geospatial data. This adaptability is crucial for businesses that need to tailor their analyses to specific requirements.
-
-In summary, Google Earth Engine's comprehensive data resources, coupled with its sophisticated yet accessible analytical tools, make it an invaluable asset for businesses seeking to leverage geospatial data for strategic decision-making. Its mature user experience ensures that even those with limited experience in spatial data science can harness the power of geospatial analytics to drive innovation and efficiency in their operations.
-
-## References
+GEE is probably the most complex tool I've learned to use on this course thus far. Having taken a sneak peak of next week's content, I'm excited expand my understanding of the tool by using more complex methods.
